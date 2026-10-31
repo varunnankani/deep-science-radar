@@ -75,5 +75,677 @@
   "company": "Meine Electric",
   "kind": "New signal",
   "summary": "Independent cell validation at the CES Battery Laboratory (Jul 2026) added; TRL estimate moved from 3–4 to 4 on that basis."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "armatrix",
+  "company": "Armatrix",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: No patents found."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "takeme2space",
+  "company": "TakeMe2Space (TM2SPACE)",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "takeme2space",
+  "company": "TakeMe2Space (TM2SPACE)",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: No patents found."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "aule",
+  "company": "Aule Space",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "aule",
+  "company": "Aule Space",
+  "kind": "Assessment changed",
+  "summary": "TRL set to TRL 5–6 (est.): Relative guidance, navigation and control system tested at ISRO's Rendezvous Simulation Laboratory, company/coverage claims TRL 6 (NewsBytes, Aug 2026."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "sanyark",
+  "company": "Sanyark Space",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "dream-aerospace",
+  "company": "Dream Aerospace",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "dream-aerospace",
+  "company": "Dream Aerospace",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Only a proprietary claim: 'India's first homegrown green chemical propulsion system' (ATOM thruster)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "tattvam",
+  "company": "Tattvam AI",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "tattvam",
+  "company": "Tattvam AI",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: No patents found."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "optoml",
+  "company": "optoML",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (1 of 4); team score still not computed (needs 2 factors)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "optoml",
+  "company": "optoML",
+  "kind": "Assessment changed",
+  "summary": "IP changed from 3 to 3: No patent found."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "sensesemi",
+  "company": "Sensesemi Technologies",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Proprietary claim only: single-chip integration of analog AI inference, wireless mesh connectivity and analog signal processing, with a focu."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "bigendian",
+  "company": "BigEndian Semiconductors",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "nusynth",
+  "company": "NuSynth Technologies",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "nusynth",
+  "company": "NuSynth Technologies",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Claims proprietary chemical processes and an AI knowledge base still being built."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quintrans",
+  "company": "Quintrans",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 2."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quintrans",
+  "company": "Quintrans",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Only a company claim of in-house direct-drive electromagnetic linear motion hardware and control electronics."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "alphadroid",
+  "company": "Alphadroid",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (2 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "hycosys",
+  "company": "Hycosys",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "hycosys",
+  "company": "Hycosys",
+  "kind": "Assessment changed",
+  "summary": "TRL set to TRL 3–4 (est.): NITI Frontier Tech profile puts Hycosys at TRL 3–4 (lab proof of concept)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "meine",
+  "company": "Meine Electric",
+  "kind": "Assessment changed",
+  "summary": "IP set to 3: Company reports four granted patents and seven international applications filed, plus proprietary 'Fast Charge Long Discharge' design (YourS."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "etrnl",
+  "company": "e-TRNL Energy",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (2 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "etrnl",
+  "company": "e-TRNL Energy",
+  "kind": "Assessment changed",
+  "summary": "IP changed from 3 to 4: YourStory (Aug 2026): two patents granted on the 3D cell design (3DEA architecture) and further applications filed. Patent numbers not discl."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "newtrace",
+  "company": "Newtrace",
+  "kind": "Assessment changed",
+  "summary": "IP set to 3: Membrane-less electrolyser and in-house electrocatalyst described as proprietary and patent-pending (YourStory 2022, Inc42)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "pranos",
+  "company": "Pranos Fusion",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Proprietary stack claimed (JENGA design/control software, in-house MAGGA HTS magnet programme)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "pranos",
+  "company": "Pranos Fusion",
+  "kind": "Assessment changed",
+  "summary": "TRL moved from TRL 2–3 (est.) to TRL 3–4 (est.): Built PRAGYA compact tokamak (0.40 m major radius, 0.1 T."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "crisprbits",
+  "company": "CrisprBits",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "crisprbits",
+  "company": "CrisprBits",
+  "kind": "Assessment changed",
+  "summary": "IP set to 3: EP 4 460 581 A1 (Assay device/method for genetic predisposition to severe SARS-CoV-2), applicant Crisprbits Pvt Ltd, filed 2022-09-30, publi."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "strainx",
+  "company": "StrainX Bioworks",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "strainx",
+  "company": "StrainX Bioworks",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Proprietary claim of an integrated strain engineering-to-scale-up platform."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "cropcoin",
+  "company": "Cropcoin",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "bioscan",
+  "company": "Bioscan Research",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "bioscan",
+  "company": "Bioscan Research",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Received Gujarat government support to file a patent for the brain-injury device (NewsNation/ANI)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "ayati",
+  "company": "Ayati Devices",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (2 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "ayati",
+  "company": "Ayati Devices",
+  "kind": "Assessment changed",
+  "summary": "IP changed from 3 to 2: Proprietary Angiocam laser blood-flow imaging and the VibraSense neuropathy screener. Round coverage says funds will 'grow the IP portfolio'."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "pulse",
+  "company": "Pulse",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (1 of 4); team score still not computed (needs 2 factors)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "curapod",
+  "company": "CURAPOD",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quarkitech",
+  "company": "Quarkitech",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Proprietary claim only: tensor-network (quantum-inspired) sensor-data compression and a core algorithm library."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quarkitech",
+  "company": "Quarkitech",
+  "kind": "Assessment changed",
+  "summary": "TRL set to TRL 3–4 (est.): Lab drone trial cut image data 26x while keeping 98% of mission-critical information."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "velmenni",
+  "company": "Velmenni",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "velmenni",
+  "company": "Velmenni",
+  "kind": "Assessment changed",
+  "summary": "IP set to 3: Coverage describes its FSO and Li-Fi technologies as patented."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "skyroot",
+  "company": "Skyroot Aerospace",
+  "kind": "Assessment changed",
+  "summary": "IP set to 3: No patents found."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "skyroot",
+  "company": "Skyroot Aerospace",
+  "kind": "Assessment changed",
+  "summary": "TRL moved from TRL 7–8 (est.) to TRL 8–9 (est.): Vikram-1 upper stage reached planned 450 km LEO on its first orbital launch from Sriharikota, 18 Jul 2026 (Circuit Digest)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "digantara",
+  "company": "Digantara",
+  "kind": "Assessment changed",
+  "summary": "IP set to 3: Geospatial World says Digantara 'secured patents' for its key technology and calls its SCOT space-based surveillance sensor 'patented'. No p."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "ethereal",
+  "company": "Ethereal Machines",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Proprietary five-axis machining systems (Halo won CES 2018 Best of Innovation)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "optimized",
+  "company": "Optimized Electrotech",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "optimized",
+  "company": "Optimized Electrotech",
+  "kind": "Assessment changed",
+  "summary": "IP set to 3: Coverage says company holds four patents in electro-optical/imaging tech (numbers and grant status not given)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "qpiai",
+  "company": "QpiAI",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "qpiai",
+  "company": "QpiAI",
+  "kind": "Assessment changed",
+  "summary": "IP set to 4: About 12 patents in 10 families (US/India), including granted US12585973B1 'Adaptive Calibration for Quantum Computing Systems' (GreyB)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "qnu",
+  "company": "QNu Labs",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "qnu",
+  "company": "QNu Labs",
+  "kind": "Assessment changed",
+  "summary": "IP set to 4: Company timeline lists three granted US patents (1st, then 2nd and 3rd)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "vervesemi",
+  "company": "Vervesemi Microelectronics",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "vervesemi",
+  "company": "Vervesemi Microelectronics",
+  "kind": "Assessment changed",
+  "summary": "IP set to 4: 10+ patents and 5 trade secrets, 140+ semiconductor IP blocks (AnySilicon, YourStory Feb 2026)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "hrdwyr",
+  "company": "HrdWyr",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (2 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "ideaforge",
+  "company": "ideaForge Technology",
+  "kind": "Assessment changed",
+  "summary": "IP set to 5: 66 patents globally, 32 granted, per co-founder Rahul Singh (BusinessWorld, May 2024)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "inbound",
+  "company": "Inbound Aerospace",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "satleo",
+  "company": "SatLeo Labs",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "satleo",
+  "company": "SatLeo Labs",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Company claims a proprietary dual-band (MWIR+LWIR) thermal imaging payload."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "satleo",
+  "company": "SatLeo Labs",
+  "kind": "Assessment changed",
+  "summary": "TRL moved from TRL 8 (company-stated) to TRL 7 (est.): TAPAS-1 thermal payload launched on SpaceX Transporter-18 aboard Dhruva Space LEAP-2 on 2026-10-02."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "orbitt",
+  "company": "Orbitt Space",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (2 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "orbitt",
+  "company": "Orbitt Space",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Only a claim of indigenous air-breathing electric propulsion for ULEO."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "omspace",
+  "company": "Omspace Rocket & Exploration",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (1 of 4); team score still not computed (needs 2 factors)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "omspace",
+  "company": "Omspace Rocket & Exploration",
+  "kind": "Assessment changed",
+  "summary": "TRL set to TRL 4 (est.): First sounding rocket launched to ~3 km from Bavaliyari, Gulf of Khambhat, 14 Mar 2026 (EDII)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "orbitaid",
+  "company": "OrbitAID Aerospace",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "orbitaid",
+  "company": "OrbitAID Aerospace",
+  "kind": "Assessment changed",
+  "summary": "IP changed from 3 to 3: SIDRP docking/refuelling interface described as patented in 2021 (YourStory."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "astrophel",
+  "company": "Astrophel Aerospace",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "astrophel",
+  "company": "Astrophel Aerospace",
+  "kind": "Assessment changed",
+  "summary": "TRL set to TRL 4 (est.): Semi-cryogenic engine test-fired Aug 2023 (YourStory, Jul 2025."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "dashamlabs",
+  "company": "Dashamlabs",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (3 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "dashamlabs",
+  "company": "Dashamlabs",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Company claims 'fully Indian-patented' aerogel tech."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "flowatt",
+  "company": "Flowatt Battery Science",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "flowatt",
+  "company": "Flowatt Battery Science",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Claims a proprietary battery assurance layer (health monitoring, lifecycle underwriting)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "flowatt",
+  "company": "Flowatt Battery Science",
+  "kind": "Assessment changed",
+  "summary": "TRL set to TRL 6–7 (est.): Battery-as-a-Service platform deployed on ~1,500 batteries across Indian cities (Autocar Pro/Entrackr, Oct 2025)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "neuralzome",
+  "company": "Neuralzome Cybernetics",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "neuralzome",
+  "company": "Neuralzome Cybernetics",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: Proprietary claims only: NeuralPilot no-code autonomy stack and RedPill digital-twin simulator."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "wankel",
+  "company": "Wankel Energy Systems",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (1 of 4); team score still not computed (needs 2 factors)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "wankel",
+  "company": "Wankel Energy Systems",
+  "kind": "Assessment changed",
+  "summary": "IP set to 4: Group CEO states three granted patents (US and India per ETV Bharat) plus 20+ trade secrets."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "h2cz",
+  "company": "H2 Carbon Zero (Umagine Hydrogen)",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: No patents found."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "greengrahi",
+  "company": "GreenGrahi",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 3."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "greengrahi",
+  "company": "GreenGrahi",
+  "kind": "Assessment changed",
+  "summary": "IP set to 2: No patents found."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quanfluence",
+  "company": "Quanfluence",
+  "kind": "Assessment changed",
+  "summary": "Team factors now evidenced (4 of 4); team score 4."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quanfluence",
+  "company": "Quanfluence",
+  "kind": "Assessment changed",
+  "summary": "IP set to 4: Indian patent 'Coherent Optical Computing System and Method for Solving Ising Problems Using Electro-Optic Coherent Ising Machine'. Applican."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "ather",
+  "company": "Ather Energy",
+  "kind": "Assessment changed",
+  "summary": "IP set to 5: 644 patents globally (604 families), 338 granted per GreyB patent analysis (Jul 2026)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "pixxel",
+  "company": "Pixxel",
+  "kind": "Stage reclassified",
+  "summary": "Moved from Undisclosed to Series C: Pixxel announced the close of a $100M Series C co-led by Temasek and Seraphim (7 Sep 2026)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "satsure",
+  "company": "SatSure",
+  "kind": "Stage reclassified",
+  "summary": "Moved from Undisclosed to Series A: Inc42 reports a $15M Series A (Aug 2023) co-led by Baring PE India and Promus Ventures; the Jun 2026 IN-SPACe award is a grant."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quanfluence",
+  "company": "Quanfluence",
+  "kind": "Stage reclassified",
+  "summary": "Moved from Undisclosed to Series A: Quantum Computing Report states the $10M round led by Chiratae Ventures is a Series A."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quanfluence",
+  "company": "Quanfluence",
+  "kind": "Correction",
+  "summary": "Founder name corrected to Anil Prabhakar; the 'about three machines sold' claim was not re-verified in the Series A coverage."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "takeme2space",
+  "company": "TakeMe2Space (TM2SPACE)",
+  "kind": "New round",
+  "summary": "Added the $5M seed led by Chiratae Ventures (Inc42, Jan 2026); last confirmed round moves from Pre-seed to Seed."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "velmenni",
+  "company": "Velmenni",
+  "kind": "Correction",
+  "summary": "Lead investor set to pi Ventures for the ₹30 Cr pre-Series A (CXO Digitalpulse, Mar 2026)."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "skyroot",
+  "company": "Skyroot Aerospace",
+  "kind": "Correction",
+  "summary": "Series C leads set to GIC and Sherpalo Ventures (co-led), per Satellite Today."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "ethereal",
+  "company": "Ethereal Machines",
+  "kind": "Correction",
+  "summary": "Lead partner reset to not named: Anirudh Singh (Avataar) is quoted in coverage but not stated to have led the round."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "orbitaid",
+  "company": "OrbitAID Aerospace",
+  "kind": "New signal",
+  "summary": "AayulSAT in-orbit refuelling demo was lost when PSLV-C62 failed (12 Jan 2026); TRL basis now carries this caveat."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "bioscan",
+  "company": "Bioscan Research",
+  "kind": "Correction",
+  "summary": "Location corrected from Bengaluru to Ahmedabad, per YourStory and NewsNation."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "astrophel",
+  "company": "Astrophel Aerospace",
+  "kind": "Correction",
+  "summary": "Location corrected from India to Pune, per Free Press Journal."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "dream-aerospace",
+  "company": "Dream Aerospace",
+  "kind": "Correction",
+  "summary": "Location corrected from India to Chennai, per Entrackr."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "nusynth",
+  "company": "NuSynth Technologies",
+  "kind": "Correction",
+  "summary": "Location corrected from Bengaluru to Mysuru, per funding coverage."
  }
 ]

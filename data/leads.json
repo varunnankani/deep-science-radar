@@ -22,7 +22,7 @@
   "fit": 5,
   "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -180,7 +180,10 @@
     "score": 4,
     "rationale": "Confined-space entry is a safety and regulatory issue across oil and gas, shipbuilding, aviation and nuclear"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "No patents found; coverage calls the snake-like arm proprietary (3-5 m, >22 DoF, extrinsic actuation with motors outside the arm, AI navigation, digital twin) - company claim only (Outlook Business)"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -476,14 +479,14 @@
   "source_url": "https://yourstory.com/2026/06/in-space-selects-3-startups-funding-technology-adoption-fund",
   "signal_date": "2026-06-12",
   "first_found": "2026-10-31",
-  "funding": "₹5.5 Cr pre-seed (2025), Seafund; IN-SPACe TAF award",
+  "funding": "$5M seed (Jan 2026), Chiratae Ventures; ₹5.5 Cr pre-seed (2025), Seafund; IN-SPACe TAF award",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Next raise: Seed",
+  "entry_window": "Next raise: Series A",
   "fit": 5,
-  "team": null,
+  "team": 3,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -492,12 +495,12 @@
   "trl": "TRL 6–7 (est.)",
   "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
-  "round_tab": "Pre-seed",
-  "latest_round": "Pre-seed · ₹5.5 Cr · 2025",
-  "lead_investor": "Seafund",
+  "round_tab": "Seed",
+  "latest_round": "Seed · $5M · Jan 2026",
+  "lead_investor": "Chiratae Ventures",
   "lead_partner": "Manoj Kumar Agarwal, Managing Partner",
   "founder_snapshot": "Founder-CEO Ronak Kumar Samantray started it in 2024; 17+ people; has flown payloads on ISRO's POEM platform twice.",
-  "next_raise": "Next raise: Seed",
+  "next_raise": "Next raise: Series A",
   "global_peers": [
    {
     "name": "Starcloud (formerly Lumen Orbit)",
@@ -539,18 +542,19 @@
    "note": null
   },
   "team_strengths": [
-   "Fast execution: payloads flown twice on ISRO's POEM platform within two years",
-   "Company plus a government grant on top of private money"
+   "Serial founder with a prior acquired startup (NowFloats)",
+   "Software/compute depth suited to in-orbit computing",
+   "Ex-ISRO consultants on board"
   ],
   "team_gaps": [
-   "Solo founder publicly; no named co-founder for hardware or sales",
-   "Founder's background before TM2Space isn't in coverage"
+   "Single founder; no co-founder with formal spacecraft engineering background evidenced",
+   "No named customers in coverage despite a claimed 40-client waitlist"
   ],
   "founders_detail": [
    {
     "name": "Ronak Kumar Samantray",
     "role": "Founder and CEO",
-    "background": "Founded TakeMe2Space in 2024; prior background not in coverage"
+    "background": "B.Tech Computer Science, College of Engineering and Technology, Bhubaneswar; former senior software engineer at Microsoft; co-founder of NowFloats (company site says it was acquired by Reliance); founder of Kitsune serverless framework (Entrepreneur India speaker profile; tm2.space about page)"
    }
   ],
   "rubric": {
@@ -572,16 +576,18 @@
    ]
   },
   "investors": [
+   "Chiratae Ventures",
    "Seafund",
    "Blume Ventures",
-   "Artha Venture Fund"
+   "Artha Venture Fund",
+   "Unicorn India Ventures"
   ],
   "institution_tags": [],
   "last_funding": {
-   "stage": "Pre-seed",
-   "amount": "₹5.5 Cr",
-   "date": "2025",
-   "lead": "Seafund",
+   "stage": "Seed",
+   "amount": "$5M",
+   "date": "2026-01",
+   "lead": "Chiratae Ventures",
    "status": "Completed"
   },
   "latest_signal": {
@@ -606,12 +612,21 @@
    "Revenue doubling over 12 months, as the company guides"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 3,
+    "evidence": "Founder is a software engineer (ex-Microsoft), not a space specialist; three ex-ISRO members serve as consultants (ThePrint)"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "Founder co-founded NowFloats, an SMB digital-presence startup that the company site says Reliance acquired"
+   },
+   "complementarity": {
+    "score": 2,
+    "evidence": "Single founder; business strategy and product heads hired from T-Works (ThePrint)"
+   },
    "execution": {
     "score": 4,
-    "evidence": "Two in-orbit missions on ISRO's POEM within two years"
+    "evidence": "Flew MOI-TD on ISRO POEM; claims first uplink of AI models and run of external code in orbit (Inc42, Jan 2026); prior startup exit"
    }
   },
   "factor_evidence": {
@@ -623,21 +638,47 @@
     "score": 4,
     "rationale": "Onboard processing addresses a real downlink bottleneck, but demand is still forming"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "No patents found; company claims all core systems (radiation shielding coating, on-orbit processing) built in-house, including a tantalum-based radiation coating (tm2.space, ThePrint)"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "College of Engineering and Technology, Bhubaneswar",
+    "relation": "Founder's education"
+   },
+   {
+    "name": "Microsoft",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "NowFloats",
+    "relation": "Founder's previous company (co-founded)"
+   },
+   {
+    "name": "T-Works (Telangana prototyping lab)",
+    "relation": "Key hires' previous employment (Head of Business Strategy, Head of Products)"
+   }
+  ],
   "tech_approach": "In-orbit computing",
   "investor_edges": [
    {
-    "name": "Seafund",
+    "name": "Chiratae Ventures",
     "role": "Lead",
-    "round": "Pre-seed",
-    "date": "2025"
+    "round": "Seed",
+    "date": "2026-01"
+   },
+   {
+    "name": "Seafund",
+    "role": "Participant",
+    "round": null,
+    "date": null
    },
    {
     "name": "Blume Ventures",
@@ -650,9 +691,15 @@
     "role": "Participant",
     "round": null,
     "date": null
+   },
+   {
+    "name": "Unicorn India Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -681,7 +728,7 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed (~$5M signalled)",
   "fit": 5,
-  "team": null,
+  "team": 4,
   "market": 4,
   "ip": null,
   "confidence": "Medium",
@@ -689,8 +736,8 @@
   "diligence": true,
   "why": "Life-extension is a service with a clear buyer (satellite operators) and a dual-use defence angle in space situational awareness.",
   "rdi_sector": "Space",
-  "trl": "Not estimable",
-  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl": "TRL 5–6 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $2M · Jan 2026",
@@ -731,28 +778,28 @@
    "note": "No public financial filings found; founded 2024."
   },
   "team_strengths": [
-   "Angel backing from the CEO of Tonbo Imaging and a former Intelsat board member brings customer access",
-   "Clear plan: demo satellite next year, then a ~$5M round"
+   "Satellite flight-hardware experience (Pixxel, ESA)",
+   "First private company to test at ISRO's Rendezvous Simulation Lab"
   ],
   "team_gaps": [
-   "Founders' technical backgrounds aren't in coverage",
-   "No one with satellite-operator sales experience named on the team"
+   "No evidenced commercial/sales lead for satellite-operator contracts",
+   "No on-orbit demonstration yet (demo satellite planned ~2027)"
   ],
   "founders_detail": [
    {
     "name": "Jay Panchal",
     "role": "Co-founder and CEO",
-    "background": "Background not in coverage"
+    "background": "BITS Pilani; previously at Pixxel, where he led structural engineering for six hyperspectral satellites; won NASA Rover Challenge at BITS; published research on satellite mechanisms (Entrepreneur First profile; AIM)"
    },
    {
     "name": "Nithyaa Giri",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "role": "Co-founder and CTO",
+    "background": "Previously led EV charging infrastructure development at Hero; built rockets, drones (awards judged by Indian Air Force) and autonomous submarines for Indian defence (Entrepreneur First profile)"
    },
    {
     "name": "Hrishit Tambi",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "role": "Co-founder and COO",
+    "background": "Previously built open-source satellite communication systems at the European Space Agency and led the vision team for SAR satellites at MapMyIndia; built Mars rovers that won the International Rover Competition (Entrepreneur First profile)"
    }
   ],
   "rubric": {
@@ -790,10 +837,11 @@
    "event_date": "2026-01-14",
    "source_date": "2026-01-14"
   },
-  "trl_estimate": null,
-  "trl_basis": "No demonstrated hardware milestone in coverage; demo satellite planned for 2027",
-  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl_estimate": "TRL 5–6 (est.)",
+  "trl_basis": "Relative guidance, navigation and control system tested at ISRO's Rendezvous Simulation Laboratory, company/coverage claims TRL 6 (NewsBytes, Aug 2026); in-orbit demo satellite still planned",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
+   "GNC/docking system tested at ISRO Rendezvous Simulation Lab (Aug 2026)",
    "Pre-seed raised with angels from Tonbo Imaging and Intelsat's former board"
   ],
   "unproven": [
@@ -805,10 +853,19 @@
    "A letter of intent from a GEO operator"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 4,
+    "evidence": "CEO led structures for six Pixxel satellites; COO built satcom systems at ESA and SAR vision at MapMyIndia"
+   },
    "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "complementarity": {
+    "score": 3,
+    "evidence": "Distinct technical roles (structures, EV/robotics hardware, satcom/vision) but no evidenced business/sales founder"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "Relative GNC tech tested at ISRO's Rendezvous Simulation Lab, reported TRL 6 (Aug 2026); ground docking test setups built"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -826,7 +883,36 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "BITS Pilani",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Pixxel",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "European Space Agency",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "MapMyIndia",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Hero",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Entrepreneur First",
+    "relation": "Accelerator"
+   },
+   {
+    "name": "ISRO Rendezvous Simulation Laboratory",
+    "relation": "Research: GNC/docking test facility (first private user)"
+   }
+  ],
   "tech_approach": "Satellite docking and servicing",
   "investor_edges": [
    {
@@ -836,7 +922,7 @@
     "date": "2026-01"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -865,7 +951,7 @@
   "stage_label": "Lab-validated science",
   "entry_window": "Next raise: Seed",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 3,
   "ip": null,
   "confidence": "Low",
@@ -915,20 +1001,25 @@
    "source": null,
    "note": "No public financial filings found."
   },
-  "team_strengths": [],
+  "team_strengths": [
+   "Both founders have ISRO backgrounds",
+   "CEO pairs space engineering with consulting and an MBA"
+  ],
   "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+   "No hardware demonstrated yet",
+   "No named customers or defence/telecom contracts",
+   "No evidenced satellite programme delivery as leads"
   ],
   "founders_detail": [
    {
     "name": "Akhileshwar Reddy Peseke",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "role": "Co-founder and CTO",
+    "background": "Former ISRO scientist (per Newskart and Indian Defence News coverage); no education details found"
    },
    {
-    "name": "Raghava K",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "name": "Raghava K (Raghava Kundrapu)",
+    "role": "Co-founder and CEO",
+    "background": "IIST alumnus; formerly engineer at Satish Dhawan Space Centre (SDSC-SHAR, ISRO) and with Deloitte Space; MBA, Masters' Union"
    }
   ],
   "rubric": {
@@ -980,10 +1071,22 @@
    "A government or defence anchor customer"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "domain": {
+    "score": 4,
+    "evidence": "Both founders ex-ISRO; CEO is IIST alumnus and ex-SDSC-SHAR engineer"
+   },
+   "commercial": {
+    "score": 2,
+    "evidence": "CEO has Deloitte Space consulting stint and an MBA; no customers or sales record evidenced"
+   },
+   "complementarity": {
+    "score": 3,
+    "evidence": "CTO ex-ISRO scientist; CEO combines ISRO engineering with consulting/MBA"
+   },
+   "execution": {
+    "score": 2,
+    "evidence": "Raised pre-seed capital; no satellite or payload yet built or flown (first tech-demo satellite is a plan)"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -1001,7 +1104,24 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "Indian Institute of Space Science and Technology (IIST)",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Masters' Union",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "ISRO (Satish Dhawan Space Centre SHAR)",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Deloitte (Deloitte Space)",
+    "relation": "Founder's previous employment"
+   }
+  ],
   "tech_approach": "Satellite navigation constellations",
   "investor_edges": [
    {
@@ -1011,7 +1131,7 @@
     "date": "2026-02"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -1022,9 +1142,9 @@
  {
   "id": "dream-aerospace",
   "company": "Dream Aerospace",
-  "founders": "Not named in source",
+  "founders": "Hari Krishnan KJ, Rogith S",
   "institution": "",
-  "location": "India",
+  "location": "Chennai",
   "sector": "Space & earth observation",
   "tech": "ATOM satellite thruster and CUBEHOOD demo mission",
   "problem": "Small satellites need compact, reliable propulsion to move and stay in orbit",
@@ -1040,9 +1160,9 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 3,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": true,
@@ -1089,11 +1209,26 @@
    "source": null,
    "note": "No revenue figures found. Inc42 lists founders holding about 81% of the company."
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "Propulsion-specific doctoral training at IIT Kanpur",
+   "Founded 2022 and raised two institutional rounds (IPV, 247VC/Campus Angels)"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "No evidenced commercial/sales experience or named customers",
+   "No independently reported thruster test data or flight heritage yet"
+  ],
+  "founders_detail": [
+   {
+    "name": "Hari Krishnan KJ",
+    "role": "Co-founder & CEO",
+    "background": "PhD candidate in propulsion at IIT Kanpur; leads technical side (TechObserver, Jan 2025)"
+   },
+   {
+    "name": "Rogith S",
+    "role": "Co-founder",
+    "background": "Aerospace engineering graduate of Hindustan University; oversees operations (TechObserver, Jan 2025)"
+   }
+  ],
   "rubric": {
    "business": [
     "Signed launch, data or servicing contracts, not just MoUs",
@@ -1146,10 +1281,19 @@
    "Repeat orders from satellite makers"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 3,
+    "evidence": "CEO is a propulsion PhD candidate at IIT Kanpur; co-founder is an aerospace engineering graduate"
+   },
    "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "complementarity": {
+    "score": 3,
+    "evidence": "Split of technical lead (propulsion PhD) and operations lead (aerospace grad)"
+   },
+   "execution": {
+    "score": 3,
+    "evidence": "Company reports a successful full-scale propulsion system test (SME Futures); two closed rounds (Rs 3 Cr pre-seed Jan 2025, Rs 10 Cr pre-Series A)"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -1160,14 +1304,34 @@
     "score": 3,
     "rationale": "Steady demand from small-satellite builders; competitive with European suppliers"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Only a proprietary claim: 'India's first homegrown green chemical propulsion system' (ATOM thruster); no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Kanpur",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Hindustan University",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "TANSEED 4.0 (StartupTN)",
+    "relation": "Grant / programme support"
+   },
+   {
+    "name": "NIDHI-PRAYAS",
+    "relation": "Grant / programme support"
+   }
+  ],
   "tech_approach": "Electric propulsion",
   "investor_edges": [
    {
@@ -1183,7 +1347,7 @@
     "date": "2026-06"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -1212,9 +1376,9 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 5,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -1263,23 +1427,23 @@
    "note": "Registered abroad; no Indian filings found."
   },
   "team_strengths": [
-   "Backed by Stan Boland, who built and sold Icera to NVIDIA, a strong signal on the founder",
-   "Founder described by investors as one of the most driven young founders in chip design"
+   "Startup chip-engineering experience (Fractile) plus academic chip design (ETH Zurich)",
+   "Backed by semiconductor angel Stan Boland (Icera, Element 14 founder)"
   ],
   "team_gaps": [
-   "Team size and depth of physical-design veterans not public",
-   "Selling into the Cadence and Synopsys ecosystem needs enterprise sales experience"
+   "No evidenced sales/GTM lead",
+   "No product launch or design-partner pilot announced yet"
   ],
   "founders_detail": [
    {
     "name": "Bragadeesh Suresh Babu",
     "role": "Co-founder and CEO",
-    "background": "IIT Madras alumnus"
+    "background": "IIT Madras alumnus; previously an early engineer at UK brain-monitoring startup CoMind and one of the earliest engineers at UK chip startup Fractile; turned down a role on Google's TPU team to start Tattvam (CRN Asia, Seedcamp)"
    },
    {
     "name": "Lannan Jiang",
     "role": "Co-founder",
-    "background": "Background not in coverage"
+    "background": "Hands-on chip designer; built high-performance chips at a research lab at ETH Zurich (Seedcamp, CRN Asia)"
    }
   ],
   "rubric": {
@@ -1337,10 +1501,19 @@
    "Measured hours saved per block"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 4,
+    "evidence": "IIT Madras CEO who was an early engineer at chip startup Fractile; co-founder built chips at an ETH Zurich research lab"
+   },
    "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "complementarity": {
+    "score": 2,
+    "evidence": "Both founders are chip/engineering profiles; no business-side founder evidenced"
+   },
+   "execution": {
+    "score": 2,
+    "evidence": "Out of stealth Feb 2026; first product planned 'in the coming months'; no customers or pilots reported"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -1351,7 +1524,10 @@
     "score": 5,
     "rationale": "Design labour is a bottleneck for fabless growth globally"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "No patents found; claims a proprietary AI reasoning layer over Cadence/Synopsys EDA that 'understands circuits from first principles'"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -1362,6 +1538,26 @@
    {
     "name": "IIT Madras",
     "relation": "Founder's education"
+   },
+   {
+    "name": "ETH Zurich",
+    "relation": "Founder's previous employment (chip research lab)"
+   },
+   {
+    "name": "Fractile",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "CoMind",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Seedcamp",
+    "relation": "Lead investor"
+   },
+   {
+    "name": "EWOR",
+    "relation": "Accelerator / investor"
    }
   ],
   "tech_approach": "AI for chip design",
@@ -1391,7 +1587,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -1476,18 +1672,17 @@
    "note": "Headquartered in Singapore with a Bengaluru team; no Indian filings found."
   },
   "team_strengths": [
-   "Already taped out a 12nm chip at TSMC, rare for a pre-Series A Indian team",
-   "Partnership with Kaynes Semicon for assembly and test"
+   "Delivered a 12nm TSMC tape-out at pre-Series A stage"
   ],
   "team_gaps": [
-   "Single named founder; no commercial co-founder in coverage",
-   "Founder's prior chip experience isn't public"
+   "Founder background and wider founding/leadership team not publicly documented",
+   "No evidenced commercial or GTM lead"
   ],
   "founders_detail": [
    {
     "name": "Saravana Maruthamuthu",
     "role": "Founder and CEO",
-    "background": "Background not in coverage"
+    "background": "Background not in coverage (Inc42 people page and funding coverage list name and role only)"
    }
   ],
   "rubric": {
@@ -1547,7 +1742,7 @@
    "complementarity": null,
    "execution": {
     "score": 4,
-    "evidence": "12nm tape-out at TSMC at pre-Series A"
+    "evidence": "12nm tape-out with TSMC completed; MoU with Kaynes Semicon for assembly and test (Indian Startup News, Feb 2026)"
    }
   },
   "factor_evidence": {
@@ -1561,7 +1756,7 @@
    },
    "ip": {
     "score": 3,
-    "rationale": "Proprietary analog in-memory architecture taped out at 12nm"
+    "rationale": "No patent found; proprietary Analog-in-Memory Compute architecture with optical interconnects realised in a 12nm TSMC tape-out (company claim, Indian Startup News)"
    }
   },
   "role": "Core",
@@ -1616,7 +1811,7 @@
   "fit": 4,
   "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -1776,7 +1971,10 @@
     "score": 4,
     "rationale": "Billions of IoT and medical devices need low-power chips"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Proprietary claim only: single-chip integration of analog AI inference, wireless mesh connectivity and analog signal processing, with a focus on owning core chip-design IP (CXOToday, Jan 2026). No patents found."
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -1829,7 +2027,7 @@
  {
   "id": "bigendian",
   "company": "BigEndian Semiconductors",
-  "founders": "Sunil Kumar, Renuka Prasad, Kanagaraju Ponnusamy, Dinesh Annayya, Jansen Cheng",
+  "founders": "Sunil Kumar, Renuka Prasad, Harpreet Wadhawan, Dinesh Annayya, Kanagaraju Ponnusamy, Jansen Cheng",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Semiconductors",
@@ -1847,7 +2045,7 @@
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A (round still open for ~$4M more)",
   "fit": 5,
-  "team": null,
+  "team": 4,
   "market": 5,
   "ip": 3,
   "confidence": "Medium",
@@ -1904,43 +2102,44 @@
    "note": null
   },
   "team_strengths": [
-   "Six co-founders, a large team for a chip startup, covering design and business",
-   "Repeat backing: Vertex led the seed and returned in the pre-Series A"
+   "Deep chip-design pedigree across ARM, Intel, Broadcom, Beceem",
+   "Founders have worked together ~25 years (TechCrunch)",
+   "Full functional coverage including CFO and global BD"
   ],
   "team_gaps": [
-   "Individual founder backgrounds aren't public",
-   "Six founders means decision-making and equity need to be clear"
+   "No named end customers yet",
+   "Individual backgrounds of five co-founders not public in coverage"
   ],
   "founders_detail": [
    {
     "name": "Sunil Kumar",
     "role": "Co-founder and CEO",
-    "background": "Background not in coverage"
+    "background": "Semiconductor veteran; executive roles at ARM, Intel and Beceem (which taped out the first 4G chipset from Bengaluru before Broadcom acquired it in 2010) (Inc42, TechCrunch)"
    },
    {
     "name": "Renuka Prasad",
-    "role": "Co-founder",
-    "background": ""
-   },
-   {
-    "name": "Kanagaraju Ponnusamy",
-    "role": "Co-founder",
-    "background": ""
-   },
-   {
-    "name": "Dinesh Annayya",
-    "role": "Co-founder",
-    "background": ""
-   },
-   {
-    "name": "Jansen Cheng",
-    "role": "Co-founder",
-    "background": ""
+    "role": "Co-founder, Head of System Engineering",
+    "background": "Individual background not in coverage; team collectively from ARM, Intel, Broadcom, Cypress, Beceem, Arcus (Vertex Ventures)"
    },
    {
     "name": "Harpreet Wadhawan",
-    "role": "Co-founder",
-    "background": "Listed as a founder on Inc42"
+    "role": "Co-founder, CFO",
+    "background": "Individual background not in coverage"
+   },
+   {
+    "name": "Dinesh Annayya",
+    "role": "Co-founder, Head of Silicon Engineering",
+    "background": "Individual background not in coverage; team collectively from ARM, Intel, Broadcom, Cypress, Beceem, Arcus (Vertex Ventures)"
+   },
+   {
+    "name": "Kanagaraju Ponnusamy",
+    "role": "Co-founder, Head of Engineering",
+    "background": "Individual background not in coverage; team collectively from ARM, Intel, Broadcom, Cypress, Beceem, Arcus (Vertex Ventures)"
+   },
+   {
+    "name": "Jansen Cheng",
+    "role": "Co-founder, Head of Global Business Development",
+    "background": "Individual background not in coverage"
    }
   ],
   "rubric": {
@@ -1997,12 +2196,21 @@
    "Commercial availability in Q3–Q4 as guided"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 4,
+    "evidence": "CEO held exec roles at ARM, Intel, Beceem; founders have built multiple SoCs in India with ARM/Broadcom/Cypress experience (Inc42, Vertex)"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "Dedicated Head of Global BD and CFO; tie-up with a Taiwanese ODM as lead partner, but no named paying customers (Inc42)"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Distinct roles across system engineering, silicon, engineering, BD and finance (Vertex leadership list)"
+   },
    "execution": {
     "score": 4,
-    "evidence": "Commercial SoC taped out; seed investor returned in next round"
+    "evidence": "Shuttle run with fab in 2024; sample SoC chipset unveiled May 2026; Vertex returned in next round (Inc42)"
    }
   },
   "factor_evidence": {
@@ -2024,7 +2232,24 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "ARM",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Intel",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Beceem Communications",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "UMC (Taiwan foundry)",
+    "relation": "Research: fabrication partner for 28nm reference chip"
+   }
+  ],
   "tech_approach": "Vision SoCs",
   "investor_edges": [
    {
@@ -2046,7 +2271,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -2060,7 +2285,7 @@
   "company": "NuSynth Technologies",
   "founders": "Poorvank Purohit, Ramesha A R, Abhishek Deo, Dipak Bajaj",
   "institution": "",
-  "location": "Bengaluru",
+  "location": "Mysuru",
   "sector": "Advanced materials & chemistry",
   "tech": "New chemical processes for pharma and electronics chemicals, designed with AI and made through partner plants",
   "problem": "Process chemistry for drug ingredients is slow, trial-and-error and often imported",
@@ -2076,9 +2301,9 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -2127,33 +2352,34 @@
    "note": "Founded 2026; no filings yet."
   },
   "team_strengths": [
-   "Four co-founders and a large seed round from two climate and deep-tech specialists",
-   "Asset-light model avoids building plants early"
+   "Pharma API industry leadership and customer relationships",
+   "Deep chemistry research credentials",
+   "Operating experience from scaled Indian startups"
   ],
   "team_gaps": [
-   "Founders' chemistry and pharma backgrounds aren't in coverage",
-   "Brand-new company: no track record yet"
+   "No demonstrated process or plant scale-up yet",
+   "AI/data science lead not named in coverage"
   ],
   "founders_detail": [
    {
     "name": "Poorvank Purohit",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "role": "Co-founder and CEO",
+    "background": "Former MD & CEO of Solara Active Pharma Sciences (Indian Chemical News)"
    },
    {
     "name": "Ramesha A R",
     "role": "Co-founder",
-    "background": ""
+    "background": "PhD, IISc; postdoctoral researcher at NIH; leads scientific/R&D side (Indian Chemical News)"
    },
    {
     "name": "Abhishek Deo",
     "role": "Co-founder",
-    "background": ""
+    "background": "Commercial and operating experience; coverage lists the pair's prior firms jointly as Zetwerk, Mstack, Ola, JPMorgan, BlackBuck and SUN Mobility (individual roles not specified)"
    },
    {
     "name": "Dipak Bajaj",
     "role": "Co-founder",
-    "background": ""
+    "background": "Commercial and operating experience; coverage lists the pair's prior firms jointly as Zetwerk, Mstack, Ola, JPMorgan, BlackBuck and SUN Mobility (individual roles not specified)"
    }
   ],
   "rubric": {
@@ -2206,10 +2432,22 @@
    "A first pharma or electronics-chemicals contract"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "domain": {
+    "score": 4,
+    "evidence": "IISc PhD/NIH postdoc chemist plus former MD & CEO of an API maker (Solara)"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "CEO ran Solara Active Pharma Sciences; co-founders from Zetwerk, Mstack, Ola, JPMorgan"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Science (IISc/NIH), pharma industry leadership, and commercial/operating founders"
+   },
+   "execution": {
+    "score": 3,
+    "evidence": "Founders' prior zero-to-scale roles; company itself founded 2026 with no product milestone yet"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -2220,14 +2458,34 @@
     "score": 4,
     "rationale": "India makes most of the world's generics; process cost is a real lever"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Claims proprietary chemical processes and an AI knowledge base still being built; no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "Solara Active Pharma Sciences",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "IISc Bangalore",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "NIH",
+    "relation": "Founder's previous employment (postdoc)"
+   },
+   {
+    "name": "Zetwerk / Mstack / Ola / JPMorgan / BlackBuck / SUN Mobility",
+    "relation": "Founder's previous employment"
+   }
+  ],
   "tech_approach": "AI-designed chemical processes",
   "investor_edges": [
    {
@@ -2243,7 +2501,7 @@
     "date": "2026-10"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -2272,9 +2530,9 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed",
   "fit": 5,
-  "team": null,
+  "team": 2,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -2334,33 +2592,34 @@
    "note": "Website domain reflects the company's earlier hyperloop focus."
   },
   "team_strengths": [
-   "Four engineers who have stayed together since MIT Pune",
-   "Inside a hardware accelerator (MaXcel) with manufacturing mentors"
+   "Long-running team (since 2018) with hands-on electromagnetic propulsion work",
+   "Clear role split across four co-founders"
   ],
   "team_gaps": [
-   "Young team without named industry experience",
-   "Company started as a hyperloop project; the pivot to linear motors is recent"
+   "No evidenced industry or sales experience",
+   "No named customers for the linear-motion pivot",
+   "Early-career founders with no prior companies"
   ],
   "founders_detail": [
    {
     "name": "Pranay Luniya",
     "role": "Founder and CEO",
-    "background": "MIT Pune"
+    "background": "MIT Pune engineering graduate; co-started the Hyperloop research unit at MIT Pune in 2018 that became the company"
    },
    {
     "name": "Kartik Kulkarni",
-    "role": "Co-founder",
-    "background": "MIT Pune"
+    "role": "Co-founder and COO",
+    "background": "MIT Pune engineering graduate; co-started the 2018 MIT Pune Hyperloop research unit"
    },
    {
     "name": "Aniruddha Atigre",
-    "role": "Co-founder",
-    "background": "MIT Pune"
+    "role": "Co-founder and CTO",
+    "background": "MIT Pune engineering graduate; co-started the 2018 MIT Pune Hyperloop research unit"
    },
    {
     "name": "Prasanna Kadambi",
-    "role": "Co-founder",
-    "background": "MIT Pune"
+    "role": "Co-founder and CPO",
+    "background": "MIT Pune engineering graduate; co-started the 2018 MIT Pune Hyperloop research unit"
    }
   ],
   "rubric": {
@@ -2416,12 +2675,18 @@
    "Paid orders from automation OEMs"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 3,
+    "evidence": "Engineering grads working on maglev/linear-motor tech since 2018; showed tech at SpaceX Hyperloop pod competition and European Hyperloop Week"
+   },
    "commercial": null,
-   "complementarity": null,
+   "complementarity": {
+    "score": 2,
+    "evidence": "Roles split CEO/COO/CTO/CPO, but all four are MIT Pune engineers with no distinct business background evidenced"
+   },
    "execution": {
     "score": 2,
-    "evidence": "FY25 revenue ₹4.3 lakh; facility still being set up"
+    "evidence": "About ₹80–85 lakh in grants, competition demos; FY25 revenue ₹4.3 lakh; manufacturing facility still being set up"
    }
   },
   "factor_evidence": {
@@ -2433,7 +2698,10 @@
     "score": 4,
     "rationale": "Every automation OEM buys linear motion; distribution is the hard part"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Only a company claim of in-house direct-drive electromagnetic linear motion hardware and control electronics; no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -2448,6 +2716,14 @@
    {
     "name": "MaXcel accelerator",
     "relation": "Accelerator"
+   },
+   {
+    "name": "AIC-Pinnacle",
+    "relation": "Investor/incubator (participated in pre-seed)"
+   },
+   {
+    "name": "SanchiConnect",
+    "relation": "Accelerator (co-runs MaXcel) and investor"
    }
   ],
   "tech_approach": "Linear motors",
@@ -2465,7 +2741,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -2494,7 +2770,7 @@
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": null,
+  "team": 4,
   "market": 3,
   "ip": null,
   "confidence": "Low",
@@ -2557,12 +2833,11 @@
    "note": null
   },
   "team_strengths": [
-   "Named enterprise customers within two years",
-   "Subscription pricing (₹25,000–₹80,000 a month) shows a clear model"
+   "Commercial traction with named FMCG/retail customers on robot-as-a-service"
   ],
   "team_gaps": [
-   "Single named founder; technical depth behind the robots isn't described",
-   "Hardware made in India versus imported parts is unclear"
+   "Founder education and prior experience not documented in any source found",
+   "No co-founders or technical leadership named"
   ],
   "founders_detail": [
    {
@@ -2625,11 +2900,14 @@
   ],
   "team_factors": {
    "domain": null,
-   "commercial": null,
+   "commercial": {
+    "score": 3,
+    "evidence": "Named enterprise customers Nestle, Bikanerwala, Emami, Reliance Smart (Inc42)"
+   },
    "complementarity": null,
    "execution": {
     "score": 4,
-    "evidence": "Four named enterprise customers and ₹1.4 Cr revenue within two years"
+    "evidence": "Four named enterprise customers and Rs 1.4 Cr revenue within two years"
    }
   },
   "factor_evidence": {
@@ -2663,7 +2941,7 @@
     "date": "2026-05"
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "2 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -2674,7 +2952,7 @@
  {
   "id": "hycosys",
   "company": "Hycosys",
-  "founders": "Not named in source",
+  "founders": "Tapish Agarwal, Ugandhar Reddy",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Energy & climate",
@@ -2692,7 +2970,7 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Pre-Series A",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 4,
   "ip": null,
   "confidence": "Low",
@@ -2700,8 +2978,8 @@
   "diligence": true,
   "why": "Fuel-flexible turbines hedge the hydrogen bet: they sell on today's fuels and upgrade as hydrogen gets cheaper.",
   "rdi_sector": "Energy & climate action",
-  "trl": "Not estimable",
-  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl": "TRL 3–4 (est.)",
+  "rdi_eligibility": "Likely below TRL 4 today; ANRF programmes may fit first",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Seed · >$1M · Feb 2026",
@@ -2748,11 +3026,26 @@
    "source": "https://inc42.com/company/hycosys/financials/",
    "note": null
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "Deep gas-turbine and hydrogen combustion expertise",
+   "Strong advisory bench (ex-DRDO HSTDV director, IIT Madras combustion centre head)"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "No evidenced commercial/GTM founder",
+   "No customers yet; access to large-scale combustion test facilities still pending"
+  ],
+  "founders_detail": [
+   {
+    "name": "Tapish Agarwal",
+    "role": "Co-founder & CEO",
+    "background": "PhD in gas turbine combustion; gas turbine researcher with experience at IIT Kanpur, CentraleSupelec and Technion-Israel (company site, NITI Frontier Tech)"
+   },
+   {
+    "name": "Ugandhar Reddy",
+    "role": "Co-founder & CTO",
+    "background": "Aerospace combustion leader with experience at GE and Reaction Engines UK; worked on combustion dynamics, hydrogen combustion and aircraft-engine afterburners (company site, NITI Frontier Tech)"
+   }
+  ],
   "rubric": {
    "business": [
     "Offtake or supply agreements with utilities, OEMs or developers",
@@ -2788,10 +3081,11 @@
    "event_date": "2026-02-23",
    "source_date": "2026-02-23"
   },
-  "trl_estimate": null,
-  "trl_basis": "No turbine test data in coverage",
-  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl_estimate": "TRL 3–4 (est.)",
+  "trl_basis": "NITI Frontier Tech profile puts Hycosys at TRL 3–4 (lab proof of concept); Entrackr (Feb 2026) reports hydrogen-optimised combustor, 3D-printed heat recovery unit and turbine design under test at IIT-BHU",
+  "rdi_status": "Likely below TRL 4 today; ANRF programmes may fit first",
   "demonstrated": [
+   "Combustor, heat-recovery unit and turbine design under test at IIT-BHU (Feb 2026)",
    "Seed raised"
   ],
   "unproven": [
@@ -2803,10 +3097,19 @@
    "A paid pilot replacing a diesel generator"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 4,
+    "evidence": "CEO holds PhD in gas turbine combustion; CTO ex-GE and Reaction Engines aerospace combustion"
+   },
    "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "complementarity": {
+    "score": 2,
+    "evidence": "Both founders are combustion specialists; no business-side founder evidenced"
+   },
+   "execution": {
+    "score": 3,
+    "evidence": "Components under test at IIT-BHU; won NIDHI PRAYAS, Karnataka Elevate, Cummins CSR grants and Xynteo hydrogen challenge (Jul 2026)"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -2824,7 +3127,44 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Kanpur",
+    "relation": "Founder's previous research"
+   },
+   {
+    "name": "CentraleSupelec",
+    "relation": "Founder's previous research"
+   },
+   {
+    "name": "Technion-Israel Institute of Technology",
+    "relation": "Founder's previous research"
+   },
+   {
+    "name": "GE",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Reaction Engines",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Social Alpha",
+    "relation": "Incubation"
+   },
+   {
+    "name": "IIT-BHU",
+    "relation": "Research: testing of combustor, 3D-printed heat recovery unit and turbine"
+   },
+   {
+    "name": "DST NIDHI PRAYAS",
+    "relation": "Grant (Nov 2025)"
+   },
+   {
+    "name": "PointOne Capital",
+    "relation": "Pre-seed investor (Dec 2024)"
+   }
+  ],
   "tech_approach": "Hydrogen turbines",
   "investor_edges": [
    {
@@ -2834,7 +3174,7 @@
     "date": "2026-02"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -2865,7 +3205,7 @@
   "fit": 5,
   "team": 4,
   "market": 5,
-  "ip": null,
+  "ip": 3,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -2935,12 +3275,12 @@
   "founders_detail": [
    {
     "name": "Priyansh Mohan",
-    "role": "Co-founder",
+    "role": "Co-founder and CEO",
     "background": "Researched hydrogen fuel cells and vanadium redox flow batteries at CEG, Anna University"
    },
    {
     "name": "Stuti Kakkar",
-    "role": "Co-founder",
+    "role": "Co-founder and COO",
     "background": "Economics, Lady Shri Ram College; energy-transition consultant at BCG"
    }
   ],
@@ -3026,7 +3366,10 @@
     "score": 5,
     "rationale": "A solar-heavy grid needs cheap overnight storage; very large market"
    },
-   "ip": null
+   "ip": {
+    "score": 3,
+    "rationale": "Company reports four granted patents and seven international applications filed, plus proprietary 'Fast Charge Long Discharge' design (YourStory, Aug 2026); patent numbers not found, so scored conservatively"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -3103,9 +3446,9 @@
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 5,
-  "ip": 3,
+  "ip": 4,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -3165,23 +3508,23 @@
    "note": null
   },
   "team_strengths": [
-   "Two patents granted and a 20,000 sq ft R&D and manufacturing site",
-   "Backed by Ather co-founder Tarun Mehta"
+   "Deep battery-materials and electrochemistry training (IIT Bombay PhD, IIT Roorkee/MSU)",
+   "Granted cell-design patents"
   ],
   "team_gaps": [
-   "Founders' backgrounds aren't in coverage",
-   "Revenue fell in FY25 while losses grew"
+   "No evidenced commercial/sales leader or named customers",
+   "No third-party validation of cell performance yet"
   ],
   "founders_detail": [
    {
     "name": "Apoorv Shaligram",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "role": "Co-founder and CEO",
+    "background": "Metallurgy and materials science at IIT Roorkee; master's degree from Michigan State University. Co-founders together report 25+ years in EV and battery-cell technology (Shaastra, IIT Madras)"
    },
    {
     "name": "Dr Uttam Kumar Sen",
     "role": "Co-founder",
-    "background": "PhD; background not in coverage"
+    "background": "PhD in energy science and engineering from IIT Bombay (Shaastra); doctorate in high-energy-density batteries (EVreporter)"
    }
   ],
   "rubric": {
@@ -3237,12 +3580,15 @@
    "A signed offtake agreement"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 4,
+    "evidence": "IIT Bombay PhD in energy science (batteries) plus an IIT Roorkee/MSU materials scientist; 25+ years combined in battery cells"
+   },
    "commercial": null,
    "complementarity": null,
    "execution": {
     "score": 3,
-    "evidence": "Two patents and a manufacturing site; revenue fell in FY25"
+    "evidence": "Two patents granted; 20,000 sq ft R&D and early-manufacturing site in Bengaluru; no third-party test results or customers yet (YourStory, Aug 2026)"
    }
   },
   "factor_evidence": {
@@ -3255,8 +3601,8 @@
     "rationale": "EV and storage cell demand is large; manufacturing is capital-heavy"
    },
    "ip": {
-    "score": 3,
-    "rationale": "Two patents granted, more filed"
+    "score": 4,
+    "rationale": "YourStory (Aug 2026): two patents granted on the 3D cell design (3DEA architecture) and further applications filed. Patent numbers not disclosed."
    }
   },
   "role": "Core",
@@ -3264,7 +3610,24 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Roorkee",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Michigan State University",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "IIT Bombay",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "CIIE.CO",
+    "relation": "Investor in pre-seed round"
+   }
+  ],
   "tech_approach": "Lithium-ion cell manufacturing",
   "investor_edges": [
    {
@@ -3286,7 +3649,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "2 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -3317,7 +3680,7 @@
   "fit": 4,
   "team": 4,
   "market": 5,
-  "ip": null,
+  "ip": 3,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -3387,12 +3750,12 @@
    {
     "name": "Prasanta Sarkar",
     "role": "Co-founder and CEO",
-    "background": "PhD from a global university; met co-founder at Entrepreneur First"
+    "background": "PhD engineer; nearly a decade studying/working in Europe; met co-founder at Entrepreneur First; the pair first started a materials-informatics software company (YourStory 2022, Inc42)"
    },
    {
     "name": "Rochan Sinha",
     "role": "Co-founder and CTO",
-    "background": "PhD from a global university"
+    "background": "PhD engineer; developed solar-fuel devices in the Netherlands during his PhD; ~decade in Europe (YourStory 2022)"
    }
   ],
   "rubric": {
@@ -3473,7 +3836,10 @@
     "score": 5,
     "rationale": "National Green Hydrogen Mission creates demand; incumbents (Adani, Reliance, L&T) are formidable"
    },
-   "ip": null
+   "ip": {
+    "score": 3,
+    "rationale": "Membrane-less electrolyser and in-house electrocatalyst described as proprietary and patent-pending (YourStory 2022, Inc42); no patent numbers found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -3488,6 +3854,10 @@
    {
     "name": "Entrepreneur First",
     "relation": "Founders met at this programme"
+   },
+   {
+    "name": "IIT Madras (Dr Satyanarayanan Chakravarthy)",
+    "relation": "Research: lab prototype of electrolyser developed there"
    }
   ],
   "tech_approach": "Electrolysers",
@@ -3554,13 +3924,13 @@
   "fit": 4,
   "team": 4,
   "market": 5,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "One of very few Indian magnetic-confinement efforts; the value is in milestone-gated capital, not near-term revenue.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 2–3 (est.)",
+  "trl": "TRL 3–4 (est.)",
   "rdi_eligibility": "Likely below TRL 4 today; ANRF programmes may fit first",
   "rdi_route": "TDB",
   "round_tab": "Seed",
@@ -3613,13 +3983,13 @@
   "founders_detail": [
    {
     "name": "Shaurya Kaushal",
-    "role": "Co-founder",
-    "background": "PhD, JNCASR"
+    "role": "Co-founder and CEO",
+    "background": "PhD in computational physics, JNCASR; engineering degree, BITS Pilani; previously worked with UK Atomic Energy Authority and CSIR-CEERI; leads physics and hardware (OfficeChai)"
    },
    {
     "name": "Roshan George",
-    "role": "Co-founder",
-    "background": "Former principal engineer, REConnect Energy"
+    "role": "Co-founder and COO",
+    "background": "Computer science background; former principal engineer, REConnect Energy; years building digital/intelligence platforms for the energy industry; leads software and control (OfficeChai)"
    }
   ],
   "rubric": {
@@ -3661,21 +4031,21 @@
    "event_date": "2026-03",
    "source_date": "2026-03-30"
   },
-  "trl_estimate": "TRL 2–3 (est.)",
-  "trl_basis": "Tokamak delivery targeted for 2026; HTS magnets still in R&D; no plasma or magnet test results in coverage",
+  "trl_estimate": "TRL 3–4 (est.)",
+  "trl_basis": "Built PRAGYA compact tokamak (0.40 m major radius, 0.1 T; OfficeChai, Aug 2026) and reported producing plasma in it (CXO Digital Pulse, Sep 2026); HTS magnets still in development for successor PraniQ. Supersedes record's 'no plasma' basis",
   "rdi_status": "Likely below TRL 4 today; ANRF programmes may fit first",
   "demonstrated": [
-   "Seed raised from two deep-science investors",
-   "JENGA software in prototyping"
+   "PRAGYA compact tokamak built (Aug 2026) and plasma reported (Sep 2026)",
+   "Seed raised from two deep-science investors"
   ],
   "unproven": [
-   "Magnet field strength",
-   "Commissioning the first tokamak",
+   "Plasma parameters, which are not published",
+   "HTS magnet field strength",
    "Any path to revenue before fusion"
   ],
   "would_change": [
-   "Tokamak commissioned",
-   "Published magnet test results",
+   "Published plasma parameters from PRAGYA",
+   "Published HTS magnet test results",
    "JENGA pilot customers"
   ],
   "team_factors": {
@@ -3702,7 +4072,10 @@
     "score": 5,
     "rationale": "Enormous if it works; timelines run a decade or more"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Proprietary stack claimed (JENGA design/control software, in-house MAGGA HTS magnet programme); no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -3716,6 +4089,18 @@
    },
    {
     "name": "REConnect Energy",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "BITS Pilani",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "UK Atomic Energy Authority",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "CSIR-CEERI",
     "relation": "Founder's previous employment"
    }
   ],
@@ -3769,9 +4154,9 @@
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 3,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -3832,38 +4217,40 @@
    "note": null
   },
   "team_strengths": [
-   "Large, senior founding group with a C-CAMP connection",
-   "Revenue more than tripled in FY25"
+   "Serial science entrepreneur as CSO",
+   "Strong business and manufacturing operators on founding team",
+   "Distribution partnership with Molbio"
   ],
   "team_gaps": [
-   "Five founders plus executive turnover (a chief commercial officer has left) raises questions about who drives the business",
-   "Two platforms (diagnostics and strain engineering) split focus"
+   "Several founders are part-time or have other primary roles",
+   "Chief Commercial Officer recently exited (Inc42)",
+   "No regulatory approvals for PathCrisp found in coverage"
   ],
   "founders_detail": [
    {
-    "name": "Vijaya Chandru",
-    "role": "Co-founder",
-    "background": ""
+    "name": "Vijaya Chandru (Dr Vijay Chandru)",
+    "role": "Co-founder and CSO",
+    "background": "Academician and entrepreneur; co-founded Strand Life Sciences (genomics research and diagnostics)"
    },
    {
     "name": "Sunil Arora",
-    "role": "Co-founder",
-    "background": ""
+    "role": "Co-founder and CEO",
+    "background": "Managing Director of Abilities India Pistons & Rings Ltd, which he grew from a domestic aftermarket player to an export OEM supplier (80% exported)"
    },
    {
     "name": "Dr Rajeev Kohli",
     "role": "Co-founder",
-    "background": ""
+    "background": "Ira Leon Rennert Professor of Business, Columbia Business School (Marketing Division since 1991)"
    },
    {
     "name": "Bharat Jobanputra",
     "role": "Co-founder",
-    "background": ""
+    "background": "Former VP Projects at Forderanlagen Magdeburg GmbH (Canada), led turnkey projects for multinationals"
    },
    {
     "name": "Aditya Sarda",
     "role": "Co-founder",
-    "background": ""
+    "background": "Managing Director of Bhawani Plywoods Pvt Ltd; partner in Pioneer Timber Products"
    }
   ],
   "rubric": {
@@ -3919,12 +4306,21 @@
    "Africa and Latin America expansion"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 4,
+    "evidence": "CSO co-founded genomics firm Strand Life Sciences; team are inventors on an EP application and published PathCrisp work"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "CEO ran an export manufacturing business; Molbio partnership for manufacturing and global distribution; FY25 revenue ₹83 lakh"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Science (Chandru), marketing academia (Kohli), manufacturing/export ops (Arora), projects (Jobanputra), business (Sarda)"
+   },
    "execution": {
     "score": 3,
-    "evidence": "Revenue up about 3.5x to ₹83 lakh in FY25"
+    "evidence": "OmiCrisp developed and published; Molbio POC partnership; revenue up about 3.5x to ₹83 lakh in FY25"
    }
   },
   "factor_evidence": {
@@ -3936,7 +4332,10 @@
     "score": 4,
     "rationale": "Low-cost molecular tests have large public-health demand"
    },
-   "ip": null
+   "ip": {
+    "score": 3,
+    "rationale": "EP 4 460 581 A1 (Assay device/method for genetic predisposition to severe SARS-CoV-2), applicant Crisprbits Pvt Ltd, filed 2022-09-30, published 2024-11-13; not shown as granted"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -3947,6 +4346,22 @@
    {
     "name": "C-CAMP",
     "relation": "Incubation"
+   },
+   {
+    "name": "Strand Life Sciences",
+    "relation": "Founder's previous company"
+   },
+   {
+    "name": "Columbia Business School",
+    "relation": "Founder's current employment (faculty)"
+   },
+   {
+    "name": "C-CAMP InDx programme (DBT)",
+    "relation": "Research: OmiCrisp CRISPR SARS-CoV-2 test development support"
+   },
+   {
+    "name": "Molbio Diagnostics",
+    "relation": "Manufacturing and distribution partner for CRISPR point-of-care tests (2023)"
    }
   ],
   "tech_approach": "CRISPR diagnostics",
@@ -3964,7 +4379,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -3993,9 +4408,9 @@
   "stage_label": "Scale-up underway",
   "entry_window": "Next raise: Series B",
   "fit": 5,
-  "team": null,
+  "team": 3,
   "market": 5,
-  "ip": null,
+  "ip": 2,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -4037,9 +4452,26 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_strengths": [],
-  "team_gaps": [],
-  "founders_detail": [],
+  "team_strengths": [
+   "Built 10,000 L facility and 100+ team in two years in stealth",
+   "US self-GRAS on first ingredient"
+  ],
+  "team_gaps": [
+   "Founders' prior industry experience not documented",
+   "No named customers yet (first molecule in trials with ~20-25 companies)"
+  ],
+  "founders_detail": [
+   {
+    "name": "Akshay Mittal",
+    "role": "Founder & CEO",
+    "background": "IIT Delhi alumnus (YourStory/Inc42); prior roles not in coverage"
+   },
+   {
+    "name": "Dr Alok Malaviya",
+    "role": "Co-founder & CTO",
+    "background": "PhD; IIT Delhi alumnus (AgFunderNews, YourStory); prior roles not in coverage"
+   }
+  ],
   "rubric": {
    "business": [
     "Regulatory approvals obtained per product",
@@ -4060,7 +4492,11 @@
   "investors": [
    "Prime Venture Partners",
    "Leo Capital",
-   "Good Startup"
+   "Good Startup",
+   "Sparrow Capital",
+   "Sun Icon Ventures",
+   "Dholakia Ventures",
+   "WindT Angels"
   ],
   "institution_tags": [
    "IIT Delhi"
@@ -4093,10 +4529,19 @@
    "Scale-up to 100,000 litres"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 3,
+    "evidence": "CTO holds a PhD; both founders IIT Delhi alumni; specific biotech experience not documented"
+   },
    "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "complementarity": {
+    "score": 3,
+    "evidence": "Distinct CEO and PhD CTO roles; deeper backgrounds not evidenced"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "10,000 L fermentation capacity operational in Bhopal, ~100 staff, self-GRAS for one ingredient with FDA dossier submitted (AgFunderNews, May 2026)"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -4107,7 +4552,10 @@
     "score": 5,
     "rationale": "Precision fermentation is a global market where India has a cost edge"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Proprietary claim of an integrated strain engineering-to-scale-up platform; no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -4139,9 +4587,33 @@
     "role": "Participant",
     "round": null,
     "date": null
+   },
+   {
+    "name": "Sparrow Capital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Sun Icon Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Dholakia Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "WindT Angels",
+    "role": "Participant",
+    "round": null,
+    "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -4152,7 +4624,7 @@
  {
   "id": "cropcoin",
   "company": "Cropcoin",
-  "founders": "Not named in source",
+  "founders": "Pankaj Pandey, Ehtesham Farooqui, Uttam Kumar, Shabih Abbas, Sumit Suman, Wasim Akhtar, Mantosh Kumar",
   "institution": "",
   "location": "Bihar / Jharkhand",
   "sector": "Agri-bio",
@@ -4170,7 +4642,7 @@
   "stage_label": "Early revenue",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": null,
+  "team": 4,
   "market": 4,
   "ip": null,
   "confidence": "Medium",
@@ -4229,11 +4701,51 @@
    "source": "https://inc42.com/company/pehle-jaisa/financials/",
    "note": null
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "Proven rural distribution and revenue traction",
+   "Large founding team with on-ground agri and waste experience"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "Individual founder credentials (education, prior companies) not disclosed",
+   "No evidenced scientific/R&D lead for bio-stimulant products"
+  ],
+  "founders_detail": [
+   {
+    "name": "Pankaj Pandey",
+    "role": "Co-founder",
+    "background": "Described as a serial entrepreneur; no education/employer details in coverage"
+   },
+   {
+    "name": "Ehtesham Farooqui",
+    "role": "Co-founder",
+    "background": "Described as a serial entrepreneur; no education/employer details in coverage"
+   },
+   {
+    "name": "Uttam Kumar",
+    "role": "Co-founder",
+    "background": "Not in coverage"
+   },
+   {
+    "name": "Shabih Abbas",
+    "role": "Co-founder",
+    "background": "Founding team with combined experience in animal husbandry, waste management, agronomy and rural markets"
+   },
+   {
+    "name": "Sumit Suman",
+    "role": "Co-founder",
+    "background": "Founding team with combined experience in animal husbandry, waste management, agronomy and rural markets"
+   },
+   {
+    "name": "Wasim Akhtar",
+    "role": "Co-founder",
+    "background": "Founding team with combined experience in animal husbandry, waste management, agronomy and rural markets"
+   },
+   {
+    "name": "Mantosh Kumar",
+    "role": "Co-founder",
+    "background": "Founding team with combined experience in animal husbandry, waste management, agronomy and rural markets"
+   }
+  ],
   "rubric": {
    "business": [
     "Repeat purchase by farmers across seasons",
@@ -4285,12 +4797,21 @@
    "Third-party yield trials"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 3,
+    "evidence": "Founding team spans animal husbandry, waste management and agronomy (no individual credentials)"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": ">₹2.5 Cr FY25 revenue; farmer network grew 20,000 to 70,000 in 12 months"
+   },
+   "complementarity": {
+    "score": 3,
+    "evidence": "Team covers agronomy, waste processing and rural market development"
+   },
    "execution": {
     "score": 4,
-    "evidence": "₹2.8 Cr FY25 revenue across 10 districts"
+    "evidence": "1,500+ MT sold in FY25 and >₹2.5 Cr revenue; ₹2.8 Cr per Inc42 filings"
    }
   },
   "factor_evidence": {
@@ -4309,7 +4830,20 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Ropar",
+    "relation": "Incubation"
+   },
+   {
+    "name": "IIMA Ventures",
+    "relation": "Accelerator (Top 15 agri startups; Kotak BizLabs grant)"
+   },
+   {
+    "name": "Agri-Udaan 8.0",
+    "relation": "Accelerator"
+   }
+  ],
   "tech_approach": "Agri-biologicals",
   "investor_edges": [
    {
@@ -4325,7 +4859,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -4338,7 +4872,7 @@
   "company": "Bioscan Research",
   "founders": "Anupam Lavania, Shilpa Malik",
   "institution": "",
-  "location": "Bengaluru",
+  "location": "Ahmedabad",
   "sector": "Medtech & diagnostics",
   "tech": "CEREBO: portable near-infrared device with machine learning that detects bleeding inside the skull",
   "problem": "Head-injury patients often reach hospitals without CT scanners, losing critical time",
@@ -4354,9 +4888,9 @@
   "stage_label": "Early revenue",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -4417,23 +4951,25 @@
    "note": null
   },
   "team_strengths": [
-   "Profitable in FY25 on ₹13.4 Cr revenue, rare for a seed-stage medtech",
-   "Two founders running the company since 2017"
+   "Defence-sensor hardware depth in CTO",
+   "Product commercialised with ~70 units sold and profitable FY25",
+   "Clinical testing with NIMHANS and AIIMS Bhopal neurosurgeons"
   ],
   "team_gaps": [
-   "Founders' clinical or engineering backgrounds aren't in coverage",
-   "Revenue dipped slightly in FY25; growth needs new markets"
+   "No named purchasing customers or regulatory clearance (CDSCO/CE/FDA) found in coverage",
+   "Founder education not documented",
+   "CEO background only from an unofficial aggregator profile"
   ],
   "founders_detail": [
    {
     "name": "Anupam Lavania",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "role": "Co-founder and CEO",
+    "background": "Per an aggregator profile (Affluense, unverified): Head of Technology Business Incubator at iCreate (2014-2018); Regional Manager South Asia, sales and service, Brunswick Asia Pacific Group, Singapore (2009-2012); earlier engineer at OMI Corporation (USA) and founder of Uma Innovations and SuccessIT Solutions. Education not found"
    },
    {
-    "name": "Shilpa Malik",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "name": "Shilpa Malik (Lavania)",
+    "role": "Co-founder and CTO",
+    "background": "About a decade in hardware innovation; previously a scientist at DRDO on military sensor systems design (NewsNation/ANI; Global Chamber). Education not found"
    }
   ],
   "rubric": {
@@ -4487,12 +5023,21 @@
    "Additional approvals the round is funding"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 4,
+    "evidence": "CTO was a DRDO scientist on military sensor systems with ~10 years in hardware"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "About 70 CEREBO units sold to PHCs, CHCs and trauma centres; ₹13.4 Cr FY25 revenue; CEO had prior regional sales role (unverified profile)"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Hardware/sensor CTO paired with incubator-head and sales-background CEO"
+   },
    "execution": {
     "score": 5,
-    "evidence": "₹13.4 Cr FY25 revenue with a profit"
+    "evidence": "Device commercially launched after trials on 1,500 patients; ₹13.4 Cr FY25 revenue with a profit"
    }
   },
   "factor_evidence": {
@@ -4504,14 +5049,46 @@
     "score": 4,
     "rationale": "Trauma triage outside CT-equipped hospitals is a large gap"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Received Gujarat government support to file a patent for the brain-injury device (NewsNation/ANI); no patent number or filing confirmed. Note: US 11,800,983 (hematoma NIR) belongs to US HHS/Henry M. Jackson Foundation, not Bioscan"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "DRDO",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "iCreate (International Centre for Entrepreneurship and Technology, Gujarat)",
+    "relation": "Founder's previous employment; government support for the device and patent filing"
+   },
+   {
+    "name": "NIMHANS Bengaluru",
+    "relation": "Research: clinical testing of CEREBO"
+   },
+   {
+    "name": "AIIMS Bhopal",
+    "relation": "Research: clinical testing of CEREBO"
+   },
+   {
+    "name": "BIRAC",
+    "relation": "Grant/support"
+   },
+   {
+    "name": "ICMR",
+    "relation": "Grant/support"
+   },
+   {
+    "name": "IIT Kanpur",
+    "relation": "Support (named among supporters)"
+   }
+  ],
   "tech_approach": "Portable brain-injury scanning",
   "investor_edges": [
    {
@@ -4521,7 +5098,7 @@
     "date": "2026-07"
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -4550,9 +5127,9 @@
   "stage_label": "Scale-up underway",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": 3,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -4601,12 +5178,11 @@
    "note": null
   },
   "team_strengths": [
-   "Profitable in FY25 and already cleared by US FDA, CE and CDSCO",
-   "Devices in 30+ countries before the first institutional round"
+   "Proven regulatory and commercial execution across 30+ countries"
   ],
   "team_gaps": [
-   "Founder's background isn't in coverage",
-   "No co-founders named"
+   "Founder's technical and professional background is not documented publicly",
+   "Single named founder; no co-founder or leadership team evidenced"
   ],
   "founders_detail": [
    {
@@ -4670,11 +5246,14 @@
   ],
   "team_factors": {
    "domain": null,
-   "commercial": null,
+   "commercial": {
+    "score": 4,
+    "evidence": "₹4.3 Cr FY25 revenue; clinical deployments at Medicover and Aster hospitals; international distributor network (BioSpectrum, Aug 2026)"
+   },
    "complementarity": null,
    "execution": {
     "score": 5,
-    "evidence": "Profitable; US FDA, CE and CDSCO clearances; 10,000+ devices deployed"
+    "evidence": "US FDA, CE and CDSCO clearances; 10,000+ devices in 30+ countries; profitable FY25"
    }
   },
   "factor_evidence": {
@@ -4687,8 +5266,8 @@
     "rationale": "India's diabetes burden makes screening a volume market"
    },
    "ip": {
-    "score": 3,
-    "rationale": "Regulatory clearances in the US, EU and India act as a barrier"
+    "score": 2,
+    "rationale": "Proprietary Angiocam laser blood-flow imaging and the VibraSense neuropathy screener. Round coverage says funds will 'grow the IP portfolio', but no patent numbers or filings were found."
    }
   },
   "role": "Core",
@@ -4700,6 +5279,10 @@
    {
     "name": "SINE, IIT Bombay",
     "relation": "Incubation"
+   },
+   {
+    "name": "BIRAC Biotechnology Ignition Grant (BIG)",
+    "relation": "Listed on BIG grantee site (Venture Center)"
    }
   ],
   "tech_approach": "Smartphone-based eye imaging",
@@ -4711,7 +5294,7 @@
     "date": "2026-08"
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "2 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -4776,7 +5359,7 @@
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
   "peers_note": null,
-  "website": null,
+  "website": "https://pulseio.in",
   "linkedin": null,
   "clients": {
    "status": "Potential",
@@ -4790,20 +5373,23 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_strengths": [],
+  "team_strengths": [
+   "Company claims 100+ SKUs across eight categories and 100+ customers (pulseio.in)"
+  ],
   "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+   "Founder backgrounds not public in any source found",
+   "Regulatory approvals still to be secured per funding coverage (Feb 2026)"
   ],
   "founders_detail": [
    {
     "name": "Anshul Sharma",
     "role": "Co-founder",
-    "background": "Background not in coverage"
+    "background": "Background not found in coverage (Inc42, BioSpectrum, Entrepreneur India) or on company site"
    },
    {
     "name": "Nishant Goel",
     "role": "Co-founder",
-    "background": "Background not in coverage"
+    "background": "Background not found in coverage (Inc42, BioSpectrum, Entrepreneur India) or on company site"
    }
   ],
   "rubric": {
@@ -4859,7 +5445,10 @@
   ],
   "team_factors": {
    "domain": null,
-   "commercial": null,
+   "commercial": {
+    "score": 3,
+    "evidence": "Company site claims 100+ customers incl. hospital chains and government-tender supply (self-reported, unverified)"
+   },
    "complementarity": null,
    "execution": null
   },
@@ -4901,7 +5490,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "1 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -4930,7 +5519,7 @@
   "stage_label": "Early revenue",
   "entry_window": "Next raise: Series A",
   "fit": 2,
-  "team": null,
+  "team": 4,
   "market": 3,
   "ip": null,
   "confidence": "Medium",
@@ -4988,22 +5577,24 @@
    "note": null
   },
   "team_strengths": [
-   "Revenue grew about 3.7 times in FY25"
+   "Published randomised controlled trial",
+   "Regulatory-cleared product with real sales",
+   "Senior corporate leadership in CEO"
   ],
   "team_gaps": [
-   "Losses are large against revenue",
-   "Founders' backgrounds aren't in coverage"
+   "Trial was company-funded with short follow-up; independent long-term evidence still to come",
+   "Still loss-making (₹4.5 Cr FY25)"
   ],
   "founders_detail": [
    {
     "name": "Sri Velliyur",
     "role": "Co-founder and CEO",
-    "background": "Background not in coverage"
+    "background": "Sriram Velliyur; electrical engineer with ~two decades of leadership roles at IBM, Ford, UnitedHealthcare, the United Nations and NYU Langone Medical Center (YourStory)"
    },
    {
     "name": "Surya Prakash Maguluri",
-    "role": "Co-founder",
-    "background": "Background not in coverage"
+    "role": "Founder and CTO",
+    "background": "Pharmacist (PharmD, started 2008); earlier built air-pollution prototypes before pivoting to light therapy; lead author of the CURAPOD RCT (The Week; JMIR)"
    }
   ],
   "rubric": {
@@ -5059,12 +5650,21 @@
    "Clinical studies"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": {
+   "domain": {
     "score": 3,
-    "evidence": "Revenue up to ₹1.7 Cr in FY25 with a ₹4.5 Cr loss"
+    "evidence": "PharmD founder ran a 240-patient multicentre RCT published in JMIR Biomed Eng (Apr 2026)"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "~15,000 units sold, 300+ prescribing specialists, ₹1.7 Cr FY25 revenue; CEO with two decades of corporate leadership"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Clinical/product founder paired with an engineer-executive CEO"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "CDSCO Class B device on market, RCT published, ~15,000 units sold"
    }
   },
   "factor_evidence": {
@@ -5083,7 +5683,12 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IBM / Ford / UnitedHealthcare / NYU Langone",
+    "relation": "Founder's previous employment"
+   }
+  ],
   "tech_approach": "Wearable pain therapy",
   "investor_edges": [
    {
@@ -5105,7 +5710,7 @@
     "date": "2026-02"
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -5136,14 +5741,14 @@
   "fit": 3,
   "team": 4,
   "market": 3,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "Unclear: investors not named",
   "diligence": true,
   "why": "Small, early and incubator-based, so closer to uncontested than most here, but 'quantum-inspired' needs hard benchmarks.",
   "rdi_sector": "Quantum technologies",
-  "trl": "Not estimable",
-  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl": "TRL 3–4 (est.)",
+  "rdi_eligibility": "Likely below TRL 4 today; ANRF programmes may fit first",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · ₹2 Cr · Aug 2026",
@@ -5246,11 +5851,12 @@
    "event_date": "2026-08-14",
    "source_date": "2026-08-14"
   },
-  "trl_estimate": null,
-  "trl_basis": "Software; no benchmark or customer milestone in coverage",
-  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl_estimate": "TRL 3–4 (est.)",
+  "trl_basis": "Lab drone trial cut image data 26x while keeping 98% of mission-critical information; not yet tested under operating conditions (CXO Digital Pulse, Aug 2026)",
+  "rdi_status": "Likely below TRL 4 today; ANRF programmes may fit first",
   "demonstrated": [
-   "Pre-seed raised; strong founding mix"
+   "Lab drone trial: 26x image compression keeping 98% of key information (company-reported, Aug 2026)",
+   "Pre-seed raised"
   ],
   "unproven": [
    "Advantage over classical solvers",
@@ -5284,7 +5890,10 @@
     "score": 3,
     "rationale": "Optimisation demand exists, but quantum-inspired claims are hard to prove"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Proprietary claim only: tensor-network (quantum-inspired) sensor-data compression and a core algorithm library; no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -5295,6 +5904,14 @@
    {
     "name": "IIT Madras",
     "relation": "Faculty co-founder; Research Park"
+   },
+   {
+    "name": "IITM Incubation Cell",
+    "relation": "Incubation"
+   },
+   {
+    "name": "IITM-CDOT Samgnya Technologies Foundation (National Quantum Mission)",
+    "relation": "Grant: ₹1.5 Cr"
    }
   ],
   "tech_approach": "Quantum-inspired optimisation",
@@ -5336,14 +5953,14 @@
   "source_url": "https://qubit.capital/?p=64538",
   "signal_date": "2026-03",
   "first_found": "2026-10-31",
-  "funding": "₹30 Cr (~$3.6M) seed / pre-Series A",
+  "funding": "₹30 Cr (~$3.6M) pre-Series A (Mar 2026), led by pi Ventures",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": null,
+  "team": 4,
   "market": 3,
-  "ip": null,
+  "ip": 3,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": false,
@@ -5354,7 +5971,7 @@
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · ₹30 Cr · Mar 2026",
-  "lead_investor": "Not named in coverage",
+  "lead_investor": "pi Ventures",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders Deepak Solanki and Saurabh Garg, per Inc42.",
   "next_raise": "Next raise: Series A",
@@ -5392,20 +6009,24 @@
    "source": "https://inc42.com/company/velmenni/financials/",
    "note": null
   },
-  "team_strengths": [],
+  "team_strengths": [
+   "12-year operating history with deployments in India, SE Asia, US",
+   "Defence contract and iDEX/TTDF grants"
+  ],
   "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+   "No evidenced senior sales/finance hire in coverage",
+   "Founders' formal photonics credentials not documented"
   ],
   "founders_detail": [
    {
     "name": "Deepak Solanki",
-    "role": "Co-founder",
-    "background": ""
+    "role": "Co-founder & CEO",
+    "background": "Previously worked with a robotics research lab at IIT Hyderabad; published in IEEE conferences (YourStory 2015)"
    },
    {
     "name": "Saurabh Garg",
-    "role": "Co-founder",
-    "background": ""
+    "role": "Co-founder & CTO",
+    "background": "MCA, Delhi University; ran his own software company/freelanced before co-founding (YoSuccess 2015)"
    }
   ],
   "rubric": {
@@ -5425,13 +6046,15 @@
     "Reliability in field conditions"
    ]
   },
-  "investors": [],
+  "investors": [
+   "pi Ventures"
+  ],
   "institution_tags": [],
   "last_funding": {
    "stage": "Pre-Series A",
    "amount": "₹30 Cr",
    "date": "2026-03",
-   "lead": "Not named in coverage",
+   "lead": "pi Ventures",
    "status": "Completed"
   },
   "latest_signal": {
@@ -5455,12 +6078,21 @@
    "Gross margin"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": {
+   "domain": {
     "score": 3,
-    "evidence": "₹1.1 Cr FY24 revenue"
+    "evidence": "CEO from IIT Hyderabad robotics lab with IEEE papers; CTO software/algorithms (MCA DU)"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "GMR thermal plant FSO deployment, multi-million-dollar submarine harbour connectivity defence contract, 50+ live deployments (CXO Digitalpulse, Mar 2026)"
+   },
+   "complementarity": {
+    "score": 3,
+    "evidence": "Hardware/robotics founder paired with software founder"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "FSO link at GMR plant at 99.999% availability for 18+ months; 50+ deployments incl. US Tier-1 operators; Rs 1.1 Cr FY24 revenue"
    }
   },
   "factor_evidence": {
@@ -5472,17 +6104,48 @@
     "score": 3,
     "rationale": "Secure-site demand is real; mass-market Li-Fi has repeatedly disappointed"
    },
-   "ip": null
+   "ip": {
+    "score": 3,
+    "rationale": "Coverage describes its FSO and Li-Fi technologies as patented; no numbers or count found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Hyderabad",
+    "relation": "Founder's previous employment (robotics research lab)"
+   },
+   {
+    "name": "University of Delhi",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Buildit (Estonia)",
+    "relation": "Accelerator"
+   },
+   {
+    "name": "DoT TTDF",
+    "relation": "Grant"
+   },
+   {
+    "name": "iDEX (Ministry of Defence)",
+    "relation": "Grant"
+   }
+  ],
   "tech_approach": "Li-Fi optical wireless",
-  "investor_edges": [],
-  "team_basis": "1 of 4 team factors have evidence",
+  "investor_edges": [
+   {
+    "name": "pi Ventures",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-03"
+   }
+  ],
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -5514,18 +6177,18 @@
   "fit": 5,
   "team": null,
   "market": 5,
-  "ip": null,
+  "ip": 3,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "The category leader in Indian private launch; the question now is cadence and price, not whether it can be done.",
   "rdi_sector": "Space",
-  "trl": "TRL 7–8 (est.)",
+  "trl": "TRL 8–9 (est.)",
   "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series B/C",
   "latest_round": "Series C · ~$50–60M · May 2026",
-  "lead_investor": "Not named in coverage",
+  "lead_investor": "GIC and Sherpalo Ventures (co-led)",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Pawan Kumar Chandana and Naga Bharath Daka, both ex-ISRO. Flew India's first private rocket (suborbital) in 2022.",
   "global_peers": [
@@ -5546,13 +6209,54 @@
    "Booked launch manifest and ISRO/IN-SPACe contracts"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://skyroot.in",
   "linkedin": null,
-  "clients": null,
-  "financials": null,
+  "clients": {
+   "status": "Named",
+   "items": [
+    "Grahaa Space (cubesat on Vikram-1)",
+    "Dcubed (hosted payload on Vikram-1)",
+    "Cosmoserve Space (hosted payload on Vikram-1)",
+    "Axiom Space (MoU, Jun 2025)",
+    "Nibe Space-led EO constellation consortium (launch agreement, Sep 2024)"
+   ],
+   "note": "Customer advances above ₹252 Cr as of Mar 2026 per Entrackr; commercial terms with named payload providers not disclosed"
+  },
+  "financials": {
+   "rows": [
+    {
+     "fy": "FY24",
+     "revenue": "₹29.0 Cr",
+     "net": "Loss ₹55.3 Cr"
+    },
+    {
+     "fy": "FY25",
+     "revenue": "₹32.0 Cr",
+     "net": "Loss ₹99.8 Cr"
+    },
+    {
+     "fy": "FY26 (provisional)",
+     "revenue": "₹100.6 Cr",
+     "net": "Not disclosed (EBITDA −₹130.3 Cr)"
+    }
+   ],
+   "source": "https://inc42.com/company/skyroot/financials/",
+   "note": "FY26 provisional figures from Entrackr via pulse.bot (Jun 2026); Inc42 lists FY25 loss as ₹99.7/99.8 Cr in different sections"
+  },
   "team_strengths": [],
   "team_gaps": [],
-  "founders_detail": [],
+  "founders_detail": [
+   {
+    "name": "Pawan Kumar Chandana",
+    "role": "Co-founder & CEO",
+    "background": "BTech and MTech Mechanical Engineering, IIT Kharagpur; ISRO scientist 2012–2018 (The Global Indian)"
+   },
+   {
+    "name": "Naga Bharath Daka",
+    "role": "Co-founder",
+    "background": "BTech and MTech Electrical Engineering, IIT Madras; ISRO avionics engineer; three years at Xilinx (The Global Indian)"
+   }
+  ],
   "rubric": {
    "business": [
     "Signed launch, data or servicing contracts, not just MoUs",
@@ -5572,8 +6276,8 @@
    ]
   },
   "investors": [
-   "Sherpalo Ventures",
    "GIC",
+   "Sherpalo Ventures",
    "BlackRock",
    "Arkam Ventures"
   ],
@@ -5584,7 +6288,7 @@
    "stage": "Series C",
    "amount": "~$50–60M",
    "date": "2026-05",
-   "lead": "Not named in coverage",
+   "lead": "GIC and Sherpalo Ventures (co-led)",
    "status": "Completed"
   },
   "latest_signal": {
@@ -5593,20 +6297,20 @@
    "event_date": "2026-05",
    "source_date": "2026-05-09"
   },
-  "trl_estimate": "TRL 7–8 (est.)",
-  "trl_basis": "Flew India's first private rocket (suborbital, 2022)",
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "Vikram-1 upper stage reached planned 450 km LEO on its first orbital launch from Sriharikota, 18 Jul 2026 (Circuit Digest)",
   "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
-   "Suborbital flight in 2022",
-   "Large private capital raised"
+   "Vikram-1 reached orbit on its first launch (Jul 2026)",
+   "Vikram-S suborbital flight (Nov 2022)"
   ],
   "unproven": [
-   "Orbital launch success",
-   "Launch cadence and price"
+   "Launch cadence and price per kg",
+   "Repeat orbital success"
   ],
   "would_change": [
-   "First orbital launch",
-   "Booked launch manifest"
+   "A second successful orbital launch",
+   "Booked launch manifest with paying customers"
   ],
   "team_factors": {
    "domain": null,
@@ -5623,7 +6327,10 @@
     "score": 5,
     "rationale": "Small-satellite launch demand is real; global competition from Rocket Lab"
    },
-   "ip": null
+   "ip": {
+    "score": 3,
+    "rationale": "No patents found; proprietary fully 3D-printed Dhawan cryogenic engines test-fired and Kalam solid stages qualified via static fires"
+   }
   },
   "role": "Benchmark",
   "assessed_on": "2026-10-31",
@@ -5634,21 +6341,33 @@
    {
     "name": "ISRO",
     "relation": "Founders' previous employment"
+   },
+   {
+    "name": "IIT Kharagpur",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "IIT Madras",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Xilinx",
+    "relation": "Founder's previous employment"
    }
   ],
   "tech_approach": "Small launch vehicles",
   "investor_edges": [
    {
-    "name": "Sherpalo Ventures",
-    "role": "Participant",
-    "round": null,
-    "date": null
+    "name": "GIC",
+    "role": "Lead",
+    "round": "Series C",
+    "date": "2026-05"
    },
    {
-    "name": "GIC",
-    "role": "Participant",
-    "round": null,
-    "date": null
+    "name": "Sherpalo Ventures",
+    "role": "Lead",
+    "round": "Series C",
+    "date": "2026-05"
    },
    {
     "name": "BlackRock",
@@ -5682,16 +6401,16 @@
   "problem": "Standard satellite photos can't see crop disease, pollution or minerals",
   "eli12": "Normal cameras see red, green and blue. Pixxel's satellites see hundreds of colours our eyes can't, which reveal things like sick crops, oil leaks or minerals in the ground. The hard part is processing that huge amount of data and selling it to people who need answers, not pictures.",
   "signal_type": "Funding news",
-  "signal": "In talks for an $80–100M round at ~$400M pre-money (May 2026)",
-  "source_name": "Outlook Business",
-  "source_url": "https://www.outlookbusiness.com/start-up/pixxel-expands-funding-round-to-100-mn-after-deepinder-goyal-steps-back",
-  "signal_date": "2026-05",
+  "signal": "$100M Series C closed, co-led by Temasek and Seraphim",
+  "source_name": "Pixxel",
+  "source_url": "https://www.pixxel.space/news/pixxel-raises-100-million-in-series-c-funding-to-build-the-infrastructure-for-a-changing-planet",
+  "signal_date": "2026-09-07",
   "first_found": "2026-10-31",
-  "funding": "~$96M raised in total; new round of $80–100M in talks",
+  "funding": "$100M Series C (Sep 2026), co-led by Temasek and Seraphim",
   "stage": 4,
   "stage_label": "Scale-up underway",
-  "entry_window": "Next raise: Series C close",
-  "next_raise": "Next raise: Series C close",
+  "entry_window": "Next raise: not tracked yet",
+  "next_raise": "Next raise: not tracked yet",
   "fit": 5,
   "team": null,
   "market": 4,
@@ -5704,9 +6423,9 @@
   "trl": "TRL 8–9 (est.)",
   "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
-  "round_tab": "Undisclosed",
-  "latest_round": "Undisclosed · ~$96M total",
-  "lead_investor": "Not named in coverage",
+  "round_tab": "Series B/C",
+  "latest_round": "Series C · $100M · Sep 2026",
+  "lead_investor": "Temasek and Seraphim (co-led)",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founded 2019 by Awais Ahmed (CEO) and Kshitij Khandelwal.",
   "global_peers": [
@@ -5727,13 +6446,48 @@
    "Pathfinder launch (as early as Q4 2026) and in-orbit AI performance"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
-  "linkedin": null,
-  "clients": null,
-  "financials": null,
+  "website": "https://www.pixxel.space",
+  "linkedin": "https://www.linkedin.com/company/pixxelspace/",
+  "clients": {
+   "status": "Named",
+   "items": [
+    "NASA (Commercial SmallSat Data Acquisition program contract, Sep 2024)",
+    "US National Reconnaissance Office (5-year hyperspectral data contract)",
+    "Indian Ministry of Defence (multiple iDEX challenges)",
+    "IN-SPACe (selected to lead 12-satellite public-private EO constellation)"
+   ],
+   "note": "Per Pixxel's Series C release and Wikipedia; total funding now ~$195M"
+  },
+  "financials": {
+   "rows": [
+    {
+     "fy": "FY24",
+     "revenue": "₹30.6 Cr",
+     "net": "Loss ₹20.4 Cr"
+    },
+    {
+     "fy": "FY25",
+     "revenue": "₹39.3 Cr",
+     "net": "Loss ₹30.8 Cr"
+    }
+   ],
+   "source": "https://inc42.com/company/pixxel/financials/",
+   "note": "Indian entity figures from Inc42 Datalabs"
+  },
   "team_strengths": [],
   "team_gaps": [],
-  "founders_detail": [],
+  "founders_detail": [
+   {
+    "name": "Awais Ahmed",
+    "role": "Co-founder and CEO",
+    "background": "Founded Pixxel in 2019 while studying at BITS Pilani; founding member and engineering lead of Hyperloop India (SpaceX Hyperloop Pod Competition 2017 finalist)"
+   },
+   {
+    "name": "Kshitij Khandelwal",
+    "role": "Co-founder and CTO",
+    "background": "Co-founded Pixxel in 2019 while studying at BITS Pilani"
+   }
+  ],
   "rubric": {
    "business": [
     "Signed launch, data or servicing contracts, not just MoUs",
@@ -5753,40 +6507,47 @@
    ]
   },
   "investors": [
+   "Temasek",
+   "Seraphim",
    "GIC",
    "Google",
    "Lightspeed",
    "Blume Ventures",
-   "Aditya Birla Ventures"
+   "Aditya Birla Ventures",
+   "360 ONE Asset",
+   "IMM Investment",
+   "Radical Ventures",
+   "growX ventures",
+   "M&G Catalyst"
   ],
   "institution_tags": [],
   "last_funding": {
-   "stage": "Undisclosed",
-   "amount": "~$96M total",
-   "date": "",
-   "lead": "Not named in coverage",
+   "stage": "Series C",
+   "amount": "$100M",
+   "date": "2026-09",
+   "lead": "Temasek and Seraphim (co-led)",
    "status": "Completed"
   },
   "latest_signal": {
-   "kind": "Reported discussions",
-   "summary": "In talks for an $80–100M round at about $400M pre-money; round not closed",
-   "event_date": "2026-05",
-   "source_date": "2026-05-22"
+   "kind": "Funding",
+   "summary": "$100M Series C closed, co-led by Temasek and Seraphim",
+   "event_date": "2026-09-07",
+   "source_date": "2026-09-07"
   },
   "trl_estimate": "TRL 8–9 (est.)",
   "trl_basis": "Hyperspectral satellites in orbit; Pathfinder planned for Q4 2026",
   "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
-   "Satellites in orbit",
-   "Backed by Google, GIC, Lightspeed"
+   "Hyperspectral satellites in orbit, including six Fireflies launched in 2025",
+   "$100M Series C closed (Sep 2026)"
   ],
   "unproven": [
    "Revenue per satellite",
    "In-orbit AI with Pathfinder"
   ],
   "would_change": [
-   "Round closing",
-   "Data contract revenue"
+   "Data contract revenue against the FY25 loss",
+   "Named commercial customers beyond government and agencies"
   ],
   "team_factors": {
    "domain": null,
@@ -5810,9 +6571,26 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "BITS Pilani",
+    "relation": "Founders' education"
+   }
+  ],
   "tech_approach": "Hyperspectral imaging",
   "investor_edges": [
+   {
+    "name": "Temasek",
+    "role": "Lead",
+    "round": "Series C",
+    "date": "2026-09"
+   },
+   {
+    "name": "Seraphim",
+    "role": "Lead",
+    "round": "Series C",
+    "date": "2026-09"
+   },
    {
     "name": "GIC",
     "role": "Participant",
@@ -5842,6 +6620,36 @@
     "role": "Participant",
     "round": null,
     "date": null
+   },
+   {
+    "name": "360 ONE Asset",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "IMM Investment",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Radical Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "growX ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "M&G Catalyst",
+    "role": "Participant",
+    "round": null,
+    "date": null
    }
   ],
   "team_basis": "0 of 4 team factors have evidence",
@@ -5855,7 +6663,7 @@
  {
   "id": "digantara",
   "company": "Digantara",
-  "founders": "Not named in source",
+  "founders": "Anirudh Sharma, Rahul Rawat, Tanveer Ahmed",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Space & earth observation",
@@ -5876,7 +6684,7 @@
   "fit": 5,
   "team": null,
   "market": 5,
-  "ip": null,
+  "ip": 3,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -5908,13 +6716,51 @@
    "Data subscription revenue from satellite operators"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
-  "linkedin": null,
-  "clients": null,
-  "financials": null,
+  "website": "https://digantara.co.in",
+  "linkedin": "https://in.linkedin.com/company/digantara",
+  "clients": {
+   "status": "Named",
+   "items": [
+    "US Air Force",
+    "US Space Force"
+   ],
+   "note": "Inc42 (Dec 2025) reports contracts with the USAF and Space Force, work on Space RCO and Space Systems Command programmes, and government/defence customers in India, US, UK, Singapore, Australia and Japan. SCOT satellite launched Jan 2025."
+  },
+  "financials": {
+   "rows": [
+    {
+     "fy": "FY24",
+     "revenue": "₹1.3 Cr",
+     "net": "Loss ₹8.4 Cr"
+    },
+    {
+     "fy": "FY25",
+     "revenue": "₹3.7 Cr",
+     "net": "Loss ₹20.9 Cr"
+    }
+   ],
+   "source": "https://inc42.com/company/digantara/financials/",
+   "note": "Inc42 page is internally inconsistent: its FAQ gives FY24 revenue ₹3.2 Cr, FY25 revenue ₹4.7 Cr and FY25 net loss ₹24.0 Cr. Verify against filings."
+  },
   "team_strengths": [],
   "team_gaps": [],
-  "founders_detail": [],
+  "founders_detail": [
+   {
+    "name": "Anirudh Sharma",
+    "role": "Co-founder and CEO",
+    "background": "Engineering student at Lovely Professional University when the company was founded there; worked on university student-satellite and CubeSat structure projects (Business Standard, Jan 2021)"
+   },
+   {
+    "name": "Rahul Rawat",
+    "role": "Co-founder",
+    "background": "Engineering student at Lovely Professional University; student-satellite and CubeSat projects (Business Standard, Jan 2021)"
+   },
+   {
+    "name": "Tanveer Ahmed",
+    "role": "Co-founder and CTO",
+    "background": "Engineering student at RV College of Engineering; student-satellite and CubeSat projects (Business Standard, Jan 2021)"
+   }
+  ],
   "rubric": {
    "business": [
     "Signed launch, data or servicing contracts, not just MoUs",
@@ -5983,14 +6829,26 @@
     "score": 5,
     "rationale": "Defence budgets fund tracking; growing global need"
    },
-   "ip": null
+   "ip": {
+    "score": 3,
+    "rationale": "Geospatial World says Digantara 'secured patents' for its key technology and calls its SCOT space-based surveillance sensor 'patented'. No patent numbers found."
+   }
   },
   "role": "Benchmark",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "Lovely Professional University",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "RV College of Engineering",
+    "relation": "Founders' education"
+   }
+  ],
   "tech_approach": "Space-domain awareness",
   "investor_edges": [
    {
@@ -6050,7 +6908,7 @@
   "fit": 4,
   "team": null,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -6062,7 +6920,7 @@
   "round_tab": "Series B/C",
   "latest_round": "Series B · $28.5M · Jun 2026",
   "lead_investor": "Avataar Ventures",
-  "lead_partner": "Anirudh Singh, Avataar Ventures",
+  "lead_partner": "Not named in coverage",
   "founder_snapshot": "Kaushik Mudda (CEO) and Navin Jain founded it in 2014. Series A of $13M in June 2024.",
   "global_peers": [
    {
@@ -6082,13 +6940,47 @@
    "Its own CNC controller shipping"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://etherealmachines.com",
   "linkedin": null,
-  "clients": null,
-  "financials": null,
+  "clients": {
+   "status": "Named",
+   "items": [
+    "HAL",
+    "BEL",
+    "Collins Aerospace"
+   ],
+   "note": "Named in YourStory (Jun 2026); Series B coverage cites unnamed 'top-tier global clients' and 3X YoY Machining-as-a-Service revenue growth."
+  },
+  "financials": {
+   "rows": [
+    {
+     "fy": "FY24",
+     "revenue": "₹6.4 Cr",
+     "net": "Not stated"
+    },
+    {
+     "fy": "FY25",
+     "revenue": "₹16.9 Cr",
+     "net": "Loss ₹27.3 Cr"
+    }
+   ],
+   "source": "https://inc42.com/company/ethereal-machines/financials/",
+   "note": "Inc42 Datalabs"
+  },
   "team_strengths": [],
   "team_gaps": [],
-  "founders_detail": [],
+  "founders_detail": [
+   {
+    "name": "Kaushik Mudda",
+    "role": "Co-founder and CEO",
+    "background": "Electrical engineering, RV College of Engineering (graduated 2014); began building a five-axis CNC machine in his dorm in 2013 (YourStory, Jun 2026)"
+   },
+   {
+    "name": "Navin Jain",
+    "role": "Co-founder",
+    "background": "Electrical engineering, RV College of Engineering (graduated 2014) (YourStory, Jun 2026)"
+   }
+  ],
   "rubric": {
    "business": [
     "Paid pilots converting into fleet orders",
@@ -6155,14 +7047,22 @@
     "score": 4,
     "rationale": "Precision machining capacity is scarce in India"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Proprietary five-axis machining systems (Halo won CES 2018 Best of Innovation); indigenous CNC controller in development; no patents found (YourStory)"
+   }
   },
   "role": "Benchmark",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "RV College of Engineering (RVCE), Bengaluru",
+    "relation": "Founders' education"
+   }
+  ],
   "tech_approach": "CNC machining as a service",
   "investor_edges": [
    {
@@ -6208,9 +7108,9 @@
   "entry_window": "Next raise: Series A",
   "next_raise": "Next raise: Series A",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 3,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -6245,13 +7145,19 @@
   "website": "https://optimizedelectrotech.com",
   "linkedin": "https://in.linkedin.com/company/optimized-electrotech-pvt-ltd",
   "clients": {
-   "status": "Potential",
+   "status": "Named",
    "items": [
-    "Defence services and paramilitary forces",
-    "Border security",
-    "Mining companies"
+    "Indian Army",
+    "Indian Navy",
+    "ISRO",
+    "Gujarat Police",
+    "MeitY",
+    "BEL",
+    "BDL",
+    "India Optel",
+    "L&T Defence"
    ],
-   "note": "Already secured initial orders for its space platform."
+   "note": "Customers as named in OfficeChai coverage"
   },
   "financials": {
    "rows": [
@@ -6269,9 +7175,42 @@
    "source": "https://inc42.com/company/optimized-electrotech/financials/",
    "note": null
   },
-  "team_strengths": [],
-  "team_gaps": [],
-  "founders_detail": [],
+  "team_strengths": [
+   "ISRO imaging heritage plus ISRO tech transfer",
+   "Named defence and PSU customers",
+   "Wins across iDEX DISC, Open and ADITI challenges"
+  ],
+  "team_gaps": [
+   "Revenue fell FY24 to FY25 while losses widened",
+   "Space imaging constellation not yet demonstrated in orbit"
+  ],
+  "founders_detail": [
+   {
+    "name": "Sandeep Shah",
+    "role": "Co-founder and Managing Director",
+    "background": "OfficeChai: two decades at ISRO on detector characterisation for Cartosat, Chandrayaan, Mangalyaan and IRNSS signal monitoring. Bharatpedia (wiki, weaker): IIM Calcutta alumnus; earlier company Optimized Solutions served ISRO"
+   },
+   {
+    "name": "Dharin Shah",
+    "role": "Co-founder (Executive Director)",
+    "background": "Two decades in semiconductors and system design including Texas Instruments; multiple patents (OfficeChai); IISc per Bharatpedia"
+   },
+   {
+    "name": "Anil Yekkala",
+    "role": "Co-founder",
+    "background": "IISc per Bharatpedia (listed as 'Anil Kumar'); otherwise not in coverage"
+   },
+   {
+    "name": "Kuldeep Saxena",
+    "role": "Co-founder",
+    "background": "Former ISRO scientist per Bharatpedia"
+   },
+   {
+    "name": "Purvi Shah",
+    "role": "Co-founder",
+    "background": "Background not in coverage"
+   }
+  ],
   "rubric": {
    "business": [
     "Signed launch, data or servicing contracts, not just MoUs",
@@ -6326,10 +7265,22 @@
    "Revenue recovery"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "domain": {
+    "score": 4,
+    "evidence": "MD spent two decades on ISRO detector systems; co-founder ex-Texas Instruments semiconductor/system design"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "Named buyers include Indian Army, Indian Navy, ISRO, Gujarat Police, BEL, BDL, L&T Defence"
+   },
+   "complementarity": {
+    "score": 3,
+    "evidence": "Five founders across imaging, semiconductors and space; business-side roles not clearly evidenced"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "Products (NoctVision, WolfSight) delivered to defence users; ₹25 Cr iDEX ADITI grant; revenue since FY24"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -6340,14 +7291,34 @@
     "score": 4,
     "rationale": "Defence surveillance demand is steady; space imaging is crowded"
    },
-   "ip": null
+   "ip": {
+    "score": 3,
+    "rationale": "Coverage says company holds four patents in electro-optical/imaging tech (numbers and grant status not given); ISRO technology transfer"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "ISRO",
+    "relation": "Founder's previous employment; technology transfer"
+   },
+   {
+    "name": "Texas Instruments",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "IISc Bangalore",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "iDEX (DISC, Open, ADITI 1.0)",
+    "relation": "Defence innovation grant (₹25 Cr ADITI, Oct 2024)"
+   }
+  ],
   "tech_approach": "Electro-optic imaging",
   "investor_edges": [
    {
@@ -6375,7 +7346,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -6386,7 +7357,7 @@
  {
   "id": "qpiai",
   "company": "QpiAI",
-  "founders": "Not named in source",
+  "founders": "Nagendra Nagaraja",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Quantum",
@@ -6405,9 +7376,9 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 5,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 4,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -6439,13 +7410,26 @@
    "Local manufacturing of quantum hardware starting in 2026"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
-  "linkedin": null,
+  "website": "https://qpiai.tech",
+  "linkedin": "https://www.linkedin.com/company/qpiai",
   "clients": null,
   "financials": null,
-  "team_strengths": [],
-  "team_gaps": [],
-  "founders_detail": [],
+  "team_strengths": [
+   "Deep semiconductor/AI technical founder with a large patent record",
+   "Delivered working quantum hardware",
+   "Senior VP bench across hardware, software and AI"
+  ],
+  "team_gaps": [
+   "Single-founder concentration",
+   "No named enterprise customers or revenue found"
+  ],
+  "founders_detail": [
+   {
+    "name": "Nagendra Nagaraja",
+    "role": "Founder and CEO",
+    "background": "BE ECE Bangalore University (2000); MS ECE Illinois Institute of Technology (2008); PhD (wireless/ML/AI) Coventry University; entrepreneurship programme at IIM Bangalore; engineering roles at NVIDIA, Qualcomm and Lucent Microelectronics; co-founded AlphaICs (2016, with Vinod Dham); about 27 granted patents as an inventor"
+   }
+  ],
   "rubric": {
    "business": [
     "Paid pilots versus free proofs of concept",
@@ -6497,10 +7481,22 @@
    "Enterprise customers"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "domain": {
+    "score": 5,
+    "evidence": "PhD; NVIDIA/Qualcomm engineer; about 27 granted patents; led build of India's first full-stack 25-qubit computer"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "Prior co-founder of AlphaICs; raised $32M Series A; L&T-Cloudfiniti partnership; no named paying customers found"
+   },
+   "complementarity": {
+    "score": 2,
+    "evidence": "Single founder; VP bench covers quantum hardware, software and AI platforms (Inc42)"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "Launched QpiAI-Indus 25-qubit superconducting computer on 2025-04-14; $32M Series A"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -6511,14 +7507,46 @@
     "score": 4,
     "rationale": "Government demand is clear; commercial demand is early"
    },
-   "ip": null
+   "ip": {
+    "score": 4,
+    "rationale": "About 12 patents in 10 families (US/India), including granted US12585973B1 'Adaptive Calibration for Quantum Computing Systems' (GreyB); counts partly inconsistent in source"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "Illinois Institute of Technology",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Coventry University",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "IIM Bangalore",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "NVIDIA / Qualcomm / Lucent Microelectronics",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "AlphaICs",
+    "relation": "Founder's previous company"
+   },
+   {
+    "name": "National Quantum Mission",
+    "relation": "Investor and development support for QpiAI-Indus"
+   },
+   {
+    "name": "SIDBI",
+    "relation": "Financial backing for QpiAI-Indus"
+   }
+  ],
   "tech_approach": "Superconducting qubits",
   "investor_edges": [
    {
@@ -6534,7 +7562,7 @@
     "date": "2025-07"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -6545,7 +7573,7 @@
  {
   "id": "qnu",
   "company": "QNu Labs",
-  "founders": "Not named in source",
+  "founders": "Sunil Gupta, Srinivasa Rao Aluri, Mark Mathias, Anil Prabhakar",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Quantum",
@@ -6564,9 +7592,9 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 4,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -6598,13 +7626,39 @@
    "Delivery on the RDI quantum-network project"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://www.qnulabs.com/",
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_strengths": [],
-  "team_gaps": [],
-  "founders_detail": [],
+  "team_strengths": [
+   "Academic quantum-optics depth plus seasoned industry operators",
+   "Repeat defence customers and national mission backing"
+  ],
+  "team_gaps": [
+   "Founders' detailed career histories beyond titles are thin in public sources"
+  ],
+  "founders_detail": [
+   {
+    "name": "Sunil Gupta",
+    "role": "Co-founder & CEO",
+    "background": "Quantum-security entrepreneur and product-engineering leader with 30+ years of experience (IITM Research Park)"
+   },
+   {
+    "name": "Srinivasa Rao Aluri",
+    "role": "Co-founder & Chairman",
+    "background": "Former Managing Director, Morgan Stanley (IITM Research Park)"
+   },
+   {
+    "name": "Mark Mathias",
+    "role": "Co-founder (Head of Production)",
+    "background": "Former CTO of Enventure Technology Services; hardware and systems expertise (IITM Research Park)"
+   },
+   {
+    "name": "Dr Anil Prabhakar",
+    "role": "Co-founder (Technical Advisor)",
+    "background": "Professor, Electrical Engineering, IIT Madras; photonics and quantum technologies research (IITM Research Park)"
+   }
+  ],
   "rubric": {
    "business": [
     "Paid pilots versus free proofs of concept",
@@ -6656,10 +7710,22 @@
    "Project delivery"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "domain": {
+    "score": 4,
+    "evidence": "IIT Madras EE professor in photonics/quantum plus CEO with 30+ years product engineering"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "Navy order for 150 km QKD systems (2023), Army field trials/deployments, products on GeM; Chairman ex-Morgan Stanley MD"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Distinct quantum-optics (academic), hardware/production, product engineering and finance/governance founders"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "Armos/Tropos launched 2020; 500 km QKD network over existing fibre with Army demonstrated Nov 2025"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -6670,14 +7736,46 @@
     "score": 4,
     "rationale": "Every bank and government will need post-quantum security"
    },
-   "ip": null
+   "ip": {
+    "score": 4,
+    "rationale": "Company timeline lists three granted US patents (1st, then 2nd and 3rd); numbers not confirmed in sources seen"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Madras Research Park",
+    "relation": "Incubation"
+   },
+   {
+    "name": "IIT Madras",
+    "relation": "Founder's faculty affiliation (Anil Prabhakar)"
+   },
+   {
+    "name": "Morgan Stanley",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Enventure Technology Services",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Cisco LaunchPad",
+    "relation": "Accelerator"
+   },
+   {
+    "name": "I-Hub Quantum Technology Foundation, IISER Pune",
+    "relation": "Research: support for 500 km QKD network"
+   },
+   {
+    "name": "Indian Army Southern Command Signals",
+    "relation": "Research: QKD test-bed partner"
+   }
+  ],
   "tech_approach": "Quantum key distribution",
   "investor_edges": [
    {
@@ -6693,7 +7791,7 @@
     "date": "2026-09"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -6723,9 +7821,9 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 4,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -6761,9 +7859,26 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_strengths": [],
-  "team_gaps": [],
-  "founders_detail": [],
+  "team_strengths": [
+   "Decades of analog/mixed-signal experience at STMicroelectronics",
+   "Large licensed IP portfolio with foundry alliance memberships"
+  ],
+  "team_gaps": [
+   "No evidenced dedicated sales/BD leader as it moves from IP licensing to product sales",
+   "Founder background details come mainly from a third-party profile"
+  ],
+  "founders_detail": [
+   {
+    "name": "Rakesh Malik",
+    "role": "Co-founder & CEO",
+    "background": "Per Affluense profile: Senior Group Manager at STMicroelectronics (1991–2017); Design Engineer, Department of Electronics, Govt of India (1988–1991); Chair, IEEE SSCS Delhi chapter"
+   },
+   {
+    "name": "Pratap Narayan Singh",
+    "role": "Co-founder & CTO",
+    "background": "Inventor on 30+ patents (Semiconductorforu, Feb 2026); per Affluense profile ('Pratap Singh', Vervesemi): STMicroelectronics analog design roles 2006–2017 up to Senior Principal Engineer, and Principal Analog Design Engineer at Wolfson Microelectronics (2011–2012)"
+   }
+  ],
   "rubric": {
    "business": [
     "Design wins with named OEMs or ODMs",
@@ -6816,10 +7931,22 @@
    "Named sensor or industrial customers"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "domain": {
+    "score": 4,
+    "evidence": "CEO ~26 years at STMicroelectronics; CTO analog designer at ST and Wolfson with 30+ patents (third-party profile + trade press)"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "Several customers in production; chip order from a leading space organisation; global IP licensing; claims consistent profitability"
+   },
+   "complementarity": {
+    "score": 3,
+    "evidence": "CEO senior management at ST paired with hands-on analog design CTO; both technical"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "ML-enabled analog architecture validated in silicon; 140+ IP blocks, 25 IC variants; first DLI-recognised company"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -6830,14 +7957,42 @@
     "score": 4,
     "rationale": "Analog demand is broad; Indian design talent is thin"
    },
-   "ip": null
+   "ip": {
+    "score": 4,
+    "rationale": "10+ patents and 5 trade secrets, 140+ semiconductor IP blocks (AnySilicon, YourStory Feb 2026); patent numbers/status not verified"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "STMicroelectronics",
+    "relation": "Founders' previous employment"
+   },
+   {
+    "name": "Wolfson Microelectronics",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Department of Electronics, Government of India",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "MeitY Design Linked Incentive (DLI) scheme",
+    "relation": "First company recognised under DLI; C2S project"
+   },
+   {
+    "name": "Samsung Advanced Foundry Ecosystem (SAFE)",
+    "relation": "IP alliance partner"
+   },
+   {
+    "name": "UMC IP Alliance",
+    "relation": "IP alliance partner"
+   }
+  ],
   "tech_approach": "Analog and mixed-signal chips",
   "investor_edges": [
    {
@@ -6859,7 +8014,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -6870,7 +8025,7 @@
  {
   "id": "hrdwyr",
   "company": "HrdWyr",
-  "founders": "Not named in source",
+  "founders": "Ramamurthy Sivakumar, Guruswamy Ganesh",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Semiconductors",
@@ -6889,7 +8044,7 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 5,
   "ip": null,
   "confidence": "Low",
@@ -6923,13 +8078,30 @@
    "Software stack adoption by developers"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://www.hrdwyr.com/",
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_strengths": [],
-  "team_gaps": [],
-  "founders_detail": [],
+  "team_strengths": [
+   "Big-company semiconductor experience across Intel, WD, SanDisk, AMD, NXP",
+   "Early strategic partner (boAt) and $13M Series A"
+  ],
+  "team_gaps": [
+   "No silicon/tape-out milestone reported",
+   "Individual founder backgrounds not documented"
+  ],
+  "founders_detail": [
+   {
+    "name": "Ramamurthy Sivakumar",
+    "role": "Co-founder and CEO",
+    "background": "Semiconductor industry veteran; founding team's collective experience spans Intel, Western Digital, SanDisk, AMD and NXP (individual attribution not given)"
+   },
+   {
+    "name": "Guruswamy Ganesh",
+    "role": "Co-founder",
+    "background": "Semiconductor industry veteran; founding team's collective experience spans Intel, Western Digital, SanDisk, AMD and NXP (individual attribution not given)"
+   }
+  ],
   "rubric": {
    "business": [
     "Design wins with named OEMs or ODMs",
@@ -6981,8 +8153,14 @@
    "Design wins"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
+   "domain": {
+    "score": 3,
+    "evidence": "Founders described as semiconductor leaders with Intel/WD/SanDisk/AMD/NXP experience (Ideaspring), not attributed per founder"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "Strategic collaboration with boAt for consumer tech; Persistent Systems as strategic investor"
+   },
    "complementarity": null,
    "execution": null
   },
@@ -7018,7 +8196,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "2 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -7029,7 +8207,7 @@
  {
   "id": "satsure",
   "company": "SatSure",
-  "founders": "Not named in source",
+  "founders": "Prateep Basu, Rashmit Singh Sukhmani, Abhishek Raju",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Space & earth observation",
@@ -7042,7 +8220,7 @@
   "source_url": "https://yourstory.com/2026/06/in-space-selects-3-startups-funding-technology-adoption-fund",
   "signal_date": "2026-06-12",
   "first_found": "2026-10-31",
-  "funding": "Later-stage company (latest round not in this coverage); IN-SPACe TAF award",
+  "funding": "$15M Series A (Aug 2023, equity and debt), co-led by Baring PE India and Promus Ventures; IN-SPACe TAF award (Jun 2026)",
   "stage": 4,
   "stage_label": "Scale-up underway",
   "entry_window": "Next raise: not tracked yet",
@@ -7059,9 +8237,9 @@
   "trl": "Not estimable",
   "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
-  "round_tab": "Undisclosed",
-  "latest_round": "Undisclosed · Not in coverage",
-  "lead_investor": "Not named in coverage",
+  "round_tab": "Series A",
+  "latest_round": "Series A · $15M · Aug 2023",
+  "lead_investor": "Baring Private Equity Partners India and Promus Ventures (co-led)",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders not named in this coverage.",
   "global_peers": [
@@ -7082,13 +8260,53 @@
    "Own satellite plans versus buying data"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://www.satsure.co",
   "linkedin": null,
-  "clients": null,
-  "financials": null,
+  "clients": {
+   "status": "Named",
+   "items": [
+    "HDFC Bank",
+    "ICICI Bank",
+    "Kotak Mahindra Bank",
+    "TransUnion CIBIL (partner, CIBIL Credit & Farm Report)"
+   ],
+   "note": "OfficeChai (Aug 2026) names the three banks as clients and strategic investors. Inc42 (Feb 2023) describes ICICI Bank using SatSure data for farmer credit assessment."
+  },
+  "financials": {
+   "rows": [
+    {
+     "fy": "FY24",
+     "revenue": "₹10.5 Cr",
+     "net": "Loss ₹54.2 Cr"
+    },
+    {
+     "fy": "FY25",
+     "revenue": "₹33.6 Cr",
+     "net": "Loss ₹32.7 Cr"
+    }
+   ],
+   "source": "https://inc42.com/company/satsure/financials/",
+   "note": "Inc42 page is internally inconsistent: its FAQ gives FY24 revenue ₹9.7 Cr, FY25 revenue ₹31.5 Cr and FY25 net loss ₹42.6 Cr. Verify against filings."
+  },
   "team_strengths": [],
   "team_gaps": [],
-  "founders_detail": [],
+  "founders_detail": [
+   {
+    "name": "Prateep Basu",
+    "role": "Co-founder and CEO",
+    "background": "IIST aerospace engineer; postgraduate in Space Studies, International Space University (Strasbourg); liquid propulsion systems engineer at ISRO's Satish Dhawan Space Centre; geospatial industry analyst at Northern Sky Research, Boston (OfficeChai, Aug 2026)"
+   },
+   {
+    "name": "Rashmit Singh Sukhmani",
+    "role": "Co-founder and CTO",
+    "background": "IIST-trained; Scientist/Engineer at ISRO's Indian Institute of Remote Sensing (2011-2013); MBA; product roles up to Chief Data Officer before becoming CTO in 2023 (OfficeChai, Aug 2026)"
+   },
+   {
+    "name": "Abhishek Raju",
+    "role": "Co-founder (former Head, EMEA)",
+    "background": "IIST alumnus; led international expansion as Head of EMEA; has since stepped back from day-to-day operations (OfficeChai, Aug 2026)"
+   }
+  ],
   "rubric": {
    "business": [
     "Signed launch, data or servicing contracts, not just MoUs",
@@ -7108,14 +8326,20 @@
    ]
   },
   "investors": [
-   "IN-SPACe"
+   "Baring Private Equity Partners India",
+   "Promus Ventures",
+   "IN-SPACe",
+   "Omidyar Network India",
+   "xto10x",
+   "Force Ventures",
+   "Luckbox Ventures"
   ],
   "institution_tags": [],
   "last_funding": {
-   "stage": "Undisclosed",
-   "amount": "Not in coverage",
-   "date": "",
-   "lead": "Not named in coverage",
+   "stage": "Series A",
+   "amount": "$15M",
+   "date": "2023-08",
+   "lead": "Baring Private Equity Partners India and Promus Ventures (co-led)",
    "status": "Completed"
   },
   "latest_signal": {
@@ -7128,15 +8352,16 @@
   "trl_basis": "Grant for a foundation model; no model release in coverage",
   "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "demonstrated": [
-   "Government grant for an Earth-observation model"
+   "Government grant for an Earth-observation model",
+   "KaleidEO payload prototype flown on aircraft (Apr 2024)"
   ],
   "unproven": [
-   "Model adoption",
-   "Funding history in this dataset"
+   "Adoption of the Earth-observation foundation model",
+   "KaleidEO satellite launch and imagery"
   ],
   "would_change": [
-   "Model released and used",
-   "Funding details verified"
+   "Model released and used by customers",
+   "A newer closed equity round"
   ],
   "team_factors": {
    "domain": null,
@@ -7160,11 +8385,68 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "Indian Institute of Space Science and Technology (IIST)",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "International Space University",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "ISRO (SDSC SHAR, IIRS)",
+    "relation": "Founders' previous employment"
+   },
+   {
+    "name": "Northern Sky Research",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "IN-SPACe",
+    "relation": "Grant: ₹24.6 Cr Technology Adoption Fund for EO AI models (Jun 2026)"
+   }
+  ],
   "tech_approach": "Earth-observation AI models",
   "investor_edges": [
    {
+    "name": "Baring Private Equity Partners India",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2023-08"
+   },
+   {
+    "name": "Promus Ventures",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2023-08"
+   },
+   {
     "name": "IN-SPACe",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Omidyar Network India",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "xto10x",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Force Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Luckbox Ventures",
     "role": "Participant",
     "round": null,
     "date": null
@@ -7181,7 +8463,7 @@
  {
   "id": "ideaforge",
   "company": "ideaForge Technology",
-  "founders": "Not named in source",
+  "founders": "Ankit Mehta, Rahul Singh, Ashish Bhat, Vipul Joshi, Amardeep Singh",
   "institution": "IIT Bombay origins",
   "location": "Mumbai",
   "sector": "Robotics & automation",
@@ -7202,7 +8484,7 @@
   "fit": 3,
   "team": null,
   "market": 4,
-  "ip": null,
+  "ip": 5,
   "confidence": "Medium",
   "uncontested": "No: listed",
   "diligence": false,
@@ -7236,11 +8518,63 @@
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
   "website": null,
   "linkedin": null,
-  "clients": null,
-  "financials": null,
+  "clients": {
+   "status": "Named",
+   "items": [
+    "Indian Army",
+    "Indian Navy",
+    "Indian Air Force",
+    "Indian Railways",
+    "DRDO labs (rate contract)",
+    "Lamar Police Department, Texas (first US order, Q4 FY26)"
+   ],
+   "note": "Armed forces/Railways from BusinessWorld (2024); DRDO from YourStory (2013); Lamar PD from Inc42 (May 2026)."
+  },
+  "financials": {
+   "rows": [
+    {
+     "fy": "FY25",
+     "revenue": "₹187.2 Cr",
+     "net": "Loss ₹51.4 Cr"
+    },
+    {
+     "fy": "FY26",
+     "revenue": "₹226.1 Cr (operating)",
+     "net": "Loss ₹17 Cr"
+    }
+   ],
+   "source": "https://inc42.com/buzz/ideaforge-back-in-the-black-posts-₹60-cr-pat-in-q4/",
+   "note": "FY26 from Inc42 news (operating revenue +40% YoY; Q4 PAT ₹60 Cr). FY25 from Inc42 Datalabs (https://inc42.com/company/ideaforge/financials/), whose figures are internally inconsistent (also shows ₹182.4 Cr) and likely not comparable to FY26 operating revenue - verify against filings."
+  },
   "team_strengths": [],
   "team_gaps": [],
-  "founders_detail": [],
+  "founders_detail": [
+   {
+    "name": "Ankit Mehta",
+    "role": "Co-founder",
+    "background": "IIT Bombay; briefly worked at a firm before recruiting co-founders (YourStory 2013)"
+   },
+   {
+    "name": "Rahul Singh",
+    "role": "Co-founder, VP Engineering",
+    "background": "IIT Bombay graduate (YourStory 2013; BusinessWorld 2024)"
+   },
+   {
+    "name": "Ashish Bhat",
+    "role": "Co-founder",
+    "background": "IIT Bombay graduate (YourStory 2013)"
+   },
+   {
+    "name": "Vipul Joshi",
+    "role": "Co-founder",
+    "background": "MBA in Switzerland (YourStory 2013)"
+   },
+   {
+    "name": "Amardeep Singh",
+    "role": "Co-founder",
+    "background": "IIT Bombay Aerospace Engineering; final-year UAV project (2008) won first prize with MIT in hovering class of an international competition (YourStory 2013)"
+   }
+  ],
   "rubric": {
    "business": [
     "Paid pilots converting into fleet orders",
@@ -7305,7 +8639,10 @@
     "score": 4,
     "rationale": "Defence drones are a growing budget line"
    },
-   "ip": null
+   "ip": {
+    "score": 5,
+    "rationale": "66 patents globally, 32 granted, per co-founder Rahul Singh (BusinessWorld, May 2024)"
+   }
   },
   "role": "Benchmark",
   "assessed_on": "2026-10-31",
@@ -7331,7 +8668,7 @@
  {
   "id": "inbound",
   "company": "Inbound Aerospace",
-  "founders": "Aravind I B (others not named)",
+  "founders": "Aravind I B, Vishal Reddy, Abhijit Bhutey",
   "institution": "IIT Madras incubated",
   "location": "Chennai",
   "sector": "Space & earth observation",
@@ -7350,7 +8687,7 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 5,
-  "team": null,
+  "team": 3,
   "market": 4,
   "ip": null,
   "confidence": "Low",
@@ -7384,7 +8721,7 @@
    "Customers for returned payloads (pharma, materials)"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://inboundaerospace.com",
   "linkedin": null,
   "clients": {
    "status": "Potential",
@@ -7399,15 +8736,29 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_strengths": [],
+  "team_strengths": [
+   "Distinct research, strategy and flight-operations backgrounds",
+   "IIT Madras incubation and international test-range MoU"
+  ],
   "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+   "No hardware or subsystem tests reported yet",
+   "Commercial traction and customer commitments not evidenced"
   ],
   "founders_detail": [
    {
     "name": "Aravind I B",
     "role": "Co-founder and CEO",
-    "background": "Background not in coverage"
+    "background": "IIT Madras researcher whose microgravity experiments informed the company's platform (IITM Research Park page)"
+   },
+   {
+    "name": "Vishal Reddy",
+    "role": "Co-founder",
+    "background": "Aerospace and strategy professional; guides product direction and business strategy (IITM Research Park page)"
+   },
+   {
+    "name": "Abhijit Bhutey",
+    "role": "Co-founder",
+    "background": "Capt (IN), retired; former Indian Navy pilot; focuses on operations, safety and mission profiles (IITM Research Park page; CXOToday)"
    }
   ],
   "rubric": {
@@ -7462,10 +8813,22 @@
    "Re-entry MVP on track for Q1 2028"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "domain": {
+    "score": 3,
+    "evidence": "CEO is an IIT Madras microgravity researcher; co-founder ex-Navy pilot; no re-entry hardware track record evidenced"
+   },
+   "commercial": {
+    "score": 2,
+    "evidence": "One co-founder described as aerospace and strategy professional; no customers or sales evidenced"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Research (CEO), strategy/product (Reddy) and flight operations/safety (Bhutey) roles are distinct"
+   },
+   "execution": {
+    "score": 2,
+    "evidence": "Pre-seed raised, S-Booster 2025 finalist, testing MoU signed; no hardware test reported"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -7487,6 +8850,18 @@
    {
     "name": "IIT Madras",
     "relation": "Incubation"
+   },
+   {
+    "name": "IITM Nirmaan",
+    "relation": "Pre-incubation"
+   },
+   {
+    "name": "Indian Navy",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Space Angel Group (Australia)",
+    "relation": "Research: 5-year MoU for flight/drop/near-space testing and recovery (Sep 2026)"
    }
   ],
   "tech_approach": "Re-entry vehicles",
@@ -7504,7 +8879,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -7534,15 +8909,15 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 5,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Thermal is a less crowded slice of Earth observation with clear agriculture and climate buyers.",
   "rdi_sector": "Space",
-  "trl": "TRL 8 (company-stated)",
+  "trl": "TRL 7 (est.)",
   "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
@@ -7583,28 +8958,29 @@
    "note": "Inc42 has a profile but no figures were readable."
   },
   "team_strengths": [
-   "Ex-ISRO scientists in the team",
-   "Pipeline of letters of intent grew from about $15M to over $42M in a year"
+   "Veteran ISRO payload scientist as CTO",
+   "Dedicated, experienced sales co-founder",
+   "Payload flown within about three years of founding"
   ],
   "team_gaps": [
-   "Founders' individual backgrounds aren't in coverage",
-   "Letters of intent aren't contracts"
+   "No in-orbit performance results published yet",
+   "LOIs not yet converted to disclosed contracts or revenue"
   ],
   "founders_detail": [
    {
-    "name": "Shravan Bhati",
+    "name": "Shravan Bhati (Shravan Singh Bhati)",
     "role": "Co-founder and CEO",
-    "background": ""
+    "background": "16+ years in satellite-based innovation; led large Earth-observation data projects across India, APAC, Europe and Africa"
    },
    {
     "name": "Ranendu Ghosh",
     "role": "Co-founder and CTO",
-    "background": ""
+    "background": "Dr; 27 years at ISRO in payload and remote-sensing development; PhD, Indian Agricultural Research Institute; Professor (ICT), DA-IICT Gandhinagar"
    },
    {
     "name": "Urmil Bakhai",
     "role": "Co-founder and CSO",
-    "background": ""
+    "background": "22+ years in sales leadership and strategic business growth; former colleague of Bhati"
    }
   ],
   "rubric": {
@@ -7647,11 +9023,11 @@
    "event_date": "2026-04-06",
    "source_date": "2026-04-06"
   },
-  "trl_estimate": "TRL 8 (company-stated)",
-  "trl_basis": "TAPAS-1 payload delivered and stated at TRL 8, preparing for launch",
+  "trl_estimate": "TRL 7 (est.)",
+  "trl_basis": "TAPAS-1 thermal payload launched on SpaceX Transporter-18 aboard Dhruva Space LEAP-2 on 2026-10-02; in-orbit tests pending (Inc42, Oct 2026)",
   "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
-   "TAPAS-1 payload built in six months",
+   "TAPAS-1 thermal payload launched to orbit on Dhruva LEAP-2 (Oct 2026)",
    "City pilots in Ahmedabad and Tumkur"
   ],
   "unproven": [
@@ -7663,12 +9039,21 @@
    "Paid contracts from its $42M of letters of intent"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 4,
+    "evidence": "CTO spent 27 years at ISRO on payloads and remote sensing and holds a PhD; CEO has 16+ years in EO data"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "CSO has 22+ years in sales leadership; Tumakuru and Ahmedabad pilots, Rajasthan MoU, $42M in LOIs"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Payload science (CTO), EO programme leadership (CEO), sales (CSO)"
+   },
    "execution": {
     "score": 4,
-    "evidence": "Payload delivered in six months; city pilots; $42M of letters of intent"
+    "evidence": "TAPAS-1 payload built and launched to orbit 2026-10-02 on Transporter-18; city pilots; LOIs"
    }
   },
   "factor_evidence": {
@@ -7680,7 +9065,10 @@
     "score": 4,
     "rationale": "Urban heat and agriculture create clear buyers"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Company claims a proprietary dual-band (MWIR+LWIR) thermal imaging payload; no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -7691,6 +9079,26 @@
    {
     "name": "ISRO",
     "relation": "Team members' previous employment"
+   },
+   {
+    "name": "Indian Agricultural Research Institute",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "DA-IICT",
+    "relation": "Founder's current/previous employment (faculty)"
+   },
+   {
+    "name": "IN-SPACe",
+    "relation": "Incubation/facilities"
+   },
+   {
+    "name": "ISRO Space Applications Centre (Bopal)",
+    "relation": "Facilities rented"
+   },
+   {
+    "name": "Dhruva Space",
+    "relation": "Host satellite (LEAP-2) for TAPAS-1"
    }
   ],
   "tech_approach": "Thermal imaging from orbit",
@@ -7720,7 +9128,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -7750,9 +9158,9 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 3,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -7787,20 +9195,23 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_strengths": [],
+  "team_strengths": [
+   "Direct ISRO spacecraft systems and environmental-testing experience"
+  ],
   "team_gaps": [
-   "Founders' backgrounds beyond ISRO experience aren't in coverage"
+   "No evidenced commercial or fundraising/BD experience",
+   "No dated thruster test results; first in-orbit demo (planned on PSLV POEM, mid-2026) not confirmed as flown"
   ],
   "founders_detail": [
    {
     "name": "Christopher Parmar",
-    "role": "Co-founder",
-    "background": ""
+    "role": "Co-founder & CEO",
+    "background": "Former ISRO scientist, 8+ years working on high-reliability aerospace systems (Analytics Insight)"
    },
    {
     "name": "Anupam Kumar",
-    "role": "Co-founder",
-    "background": "Former ISRO scientist"
+    "role": "Co-founder & CTO",
+    "background": "Former ISRO scientist; worked on satellite environment testing at ISRO (IDRW)"
    }
   ],
   "rubric": {
@@ -7855,9 +9266,15 @@
    "A satellite customer"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 4,
+    "evidence": "Both founders ex-ISRO scientists; CEO 8+ years on high-reliability aerospace systems, CTO on satellite environment testing"
+   },
    "commercial": null,
-   "complementarity": null,
+   "complementarity": {
+    "score": 2,
+    "evidence": "Both founders have technical ISRO backgrounds; no business/GTM founder evidenced"
+   },
    "execution": null
   },
   "factor_evidence": {
@@ -7869,7 +9286,10 @@
     "score": 3,
     "rationale": "Very low orbits are an emerging niche"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Only a claim of indigenous air-breathing electric propulsion for ULEO; no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -7897,7 +9317,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "2 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -7935,8 +9355,8 @@
   "diligence": true,
   "why": "Third or fourth Indian small-launch entrant; differentiation is unclear.",
   "rdi_sector": "Space",
-  "trl": "Not estimable",
-  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl": "TRL 4 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $3M · Jul 2025",
@@ -7975,25 +9395,28 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_strengths": [],
+  "team_strengths": [
+   "Has flown a sub-scale sounding rocket"
+  ],
   "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+   "No evidenced propulsion/aerospace credentials for founders",
+   "No commercial contracts disclosed"
   ],
   "founders_detail": [
    {
     "name": "Ravindra Raj Binod Mistri",
-    "role": "Co-founder",
-    "background": ""
+    "role": "Co-founder, CEO & MD",
+    "background": "Holds 'Dr' title; founder and director of Omspace; education and prior employers not in coverage"
    },
    {
     "name": "Maulik Mota",
     "role": "Co-founder",
-    "background": ""
+    "background": "Not in coverage"
    },
    {
     "name": "Stutika Padamshali",
     "role": "Co-founder",
-    "background": ""
+    "background": "Not in coverage"
    }
   ],
   "rubric": {
@@ -8031,10 +9454,11 @@
    "event_date": "2025-07-18",
    "source_date": "2025-07-18"
   },
-  "trl_estimate": null,
-  "trl_basis": "No engine test in coverage",
-  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl_estimate": "TRL 4 (est.)",
+  "trl_basis": "First sounding rocket launched to ~3 km from Bavaliyari, Gulf of Khambhat, 14 Mar 2026 (EDII); Infinity One orbital vehicle not yet flown (YourStory, Aug 2026)",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
+   "Sounding rocket flown to ~3 km (Mar 2026)",
    "Pre-seed raised; AWS space accelerator"
   ],
   "unproven": [
@@ -8049,7 +9473,10 @@
    "domain": null,
    "commercial": null,
    "complementarity": null,
-   "execution": null
+   "execution": {
+    "score": 3,
+    "evidence": "Launched Gujarat's first sounding rocket to ~3 km planned altitude, 14 Mar 2026"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -8075,7 +9502,7 @@
   ],
   "tech_approach": "Reusable launch vehicles",
   "investor_edges": [],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "1 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -8086,7 +9513,7 @@
  {
   "id": "orbitaid",
   "company": "OrbitAID Aerospace",
-  "founders": "Nikhil Balasubramanian, Sakthikumar R",
+  "founders": "Sakthikumar R, Nikhil Balasubramanian, Mano Balaji K",
   "institution": "",
   "location": "Chennai",
   "sector": "Space & earth observation",
@@ -8105,7 +9532,7 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 5,
-  "team": null,
+  "team": 3,
   "market": 4,
   "ip": 3,
   "confidence": "Low",
@@ -8166,22 +9593,28 @@
    "note": "FY25 revenue jumped sharply; source of revenue isn't disclosed."
   },
   "team_strengths": [
-   "Claims TRL 7 after a zero-gravity flight test",
-   "₹4.2 Cr revenue in FY25 is unusual for a pre-seed space company"
+   "Deep academic engineering grounding from IISc",
+   "Hardware built to flight (AayulSAT) and zero-g tested"
   ],
   "team_gaps": [
-   "Founders' backgrounds aren't in coverage"
+   "In-orbit demonstration still pending after PSLV-C62 launch failure",
+   "Clients undisclosed; no evidenced business-side founder background"
   ],
   "founders_detail": [
    {
-    "name": "Nikhil Balasubramanian",
-    "role": "Co-founder",
-    "background": ""
+    "name": "Sakthikumar R",
+    "role": "Founder and CEO",
+    "background": "IISc alumnus; about eight years as an academician at IISc"
    },
    {
-    "name": "Sakthikumar R",
-    "role": "Co-founder",
-    "background": ""
+    "name": "Nikhil Balasubramanian",
+    "role": "Co-founder and COO",
+    "background": "IISc alumnus; worked at IISc (2011-2019 period)"
+   },
+   {
+    "name": "Mano Balaji K",
+    "role": "Co-founder and CMO",
+    "background": "IISc alumnus; worked at IISc (2011-2019 period)"
    }
   ],
   "rubric": {
@@ -8221,14 +9654,14 @@
    "source_date": "2025-01-15"
   },
   "trl_estimate": "TRL 6–7 (company-stated)",
-  "trl_basis": "Patented docking interface tested on a zero-gravity flight; company claims TRL 7",
+  "trl_basis": "Patented docking interface tested on a zero-gravity flight; company claims TRL 7. Caveat: the AayulSAT refuelling demo was on PSLV-C62 (12 Jan 2026), which failed and did not reach orbit",
   "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
    "Zero-gravity flight test",
    "₹4.2 Cr FY25 revenue"
   ],
   "unproven": [
-   "Docking in orbit",
+   "Docking in orbit (AayulSAT lost on PSLV-C62, Jan 2026)",
    "Source of FY25 revenue"
   ],
   "would_change": [
@@ -8236,12 +9669,18 @@
    "Satellite makers adopting its port"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
+   "domain": {
+    "score": 4,
+    "evidence": "IISc alumni; CEO spent ~8 years as an IISc academician"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "Three undisclosed international clients; ₹4.2 Cr FY25 revenue"
+   },
    "complementarity": null,
    "execution": {
     "score": 3,
-    "evidence": "Zero-gravity test; ₹4.2 Cr FY25 revenue"
+    "evidence": "SIDRP zero-g parabolic tests in Florida (Dec 2024); AayulSAT built and flown on PSLV-C62, which failed to reach orbit (Jan 2026)"
    }
   },
   "factor_evidence": {
@@ -8255,7 +9694,7 @@
    },
    "ip": {
     "score": 3,
-    "rationale": "Patented SIDRP docking interface (company-stated)"
+    "rationale": "SIDRP docking/refuelling interface described as patented in 2021 (YourStory; Business Standard/Raksha Anirveda); patent number not found"
    }
   },
   "role": "Core",
@@ -8263,7 +9702,12 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "Indian Institute of Science (IISc)",
+    "relation": "Founders' education and previous employment"
+   }
+  ],
   "tech_approach": "Satellite docking and servicing",
   "investor_edges": [
    {
@@ -8279,7 +9723,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -8290,9 +9734,9 @@
  {
   "id": "astrophel",
   "company": "Astrophel Aerospace",
-  "founders": "Not named in source",
+  "founders": "Suyash Bafna, Immanuel Louis, Md Taj Baba",
   "institution": "",
-  "location": "India",
+  "location": "Pune",
   "sector": "Space & earth observation",
   "tech": "Reusable rocket technology and precision guidance; MoU with IN-SPACe for reusable engine development",
   "problem": "Indigenous launch capability",
@@ -8309,7 +9753,7 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 3,
-  "team": null,
+  "team": 3,
   "market": 3,
   "ip": null,
   "confidence": "Low",
@@ -8317,8 +9761,8 @@
   "diligence": true,
   "why": "Thin public detail; low priority until more is known.",
   "rdi_sector": "Space",
-  "trl": "Not estimable",
-  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl": "TRL 4 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · ₹6.84 Cr · 2025",
@@ -8352,11 +9796,31 @@
    "source": "https://inc42.com/company/astrophel-aerospace/financials/",
    "note": null
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "Built and fired an engine on a ₹6 lakh bootstrap budget",
+   "ISRO and IN-SPACe MoUs for testing and validation"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "No evidenced commercial or business-development leader",
+   "Founders' backgrounds thinly and inconsistently documented"
+  ],
+  "founders_detail": [
+   {
+    "name": "Suyash Bafna",
+    "role": "Co-founder",
+    "background": "Sources differ. Down To Earth says electronics and communication engineering and previously at ISRO. YourStory (Jul 2025) says he was a third-year (mechanical) engineering student when he designed a rocket injector during the COVID lockdown"
+   },
+   {
+    "name": "Immanuel Louis",
+    "role": "Co-founder",
+    "background": "Aerospace engineer from MIT Chennai; former member of the Agnikul Cosmos team (YourStory, Jul 2025)"
+   },
+   {
+    "name": "Md Taj Baba",
+    "role": "Co-founder",
+    "background": "Thermal systems expert with experience on India's Tejas fighter programme; employer not named (YourStory, Jul 2025)"
+   }
+  ],
   "rubric": {
    "business": [
     "Signed launch, data or servicing contracts, not just MoUs",
@@ -8390,25 +9854,35 @@
    "event_date": "2025",
    "source_date": "2025"
   },
-  "trl_estimate": null,
-  "trl_basis": "No engine test in coverage",
-  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl_estimate": "TRL 4 (est.)",
+  "trl_basis": "Semi-cryogenic engine test-fired Aug 2023 (YourStory, Jul 2025; Free Press Journal, Sep 2025). Indigenous cryo-pump testing at ISRO facilities announced Sep 2025. Turbopump-fed engine not yet tested.",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
-   "Pre-seed raised; IN-SPACe MoU"
+   "Semi-cryogenic engine test-fired (Aug 2023)",
+   "Cryogenic pump testing at an ISRO facility (Sep 2025)"
   ],
   "unproven": [
-   "Product clarity",
-   "Engine tests"
+   "Turbopump-fed engine performance",
+   "Product clarity and customers"
   ],
   "would_change": [
-   "Engine test results",
-   "Team details"
+   "Published thrust and burn-duration data",
+   "A turbopump-fed hot-fire"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 3,
+    "evidence": "Aerospace engineer ex-Agnikul plus a Tejas thermal-systems specialist; one founder possibly ex-ISRO (sources conflict)"
+   },
    "commercial": null,
-   "complementarity": null,
-   "execution": null
+   "complementarity": {
+    "score": 3,
+    "evidence": "Propulsion/aerospace, thermal systems and electronics/injector design skills split across three founders"
+   },
+   "execution": {
+    "score": 3,
+    "evidence": "Bootstrapped semi-cryogenic engine test-fire in Aug 2023 for about ₹6 lakh; cryo-pump testing at ISRO facilities (Sep 2025)"
+   }
   },
   "factor_evidence": {
    "fit": {
@@ -8426,10 +9900,27 @@
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "MIT Chennai (Anna University)",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Agnikul Cosmos",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "ISRO",
+    "relation": "Research: MoU for testing/certification of cryogenic pumps; pump testing at ISRO facilities"
+   },
+   {
+    "name": "IN-SPACe",
+    "relation": "Research: MoU on reusable launch vehicles and cryogenic propulsion (Aug 2025)"
+   }
+  ],
   "tech_approach": "Reusable launch vehicles",
   "investor_edges": [],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -8440,7 +9931,7 @@
  {
   "id": "dashamlabs",
   "company": "Dashamlabs",
-  "founders": "Not named in source",
+  "founders": "Ankit Jhanwar, Apoorv Balwani, Devakar Dhingra, Neha Hebalkar",
   "institution": "",
   "location": "Delhi",
   "sector": "Advanced materials & chemistry",
@@ -8459,9 +9950,9 @@
   "entry_window": "Next raise: Series A",
   "next_raise": "Next raise: Series A",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -8509,11 +10000,36 @@
    "source": "https://inc42.com/company/dashamlabs/financials/",
    "note": null
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "Direct link to the inventor of the underlying ARCI aerogel process",
+   "Balanced tech, commercial and scientific roles"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "No production, pilot or customer milestone evidenced yet",
+   "Formal ARCI licence not confirmed in any source"
+  ],
+  "founders_detail": [
+   {
+    "name": "Ankit Jhanwar",
+    "role": "Co-founder and CEO",
+    "background": "Harvard Business School and IIT Roorkee alumnus; 11+ years in technology and manufacturing (company site)"
+   },
+   {
+    "name": "Apoorv Balwani",
+    "role": "Co-founder and CTO",
+    "background": "Polymer Science graduate, IIT Roorkee; PhD Chemical Engineering, Clemson University (company site)"
+   },
+   {
+    "name": "Devakar Dhingra",
+    "role": "Co-founder and CCO",
+    "background": "9+ years in sales, strategy and business development (company site)"
+   },
+   {
+    "name": "Neha Hebalkar",
+    "role": "Inventor, Co-founder and honorary Scientific Advisor",
+    "background": "PhD Chemistry, Pune University (2003, thesis on aerogels); Scientist 'F' at ARCI Hyderabad; ARCI's first scientist-entrepreneur (ARCI pages)"
+   }
+  ],
   "rubric": {
    "business": [
     "Customer qualification trials passed",
@@ -8564,9 +10080,18 @@
    "EV or industrial customer"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 4,
+    "evidence": "CTO has Clemson ChemE PhD; inventor co-founder is ARCI scientist with aerogel PhD and two granted aerogel patents"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "CCO with 9+ years sales/BD; CEO 11+ years in tech and manufacturing; no named customers yet"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Distinct CEO (strategy/HBS), CTO (ChemE PhD), CCO (sales) and inventor-scientist roles (company site)"
+   },
    "execution": null
   },
   "factor_evidence": {
@@ -8578,14 +10103,34 @@
     "score": 4,
     "rationale": "EV battery safety creates aerogel demand"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Company claims 'fully Indian-patented' aerogel tech; co-founder Neha Hebalkar holds Indian patents 290370 and 305898, but assignment or licence to Dashamlabs is not confirmed"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Medium",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Roorkee",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Harvard Business School",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Clemson University",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "ARCI Hyderabad",
+    "relation": "Research: silica aerogel thermal insulation (inventor co-founder; listed as technology partner)"
+   }
+  ],
   "tech_approach": "Aerogels",
   "investor_edges": [
    {
@@ -8601,7 +10146,7 @@
     "date": null
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "3 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -8612,7 +10157,7 @@
  {
   "id": "flowatt",
   "company": "Flowatt Battery Science",
-  "founders": "Not named in source",
+  "founders": "Siddhartha Srivastava, Bikesh Jha, Vikash Singh",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Energy & climate",
@@ -8631,16 +10176,16 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 3,
-  "team": null,
+  "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": true,
   "why": "Needs primary research.",
   "rdi_sector": "Energy & climate action",
-  "trl": "Not estimable",
-  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · ₹2.2 Cr · Oct 2025",
@@ -8674,11 +10219,31 @@
    "source": "https://inc42.com/company/flowatt-battery-science/financials/",
    "note": null
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "Battery industry depth plus EV operating experience (Ola Electric)",
+   "Live BaaS deployments with fleet operators"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "Proprietary battery design still at proof-of-concept",
+   "No named customers in coverage"
+  ],
+  "founders_detail": [
+   {
+    "name": "Siddhartha Srivastava",
+    "role": "Co-founder",
+    "background": "IIT Bombay and IIM Ahmedabad alumnus; 19+ years at Myntra, Flipkart and Ola Electric (Autocar Pro)"
+   },
+   {
+    "name": "Bikesh Jha",
+    "role": "Co-founder",
+    "background": "IIT Bombay alumnus; 17+ years in lithium-ion battery and solar at SunEdison, Enphase and SAR Group (Autocar Pro)"
+   },
+   {
+    "name": "Vikash Singh",
+    "role": "Co-founder",
+    "background": "HEC Paris alumnus; prior leadership roles at Ola Electric, Treebo Hotels and Quickride (Autocar Pro)"
+   }
+  ],
   "rubric": {
    "business": [
     "Offtake or supply agreements with utilities, OEMs or developers",
@@ -8714,26 +10279,37 @@
    "event_date": "2025-10",
    "source_date": "2025-10"
   },
-  "trl_estimate": null,
-  "trl_basis": "Technology not described in coverage",
-  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "Battery-as-a-Service platform deployed on ~1,500 batteries across Indian cities (Autocar Pro/Entrackr, Oct 2025); in-house battery design proof-of-concept still being completed",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
+   "~1,500 batteries deployed under battery-as-a-service (Oct 2025)",
    "₹87 lakh FY25 revenue"
   ],
   "unproven": [
-   "What the technology is"
+   "In-house battery design beyond proof of concept",
+   "Named fleet customers"
   ],
   "would_change": [
-   "Product details",
-   "Customers"
+   "Named fleet contracts",
+   "Battery-health data across the deployed base"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 4,
+    "evidence": "IIT Bombay co-founder with 17+ years in Li-ion battery and solar (SunEdison, Enphase, SAR Group)"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "Founders from Flipkart, Myntra, Ola Electric; ~1,500 batteries deployed under BaaS; ₹87 lakh FY25 revenue"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Battery engineering founder plus two business/operations founders"
+   },
    "execution": {
     "score": 3,
-    "evidence": "₹87 lakh FY25 revenue"
+    "evidence": "~1,500 batteries deployed across cities (Oct 2025); own battery design PoC still being completed"
    }
   },
   "factor_evidence": {
@@ -8745,14 +10321,42 @@
     "score": 4,
     "rationale": "Large EV battery market"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Claims a proprietary battery assurance layer (health monitoring, lifecycle underwriting); no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "IIT Bombay",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "IIM Ahmedabad",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "HEC Paris",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Ola Electric",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "SunEdison / Enphase / SAR Group",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "PedalStart",
+    "relation": "Accelerator"
+   }
+  ],
   "tech_approach": "Battery systems",
   "investor_edges": [
    {
@@ -8762,7 +10366,7 @@
     "date": "2025-10"
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -8773,7 +10377,7 @@
  {
   "id": "neuralzome",
   "company": "Neuralzome Cybernetics",
-  "founders": "Mohan Shivam (and one other)",
+  "founders": "Mohan Sivam (also spelled Mohan Shivam), Aditya Shriwastava",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Robotics & automation",
@@ -8792,9 +10396,9 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -8852,15 +10456,30 @@
    "source": "https://inc42.com/company/neuralzome-cybernetics/financials/",
    "note": null
   },
-  "team_strengths": [],
+  "team_strengths": [
+   "Serial founder CEO (third startup) with robotics and vision depth",
+   "Software plus hardware product line already shipping revenue"
+  ],
   "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+   "No named deployment customers",
+   "Co-founder backgrounds rest on a single profile source",
+   "No agriculture-domain operator evidenced on the team"
   ],
   "founders_detail": [
    {
-    "name": "Mohan Shivam",
-    "role": "Co-founder",
-    "background": ""
+    "name": "Mohan Shivam (Mohan Sivam)",
+    "role": "Co-founder and CEO",
+    "background": "Electrical/electronics/communications engineering degree, Anna University; 10+ years in computer vision, graphics and robotics; founded GAMASOME (2013, ran about 8 years); consultant at Hero MotoCorp on connected vehicles and charging; co-founder and CTO of Flo Mobility"
+   },
+   {
+    "name": "Aditya Shriwastava",
+    "role": "Co-founder and CTO",
+    "background": "AI and industrial-robotics specialist (per yespress profile); listed as founder on Inc42"
+   },
+   {
+    "name": "Prasanna Venkatesan",
+    "role": "COO (named as co-founder in yespress profile only)",
+    "background": "Not in coverage"
    }
   ],
   "rubric": {
@@ -8916,12 +10535,21 @@
    "Interventions per operating hour"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 3,
+    "evidence": "CEO has 10+ years in computer vision and robotics, ex-CTO of Flo Mobility; CTO described as AI/industrial-robotics specialist"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "FY25 revenue ₹44.1 lakh; CEO ran own company for about 8 years; no named customers"
+   },
+   "complementarity": {
+    "score": 3,
+    "evidence": "CEO, CTO and COO roles split; CTO and COO backgrounds thinly evidenced"
+   },
    "execution": {
     "score": 3,
-    "evidence": "₹44 lakh FY25 revenue"
+    "evidence": "Product line (NeuralPilot, RedPill, Jeeno, Chitti); claims active field deployments; ₹44 lakh FY25 revenue"
    }
   },
   "factor_evidence": {
@@ -8933,14 +10561,34 @@
     "score": 4,
     "rationale": "Labour shortages drive demand"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "Proprietary claims only: NeuralPilot no-code autonomy stack and RedPill digital-twin simulator; no patents found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "Anna University",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Hero MotoCorp",
+    "relation": "Founder's previous employment (consultant)"
+   },
+   {
+    "name": "Flo Mobility",
+    "relation": "Founder's previous company"
+   },
+   {
+    "name": "IIM Ahmedabad CIIE",
+    "relation": "Investor/incubator"
+   }
+  ],
   "tech_approach": "Autonomy software for machines",
   "investor_edges": [
    {
@@ -8968,7 +10616,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -8979,7 +10627,7 @@
  {
   "id": "wankel",
   "company": "Wankel Energy Systems",
-  "founders": "Not named in source",
+  "founders": "Balachandran Raju, Prof. Satyanarayanan Seshadri",
   "institution": "IIT Madras incubated",
   "location": "Chennai",
   "sector": "Energy & climate",
@@ -9000,7 +10648,7 @@
   "fit": 4,
   "team": null,
   "market": 4,
-  "ip": null,
+  "ip": 4,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -9041,11 +10689,31 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "IIT Madras energy-research leadership on the founding team",
+   "Granted patents and 20+ trade secrets claimed"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "Operating founder/CEO backgrounds not documented",
+   "No completed pilots or named customers yet"
+  ],
+  "founders_detail": [
+   {
+    "name": "Balachandran Raju",
+    "role": "Co-founder",
+    "background": "Background not in coverage (ETV Bharat)"
+   },
+   {
+    "name": "Prof. Satyanarayanan Seshadri",
+    "role": "Co-founder & Advisor",
+    "background": "IIT Madras faculty; faculty head of The Energy Consortium, IIT Madras (ETV Bharat)"
+   },
+   {
+    "name": "Dr Sathya Menon",
+    "role": "Group CEO",
+    "background": "Background not in coverage (Dinamalar)"
+   }
+  ],
   "rubric": {
    "business": [
     "Offtake or supply agreements with utilities, OEMs or developers",
@@ -9097,7 +10765,10 @@
    "Payback period"
   ],
   "team_factors": {
-   "domain": null,
+   "domain": {
+    "score": 4,
+    "evidence": "Co-founder heads The Energy Consortium at IIT Madras; company holds three granted patents"
+   },
    "commercial": null,
    "complementarity": null,
    "execution": null
@@ -9111,7 +10782,10 @@
     "score": 4,
     "rationale": "Short-payback efficiency sells if the data holds"
    },
-   "ip": null
+   "ip": {
+    "score": 4,
+    "rationale": "Group CEO states three granted patents (US and India per ETV Bharat) plus 20+ trade secrets; numbers not found"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -9122,6 +10796,14 @@
    {
     "name": "IIT Madras",
     "relation": "Incubation"
+   },
+   {
+    "name": "IIT Madras",
+    "relation": "Founder's faculty affiliation (The Energy Consortium)"
+   },
+   {
+    "name": "Department of Science and Technology (DST)",
+    "relation": "Grant"
    }
   ],
   "tech_approach": "Rotary expanders for waste heat",
@@ -9133,7 +10815,7 @@
     "date": "2025-09"
    }
   ],
-  "team_basis": "0 of 4 team factors have evidence",
+  "team_basis": "1 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -9165,7 +10847,7 @@
   "fit": 4,
   "team": 4,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": false,
@@ -9197,7 +10879,7 @@
    "Cost per kWh versus diesel"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://umagine.co.in",
   "linkedin": null,
   "clients": {
    "status": "Potential",
@@ -9224,13 +10906,13 @@
   "founders_detail": [
    {
     "name": "Santosh Gurunath",
-    "role": "Co-founder",
-    "background": "Chemical engineer; led hydrogen production and safety at Shell; management consultant at McKinsey and BCG"
+    "role": "CEO & Co-founder",
+    "background": "Chemical engineer with ~13 years across oil and gas, solar, EV infrastructure and hydrogen; led hydrogen production and safety at Shell; management consultant at McKinsey and BCG"
    },
    {
     "name": "Laxmikant Banjarey",
     "role": "Co-founder",
-    "background": "Civil engineer; co-founded Arcatron Mobility (Frido) in 2014"
+    "background": "Civil engineer with 11+ years in assisted mobility, e-mobility and climate tech; co-founded Arcatron Mobility (Frido) in 2014"
    }
   ],
   "rubric": {
@@ -9307,7 +10989,10 @@
     "score": 4,
     "rationale": "Diesel replacement for backup power is a clear market"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "No patents found; claims a proprietary plug-and-play system architecture combining hydrogen, battery and solar, described as '100% indigenous'"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -9358,7 +11043,7 @@
  {
   "id": "greengrahi",
   "company": "GreenGrahi",
-  "founders": "Not named in source",
+  "founders": "Siddharth Sharma, Shivali Sugand",
   "institution": "",
   "location": "India",
   "sector": "Agri-bio",
@@ -9377,9 +11062,9 @@
   "entry_window": "Next raise: Series A",
   "next_raise": "Next raise: Series A",
   "fit": 4,
-  "team": null,
+  "team": 3,
   "market": 4,
-  "ip": null,
+  "ip": 2,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
@@ -9437,11 +11122,26 @@
    "source": "https://inc42.com/company/green-grahi/financials/",
    "note": "Total assets of ₹28 Cr suggest the bio-factory build is under way."
   },
-  "team_strengths": [],
-  "team_gaps": [
-   "Coverage and company profiles don't give enough detail to assess the team yet."
+  "team_strengths": [
+   "Complementary science and business education",
+   "Running production and B2B sales before the ₹32 Cr seed"
   ],
-  "founders_detail": [],
+  "team_gaps": [
+   "No prior industry operating roles documented for founders",
+   "Large-scale bio-factory not yet operational"
+  ],
+  "founders_detail": [
+   {
+    "name": "Siddharth Sharma",
+    "role": "Co-founder",
+    "background": "BITS Pilani graduate; Kellogg School of Management"
+   },
+   {
+    "name": "Shivali Sugand",
+    "role": "Co-founder",
+    "background": "TERI School of Advanced Studies graduate; Humboldt Fellow"
+   }
+  ],
   "rubric": {
    "business": [
     "Repeat purchase by farmers across seasons",
@@ -9490,12 +11190,21 @@
    "Feed offtake contracts"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
+   "domain": {
+    "score": 3,
+    "evidence": "Co-founder is a TERI SAS graduate and Humboldt Fellow; R&D partnerships with labs in India, Israel, Germany"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "Agri-bio products used by 10+ B2B clients; ₹73 lakh FY25 revenue; co-founder has Kellogg management education"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Science-track founder (TERI, Humboldt) paired with engineering/management founder (BITS, Kellogg)"
+   },
    "execution": {
     "score": 3,
-    "evidence": "₹73 lakh FY25 revenue; factory under construction"
+    "evidence": "Operating Roorkee production unit with pilots (2023); 150 TPD bio-factory under construction"
    }
   },
   "factor_evidence": {
@@ -9507,14 +11216,34 @@
     "score": 4,
     "rationale": "Feed protein demand is large; unit economics have sunk peers"
    },
-   "ip": null
+   "ip": {
+    "score": 2,
+    "rationale": "No patents found; claims proprietary insect biotechnology and 'Climate Cubes' rearing system (Entrepreneur India; ThePrint/BusinessWire)"
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
   "last_verified": "2026-10-31",
   "last_changed": "2026-10-31",
   "evidence_confidence": "Low",
-  "institutions": [],
+  "institutions": [
+   {
+    "name": "BITS Pilani",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Kellogg School of Management",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "TERI School of Advanced Studies",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "Alexander von Humboldt Foundation (Humboldt Fellowship)",
+    "relation": "Research: founder fellowship"
+   }
+  ],
   "tech_approach": "Insect protein (black soldier fly)",
   "investor_edges": [
    {
@@ -9524,7 +11253,7 @@
     "date": "2025-04"
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -9535,7 +11264,7 @@
  {
   "id": "quanfluence",
   "company": "Quanfluence",
-  "founders": "Sujoy Chakravarty, Ravi Mehta, Biman Chattopadhyay, Aditi Vaidya, Anil Prabhaka, Sandeep Goyal",
+  "founders": "Sujoy Chakravarty, Ravi Mehta, Biman Chattopadhyay, Anil Prabhakar, Sandeep Goyal, Aditi Vaidya",
   "institution": "IIT Madras incubated",
   "location": "Bengaluru",
   "sector": "Quantum",
@@ -9543,20 +11272,20 @@
   "problem": "Some optimisation problems are too slow on normal computers",
   "eli12": "An Ising machine uses light pulses that settle into the best arrangement by themselves, like marbles rolling into the lowest dips of a bumpy tray. Each settled pattern is an answer to a hard puzzle. The hard part is beating clever software on ordinary computers.",
   "signal_type": "Funding news",
-  "signal": "$10M led by Chiratae Ventures with Rainmatter and pi Ventures; about three optical Ising machines sold; 10–15 paid pilots",
-  "source_name": "Inc42",
-  "source_url": "https://inc42.com/?p=574902",
+  "signal": "$10M Series A led by Chiratae Ventures, with pi Ventures and Rainmatter",
+  "source_name": "Quantum Computing Report",
+  "source_url": "https://quantumcomputingreport.com/quanfluence-secures-10-million-to-build-full-stack-photonic-quantum-computer-architecture/",
   "signal_date": "2026-10-07",
   "first_found": "2026-10-31",
-  "funding": "$10M (Oct 2026), Chiratae Ventures; $2M seed (Dec 2024), pi Ventures",
+  "funding": "$10M Series A (Oct 2026), Chiratae Ventures; $2M seed (Dec 2024), pi Ventures",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": null,
+  "team": 4,
   "market": 3,
-  "ip": null,
+  "ip": 4,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
@@ -9565,8 +11294,8 @@
   "trl": "TRL 6–7 (est.)",
   "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
-  "round_tab": "Undisclosed",
-  "latest_round": "Undisclosed · $10M · Oct 2026",
+  "round_tab": "Series A",
+  "latest_round": "Series A · $10M · Oct 2026",
   "lead_investor": "Chiratae Ventures",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Six co-founders including Sujoy Chakravarty; founded 2021, IIT Madras incubated. Building a full-stack photonic quantum computer.",
@@ -9595,12 +11324,50 @@
     "10–15 corporate paid pilots (unnamed)"
    ]
   },
-  "website": null,
+  "website": "https://quanfluence.com",
   "linkedin": null,
   "financials": null,
-  "team_strengths": [],
-  "team_gaps": [],
-  "founders_detail": [],
+  "team_strengths": [
+   "Repeat founders with a prior exit to Synopsys",
+   "Academic quantum-optics depth from IIT Madras and IISER Mohali",
+   "Granted patent on core Ising machine"
+  ],
+  "team_gaps": [
+   "Named paying customers not public",
+   "Full-stack photonic quantum computer is a 4-5 year effort (per Inc42)"
+  ],
+  "founders_detail": [
+   {
+    "name": "Sujoy Chakravarty",
+    "role": "Co-founder",
+    "background": "Chip designer: nearly 12 years at Texas Instruments; co-built semiconductor IP startup Silabtech (2012-2018, sold to Synopsys); then at Synopsys (Inc42)"
+   },
+   {
+    "name": "Ravi Mehta",
+    "role": "Co-founder",
+    "background": "Ex-Texas Instruments; co-founder of Silabtech (sold to Synopsys 2018); co-inventor on Quanfluence's coherent Ising machine patent (Inc42; QuickCompany)"
+   },
+   {
+    "name": "Biman Chattopadhyay",
+    "role": "Co-founder",
+    "background": "Ex-Texas Instruments; co-founder of Silabtech (sold to Synopsys 2018); co-inventor on Quanfluence's coherent Ising machine patent (Inc42; QuickCompany)"
+   },
+   {
+    "name": "Anil Prabhakar",
+    "role": "Co-founder",
+    "background": "Professor at IIT Madras; originally explored the optical Ising machine concept in his research (Inc42)"
+   },
+   {
+    "name": "Sandeep Goyal",
+    "role": "Co-founder",
+    "background": "Professor at IISER Mohali; physics and quantum mechanics expertise (Inc42)"
+   },
+   {
+    "name": "Aditi Vaidya",
+    "role": "Co-founder",
+    "background": "Leads product marketing, sales and business operations; education/prior employers not in coverage (Inc42)"
+   }
+  ],
   "rubric": {
    "business": [
     "Paid pilots versus free proofs of concept",
@@ -9627,7 +11394,7 @@
    "IIT Madras"
   ],
   "last_funding": {
-   "stage": "Undisclosed",
+   "stage": "Series A",
    "amount": "$10M",
    "date": "2026-10",
    "lead": "Chiratae Ventures",
@@ -9635,7 +11402,7 @@
   },
   "latest_signal": {
    "kind": "Funding",
-   "summary": "$10M led by Chiratae Ventures (stage not stated); about three Ising machines sold",
+   "summary": "$10M Series A led by Chiratae Ventures, with pi Ventures and Rainmatter",
    "event_date": "2026-10-07",
    "source_date": "2026-10-07"
   },
@@ -9643,7 +11410,6 @@
   "trl_basis": "Optical Ising machines sold (about three) and 10–15 paid pilots",
   "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
-   "About three machines sold",
    "10–15 paid pilots"
   ],
   "unproven": [
@@ -9655,12 +11421,21 @@
    "Pilots converting to contracts"
   ],
   "team_factors": {
-   "domain": null,
-   "commercial": null,
-   "complementarity": null,
-   "execution": {
+   "domain": {
+    "score": 5,
+    "evidence": "Three ex-TI chip designers plus IIT Madras and IISER Mohali physics professors; the IIT Madras professor originated the OIM research"
+   },
+   "commercial": {
     "score": 4,
-    "evidence": "About three machines sold and 10–15 paid pilots"
+    "evidence": "Founders built and sold Silabtech to Synopsys (2018); dedicated co-founder leads sales and business operations"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Semiconductor/hardware engineering, quantum physics academia and a sales/business-ops lead"
+   },
+   "execution": {
+    "score": 5,
+    "evidence": "Prior exit (Silabtech to Synopsys); commercialised optical coherent Ising machine with API/SDK access; Indian patent granted Mar 2026"
    }
   },
   "factor_evidence": {
@@ -9672,7 +11447,10 @@
     "score": 3,
     "rationale": "Optimisation users exist; quantum advantage unproven"
    },
-   "ip": null
+   "ip": {
+    "score": 4,
+    "rationale": "Indian patent 'Coherent Optical Computing System and Method for Solving Ising Problems Using Electro-Optic Coherent Ising Machine'. Applicant Quanfluence Pvt Ltd; inventors B. Chattopadhyay and R. Mehta; filed 13 May 2025; granted 30 Mar 2026 (QuickCompany; app. no. 202541046159 from URL)."
+   }
   },
   "role": "Core",
   "assessed_on": "2026-10-31",
@@ -9683,6 +11461,26 @@
    {
     "name": "IIT Madras",
     "relation": "Incubation"
+   },
+   {
+    "name": "Texas Instruments",
+    "relation": "Founders' previous employment"
+   },
+   {
+    "name": "Silabtech",
+    "relation": "Founders' previous company (acquired by Synopsys, 2018)"
+   },
+   {
+    "name": "Synopsys",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "IISER Mohali",
+    "relation": "Founder's affiliation (faculty)"
+   },
+   {
+    "name": "IIT Madras",
+    "relation": "Research: optical Ising machine concept (Prof. Anil Prabhakar)"
    }
   ],
   "tech_approach": "Photonic Ising machines",
@@ -9690,7 +11488,7 @@
    {
     "name": "Chiratae Ventures",
     "role": "Lead",
-    "round": "Undisclosed",
+    "round": "Series A",
     "date": "2026-10"
    },
    {
@@ -9706,7 +11504,7 @@
     "date": null
    }
   ],
-  "team_basis": "1 of 4 team factors have evidence",
+  "team_basis": "4 of 4 team factors have evidence",
   "date_added": "2026-10-31",
   "last_substantive_update": "2026-10-31",
   "dates_note": "Event date is when it happened; source date is when it was reported.",
@@ -9717,7 +11515,7 @@
  {
   "id": "ather",
   "company": "Ather Energy",
-  "founders": "Not named in source",
+  "founders": "Tarun Mehta, Swapnil Jain",
   "institution": "IIT Madras incubated (first IITM-incubated company to go public)",
   "location": "Bengaluru",
   "sector": "Energy & climate",
@@ -9738,7 +11536,7 @@
   "fit": 3,
   "team": null,
   "market": 5,
-  "ip": null,
+  "ip": 5,
   "confidence": "Medium",
   "uncontested": "No: listed",
   "diligence": false,
@@ -9770,13 +11568,44 @@
    "Battery cost and in-house cell strategy"
   ],
   "peers_source": "Claude's comparison from general knowledge, not from the cited source",
-  "website": null,
+  "website": "https://atherenergy.com",
   "linkedin": null,
   "clients": null,
-  "financials": null,
+  "financials": {
+   "rows": [
+    {
+     "fy": "FY24",
+     "revenue": "₹1,753.8 Cr",
+     "net": "Loss ₹1,062.3 Cr (comprehensive loss)"
+    },
+    {
+     "fy": "FY25",
+     "revenue": "₹2,255 Cr",
+     "net": "Loss ₹812.3 Cr"
+    },
+    {
+     "fy": "FY26",
+     "revenue": "₹3,823 Cr (total income)",
+     "net": "Loss ₹517 Cr"
+    }
+   ],
+   "source": "https://www.autocarpro.in/news/ather-energy-fy26-revenue-climbs-66-percent-net-loss-at-517-crore-132392",
+   "note": "FY24-25 revenue from operations per Autocar Pro FY25 article (https://www.autocarpro.in/news/ather-energy-posts-%e2%82%b98123-crore-loss-in-fy25-despite-higher-revenues-126362); FY26 is total income, not operating revenue. FY26 volumes 2,62,942 units."
+  },
   "team_strengths": [],
   "team_gaps": [],
-  "founders_detail": [],
+  "founders_detail": [
+   {
+    "name": "Tarun Mehta",
+    "role": "Co-founder and CEO",
+    "background": "IIT Madras dual degree in Engineering Design (2012); worked at Ashok Leyland before founding Ather in 2013; six co-patents pending (Ather press bio)"
+   },
+   {
+    "name": "Swapnil Jain",
+    "role": "Co-founder and CTO",
+    "background": "IIT Madras alumnus; leads hardware and software integration (IITM Research Park page)"
+   }
+  ],
   "rubric": {
    "business": [
     "Offtake or supply agreements with utilities, OEMs or developers",
@@ -9840,7 +11669,10 @@
     "score": 5,
     "rationale": "Electric two-wheelers are a large market"
    },
-   "ip": null
+   "ip": {
+    "score": 5,
+    "rationale": "644 patents globally (604 families), 338 granted per GreyB patent analysis (Jul 2026)"
+   }
   },
   "role": "Benchmark",
   "assessed_on": "2026-10-31",
@@ -9851,6 +11683,10 @@
    {
     "name": "IIT Madras",
     "relation": "Incubation"
+   },
+   {
+    "name": "Ashok Leyland",
+    "relation": "Founder's previous employment"
    }
   ],
   "tech_approach": "Electric two-wheelers",

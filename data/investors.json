@@ -7,6 +7,13 @@
   "website": null
  },
  {
+  "id": "360-one-asset",
+  "name": "360 ONE Asset",
+  "type": "Sovereign or asset manager",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "3i-partners",
   "name": "3i Partners",
   "type": "Not classified",
@@ -119,6 +126,13 @@
   "website": null
  },
  {
+  "id": "baring-private-equity-partners-india",
+  "name": "Baring Private Equity Partners India",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "blackrock",
   "name": "BlackRock",
   "type": "Sovereign or asset manager",
@@ -196,6 +210,13 @@
   "website": null
  },
  {
+  "id": "dholakia-ventures",
+  "name": "Dholakia Ventures",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "ewor",
   "name": "EWOR",
   "type": "Accelerator or incubator",
@@ -226,6 +247,13 @@
  {
   "id": "finvolve",
   "name": "Finvolve",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "force-ventures",
+  "name": "Force Ventures",
   "type": "Not classified",
   "aliases": [],
   "website": null
@@ -272,6 +300,13 @@
   "aliases": [
    "IIMA Ventures CIIE"
   ],
+  "website": null
+ },
+ {
+  "id": "imm-investment",
+  "name": "IMM Investment",
+  "type": "Not classified",
+  "aliases": [],
   "website": null
  },
  {
@@ -359,6 +394,20 @@
   "website": null
  },
  {
+  "id": "luckbox-ventures",
+  "name": "Luckbox Ventures",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "m-g-catalyst",
+  "name": "M&G Catalyst",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "mela-ventures",
   "name": "Mela Ventures",
   "type": "Venture fund",
@@ -401,6 +450,13 @@
   "website": null
  },
  {
+  "id": "omidyar-network-india",
+  "name": "Omidyar Network India",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "peak-xv-partners",
   "name": "Peak XV Partners",
   "type": "Venture fund",
@@ -434,6 +490,20 @@
   "type": "Venture fund",
   "aliases": [],
   "website": "https://primevp.in"
+ },
+ {
+  "id": "promus-ventures",
+  "name": "Promus Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "radical-ventures",
+  "name": "Radical Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
  },
  {
   "id": "rainmatter",
@@ -492,6 +562,13 @@
   "website": "https://seedcamp.com"
  },
  {
+  "id": "seraphim",
+  "name": "Seraphim",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "shastra-vc",
   "name": "Shastra VC",
   "type": "Venture fund",
@@ -502,6 +579,13 @@
   "id": "sherpalo-ventures",
   "name": "Sherpalo Ventures",
   "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "sparrow-capital",
+  "name": "Sparrow Capital",
+  "type": "Not classified",
   "aliases": [],
   "website": null
  },
@@ -541,6 +625,13 @@
   "website": null
  },
  {
+  "id": "temasek",
+  "name": "Temasek",
+  "type": "Sovereign or asset manager",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "turbostart",
   "name": "Turbostart",
   "type": "Accelerator or incubator",
@@ -576,6 +667,13 @@
   "website": "https://www.vertexventures.sg"
  },
  {
+  "id": "windt-angels",
+  "name": "WindT Angels",
+  "type": "Angel network or platform",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "a99",
   "name": "a99",
   "type": "Not classified",
@@ -590,10 +688,24 @@
   "website": null
  },
  {
+  "id": "growx-ventures",
+  "name": "growX ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
   "id": "pi-ventures",
   "name": "pi Ventures",
   "type": "Venture fund",
   "aliases": [],
   "website": "https://piventures.in"
+ },
+ {
+  "id": "xto10x",
+  "name": "xto10x",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
  }
 ]

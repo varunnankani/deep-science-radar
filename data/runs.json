@@ -1,6 +1,14 @@
 [
  {
   "run_at": "2026-10-31",
+  "mode": "Overnight evidence pass",
+  "leads_added": 0,
+  "leads_updated": 51,
+  "excluded": 0,
+  "sources_checked": "Founder, patent, milestone and funding checks across Inc42 (people/financials), YourStory, Entrackr, company sites, Google Patents/QuickCompany, GreyB, Quantum Computing Report, Satellite Today, Pixxel press release, OfficeChai, BusinessWorld"
+ },
+ {
+  "run_at": "2026-10-31",
   "mode": "Evidence review",
   "leads_added": 0,
   "leads_updated": 52,
