@@ -148,8 +148,57 @@
 
   footer { border-top: 1px solid var(--rule); margin-top: 32px; padding: 20px 0 48px; font-size: 13px; color: var(--soft); }
   .err { color: #b3261e; padding: 20px; }
+
+  .ico { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 5px; vertical-align: -5px; margin-left: 6px; text-decoration: none; }
+  .ico svg { width: 15px; height: 15px; flex: none; min-width: 15px; }
+  .ico.li { background: #0a66c2; color: #fff; }
+  .ico.web { background: var(--chip); color: var(--ink); }
+  .ico.li.search { background: transparent; color: #0a66c2; border: 1.5px solid #0a66c2; }
+  .d-links { display: flex; gap: 4px; margin: -6px 0 12px; font-size: 13px; color: var(--soft); align-items: center; }
+  .d-links .ico { margin-left: 0; }
+  .d-high a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .scores { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .score-b { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; }
+  .score-b small { display: block; font-size: 12px; color: var(--soft); }
+  .score-b .bar { display: flex; gap: 3px; margin-top: 6px; }
+  .score-b .bar i { flex: 1; height: 6px; border-radius: 2px; background: var(--rule); }
+  .score-b .bar i.on { background: var(--oxide); }
+  .score-b b { font: 400 22px/1.1 var(--serif); }
+  .sg { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 14px; }
+  @media (max-width: 560px) { .sg { grid-template-columns: 1fr; } }
+  .sg h4 { margin: 0 0 6px; font: 600 13px var(--sans); }
+  .sg h4.s { color: var(--ok); } .sg h4.g { color: #a15c00; }
+  @media (prefers-color-scheme: dark) { .sg h4.g { color: #f0b45a; } }
+  .sg ul { margin: 0; padding-left: 18px; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+  .people { display: flex; flex-direction: column; gap: 8px; }
+  .person { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: start; background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; }
+  .person .av { width: 34px; height: 34px; border-radius: 50%; background: var(--oxide-wash); color: var(--oxide); font: 600 12px/34px var(--sans); text-align: center; }
+  .person b { font-weight: 600; } .person span { display: block; font-size: 13px; color: var(--soft); }
+  .clientlist { display: flex; flex-wrap: wrap; gap: 6px; }
+  .client { font-size: 13px; background: var(--sheet); border: 1px solid var(--rule); border-radius: 999px; padding: 4px 12px; }
+  .status { font-size: 12px; font-weight: 600; border-radius: 4px; padding: 1px 8px; margin-left: 8px; vertical-align: 2px; }
+  .status.named { background: #e3f3ea; color: #1f6b42; } .status.potential { background: var(--chip); color: var(--soft); }
+  @media (prefers-color-scheme: dark) { .status.named { background: #1d3a2a; color: #8fdcb0; } }
+  table.fin { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  table.fin th, table.fin td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--rule); }
+  table.fin th { font-size: 12px; font-weight: 500; color: var(--soft); }
+  .rub { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+  @media (max-width: 620px) { .rub { grid-template-columns: 1fr; } }
+  .rub div { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; }
+  .rub h4 { margin: 0 0 6px; font: 600 13px var(--sans); }
+  .rub ul { margin: 0; padding-left: 16px; font-size: 13px; display: flex; flex-direction: column; gap: 4px; }
+  /* network */
+  .net-wrap { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; position: relative; overflow: hidden; height: min(72vh, 760px); }
+  .net-wrap svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  .net-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; align-items: center; }
+  .net-legend button { display: inline-flex; align-items: center; gap: 6px; }
+  .net-legend .sw { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .net-tip { position: absolute; pointer-events: none; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 6px 10px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,.12); max-width: 260px; }
+  .net-tip span { display: block; color: var(--soft); font-size: 12px; }
+  .net-hint { position: absolute; left: 14px; bottom: 10px; font-size: 12px; color: var(--soft); }
   [hidden] { display: none !important; }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 </head>
 <body>
 <header class="mast">
@@ -161,6 +210,7 @@
     <nav aria-label="Pages">
       <button data-go="home" aria-current="page">Radar</button>
       <button data-go="directory">Directory</button>
+      <button data-go="network">Network</button>
       <button data-go="method">Method</button>
     </nav>
   </div>
@@ -204,6 +254,15 @@
       <p class="sec-note">All companies, newest signal first. Filter by sector or search by name, technology, founder or investor.</p>
       <div class="tools" id="tools-all"></div>
       <div class="dir" id="dir-all"></div>
+    </section>
+  </div>
+
+  <div id="page-network" hidden>
+    <section class="block">
+      <h2 class="sec">Network</h2>
+      <p class="sec-note">Who backs whom, where founders came from and how sectors cluster. Drag to move, scroll to zoom, click a company to open its profile, click an investor or institution to highlight its connections.</p>
+      <div class="net-legend" id="net-legend"></div>
+      <div class="net-wrap" id="net-wrap"><div class="net-tip" id="net-tip" hidden></div><div class="net-hint">Larger circles have more connections. Zoom in to see company names.</div></div>
     </section>
   </div>
 
@@ -290,7 +349,8 @@
 
   // ---------- pages
   const go = (name) => {
-    ['home', 'directory', 'method'].forEach((p) => { $('page-' + p).hidden = p !== name; });
+    ['home', 'directory', 'network', 'method'].forEach((p) => { $('page-' + p).hidden = p !== name; });
+    if (name === 'network') drawNetwork();
     document.querySelectorAll('.mast nav button').forEach((b) => b.setAttribute('aria-current', b.dataset.go === name ? 'page' : 'false'));
     if (location.hash.slice(1) !== name) history.replaceState(null, '', '#' + name);
     window.scrollTo(0, 0);
@@ -305,17 +365,52 @@
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer(); });
 
   const sec = (title, ...kids) => { const s = el('section', 'd-sec'); if (title) s.append(el('h3', null, title)); s.append(...kids); return s; };
+  // ---------- link helpers
+  const LI_SVG = '<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>';
+  const WEB_SVG = '<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+  const ico = (href, kind, label) => { const a = el('a', 'ico ' + kind); a.href = href; a.target = '_blank'; a.rel = 'noopener'; a.innerHTML = kind.startsWith('li') ? LI_SVG : WEB_SVG; a.setAttribute('aria-label', label); a.title = label; return a; };
+  const liPerson = (name, ctx) => ico('https://www.linkedin.com/search/results/people/?keywords=' + encodeURIComponent(name + (ctx ? ' ' + ctx : '')), 'li search', 'Find ' + name + ' on LinkedIn');
+  const liFirm = (name) => ico('https://www.linkedin.com/search/results/companies/?keywords=' + encodeURIComponent(name), 'li search', 'Find ' + name + ' on LinkedIn');
+  let FIRMS = {};
+  const firmNodes = (str) => {
+    const frag = document.createDocumentFragment();
+    if (!named(str)) { frag.append(str || 'Not named in coverage'); return frag; }
+    const parts = str.replace(/\(.*?\)/g, '').split(/,| and /).map((x) => x.trim()).filter(Boolean);
+    parts.forEach((p, i) => {
+      if (i) frag.append(i === parts.length - 1 ? ' and ' : ', ');
+      const known = Object.keys(FIRMS).find((k) => k.toLowerCase() === p.toLowerCase());
+      if (known && FIRMS[known]) { const a = el('a', null, p); a.href = FIRMS[known]; a.target = '_blank'; a.rel = 'noopener'; frag.append(a); } else frag.append(p);
+      frag.append(liFirm(p));
+    });
+    return frag;
+  };
+  const partnerNodes = (str, firm) => {
+    const frag = document.createDocumentFragment();
+    if (!named(str)) { frag.append(str || 'Not named in coverage'); return frag; }
+    str.split(/;\s*/).forEach((chunk, i) => {
+      if (i) frag.append(el('br'));
+      frag.append(chunk);
+      const nm = chunk.split(',')[0].replace(/\(.*?\)/g, '').trim();
+      const fm = (chunk.match(/\(([^)]+)\)/) || [])[1] || firm || '';
+      if (nm && !/^not named/i.test(nm)) frag.append(liPerson(nm, fm.replace(/[()]/g, '')));
+    });
+    return frag;
+  };
+
   function openProfile(c) {
     lastFocus = document.activeElement;
     drawer.replaceChildren();
     const top = el('div', 'd-top');
     const x = el('button', 'd-close', '×'); x.setAttribute('aria-label', 'Close profile'); x.addEventListener('click', closeDrawer);
     const nm = el('h2', 'd-name', c.company); nm.id = 'd-name';
+    const links = el('div', 'd-links');
+    if (c.website) links.append(ico(c.website, 'web', c.company + ' website'));
+    links.append(c.linkedin ? ico(c.linkedin, 'li', c.company + ' on LinkedIn') : liFirm(c.company));
+    if (c.website) { const w = el('span', null, c.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')); w.style.marginLeft = '6px'; links.append(w); }
     const hi = el('div', 'd-high');
-    [['Latest round', c.latest_round], ['Lead investor', c.lead_investor], ['Partner who led', c.lead_partner]].forEach(([k, v]) => {
-      const d = el('div'); d.append(el('small', null, k), el('strong', null, v || 'Not named in coverage')); hi.append(d);
-    });
-    top.append(x, el('div', 'd-sector', c.sector + ', ' + c.location), nm, hi);
+    const cell = (k, node) => { const d = el('div'); const s = el('strong'); s.append(node); d.append(el('small', null, k), s); return d; };
+    hi.append(cell('Latest round', document.createTextNode(c.latest_round)), cell('Lead investor', firmNodes(c.lead_investor)), cell('Partner who led', partnerNodes(c.lead_partner, c.lead_investor)));
+    top.append(x, el('div', 'd-sector', c.sector + ', ' + c.location), nm, links, hi);
 
     const body = el('div', 'd-body');
     const tags = el('div', 'tags');
@@ -328,29 +423,83 @@
     eli.append(el('strong', null, 'Explain it simply'), document.createTextNode(c.eli12));
     body.append(sec(null, eli));
 
+    // founders
     const fs = el('div');
-    const ini = initials(c.founders);
-    if (ini.length) { const row = el('div', 'initials'); ini.forEach((i) => row.append(el('span', null, i))); row.style.marginBottom = '10px'; fs.append(row); }
-    fs.append(el('p', null, c.founder_snapshot || c.founders));
-    const first = named(c.founders) ? c.founders.split(/,| and /)[0].replace(/\(.*?\)/g, '').trim() : '';
-    if (first && !(c.founder_snapshot || '').includes(first)) fs.append(el('p', 'muted', 'Founders: ' + c.founders));
-    if (c.institution) fs.append(el('p', 'muted', c.institution));
+    const ts = c.team_scores;
+    if (ts) {
+      const g = el('div', 'scores');
+      [['Domain depth', ts.domain], ['Has sold before', ts.commercial], ['Skills that complement', ts.complementarity], ['Execution so far', ts.execution]].forEach(([k, v]) => {
+        const b = el('div', 'score-b'); const bar = el('div', 'bar');
+        for (let i = 1; i <= 5; i++) bar.append(el('i', i <= v ? 'on' : ''));
+        b.append(el('small', null, k), el('b', null, v + '/5'), bar); g.append(b);
+      });
+      fs.append(g);
+    }
+    if ((c.team_strengths || []).length || (c.team_gaps || []).length) {
+      const sg = el('div', 'sg');
+      if ((c.team_strengths || []).length) { const d = el('div'); const u = el('ul'); c.team_strengths.forEach((t) => u.append(el('li', null, t))); d.append(el('h4', 's', 'Strengths'), u); sg.append(d); }
+      if ((c.team_gaps || []).length) { const d = el('div'); const u = el('ul'); c.team_gaps.forEach((t) => u.append(el('li', null, t))); d.append(el('h4', 'g', 'Gaps to close'), u); sg.append(d); }
+      fs.append(sg);
+    }
+    const ppl = (c.founders_detail && c.founders_detail.length) ? c.founders_detail
+      : (named(c.founders) ? c.founders.split(/,| and /).map((n) => ({ name: n.replace(/\(.*?\)/g, '').trim(), role: 'Founder', background: '' })).filter((p) => p.name) : []);
+    if (ppl.length) {
+      const list = el('div', 'people');
+      ppl.forEach((p) => {
+        const r = el('div', 'person'); const av = el('div', 'av', initials(p.name)[0] || '');
+        const info = el('div'); const b = el('b', null, p.name); info.append(b, liPerson(p.name, c.company.replace(/\(.*?\)/g, '').trim()));
+        info.append(el('span', null, [p.role, p.background].filter(Boolean).join('. ')));
+        r.append(av, info); list.append(r);
+      });
+      fs.append(list);
+    } else fs.append(el('p', null, c.founder_snapshot || 'Founders not named in coverage.'));
+    if (!ts) fs.append(el('p', 'muted', 'Team scores appear once there is enough public information about the founders.'));
+    fs.append(el('p', 'muted', 'LinkedIn icons open a search for the person at this company, so you can confirm the right profile.'));
     body.append(sec('Founders', fs));
 
     body.append(sec('Why it matters', el('p', 'why', c.why)));
+
+    // clients
+    if (c.clients && (c.clients.items || []).length) {
+      const h = el('h3', null, 'Clients'); h.append(el('span', 'status ' + (c.clients.status === 'Named' ? 'named' : 'potential'), c.clients.status === 'Named' ? 'Named in coverage' : 'Potential'));
+      const s = el('section', 'd-sec'); const cl = el('div', 'clientlist');
+      c.clients.items.forEach((t) => cl.append(el('span', 'client', t)));
+      s.append(h, cl); if (c.clients.note) s.append(el('p', 'muted', c.clients.note));
+      body.append(s);
+    }
+
+    // financials
+    const f = c.financials;
+    const fsec = el('div');
+    if (f && (f.rows || []).length) {
+      const t = el('table', 'fin'); const th = el('tr'); ['Year', 'Revenue', 'Net profit or loss'].forEach((x) => th.append(el('th', null, x)));
+      const tb = el('tbody'); f.rows.forEach((r) => { const tr = el('tr'); tr.append(el('td', null, r.fy), el('td', null, r.revenue), el('td', null, r.net)); tb.append(tr); });
+      const thead = el('thead'); thead.append(th); t.append(thead, tb); fsec.append(t);
+    } else fsec.append(el('p', null, 'No public financial figures found.'));
+    if (f && f.note) fsec.append(el('p', 'muted', f.note));
+    if (f && f.source) { const p = el('p', 'muted'); const a = el('a', null, 'Inc42 Datalabs'); a.href = f.source; a.target = '_blank'; a.rel = 'noopener'; p.append('Figures from company filings as compiled by ', a, '. Indian fiscal years end in March.'); fsec.append(p); }
+    body.append(sec('Financials', fsec));
+
+    // rubric
+    const rsec = el('div');
+    if (c.rubric) {
+      const rb = el('div', 'rub');
+      [['Business', c.rubric.business], ['Financial', c.rubric.financial], ['Technical', c.rubric.technical]].forEach(([k, arr]) => {
+        const d = el('div'); const u = el('ul'); (arr || []).forEach((t) => u.append(el('li', null, t))); d.append(el('h4', null, k), u); rb.append(d);
+      });
+      rsec.append(el('p', 'muted', 'The metrics that matter for a ' + c.sector.toLowerCase() + ' company, then the milestones specific to ' + c.company + '.'), rb);
+    }
+    const ol = el('ol', 'judge'); (c.judge_on || []).forEach((j) => ol.append(el('li', null, j)));
+    const nh = el('h4', null, 'Next milestones for ' + c.company); nh.style.cssText = 'margin:4px 0 10px;font:600 13px var(--sans)';
+    rsec.append(nh, ol);
+    body.append(sec('How to judge this company', rsec));
 
     const peers = c.global_peers || [];
     if (peers.length) {
       const g = el('div', 'peers');
       peers.forEach((p) => { const d = el('div', 'peer'); d.append(el('b', null, p.name), el('span', 'rg', p.region), el('p', null, p.note)); g.append(d); });
       body.append(sec('Who is doing this elsewhere', g, el('p', 'muted', "The radar's own comparison, not taken from the source.")));
-    } else if (c.peers_note) {
-      body.append(sec('Who is doing this elsewhere', el('p', 'muted', c.peers_note)));
-    }
-
-    const ol = el('ol', 'judge');
-    (c.judge_on || []).forEach((j) => ol.append(el('li', null, j)));
-    body.append(sec('What to judge them on next', ol));
+    } else if (c.peers_note) body.append(sec('Who is doing this elsewhere', el('p', 'muted', c.peers_note)));
 
     const kv = el('dl', 'kv');
     [['RDI sector', c.rdi_sector], ['Estimated TRL', c.trl], ['Eligibility', c.rdi_eligibility], ['Likely route', c.rdi_route + ', or a VC fund manager once named']]
@@ -365,6 +514,94 @@
     drawer.hidden = false;
     requestAnimationFrame(() => { drawer.classList.add('open'); scrim.classList.add('open'); x.focus(); });
     drawer.scrollTop = 0;
+  }
+
+  // ---------- network graph
+  let netDrawn = false;
+  const NET_TYPES = [
+    { k: 'company', label: 'Companies', color: '#2a4d9b', on: true },
+    { k: 'investor', label: 'Investors', color: '#d9a400', on: true },
+    { k: 'institution', label: 'Institutions', color: '#2f7a4f', on: true },
+    { k: 'sector', label: 'Sectors', color: '#8a929b', on: true },
+    { k: 'founder', label: 'Founders', color: '#b07ac9', on: false },
+  ];
+  function drawNetwork() {
+    if (!ALL.length || typeof d3 === 'undefined') return;
+    if (netDrawn) return; netDrawn = true;
+    const wrap = $('net-wrap'), tip = $('net-tip');
+    const W = wrap.clientWidth, H = wrap.clientHeight;
+    const nodesAll = new Map(), linksAll = [];
+    const add = (id, type, label, extra) => { if (!nodesAll.has(id)) nodesAll.set(id, { id, type, label, deg: 0, ...extra }); return nodesAll.get(id); };
+    ALL.forEach((c) => {
+      const cn = add('c:' + c.id, 'company', c.company, { ref: c });
+      const link = (id, type, label) => { add(id, type, label); linksAll.push({ source: cn.id, target: id, type }); };
+      (c.investors || []).forEach((i) => link('i:' + i, 'investor', i));
+      (c.institution_tags || []).forEach((u) => link('u:' + u, 'institution', u));
+      link('s:' + c.sector, 'sector', c.sector);
+      const ppl = (c.founders_detail && c.founders_detail.length) ? c.founders_detail.map((p) => p.name) : (named(c.founders) ? c.founders.split(/,| and /).map((n) => n.replace(/\(.*?\)/g, '').trim()).filter(Boolean) : []);
+      ppl.forEach((p) => link('f:' + p, 'founder', p));
+    });
+    linksAll.forEach((l) => { nodesAll.get(l.source).deg++; nodesAll.get(l.target).deg++; });
+    const on = Object.fromEntries(NET_TYPES.map((t) => [t.k, t.on]));
+    const color = Object.fromEntries(NET_TYPES.map((t) => [t.k, t.color]));
+    const leg = $('net-legend'); leg.replaceChildren();
+    NET_TYPES.forEach((t) => {
+      const b = el('button', 'chipbtn'); b.setAttribute('aria-pressed', String(t.on));
+      const sw = el('span', 'sw'); sw.style.background = t.color; b.append(sw, t.label);
+      b.addEventListener('click', () => { on[t.k] = !on[t.k]; b.setAttribute('aria-pressed', String(on[t.k])); update(); });
+      leg.append(b);
+    });
+    const svg = d3.select(wrap).append('svg').attr('viewBox', [0, 0, W, H]);
+    const g = svg.append('g');
+    const linkG = g.append('g').attr('stroke', 'currentColor').style('color', 'var(--soft)');
+    const nodeG = g.append('g');
+    const labelG = g.append('g').style('font', '11px var(--sans)').style('pointer-events', 'none');
+    const zoom = d3.zoom().scaleExtent([0.3, 4]).on('zoom', (e) => { g.attr('transform', e.transform); labelG.selectAll('text').style('display', (d) => d.type === 'company' && e.transform.k < 1.4 ? 'none' : null); });
+    svg.call(zoom);
+    const fit = () => {
+      const ns = sim.nodes(); if (!ns.length) return;
+      const x0 = d3.min(ns, (d) => d.x) - 40, x1 = d3.max(ns, (d) => d.x) + 120, y0 = d3.min(ns, (d) => d.y) - 30, y1 = d3.max(ns, (d) => d.y) + 30;
+      const k = Math.min(1.6, 0.95 / Math.max((x1 - x0) / W, (y1 - y0) / H));
+      svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k));
+    };
+    const sim = d3.forceSimulation().force('charge', d3.forceManyBody().strength((d) => d.type === 'sector' ? -140 : -45))
+      .force('center', d3.forceCenter(W / 2, H / 2)).force('x', d3.forceX(W / 2).strength(0.04)).force('y', d3.forceY(H / 2).strength(0.06)).force('collide', d3.forceCollide().radius((d) => r(d) + 3))
+      .force('link', d3.forceLink().id((d) => d.id).distance((l) => l.type === 'sector' ? 90 : 45).strength(0.5));
+    const r = (d) => d.type === 'company' ? 6 + Math.min(d.deg, 8) * 0.5 : d.type === 'founder' ? 3.5 : 4 + Math.sqrt(d.deg) * 2.6;
+    let focus = null;
+    function update() {
+      const nodes = [...nodesAll.values()].filter((n) => on[n.type]);
+      const ids = new Set(nodes.map((n) => n.id));
+      const links = linksAll.filter((l) => ids.has(l.source.id || l.source) && ids.has(l.target.id || l.target)).map((l) => ({ source: l.source.id || l.source, target: l.target.id || l.target, type: l.type }));
+      const ls = linkG.selectAll('line').data(links, (d) => d.source + '>' + d.target).join('line').attr('stroke-width', 1).attr('stroke-opacity', 0.25);
+      const ns = nodeG.selectAll('circle').data(nodes, (d) => d.id).join('circle')
+        .attr('r', r).attr('fill', (d) => color[d.type]).attr('stroke', 'var(--sheet)').attr('stroke-width', 1.5).style('cursor', 'pointer')
+        .on('mouseenter', (e, d) => { tip.hidden = false; tip.replaceChildren(document.createTextNode(d.label), el('span', null, d.type === 'company' ? d.ref.sector + ' · ' + d.ref.latest_round : d.deg + ' connection' + (d.deg === 1 ? '' : 's'))); })
+        .on('mousemove', (e) => { const [mx, my] = d3.pointer(e, wrap); tip.style.left = Math.min(mx + 14, wrap.clientWidth - 270) + 'px'; tip.style.top = (my + 12) + 'px'; })
+        .on('mouseleave', () => { tip.hidden = true; })
+        .on('click', (e, d) => { if (d.type === 'company') openProfile(d.ref); else { focus = focus === d.id ? null : d.id; highlight(); } })
+        .call(d3.drag().on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+          .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; }).on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+      const labelled = nodes.filter((n) => n.type === 'sector' || n.type === 'institution' || (n.type === 'investor' && n.deg >= 2) || n.type === 'company');
+      const lb = labelG.selectAll('text').data(labelled, (d) => d.id).join('text').text((d) => d.label)
+        .attr('fill', (d) => d.type === 'company' ? 'var(--soft)' : 'var(--ink)').attr('font-weight', (d) => d.type === 'company' ? 400 : 600)
+        .attr('font-size', (d) => d.type === 'company' ? 10 : 11.5).attr('dx', (d) => r(d) + 3).attr('dy', '0.35em')
+        .style('display', (d) => d.type === 'company' && d3.zoomTransform(svg.node()).k < 1.4 ? 'none' : null);
+      function highlight() {
+        if (!focus) { ns.attr('opacity', 1); ls.attr('stroke-opacity', 0.25); lb.attr('opacity', 1); return; }
+        const nb = new Set([focus]); links.forEach((l) => { const s = l.source.id || l.source, t = l.target.id || l.target; if (s === focus) nb.add(t); if (t === focus) nb.add(s); });
+        ns.attr('opacity', (d) => nb.has(d.id) ? 1 : 0.12); lb.attr('opacity', (d) => nb.has(d.id) ? 1 : 0.08);
+        ls.attr('stroke-opacity', (l) => ((l.source.id || l.source) === focus || (l.target.id || l.target) === focus) ? 0.9 : 0.05);
+      }
+      update.highlight = highlight; highlight();
+      sim.nodes(nodes).on('tick', () => {
+        ls.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y);
+        ns.attr('cx', (d) => d.x).attr('cy', (d) => d.y); lb.attr('x', (d) => d.x).attr('y', (d) => d.y);
+      });
+      sim.force('link').links(links);
+      sim.on('end', fit); sim.alpha(0.9).restart();
+    }
+    update();
   }
 
   // ---------- render pieces
@@ -441,7 +678,8 @@
 
   // ---------- load
   const get = (p) => fetch(p + '?v=' + Date.now(), { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(p + ' returned ' + r.status); return r.json(); });
-  Promise.all([get('data/leads.json'), get('data/runs.json')]).then(([leads, runs]) => {
+  Promise.all([get('data/leads.json'), get('data/runs.json'), get('data/firms.json').catch(() => ({}))]).then(([leads, runs, firms]) => {
+    FIRMS = firms || {};
     ALL = leads.map((l) => ({ ...l, round_tab: l.round_tab || 'Seed', combined: Math.round(WEIGHTS.reduce((s, w) => s + Number(l[w.k] || 0) * w.w, 0) * 20) }));
     $('f-total').textContent = ALL.length;
     $('f-sectors').textContent = new Set(ALL.map((c) => c.sector)).size;
@@ -451,7 +689,7 @@
     const feed = $('feed');
     feed.replaceChildren(...ALL.slice().sort(byDate).slice(0, NEW_COUNT).map(feedRow));
     renderStage(); renderAll();
-    const h = location.hash.slice(1); if (['directory', 'method'].includes(h)) go(h);
+    const h = location.hash.slice(1); if (['directory', 'network', 'method'].includes(h)) go(h);
   }).catch((err) => {
     $('feed').replaceChildren(el('p', 'err', 'The radar data did not load (' + err.message + '). If you opened this file from disk, serve the folder with "python3 -m http.server" and open it from localhost.'));
   });

@@ -17,9 +17,14 @@ To put it beside your existing site instead, copy the folder into your `<usernam
 
 The data updates when new versions of `data/leads.json`, `data/excluded.json` and `data/runs.json` are committed. The daily run can commit them for you once GitHub is connected to Claude and the repo name is added to the scheduled task. Until then, you can download fresh files from the Claude dashboard's Sources panel and upload them here.
 
+## Network page
+
+The Network tab draws companies, investors, institutions, sectors and (optionally) founders as a force-directed graph with d3, built from the `investors` and `institution_tags` fields in `leads.json`.
+
 ## Files
 
 - `data/leads.json`: one object per company, with source URL, scores (fit, team, market, IP, each 1–5), de-risking stage, explainer and RDI fields.
+- `data/firms.json`: investor firm websites used for links (only sites that were checked).
 - `data/excluded.json`: kept for compatibility; the directory now covers every stage.
 - `data/runs.json`: run log, newest first.
 
