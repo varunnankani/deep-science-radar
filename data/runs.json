@@ -1,0 +1,10 @@
+[
+ {
+  "run_at": "2026-10-31",
+  "mode": "First run: 12-month backfill",
+  "leads_added": 27,
+  "leads_updated": 0,
+  "excluded": 19,
+  "sources_checked": "Funding news (Inc42, Entrackr, YourStory, StartupTalky, Indian Startup News, BioSpectrum, Qubit Capital), IN-SPACe TAF, BIRAC/C-CAMP pages, Venture Center, IIT Madras and IISc incubator pages"
+ }
+]

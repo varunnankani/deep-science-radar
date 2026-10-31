@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deep Science Founder Radar</title>
+<meta name="description" content="Early-stage Indian deep science companies, found from public signals and scored the way an early investor would. Updated daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f5f1; --panel: #ffffff; --ink: #121a2b; --muted: #5b6475; --line: #e3e1da;
+    --navy: #14213d; --accent: #2f5bd3; --ok: #1d7a4f; --warn: #a3620a; --bad: #b3261e;
+    --chip: #eef0f4; --bar: #2f5bd3; --radius: 10px;
+    --serif: "Fraunces", Georgia, serif; --sans: "Inter", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1424; --panel: #141d31; --ink: #e8ebf2; --muted: #9aa3b5; --line: #26314a;
+      --navy: #0a101e; --accent: #7aa2ff; --ok: #5cc994; --warn: #e6a94a; --bad: #ff8a80; --chip: #1c2740; --bar: #7aa2ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; }
+  a { color: var(--accent); }
+  .band { background: var(--navy); color: #fff; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+  header.band .wrap { padding-top: 36px; padding-bottom: 32px; }
+  .eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; opacity: .7; margin: 0 0 8px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 4.5vw, 44px); line-height: 1.1; margin: 0 0 12px; }
+  .lede { margin: 0; max-width: 46rem; opacity: .85; font-size: 16px; }
+  .lede b { opacity: 1; font-weight: 600; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-top: 24px; }
+  .tile { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); padding: 14px 16px; }
+  .tile .k { font-size: 12px; opacity: .7; }
+  .tile .v { font-family: var(--serif); font-size: 34px; line-height: 1.15; font-variant-numeric: tabular-nums; }
+  .tile .n { font-size: 12px; opacity: .6; }
+  nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 24px 0 20px; flex-wrap: wrap; }
+  nav.tabs button { font: inherit; background: none; border: 0; border-bottom: 2px solid transparent; color: var(--muted); padding: 10px 14px; cursor: pointer; margin-bottom: -1px; }
+  nav.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight: 500; }
+  section[hidden] { display: none; }
+  .note { color: var(--muted); font-size: 13px; margin: 0 0 14px; max-width: 60rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .card h2, .card h3 { margin: 0; font-size: 17px; font-weight: 600; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .rank { font-size: 12px; color: var(--muted); }
+  .score { font-family: var(--serif); font-size: 30px; font-variant-numeric: tabular-nums; }
+  .score small { font-family: var(--sans); font-size: 12px; color: var(--muted); }
+  .meta { font-size: 13px; color: var(--muted); }
+  .why { margin: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 12px; background: var(--chip); border-radius: 999px; padding: 2px 10px; color: var(--muted); white-space: nowrap; }
+  .chip.ok { color: var(--ok); } .chip.warn { color: var(--warn); }
+  dl.kv { display: grid; grid-template-columns: max-content 1fr; gap: 3px 14px; font-size: 13px; margin: 0; }
+  dl.kv dt { color: var(--muted); } dl.kv dd { margin: 0; }
+  details.eli { border-top: 1px solid var(--line); padding-top: 8px; }
+  details.eli summary { cursor: pointer; font-size: 13px; color: var(--accent); font-weight: 500; }
+  details.eli p { margin: 8px 0 0; }
+  .src { font-size: 12px; color: var(--muted); }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; margin-top: 14px; }
+  .chart { position: relative; }
+  .bar-row { display: grid; grid-template-columns: minmax(120px, 42%) 1fr; align-items: center; gap: 10px; font-size: 13px; padding: 4px 0; }
+  .bar-row .lab { color: var(--muted); text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-row .track { display: flex; align-items: center; gap: 6px; }
+  .bar-row .fill { height: 14px; background: var(--bar); border-radius: 3px; min-width: 2px; }
+  .bar-row .num { font-variant-numeric: tabular-nums; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .controls select, .controls input { font: inherit; font-size: 13px; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; }
+  .controls input { flex: 1 1 220px; }
+  .tablebox { max-height: 560px; overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th { position: sticky; top: 0; background: var(--panel); text-align: left; font-weight: 500; color: var(--muted); padding: 9px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+  td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr.click { cursor: pointer; }
+  tbody tr.click:hover td, tbody tr.on td { background: var(--chip); }
+  .r { text-align: right; }
+  @media (max-width: 720px) { .hn { display: none; } }
+  #detail { margin-bottom: 14px; }
+  ul.list { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+  dl.gloss { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
+  dl.gloss dt { font-weight: 600; } dl.gloss dd { margin: 0; color: var(--muted); }
+  footer { color: var(--muted); font-size: 12px; padding: 32px 0 48px; }
+  .err { color: var(--bad); }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <p class="eyebrow">Varun Nankani · deeptech sourcing</p>
+    <h1>Deep Science Founder Radar</h1>
+    <p class="lede" id="lede">Early-stage Indian deep science companies, found from public signals and scored the way an early investor would.</p>
+    <div class="tiles">
+      <div class="tile"><div class="k">Leads tracked</div><div class="v" id="t-leads">—</div><div class="n">Pre-seed to pre-Series A</div></div>
+      <div class="tile"><div class="k">In the sweet spot</div><div class="v" id="t-sweet">—</div><div class="n">Working prototype or first pilot</div></div>
+      <div class="tile"><div class="k">RDI-eligible now</div><div class="v" id="t-rdi">—</div><div class="n">Estimated at TRL 4 or above</div></div>
+      <div class="tile"><div class="k">Uncontested</div><div class="v" id="t-unc">—</div><div class="n">No institutional investor yet</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="shortlist" aria-selected="true">Shortlist</button>
+    <button role="tab" data-tab="leads" aria-selected="false">All leads</button>
+    <button role="tab" data-tab="method" aria-selected="false">How it works</button>
+  </nav>
+
+  <section id="shortlist">
+    <p class="note">Top ten by combined score among companies at stages 1 to 3. Companies already scaling or selling are in All leads, flagged as possibly past an early investor's entry point. Open "Explain it simply" for the plain-English version.</p>
+    <div class="cards" id="cards"></div>
+    <div class="grid2">
+      <div class="card"><h2>Where the leads sit</h2><p class="note">Leads per sector.</p><div class="chart" id="c-sector"></div></div>
+      <div class="card"><h2>What surfaced them</h2><p class="note">The signal that first put each lead on the radar. Funding news finds companies after an investor has arrived; grants and incubators are where the early edge comes from.</p><div class="chart" id="c-signal"></div></div>
+    </div>
+  </section>
+
+  <section id="leads" hidden>
+    <div class="controls">
+      <select id="f-sector" aria-label="Sector"><option value="">All sectors</option></select>
+      <select id="f-stage" aria-label="Stage">
+        <option value="">All stages</option>
+        <option value="1">1 · Lab-validated science</option>
+        <option value="2">2 · Working prototype</option>
+        <option value="3">3 · Pilot / first silicon</option>
+        <option value="4">4 · Scale-up underway</option>
+        <option value="5">5 · Early revenue</option>
+      </select>
+      <select id="f-signal" aria-label="Signal"><option value="">All signals</option></select>
+      <input id="f-q" type="search" placeholder="Search company, technology, founder" aria-label="Search">
+    </div>
+    <p class="note">Click a row to see the explainer, RDI mapping and source.</p>
+    <div class="card" id="detail"></div>
+    <div class="tablebox">
+      <table>
+        <thead><tr>
+          <th><button data-sort="company">Company</button></th>
+          <th><button data-sort="sector">Sector</button></th>
+          <th class="r"><button data-sort="stage">Stage</button></th>
+          <th class="r"><button data-sort="combined">Score</button></th>
+          <th class="hn"><button data-sort="entry_window">Entry window</button></th>
+          <th class="hn"><button data-sort="rdi_eligibility">RDI</button></th>
+          <th class="hn"><button data-sort="confidence">Confidence</button></th>
+          <th class="hn"><button data-sort="signal_date">Signal date</button></th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h2>Seen but left out</h2>
+      <p class="note">Companies the radar found and set aside, with the reason.</p>
+      <div class="tablebox" style="max-height:320px">
+        <table><thead><tr><th>Company</th><th>Why it was left out</th></tr></thead><tbody id="excl"></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <section id="method" hidden>
+    <div class="grid2" style="margin-top:0">
+      <div class="card">
+        <h2>How a lead is scored</h2>
+        <p class="note">Four supporting scores, each 1 to 5, weighted into a combined score out of 100. The de-risking stage is not part of the score: it decides whether a company is early enough for the shortlist.</p>
+        <table><thead><tr><th>Score</th><th>Weight</th><th>What a 5 looks like</th></tr></thead><tbody id="weights"></tbody></table>
+      </div>
+      <div class="card">
+        <h2>De-risking stages</h2>
+        <table><thead><tr><th>Stage</th><th>Meaning</th><th>Estimated TRL</th></tr></thead><tbody>
+          <tr><td>1</td><td>Science validated in the lab</td><td>TRL 3–4</td></tr>
+          <tr><td>2</td><td>Working prototype</td><td>TRL 4–5</td></tr>
+          <tr><td>3</td><td>Pilot with a real customer, or first silicon</td><td>TRL 6–7</td></tr>
+          <tr><td>4</td><td>Manufacturing or scale-up underway</td><td>TRL 7–8</td></tr>
+          <tr><td>5</td><td>Early commercial revenue</td><td>TRL 8–9</td></tr>
+        </tbody></table>
+        <p class="note" style="margin:8px 0 0">Stages 2 and 3 are the sweet spot for an early investor. Stage 1 carries science risk; stages 4 and 5 may already be priced for a later round.</p>
+      </div>
+      <div class="card">
+        <h2>Mapping to the RDI scheme</h2>
+        <ul class="list">
+          <li>The ₹1 lakh crore Research, Development and Innovation fund lends long-term at low or nil interest to private R&amp;D in sunrise and strategic sectors. It is mostly debt, not grants or equity.</li>
+          <li>It funds projects at TRL 4 and above. Earlier work goes to ANRF's research programmes.</li>
+          <li>Companies apply through second-level fund managers: TDB for all sunrise and strategic sectors, BIRAC for biotech and allied areas. More fund managers have been approved but not yet named publicly.</li>
+          <li>TRL here is estimated from the de-risking stage, so eligibility is a first read, not a determination.</li>
+          <li>Why it matters to an investor: cheap non-dilutive debt can carry a company further on less equity, which changes the right round size.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Where the radar struggles</h2>
+        <ul class="list">
+          <li>Most leads come from funding news, which reports a company after an investor got there. The uncontested count is the honest measure of how early the radar really is.</li>
+          <li>Grant awardee lists (BIRAC BIG, NIDHI) are PDFs, published rarely and without company detail.</li>
+          <li>Incubator pages list names without dates or stage, so a new cohort is hard to tell from an old one.</li>
+          <li>Patents and papers almost never name a spin-out; linking them to a company needs a human.</li>
+          <li>News sites disagree on round labels, amounts and headquarters, and some only give a week or month, so some signal dates are approximate.</li>
+          <li>Founder and IP scores come from public reporting only. Where founders aren't named, the team score is capped and confidence marked low.</li>
+          <li>It cannot judge whether the science works. Those leads are flagged for technical diligence.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h2>Glossary</h2>
+      <dl class="gloss">
+        <dt>TRL</dt><dd>Technology Readiness Level, a 1 to 9 scale from an idea on paper to a product in use.</dd>
+        <dt>Pre-seed / seed</dt><dd>The first outside money in a company, usually to build and test the product.</dd>
+        <dt>Pre-Series A</dt><dd>A bridge round before the first big institutional round.</dd>
+        <dt>Tape-out</dt><dd>Sending a finished chip design to the factory to be made.</dd>
+        <dt>Fabless</dt><dd>A chip company that designs chips but pays a foundry to make them.</dd>
+        <dt>Precision fermentation</dt><dd>Using reprogrammed microbes to brew a specific ingredient, like a protein.</dd>
+        <dt>CRISPR</dt><dd>A tool that finds and cuts an exact piece of DNA.</dd>
+        <dt>Electrolyser</dt><dd>A machine that uses electricity to split water into hydrogen and oxygen.</dd>
+        <dt>Long-duration storage</dt><dd>Batteries that hold energy for many hours or days.</dd>
+        <dt>In-orbit servicing</dt><dd>Refuelling, repairing or moving satellites while they are in space.</dd>
+        <dt>Non-dilutive capital</dt><dd>Money that doesn't cost founders ownership, like grants or loans.</dd>
+        <dt>TDB / BIRAC</dt><dd>Government bodies that manage RDI money: TDB across strategic sectors, BIRAC for biotech.</dd>
+        <dt>IN-SPACe</dt><dd>India's agency that authorises and supports private space companies.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer id="foot">Data from public sources, each cited per lead. Scores are judgement calls, not facts. Not investment advice.</footer>
+</main>
+
+<script>
+(() => {
+  // Combined-score weights (fixed). Stage is a gate, not a weight.
+  const WEIGHTS = [
+    { factor: 'Fit with my deeptech thesis', key: 'fit', w: 0.30, five: 'Squarely in a target sector, B2B, solves an unglamorous infrastructure problem' },
+    { factor: 'Founder and team strength', key: 'team', w: 0.25, five: 'Scientist-founder with domain depth plus a commercial co-founder' },
+    { factor: 'Market size and urgency', key: 'market', w: 0.25, five: 'Large market with a regulatory or cost forcing function' },
+    { factor: 'IP defensibility', key: 'ip', w: 0.20, five: 'Filed or granted patents, or hard-to-copy process know-how' },
+  ];
+  const SHORTLIST = 10;
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const fmtDate = (s) => { const d = new Date(s + 'T00:00:00Z'); return isNaN(d) ? String(s) : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }); };
+  const winCls = (w) => (String(w).startsWith('Sweet') ? 'ok' : String(w).startsWith('May') ? 'warn' : '');
+  const st = { sector: '', stage: '', signal: '', q: '', sort: 'combined', dir: -1, selected: null };
+  let LEADS = [];
+
+  const kv = (pairs) => { const dl = el('dl', 'kv'); pairs.forEach(([k, v]) => dl.append(el('dt', null, k), el('dd', null, v))); return dl; };
+  const chips = (l) => {
+    const c = el('div', 'chips');
+    c.append(el('span', 'chip', 'Stage ' + l.stage + ' · ' + l.stage_label), el('span', 'chip ' + winCls(l.entry_window), l.entry_window), el('span', 'chip', l.confidence + ' confidence'));
+    if (l.diligence) c.append(el('span', 'chip warn', 'Needs technical diligence'));
+    return c;
+  };
+  const rdi = (l) => kv([['RDI sector', l.rdi_sector], ['Estimated TRL', l.trl], ['Eligibility', l.rdi_eligibility], ['Likely route', l.rdi_route + ', or a VC fund manager once named']]);
+  const eli = (l, open) => { const d = el('details', 'eli'); d.open = !!open; d.append(el('summary', null, 'Explain it simply'), el('p', null, l.eli12)); return d; };
+  const src = (l) => { const a = el('a', 'src', 'Source: ' + l.source_name + ' · ' + fmtDate(l.signal_date)); a.href = l.source_url; a.target = '_blank'; a.rel = 'noopener'; return a; };
+  const head = (l, prefix) => {
+    const t = el('div', 'top'); const left = el('div');
+    left.append(el('div', 'rank', prefix), el('h3', null, l.company));
+    const s = el('div', 'score', String(l.combined)); s.append(el('small', null, ' /100'));
+    t.append(left, s); return t;
+  };
+
+  const bars = (box, counts) => {
+    box.replaceChildren();
+    const max = Math.max(1, ...counts.map((c) => c.n));
+    counts.forEach((c) => {
+      const row = el('div', 'bar-row'); row.title = c.label + ': ' + c.n;
+      const track = el('div', 'track'); const fill = el('div', 'fill'); fill.style.width = (c.n / max * 85) + '%';
+      track.append(fill, el('span', 'num', String(c.n)));
+      row.append(el('div', 'lab', c.label), track); box.append(row);
+    });
+  };
+  const countBy = (key) => Object.entries(LEADS.reduce((a, l) => (a[l[key]] = (a[l[key]] || 0) + 1, a), {}))
+    .map(([label, n]) => ({ label, n })).sort((a, b) => b.n - a.n || a.label.localeCompare(b.label));
+
+  function renderShortlist() {
+    const top = LEADS.filter((l) => l.rank && l.rank <= SHORTLIST).sort((a, b) => a.rank - b.rank);
+    $('cards').replaceChildren(...top.map((l) => {
+      const c = el('article', 'card');
+      c.append(head(l, '#' + l.rank + ' · ' + l.sector), el('div', 'meta', l.tech + ' · ' + l.location), el('p', 'why', l.why), chips(l), rdi(l), eli(l, false), src(l));
+      return c;
+    }));
+    bars($('c-sector'), countBy('sector'));
+    bars($('c-signal'), countBy('signal_type'));
+  }
+
+  function renderDetail() {
+    const l = LEADS.find((d) => d.id === st.selected) || LEADS.slice().sort((a, b) => b.combined - a.combined)[0];
+    const box = $('detail');
+    if (!l) { box.replaceChildren(); return; }
+    box.replaceChildren(head(l, l.sector + ' · ' + l.location), el('div', 'meta', l.tech), el('p', 'why', l.why), chips(l), eli(l, true),
+      kv([['Problem', l.problem], ['Founders', l.founders], ['Institution', l.institution || 'None named'], ['Signal', l.signal_type + ': ' + l.signal],
+          ['Latest funding', l.funding], ['Institutional investor yet?', l.uncontested],
+          ['Scores', 'Fit ' + l.fit + ' · Team ' + l.team + ' · Market ' + l.market + ' · IP ' + l.ip], ['First found', fmtDate(l.first_found)]]),
+      rdi(l), src(l));
+  }
+
+  function renderTable() {
+    let rows = LEADS.filter((l) => (!st.sector || l.sector === st.sector) && (!st.stage || String(l.stage) === st.stage) &&
+      (!st.signal || l.signal_type === st.signal) &&
+      (!st.q || [l.company, l.tech, l.founders, l.location, l.institution].join(' ').toLowerCase().includes(st.q)));
+    const k = st.sort;
+    rows.sort((a, b) => { const av = a[k], bv = b[k]; const c = typeof av === 'number' && typeof bv === 'number' ? av - bv : String(av).localeCompare(String(bv)); return c * st.dir || a.company.localeCompare(b.company); });
+    $('rows').replaceChildren(...rows.map((l) => {
+      const tr = el('tr', 'click' + (st.selected === l.id ? ' on' : ''));
+      const w = el('td', 'hn', l.entry_window); w.style.color = winCls(l.entry_window) === 'ok' ? 'var(--ok)' : winCls(l.entry_window) === 'warn' ? 'var(--warn)' : '';
+      tr.append(el('td', null, l.company), el('td', null, l.sector), el('td', 'r', String(l.stage)), el('td', 'r', String(l.combined)), w,
+        el('td', 'hn', l.rdi_eligibility), el('td', 'hn', l.confidence), el('td', 'hn', fmtDate(l.signal_date)));
+      tr.addEventListener('click', () => { st.selected = l.id; renderTable(); renderDetail(); $('detail').scrollIntoView({ behavior: 'smooth', block: 'nearest' }); });
+      return tr;
+    }));
+  }
+
+  function showTab(name) {
+    document.querySelectorAll('nav.tabs button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
+    ['shortlist', 'leads', 'method'].forEach((s) => { $(s).hidden = s !== name; });
+    history.replaceState(null, '', '#' + name);
+  }
+  document.querySelectorAll('nav.tabs button').forEach((b) => b.addEventListener('click', () => showTab(b.dataset.tab)));
+  const h = location.hash.slice(1); if (['shortlist', 'leads', 'method'].includes(h)) showTab(h);
+
+  $('f-stage').addEventListener('change', (e) => { st.stage = e.target.value; renderTable(); });
+  $('f-sector').addEventListener('change', (e) => { st.sector = e.target.value; renderTable(); });
+  $('f-signal').addEventListener('change', (e) => { st.signal = e.target.value; renderTable(); });
+  $('f-q').addEventListener('input', (e) => { st.q = e.target.value.trim().toLowerCase(); renderTable(); });
+  document.querySelectorAll('[data-sort]').forEach((b) => b.addEventListener('click', () => {
+    const k = b.dataset.sort;
+    if (st.sort === k) st.dir *= -1; else { st.sort = k; st.dir = ['combined', 'stage', 'signal_date'].includes(k) ? -1 : 1; }
+    renderTable();
+  }));
+
+  $('weights').replaceChildren(...WEIGHTS.map((w) => { const tr = el('tr'); tr.append(el('td', null, w.factor), el('td', null, Math.round(w.w * 100) + '%'), el('td', null, w.five)); return tr; }));
+
+  const get = (p) => fetch(p + '?v=' + Date.now(), { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(p + ' ' + r.status); return r.json(); });
+  Promise.all([get('data/leads.json'), get('data/excluded.json'), get('data/runs.json')]).then(([leads, excluded, runs]) => {
+    LEADS = leads.map((l) => ({ ...l, combined: Math.round(WEIGHTS.reduce((s, w) => s + Number(l[w.key]) * w.w, 0) * 20) }));
+    const early = LEADS.filter((l) => Number(l.stage) <= 3).sort((a, b) => b.combined - a.combined || a.company.localeCompare(b.company));
+    early.forEach((l, i) => { l.rank = i + 1; });
+
+    const sweet = LEADS.filter((l) => l.stage === 2 || l.stage === 3).length;
+    const unc = LEADS.filter((l) => String(l.uncontested).startsWith('Yes')).length;
+    $('t-leads').textContent = LEADS.length;
+    $('t-sweet').textContent = sweet;
+    $('t-rdi').textContent = LEADS.filter((l) => String(l.rdi_eligibility).startsWith('Eligible')).length;
+    $('t-unc').textContent = unc;
+    const last = runs[0];
+    const lede = $('lede');
+    lede.append(' ');
+    lede.append(el('b', null, String(sweet)), ' of ', el('b', null, String(LEADS.length)), ' leads sit in the prototype-to-pilot sweet spot, and ',
+      el('b', null, String(unc)), ' were found before any institutional investor.');
+    if (last) lede.append(' Last run ', el('b', null, fmtDate(last.run_at)), '.');
+
+    countBy('sector').forEach((c) => $('f-sector').append(new Option(c.label, c.label)));
+    countBy('signal_type').forEach((c) => $('f-signal').append(new Option(c.label, c.label)));
+    $('excl').replaceChildren(...excluded.map((e) => { const tr = el('tr'); tr.append(el('td', null, e.company), el('td', null, e.reason)); return tr; }));
+    if (last) $('foot').prepend(el('div', null, 'Last run ' + fmtDate(last.run_at) + ' (' + last.mode + '): ' + last.leads_added + ' added, ' + last.leads_updated + ' updated. Sources checked: ' + last.sources_checked + '.'));
+
+    renderShortlist(); renderTable(); renderDetail();
+  }).catch((err) => {
+    $('cards').replaceChildren(el('p', 'err', 'Could not load the radar data (' + err.message + '). If you opened this file directly from disk, serve the folder instead, for example with "python3 -m http.server".'));
+  });
+})();
+</script>
+</body>
+</html>

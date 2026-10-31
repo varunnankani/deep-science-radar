@@ -1,0 +1,97 @@
+[
+ {
+  "company": "QpiAI",
+  "reason": "Past stage filter: Series A ($32M) already raised",
+  "n": 1
+ },
+ {
+  "company": "QNu Labs",
+  "reason": "Past stage filter: Series A1 (₹200 Cr)",
+  "n": 2
+ },
+ {
+  "company": "Vervesemi",
+  "reason": "Past stage filter: Series A ($10M)",
+  "n": 3
+ },
+ {
+  "company": "HrdWyr",
+  "reason": "Past stage filter: Series A ($13M)",
+  "n": 4
+ },
+ {
+  "company": "SatSure",
+  "reason": "Past stage filter: later-stage company (surfaced via IN-SPACe grant)",
+  "n": 5
+ },
+ {
+  "company": "OrbitAID",
+  "reason": "Signal date couldn't be verified; likely older than 12 months",
+  "n": 6
+ },
+ {
+  "company": "Inbound Aerospace",
+  "reason": "Funding signal older than the 12-month backfill window",
+  "n": 7
+ },
+ {
+  "company": "SatLeo Labs",
+  "reason": "Funding signal older than the 12-month backfill window",
+  "n": 8
+ },
+ {
+  "company": "Orbitt Space",
+  "reason": "Funding signal older than the 12-month backfill window",
+  "n": 9
+ },
+ {
+  "company": "Omspace",
+  "reason": "Funding signal older than the 12-month backfill window",
+  "n": 10
+ },
+ {
+  "company": "Astrophel Aerospace",
+  "reason": "Funding signal older than the 12-month backfill window",
+  "n": 11
+ },
+ {
+  "company": "Dashamlabs",
+  "reason": "Signal from Oct 2025, just outside the window",
+  "n": 12
+ },
+ {
+  "company": "Flowatt Battery Science",
+  "reason": "Signal from Oct 2025, just outside the window",
+  "n": 13
+ },
+ {
+  "company": "Neuralzome Cybernetics",
+  "reason": "Funding signal older than the 12-month backfill window",
+  "n": 14
+ },
+ {
+  "company": "Wankel Energy Systems",
+  "reason": "No date on the funding signal found",
+  "n": 15
+ },
+ {
+  "company": "H2 Carbon Zero",
+  "reason": "No date on the funding signal found",
+  "n": 16
+ },
+ {
+  "company": "GreenGrahi",
+  "reason": "No date on the funding signal found",
+  "n": 17
+ },
+ {
+  "company": "Quanfluence",
+  "reason": "Funding date couldn't be verified",
+  "n": 18
+ },
+ {
+  "company": "OneARVO",
+  "reason": "Source didn't describe the technology well enough to score",
+  "n": 19
+ }
+]
