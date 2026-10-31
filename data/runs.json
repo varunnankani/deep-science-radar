@@ -1,6 +1,14 @@
 [
  {
   "run_at": "2026-10-31",
+  "mode": "Directory expansion: all stages",
+  "leads_added": 25,
+  "leads_updated": 27,
+  "excluded": 0,
+  "sources_checked": "Lead-investor and founder checks across Inc42, YourStory, Entrackr, BioSpectrum, StartupTalky, Indian Startup News, Antler; later-stage rounds from Entrepreneur India, Outlook Business, Angel One"
+ },
+ {
+  "run_at": "2026-10-31",
   "mode": "First run: 12-month backfill",
   "leads_added": 27,
   "leads_updated": 0,

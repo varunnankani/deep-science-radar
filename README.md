@@ -1,6 +1,6 @@
 # Deep Science Founder Radar
 
-Early-stage Indian deep science companies, found from public signals (grants, incubators, patents, papers, small funding rounds) and scored the way an early investor would. Each lead has a plain-English explainer and a mapping to India's RDI scheme.
+A directory of Indian deep science companies from pre-seed to listed. Each profile covers what the company builds (with a plain-English explainer), the founders, the latest round with its lead investor and partner, parallel companies abroad, what to judge it on next, and its fit with India's RDI scheme.
 
 The site is static: `index.html` reads three JSON files in `data/`. A daily scheduled Claude run searches for new signals, updates those files, and emails a digest.
 
@@ -20,10 +20,10 @@ The data updates when new versions of `data/leads.json`, `data/excluded.json` an
 ## Files
 
 - `data/leads.json`: one object per company, with source URL, scores (fit, team, market, IP, each 1–5), de-risking stage, explainer and RDI fields.
-- `data/excluded.json`: companies seen but left out, with the reason.
+- `data/excluded.json`: kept for compatibility; the directory now covers every stage.
 - `data/runs.json`: run log, newest first.
 
-The combined score (out of 100) is computed in the page: fit 30%, team 25%, market 25%, IP 20%. Stage is a gate for the shortlist (stages 1–3), not a weight.
+The radar score (out of 100) is computed in the page: fit 30%, team 25%, market 25%, IP 20%. Each company is filed under the stage of its latest known round (`round_tab`).
 
 ## Preview locally
 

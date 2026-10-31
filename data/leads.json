@@ -18,7 +18,7 @@
   "funding": "$2.1M pre-seed (Feb 2026), pi Ventures",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Seed (reported in talks for ~$15M)",
   "fit": 5,
   "team": 4,
   "market": 4,
@@ -30,12 +30,36 @@
   "rdi_sector": "Robotics",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $2.1M · Feb 2026",
+  "lead_investor": "pi Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Three IIT Kanpur engineers; Vishrant Dave is CEO, Ayush Ranjan CTO. Founded 2024; team of about 13.",
+  "next_raise": "Next raise: Seed (reported in talks for ~$15M)",
+  "global_peers": [
+   {
+    "name": "OC Robotics",
+    "region": "UK",
+    "note": "Snake-arm robots for aerospace inspection; acquired by GE Aviation in 2017"
+   },
+   {
+    "name": "HiBot",
+    "region": "Japan",
+    "note": "Snake-like inspection robots for industrial plants"
+   }
+  ],
+  "judge_on": [
+   "Paid pilots signed out of the 10–12 targeted, and with which industries",
+   "Arm survival in heat and chemical exposure during real tank entries",
+   "Price per inspection versus a human crew with permits and shutdown time"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "astrobase",
   "company": "Astrobase Space Technologies",
-  "founders": "CoinDCX co-founder with ex-ISRO scientists (names not in source)",
+  "founders": "Neeraj Khandelwal (CoinDCX co-founder) with ex-ISRO scientists Devakumar Thammisetty, Pawan Kumar, Prashant M",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Space & earth observation",
@@ -51,7 +75,7 @@
   "funding": "~$7M early round (2025) plus IN-SPACe TAF award",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 5,
   "team": 4,
   "market": 4,
@@ -63,7 +87,31 @@
   "rdi_sector": "Space",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · ~$10M · Jul 2025; IN-SPACe TAF award Jun 2026",
+  "lead_investor": "BanyanCo",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Co-founded by CoinDCX co-founder Neeraj Khandelwal with senior ISRO scientists Devakumar Thammisetty, Pawan Kumar and Prashant M; about 10 ex-ISRO scientists on board.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "SpaceX Raptor",
+    "region": "US",
+    "note": "The only full-flow staged-combustion engine to have flown"
+   },
+   {
+    "name": "Stoke Space",
+    "region": "US",
+    "note": "Reusable launch vehicle with a novel full-flow engine"
+   }
+  ],
+  "judge_on": [
+   "Hot-fire test duration and number of restarts on the full-flow engine",
+   "Engine cost per tonne of thrust versus ISRO and global peers",
+   "A launch-vehicle customer or anchor contract beyond grants"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "takeme2space",
@@ -84,7 +132,7 @@
   "funding": "₹5.5 Cr pre-seed (2025), Seafund; IN-SPACe TAF award",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Seed",
   "fit": 5,
   "team": 3,
   "market": 4,
@@ -96,12 +144,36 @@
   "rdi_sector": "Space",
   "trl": "TRL 6–7",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · ₹5.5 Cr · 2025; IN-SPACe TAF award Jun 2026",
+  "lead_investor": "Seafund",
+  "lead_partner": "Manoj Kumar Agarwal, Managing Partner",
+  "founder_snapshot": "Founder-CEO Ronak Kumar Samantray started it in 2024; 17+ people; has flown payloads on ISRO's POEM platform twice.",
+  "next_raise": "Next raise: Seed",
+  "global_peers": [
+   {
+    "name": "Starcloud (formerly Lumen Orbit)",
+    "region": "US",
+    "note": "Data centres in orbit"
+   },
+   {
+    "name": "Planet Labs",
+    "region": "US",
+    "note": "Onboard processing on Earth-observation satellites"
+   }
+  ],
+  "judge_on": [
+   "Number of paying users on the MOI-1 in-space AI lab against its 15-client target",
+   "Compute delivered per watt in orbit versus downlinking raw data",
+   "Whether revenue actually doubles over the next 12 months as guided"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "aule",
   "company": "Aule Space",
-  "founders": "Not named in source",
+  "founders": "Jay Panchal, Nithyaa Giri, Hrishit Tambi",
   "institution": "",
   "location": "India",
   "sector": "Space & earth observation",
@@ -117,7 +189,7 @@
   "funding": "$2M pre-seed, pi Ventures; ~₹80L IN-SPACe seed",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Seed (~$5M signalled)",
   "fit": 5,
   "team": 4,
   "market": 4,
@@ -129,7 +201,31 @@
   "rdi_sector": "Space",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $2M · Jan 2026",
+  "lead_investor": "pi Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founded 2024 by Jay Panchal, Nithyaa Giri and Hrishit Tambi. Angels include Tonbo Imaging CEO Arvind Lakshmikumar and former Intelsat board member Eash Sundaram.",
+  "next_raise": "Next raise: Seed (~$5M signalled)",
+  "global_peers": [
+   {
+    "name": "Northrop Grumman SpaceLogistics (MEV)",
+    "region": "US",
+    "note": "Docks with GEO satellites to extend their life"
+   },
+   {
+    "name": "Astroscale",
+    "region": "Japan",
+    "note": "In-orbit servicing and debris removal"
+   }
+  ],
+  "judge_on": [
+   "Docking demonstration mission launched and successful (targeted 2027)",
+   "A letter of intent or pre-order from a GEO satellite operator",
+   "Cost per year of life extension versus replacing the satellite"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "sanyark",
@@ -150,7 +246,7 @@
   "funding": "$500K pre-seed, AUM Ventures",
   "stage": 1,
   "stage_label": "Lab-validated science",
-  "entry_window": "Early: science risk",
+  "entry_window": "Next raise: Seed",
   "fit": 4,
   "team": 3,
   "market": 3,
@@ -162,7 +258,31 @@
   "rdi_sector": "Space",
   "trl": "TRL 3–4",
   "rdi_eligibility": "Approaching (TRL 3–4)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $500K · Feb 2026",
+  "lead_investor": "AUM Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Seed",
+  "global_peers": [
+   {
+    "name": "Xona Space Systems",
+    "region": "US",
+    "note": "LEO navigation constellation as a GPS alternative"
+   },
+   {
+    "name": "TrustPoint",
+    "region": "US",
+    "note": "Low-orbit navigation satellites"
+   }
+  ],
+  "judge_on": [
+   "First satellite in orbit and signal quality",
+   "Government or defence anchor customer for navigation services",
+   "Constellation capital plan and how much is non-dilutive"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "dream-aerospace",
@@ -183,7 +303,7 @@
   "funding": "₹10 Cr ($1.2M) pre-Series A",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 4,
   "team": 3,
   "market": 3,
@@ -195,12 +315,36 @@
   "rdi_sector": "Space",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · ₹10 Cr · Jun 2026",
+  "lead_investor": "Not named in coverage",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Enpulsion",
+    "region": "Austria",
+    "note": "Electric thrusters for small satellites"
+   },
+   {
+    "name": "Exotrail",
+    "region": "France",
+    "note": "Propulsion and in-space mobility for smallsats"
+   }
+  ],
+  "judge_on": [
+   "ATOM thruster passing space qualification",
+   "CUBEHOOD demo flown and performing",
+   "Repeat orders from satellite builders"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "tattvam",
   "company": "Tattvam AI",
-  "founders": "Bragadeesh Suresh Babu",
+  "founders": "Bragadeesh Suresh Babu, Lannan Jiang",
   "institution": "IIT Madras alumnus",
   "location": "London / Bengaluru",
   "sector": "Semiconductors",
@@ -216,7 +360,7 @@
   "funding": "$1.7M pre-seed, Seedcamp",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Seed",
   "fit": 4,
   "team": 4,
   "market": 5,
@@ -228,12 +372,36 @@
   "rdi_sector": "Semiconductors",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $1.7M · Feb 2026",
+  "lead_investor": "Seedcamp",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "CEO Bragadeesh Suresh Babu (IIT Madras) and co-founder Lannan Jiang. Backed by Stan Boland, founder of Icera (sold to NVIDIA) and Element 14 (sold to Broadcom).",
+  "next_raise": "Next raise: Seed",
+  "global_peers": [
+   {
+    "name": "Cadence Cerebrus / Synopsys DSO.ai",
+    "region": "US",
+    "note": "AI features inside the incumbent chip-design tools"
+   },
+   {
+    "name": "ChipAgents",
+    "region": "US",
+    "note": "AI agents for chip design and verification"
+   }
+  ],
+  "judge_on": [
+   "Design teams using it on a real tape-out, not a demo",
+   "Engineering hours saved per block, measured by the customer",
+   "Whether it can sell alongside Cadence and Synopsys rather than against them"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "optoml",
   "company": "optoML",
-  "founders": "Not named in source",
+  "founders": "Saravana Maruthamuthu",
   "institution": "",
   "location": "Chennai / Singapore",
   "sector": "Semiconductors",
@@ -249,7 +417,7 @@
   "funding": "$1.8M pre-Series A, Bluehill.VC & a99",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 5,
   "team": 3,
   "market": 5,
@@ -261,7 +429,36 @@
   "rdi_sector": "Semiconductors",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · $1.8M · Feb 2026",
+  "lead_investor": "Bluehill.VC and a99",
+  "lead_partner": "Manu Iyer, General Partner (Bluehill.VC); Vignesh S, General Partner (a99)",
+  "founder_snapshot": "Founded by Saravana Maruthamuthu. Has taped out a 12nm chip at TSMC and signed an MoU with Kaynes Semicon for assembly and test.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Lightmatter",
+    "region": "US",
+    "note": "Photonic interconnect and compute for AI"
+   },
+   {
+    "name": "Mythic",
+    "region": "US",
+    "note": "Analog in-memory compute chips"
+   },
+   {
+    "name": "Ayar Labs",
+    "region": "US",
+    "note": "Optical I/O for chips"
+   }
+  ],
+  "judge_on": [
+   "Measured energy per inference on returned 12nm silicon versus GPUs",
+   "Accuracy of analog compute holding up on real models",
+   "First design-in with a data-centre or edge customer"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "sensesemi",
@@ -282,7 +479,7 @@
   "funding": "₹25 Cr seed, Piper Serica",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 4,
   "team": 4,
   "market": 4,
@@ -294,16 +491,40 @@
   "rdi_sector": "Semiconductors",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · ₹25 Cr · Jan 2026",
+  "lead_investor": "Piper Serica",
+  "lead_partner": "Abhay Agarwal, Founder and Fund Manager",
+  "founder_snapshot": "Vijay Muktamath (CEO) and Namit Varma (Head of Engineering); founded 2014; DLI-approved.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Ambiq Micro",
+    "region": "US",
+    "note": "Ultra-low-power microcontrollers for wearables"
+   },
+   {
+    "name": "Syntiant",
+    "region": "US",
+    "note": "Low-power edge AI chips"
+   }
+  ],
+  "judge_on": [
+   "First silicon back from tape-out and meeting power targets",
+   "Design wins with device makers and ODMs",
+   "Medical or implantable customer in clinical evaluation"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "bigendian",
   "company": "BigEndian Semiconductors",
-  "founders": "Not named in source",
+  "founders": "Sunil Kumar, Renuka Prasad, Kanagaraju Ponnusamy, Dinesh Annayya, Jansen Cheng",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Semiconductors",
-  "tech": "Fabless system-on-chip design; first commercial chip taped out",
+  "tech": "Surveillance-camera system-on-chip; sample chipset unveiled May 2026",
   "problem": "India imports nearly all the chips in its devices",
   "eli12": "A system-on-chip is a whole computer squeezed onto one chip, like the brain inside a CCTV camera or a smart meter. BigEndian designs them in India and has already sent its first design to the factory. The hard part is winning customers who are used to buying proven foreign chips.",
   "signal_type": "Funding news",
@@ -315,7 +536,7 @@
   "funding": "$6M pre-Series A, IAN Alpha, Vertex, IvyCap",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A (round still open for ~$4M more)",
   "fit": 5,
   "team": 4,
   "market": 5,
@@ -327,16 +548,40 @@
   "rdi_sector": "Semiconductors",
   "trl": "TRL 6–7",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · $6M · May 2026",
+  "lead_investor": "IAN Alpha Fund",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Five co-founders: CEO Sunil Kumar, Renuka Prasad, Kanagaraju Ponnusamy, Dinesh Annayya and Jansen Cheng. Founded 2024; Vertex led its $3M seed.",
+  "next_raise": "Next raise: Series A (round still open for ~$4M more)",
+  "global_peers": [
+   {
+    "name": "Ambarella",
+    "region": "US",
+    "note": "Vision SoCs for security cameras"
+   },
+   {
+    "name": "Hailo",
+    "region": "Israel",
+    "note": "Edge AI processors for cameras"
+   }
+  ],
+  "judge_on": [
+   "Sample chipset performance against imported surveillance SoCs",
+   "Camera makers committing to volume after regulatory testing",
+   "Commercial availability landing in Q3–Q4 of the fiscal year as guided"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "nusynth",
   "company": "NuSynth Technologies",
-  "founders": "Not named in source",
+  "founders": "Poorvank Purohit, Ramesha A R, Abhishek Deo, Dipak Bajaj",
   "institution": "",
   "location": "Bengaluru",
   "sector": "Advanced materials & chemistry",
-  "tech": "AI-led chemical R&D and production for speciality chemicals and pharma",
+  "tech": "New chemical processes for pharma and electronics chemicals, designed with AI and made through partner plants",
   "problem": "Process chemistry for drug ingredients is slow, trial-and-error and often imported",
   "eli12": "Making a medicine ingredient is like following a very long, fussy recipe. NuSynth uses AI to find better recipes faster, testing fewer batches before one works cheaply and safely. The hard part: a recipe that works in a beaker often fails in a giant factory tank.",
   "signal_type": "Funding news",
@@ -348,7 +593,7 @@
   "funding": "₹36.5 Cr seed, Avaana Capital & Shastra VC",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 4,
   "team": 3,
   "market": 4,
@@ -360,13 +605,37 @@
   "rdi_sector": "Advanced materials",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · ₹36.5 Cr · Oct 2026",
+  "lead_investor": "Avaana Capital and Shastra VC",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founded 2026 by Poorvank Purohit, Ramesha A R, Abhishek Deo and Dipak Bajaj; asset-light model using partner manufacturers.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Chemify",
+    "region": "UK",
+    "note": "Digital chemistry and automated synthesis"
+   },
+   {
+    "name": "Iktos",
+    "region": "France",
+    "note": "AI for chemical synthesis planning"
+   }
+  ],
+  "judge_on": [
+   "Processes transferred from lab to a partner plant at commercial scale",
+   "Cost and step reduction versus the incumbent route, as customers measure it",
+   "First pharma or electronics-chemicals customer contract"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "quintrans",
   "company": "Quintrans",
-  "founders": "Not named in source",
-  "institution": "MaXcel accelerator (Capital-A & SanchiConnect)",
+  "founders": "Pranay Luniya, Kartik Kulkarni, Aniruddha Atigre, Prasanna Kadambi",
+  "institution": "MIT Pune alumni; MaXcel accelerator",
   "location": "India",
   "sector": "Robotics & automation",
   "tech": "India-built direct-drive linear motion systems for industrial automation",
@@ -381,7 +650,7 @@
   "funding": "$750K pre-seed, Capital-A",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Seed",
   "fit": 5,
   "team": 3,
   "market": 4,
@@ -393,7 +662,31 @@
   "rdi_sector": "Robotics",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $750K · Jan 2026",
+  "lead_investor": "Capital-A",
+  "lead_partner": "Ankit Kedia, Founder and Lead Investor",
+  "founder_snapshot": "Four MIT Pune engineers: CEO Pranay Luniya, Kartik Kulkarni, Aniruddha Atigre and Prasanna Kadambi. Part of the MaXcel hardware accelerator.",
+  "next_raise": "Next raise: Seed",
+  "global_peers": [
+   {
+    "name": "ETEL",
+    "region": "Switzerland",
+    "note": "Direct-drive linear motors for precision machines"
+   },
+   {
+    "name": "Kollmorgen",
+    "region": "US",
+    "note": "Motion-control systems and linear motors"
+   }
+  ],
+  "judge_on": [
+   "Pune manufacturing and test facility running",
+   "Paid orders from automation OEMs",
+   "Progress toward the 500,000 actuators a year target for 2030"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "alphadroid",
@@ -414,7 +707,7 @@
   "funding": "$3.8M pre-Series A",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 3,
   "team": 3,
   "market": 3,
@@ -426,7 +719,31 @@
   "rdi_sector": "Robotics",
   "trl": "TRL 6–7",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · $3.8M · May 2026",
+  "lead_investor": "Not named in coverage",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Bear Robotics",
+    "region": "US / South Korea",
+    "note": "Service robots for restaurants and hospitality"
+   },
+   {
+    "name": "Pudu Robotics",
+    "region": "China",
+    "note": "Delivery and cleaning service robots"
+   }
+  ],
+  "judge_on": [
+   "Robots deployed and uptime in real venues",
+   "Revenue per robot per month",
+   "Hardware cost versus Chinese imports"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "hycosys",
@@ -447,7 +764,7 @@
   "funding": ">$1M seed, MountTech Growth Fund – Kavachh",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Pre-Series A",
   "fit": 4,
   "team": 3,
   "market": 4,
@@ -459,12 +776,36 @@
   "rdi_sector": "Energy & climate action",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · >$1M · Feb 2026",
+  "lead_investor": "MountTech Growth Fund – Kavachh",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Pre-Series A",
+  "global_peers": [
+   {
+    "name": "Capstone Green Energy",
+    "region": "US",
+    "note": "Microturbines for distributed power"
+   },
+   {
+    "name": "Aurelia Turbines",
+    "region": "Finland",
+    "note": "Small, fuel-flexible gas turbines"
+   }
+  ],
+  "judge_on": [
+   "Running hours on hydrogen blends without damage",
+   "First paying pilot replacing a diesel generator",
+   "Efficiency against diesel gensets at the same size"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "meine",
   "company": "Meine Electric",
-  "founders": "Not named in source",
+  "founders": "Priyansh Mohan, Stuti Kakkar",
   "institution": "AIC-AU incubation",
   "location": "India",
   "sector": "Energy & climate",
@@ -480,7 +821,7 @@
   "funding": "$750K pre-seed, Antler and others",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Seed",
   "fit": 5,
   "team": 3,
   "market": 5,
@@ -492,14 +833,38 @@
   "rdi_sector": "Energy & climate action",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $750K · Jan 2026",
+  "lead_investor": "Antler",
+  "lead_partner": "Nitin, Partner, Antler India (quoted; lead role not confirmed)",
+  "founder_snapshot": "Priyansh Mohan researched fuel cells and flow batteries at CEG, Anna University; Stuti Kakkar (economics, LSR) was an energy-transition consultant at BCG. Six battery generations built in about 10 months on $25K.",
+  "next_raise": "Next raise: Seed",
+  "global_peers": [
+   {
+    "name": "Form Energy",
+    "region": "US",
+    "note": "Iron-air batteries for 100-hour storage"
+   },
+   {
+    "name": "ESS Inc",
+    "region": "US",
+    "note": "Iron flow batteries for long-duration storage"
+   }
+  ],
+  "judge_on": [
+   "Cycle life and round-trip efficiency of the pilot system",
+   "Levelised storage cost moving toward the $0.05/kWh target",
+   "A utility or solar-developer pilot site"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "etrnl",
   "company": "e-TRNL Energy",
-  "founders": "Not named in source",
+  "founders": "Apoorv Shaligram, Dr Uttam Kumar Sen",
   "institution": "",
-  "location": "India",
+  "location": "Bengaluru",
   "sector": "Energy & climate",
   "tech": "Next-generation battery cells for Indian conditions, with pilot-scale manufacturing",
   "problem": "Imported cells struggle with heat, fast charging and safety in Indian use",
@@ -513,7 +878,7 @@
   "funding": "₹27.4 Cr seed",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 4,
   "team": 3,
   "market": 5,
@@ -525,7 +890,31 @@
   "rdi_sector": "Energy & climate action",
   "trl": "TRL 6–7",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · ₹27.4 Cr · Feb 2026",
+  "lead_investor": "IAN Alpha Fund",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Apoorv Shaligram and Dr Uttam Kumar Sen founded it in 2021; 20,000 sq ft R&D and early manufacturing site in Bengaluru; two patents granted.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Northvolt",
+    "region": "Sweden",
+    "note": "Gigafactory-scale cell manufacturing (now restructured)"
+   },
+   {
+    "name": "Sila",
+    "region": "US",
+    "note": "Next-generation battery materials"
+   }
+  ],
+  "judge_on": [
+   "250 MWh pilot line commissioned by 2027",
+   "Cell safety and cycle data from independent testing",
+   "Offtake agreements with EV or storage makers"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "newtrace",
@@ -546,7 +935,7 @@
   "funding": "$6.3M pre-Series A (after $5.7M seed in 2023)",
   "stage": 4,
   "stage_label": "Scale-up underway",
-  "entry_window": "May be past entry point",
+  "entry_window": "Next raise: Series A",
   "fit": 4,
   "team": 4,
   "market": 5,
@@ -558,16 +947,40 @@
   "rdi_sector": "Energy & climate action",
   "trl": "TRL 7–8",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · $6.3M · Mar 2026",
+  "lead_investor": "HDFC Bank and Mitsui Sumitomo Insurance VC",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "CEO Prasanta Sarkar and CTO Rochan Sinha founded it in 2021. Sells Voltagen electrodes to electrolyser makers and hydrogen developers.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Electric Hydrogen",
+    "region": "US",
+    "note": "Low-cost large-scale electrolysers"
+   },
+   {
+    "name": "Sunfire",
+    "region": "Germany",
+    "note": "Industrial electrolysers"
+   }
+  ],
+  "judge_on": [
+   "First commercial Voltagen electrode deliveries within 12 months",
+   "Electrode lifetime under real operating hours",
+   "Cost per kW versus established electrolyser suppliers"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "pranos",
   "company": "Pranos Fusion",
-  "founders": "Not named in source",
+  "founders": "Shaurya Kaushal, Roshan George",
   "institution": "",
   "location": "India",
   "sector": "Energy & climate",
-  "tech": "Magnetic confinement fusion",
+  "tech": "Compact tokamak with high-temperature superconducting magnets, plus JENGA fusion software",
   "problem": "Clean, always-on power without long-lived nuclear waste",
   "eli12": "The sun makes energy by squeezing tiny atoms together until they fuse. Pranos is trying to do that on Earth, holding super-hot gas in place with powerful magnets because no wall could survive touching it. If it works, it's nearly limitless clean power. It's one of the hardest engineering problems there is.",
   "signal_type": "Funding news",
@@ -579,7 +992,7 @@
   "funding": "$6.8M seed, pi Ventures & Ankur Capital",
   "stage": 1,
   "stage_label": "Lab-validated science",
-  "entry_window": "Early: science risk",
+  "entry_window": "Next raise: Series A",
   "fit": 4,
   "team": 3,
   "market": 5,
@@ -591,16 +1004,40 @@
   "rdi_sector": "Energy & climate action",
   "trl": "TRL 3–4",
   "rdi_eligibility": "Approaching (TRL 3–4)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · $6.8M · Mar 2026",
+  "lead_investor": "pi Ventures and Ankur Capital",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Shaurya Kaushal (PhD, JNCASR) and Roshan George (ex-principal engineer at REConnect Energy) founded it in 2024. Building a tokamak, HTS magnets and JENGA software.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Commonwealth Fusion Systems",
+    "region": "US",
+    "note": "Compact tokamak with high-temperature superconducting magnets"
+   },
+   {
+    "name": "Tokamak Energy",
+    "region": "UK",
+    "note": "Spherical tokamaks and HTS magnets"
+   }
+  ],
+  "judge_on": [
+   "First tokamak delivered and commissioned in 2026",
+   "HTS magnet field strength achieved in test",
+   "JENGA software pilot as a near-term revenue line"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "crisprbits",
   "company": "CrisprBits",
   "founders": "Not named in source",
   "institution": "",
-  "location": "India",
+  "location": "Bengaluru",
   "sector": "Biotech & synbio",
-  "tech": "CRISPR platforms for diagnostics and gene editing",
+  "tech": "PathCrisp CRISPR diagnostics, plus CRISPR strain engineering for biofuels",
   "problem": "Fast, cheap molecular tests and gene-editing tools are mostly imported",
   "eli12": "CRISPR is like a pair of molecular scissors with a search function: it finds one exact piece of DNA. CrisprBits uses the search part to make quick disease tests, and the scissors part for gene editing in health, food and farming. The hard part is getting tests accurate enough for doctors and approved by regulators.",
   "signal_type": "Funding news",
@@ -612,7 +1049,7 @@
   "funding": "$3M pre-Series A, Spectrum Impact",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 4,
   "team": 3,
   "market": 4,
@@ -624,7 +1061,31 @@
   "rdi_sector": "Biotechnology",
   "trl": "TRL 6–7",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "BIRAC"
+  "rdi_route": "BIRAC",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · $3M · Nov 2025",
+  "lead_investor": "Spectrum Impact (Rajendra Gogri family office)",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage. C-CAMP participated in the round.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Mammoth Biosciences",
+    "region": "US",
+    "note": "CRISPR diagnostics and gene editing"
+   },
+   {
+    "name": "Sherlock Biosciences",
+    "region": "US",
+    "note": "CRISPR-based diagnostics"
+   }
+  ],
+  "judge_on": [
+   "Regulatory approvals and volumes for PathCrisp tests (sickle cell, typhoid, AMR)",
+   "Expansion into Africa and Latin America within six months",
+   "First commercial strain-engineering deal in biofuels"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "strainx",
@@ -645,7 +1106,7 @@
   "funding": "$13M, Prime Venture & Leo Capital",
   "stage": 4,
   "stage_label": "Scale-up underway",
-  "entry_window": "May be past entry point",
+  "entry_window": "Next raise: Series B",
   "fit": 5,
   "team": 5,
   "market": 5,
@@ -657,7 +1118,36 @@
   "rdi_sector": "Biotechnology",
   "trl": "TRL 7–8",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "BIRAC"
+  "rdi_route": "BIRAC",
+  "round_tab": "Series A",
+  "latest_round": "$13M (stage not stated) · May 2026",
+  "lead_investor": "Prime Venture Partners and Leo Capital",
+  "lead_partner": "Brij Bhushan, Managing Partner (Prime); Rajul Garg, Founder & Managing Partner (Leo)",
+  "founder_snapshot": "IIT Delhi alumni Akshay Mittal (CEO) and Dr Alok Malaviya. Fermentation proven at 10,000 litres; working toward 100,000 litres.",
+  "next_raise": "Next raise: Series B",
+  "global_peers": [
+   {
+    "name": "Perfect Day",
+    "region": "US",
+    "note": "Precision-fermented dairy proteins"
+   },
+   {
+    "name": "Geltor",
+    "region": "US",
+    "note": "Precision-fermented collagen"
+   },
+   {
+    "name": "Remilk",
+    "region": "Israel",
+    "note": "Animal-free milk proteins"
+   }
+  ],
+  "judge_on": [
+   "Cost per kilo at 100,000-litre scale versus the incumbent ingredient",
+   "Signed offtake with food or personal-care brands",
+   "Regulatory approvals for each ingredient in target markets"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "cropcoin",
@@ -678,7 +1168,7 @@
   "funding": "$1.5M pre-Series A, Unicorn India Ventures",
   "stage": 5,
   "stage_label": "Early revenue",
-  "entry_window": "May be past entry point",
+  "entry_window": "Next raise: Series A",
   "fit": 3,
   "team": 3,
   "market": 4,
@@ -690,16 +1180,40 @@
   "rdi_sector": "Biotechnology (agri)",
   "trl": "TRL 8–9",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "BIRAC"
+  "rdi_route": "BIRAC",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · $1.5M · Mar 2026",
+  "lead_investor": "Unicorn India Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Pivot Bio",
+    "region": "US",
+    "note": "Microbial nitrogen for crops"
+   },
+   {
+    "name": "Indigo Ag",
+    "region": "US",
+    "note": "Biologicals and carbon programmes for farmers"
+   }
+  ],
+  "judge_on": [
+   "Farmer repeat-purchase rate across seasons",
+   "Margin per tonne as it scales from 10 to 66 districts",
+   "Yield and soil data from independent trials"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "bioscan",
   "company": "Bioscan Research",
-  "founders": "Not named in source",
+  "founders": "Anupam Lavania, Shilpa Malik",
   "institution": "",
-  "location": "India",
+  "location": "Bengaluru",
   "sector": "Medtech & diagnostics",
-  "tech": "AI-powered, portable brain-injury detection",
+  "tech": "CEREBO: portable near-infrared device with machine learning that detects bleeding inside the skull",
   "problem": "Head-injury patients often reach hospitals without CT scanners, losing critical time",
   "eli12": "After a bad knock to the head, doctors need to know fast if there's bleeding inside. That usually needs a big CT scanner many small hospitals don't have. Bioscan makes a portable device that screens for it in minutes, with AI helping read the result. The hard part is being accurate enough to trust in an emergency.",
   "signal_type": "Funding news",
@@ -711,7 +1225,7 @@
   "funding": "$1M seed, Unicorn India Ventures",
   "stage": 4,
   "stage_label": "Scale-up underway",
-  "entry_window": "May be past entry point",
+  "entry_window": "Next raise: Series A",
   "fit": 3,
   "team": 3,
   "market": 4,
@@ -723,16 +1237,35 @@
   "rdi_sector": "Health & medical technologies",
   "trl": "TRL 7–8",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "BIRAC"
+  "rdi_route": "BIRAC",
+  "round_tab": "Seed",
+  "latest_round": "Seed · $1M · Jul 2026",
+  "lead_investor": "Unicorn India Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Anupam Lavania and Shilpa Malik incorporated it in 2017. Product: CEREBO, a machine-learning near-infrared device that detects bleeding inside the skull.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "InfraScan (Infrascanner)",
+    "region": "US",
+    "note": "Handheld near-infrared detector for brain bleeds"
+   }
+  ],
+  "judge_on": [
+   "Additional regulatory approvals the round is funding",
+   "Hospitals and ambulance fleets using CEREBO routinely",
+   "Sensitivity and specificity in published clinical data"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "ayati",
   "company": "Ayati Devices",
   "founders": "Not named in source",
-  "institution": "",
-  "location": "India",
+  "institution": "IIT Bombay SINE",
+  "location": "Bengaluru",
   "sector": "Medtech & diagnostics",
-  "tech": "AI-driven diagnostics for diabetic foot complications",
+  "tech": "Diabetic foot and peripheral vascular disease diagnostics, including Angiocam",
   "problem": "Diabetic foot ulcers are caught late and lead to avoidable amputations",
   "eli12": "People with diabetes can lose feeling in their feet, so a small wound goes unnoticed and gets serious. Ayati makes devices that check feet early, with AI spotting the warning signs before a wound appears. The hard part is getting busy clinics to use it on every patient.",
   "signal_type": "Funding news",
@@ -744,7 +1277,7 @@
   "funding": "₹15 Cr pre-Series A, Inflexor Ventures",
   "stage": 4,
   "stage_label": "Scale-up underway",
-  "entry_window": "May be past entry point",
+  "entry_window": "Next raise: Series A",
   "fit": 3,
   "team": 3,
   "market": 4,
@@ -756,7 +1289,26 @@
   "rdi_sector": "Health & medical technologies",
   "trl": "TRL 7–8",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "BIRAC"
+  "rdi_route": "BIRAC",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · ₹15 Cr · Aug 2026",
+  "lead_investor": "Inflexor Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage. Incubated at IIT Bombay's SINE. Over 10,000 devices in 30+ countries; US FDA, CE and CDSCO clearances.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Podimetrics",
+    "region": "US",
+    "note": "Smart mat that predicts diabetic foot ulcers"
+   }
+  ],
+  "judge_on": [
+   "Pay-per-test screening volumes",
+   "Angiocam commercial uptake",
+   "Clinical outcomes: amputations or ulcers avoided"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "pulse",
@@ -777,7 +1329,7 @@
   "funding": "$4M seed, 3one4 Capital",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 3,
   "team": 3,
   "market": 4,
@@ -789,7 +1341,21 @@
   "rdi_sector": "Health & medical technologies",
   "trl": "TRL 6–7",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "BIRAC"
+  "rdi_route": "BIRAC",
+  "round_tab": "Seed",
+  "latest_round": "Seed · $4M · Feb 2026",
+  "lead_investor": "3one4 Capital",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [],
+  "judge_on": [
+   "Which devices it makes, and their cost versus imports",
+   "Hospital customers and reorders",
+   "Regulatory clearances obtained"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source",
+  "peers_note": "Coverage doesn't say which devices Pulse makes, so no fair comparison yet."
  },
  {
   "id": "curapod",
@@ -810,7 +1376,7 @@
   "funding": "₹20 Cr pre-Series A",
   "stage": 5,
   "stage_label": "Early revenue",
-  "entry_window": "May be past entry point",
+  "entry_window": "Next raise: Series A",
   "fit": 2,
   "team": 3,
   "market": 3,
@@ -822,7 +1388,26 @@
   "rdi_sector": "Health & medical technologies",
   "trl": "TRL 8–9",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "BIRAC"
+  "rdi_route": "BIRAC",
+  "round_tab": "Seed",
+  "latest_round": "Pre-Series A · ₹20 Cr · Feb 2026",
+  "lead_investor": "Not named in coverage",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "Kineon",
+    "region": "US/UK",
+    "note": "Wearable red-light therapy for joints"
+   }
+  ],
+  "judge_on": [
+   "Repeat purchase and return rates",
+   "Clinical evidence beyond FDA registration",
+   "Gym and clinic channel economics"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "quarkitech",
@@ -843,7 +1428,7 @@
   "funding": "₹2 Cr (investors not named in source)",
   "stage": 2,
   "stage_label": "Working prototype",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Seed",
   "fit": 3,
   "team": 3,
   "market": 3,
@@ -855,7 +1440,31 @@
   "rdi_sector": "Quantum technologies",
   "trl": "TRL 4–5",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "₹2 Cr · Aug 2026",
+  "lead_investor": "Not named in coverage",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Co-founder and CTO Shashikant Singh Kunwar; based at IIT Madras Research Park.",
+  "next_raise": "Next raise: Seed",
+  "global_peers": [
+   {
+    "name": "Multiverse Computing",
+    "region": "Spain",
+    "note": "Quantum-inspired software for finance and industry"
+   },
+   {
+    "name": "Toshiba SQBM+",
+    "region": "Japan",
+    "note": "Quantum-inspired optimisation"
+   }
+  ],
+  "judge_on": [
+   "Benchmarks against classical solvers on customer problems",
+   "Defence or space customer pilots",
+   "Paid contracts, not just proofs of concept"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  },
  {
   "id": "velmenni",
@@ -876,7 +1485,7 @@
   "funding": "₹30 Cr (~$3.6M) seed / pre-Series A",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
-  "entry_window": "Sweet spot",
+  "entry_window": "Next raise: Series A",
   "fit": 3,
   "team": 3,
   "market": 3,
@@ -888,6 +1497,1402 @@
   "rdi_sector": "Telecom / digital economy",
   "trl": "TRL 6–7",
   "rdi_eligibility": "Eligible now (TRL 4+)",
-  "rdi_route": "TDB"
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed / pre-Series A · ₹30 Cr · Mar 2026",
+  "lead_investor": "Not named in coverage",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "next_raise": "Next raise: Series A",
+  "global_peers": [
+   {
+    "name": "pureLiFi",
+    "region": "UK",
+    "note": "Li-Fi modules for secure wireless links"
+   }
+  ],
+  "judge_on": [
+   "Defence and secure-site deployments",
+   "Unit cost of Li-Fi access points",
+   "Revenue mix between product and projects"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "skyroot",
+  "company": "Skyroot Aerospace",
+  "founders": "Pawan Kumar Chandana, Naga Bharath Daka",
+  "institution": "Ex-ISRO founders",
+  "location": "Hyderabad",
+  "sector": "Space & earth observation",
+  "tech": "Vikram series small-satellite launch vehicles",
+  "problem": "India needs private, frequent, low-cost launch capacity",
+  "eli12": "A rocket is a giant firework that has to carry a satellite into space without exploding or wobbling off course. Skyroot builds smaller rockets so companies don't have to wait for a seat on a big government launch. The hard part is making every launch reliable and cheap enough to fly often.",
+  "signal_type": "Funding news",
+  "signal": "~$60M round reported May 2026; India's first spacetech unicorn",
+  "source_name": "Entrepreneur India",
+  "source_url": "https://india.entrepreneur.com/?p=96048",
+  "signal_date": "2026-05-09",
+  "first_found": "2026-10-31",
+  "funding": "~$50–60M Series C (May 2026); ~$150M total",
+  "stage": 3,
+  "stage_label": "Pilot / first silicon",
+  "entry_window": "Next raise: Series D or pre-IPO",
+  "next_raise": "Next raise: Series D or pre-IPO",
+  "fit": 5,
+  "team": 5,
+  "market": 5,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "The category leader in Indian private launch; the question now is cadence and price, not whether it can be done.",
+  "rdi_sector": "Space",
+  "trl": "TRL 6–7",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series B/C",
+  "latest_round": "Series C · ~$50–60M · May 2026",
+  "lead_investor": "Investors incl. Sherpalo, GIC, BlackRock, Arkam (lead not named)",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Pawan Kumar Chandana and Naga Bharath Daka, both ex-ISRO. Flew India's first private rocket (suborbital) in 2022.",
+  "global_peers": [
+   {
+    "name": "Rocket Lab",
+    "region": "US / New Zealand",
+    "note": "Small-satellite launch with the Electron rocket"
+   },
+   {
+    "name": "Isar Aerospace",
+    "region": "Germany",
+    "note": "Small launch vehicle"
+   }
+  ],
+  "judge_on": [
+   "First orbital launch success and launch cadence after it",
+   "Price per kilo to orbit versus Rocket Lab",
+   "Booked launch manifest and ISRO/IN-SPACe contracts"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "pixxel",
+  "company": "Pixxel",
+  "founders": "Awais Ahmed, Kshitij Khandelwal",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Space & earth observation",
+  "tech": "Hyperspectral imaging satellites; Pathfinder satellite with Sarvam AI to run AI in orbit",
+  "problem": "Standard satellite photos can't see crop disease, pollution or minerals",
+  "eli12": "Normal cameras see red, green and blue. Pixxel's satellites see hundreds of colours our eyes can't, which reveal things like sick crops, oil leaks or minerals in the ground. The hard part is processing that huge amount of data and selling it to people who need answers, not pictures.",
+  "signal_type": "Funding news",
+  "signal": "In talks for an $80–100M round at ~$400M pre-money (May 2026)",
+  "source_name": "Outlook Business",
+  "source_url": "https://www.outlookbusiness.com/start-up/pixxel-expands-funding-round-to-100-mn-after-deepinder-goyal-steps-back",
+  "signal_date": "2026-05-22",
+  "first_found": "2026-10-31",
+  "funding": "~$96M raised in total; new round of $80–100M in talks",
+  "stage": 4,
+  "stage_label": "Scale-up underway",
+  "entry_window": "Next raise: Series C close",
+  "next_raise": "Next raise: Series C close",
+  "fit": 5,
+  "team": 5,
+  "market": 4,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Hyperspectral data is a picks-and-shovels play on climate, agriculture and defence; revenue per satellite is the number to watch.",
+  "rdi_sector": "Space",
+  "trl": "TRL 7–8",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series B/C",
+  "latest_round": "Next round in talks · $80–100M · May 2026",
+  "lead_investor": "Existing investors incl. GIC, Google, Lightspeed (lead not named)",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founded 2019 by Awais Ahmed (CEO) and Kshitij Khandelwal.",
+  "global_peers": [
+   {
+    "name": "Planet Labs",
+    "region": "US",
+    "note": "Large Earth-observation constellation"
+   },
+   {
+    "name": "Orbital Sidekick",
+    "region": "US",
+    "note": "Hyperspectral satellites for energy and defence"
+   }
+  ],
+  "judge_on": [
+   "Constellation size and revisit time",
+   "Data revenue and contracts with governments and agribusiness",
+   "Pathfinder launch (as early as Q4 2026) and in-orbit AI performance"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "digantara",
+  "company": "Digantara",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Space & earth observation",
+  "tech": "Space-based cameras that track satellites and debris",
+  "problem": "Crowded orbits make collisions and unknown objects a growing risk",
+  "eli12": "Space is getting crowded with satellites and junk zooming around faster than bullets. Digantara puts cameras in space that watch and track those objects, like air-traffic control for orbit. It's hard because the objects are tiny, far away and moving very fast.",
+  "signal_type": "Funding news",
+  "signal": "$50M round led by Reliance Industries (reported Feb 2026)",
+  "source_name": "Angel One",
+  "source_url": "https://www.angelone.in/news/unlisted-companies/reliance-industries-leads-50-million-funding-round-in-spacetech-startup-digantara",
+  "signal_date": "2026-02-01",
+  "first_found": "2026-10-31",
+  "funding": "$50M Series B (Feb 2026), Reliance Industries; ~$200M valuation",
+  "stage": 4,
+  "stage_label": "Scale-up underway",
+  "entry_window": "Next raise: Series C",
+  "next_raise": "Next raise: Series C",
+  "fit": 5,
+  "team": 4,
+  "market": 5,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Space-domain awareness has a defence buyer with budget; a strategic lead investor signals long-term capital.",
+  "rdi_sector": "Space",
+  "trl": "TRL 7–8",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series B/C",
+  "latest_round": "Series B · $50M · Feb 2026",
+  "lead_investor": "Reliance Industries",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in this coverage. Operates three satellites; selected for the US Golden Dome missile-defence programme.",
+  "global_peers": [
+   {
+    "name": "LeoLabs",
+    "region": "US",
+    "note": "Radar-based tracking of objects in low orbit"
+   },
+   {
+    "name": "ExoAnalytic Solutions",
+    "region": "US",
+    "note": "Optical space-domain awareness"
+   }
+  ],
+  "judge_on": [
+   "Number of tracking satellites in orbit and coverage",
+   "Defence and government contracts, in India and abroad",
+   "Data subscription revenue from satellite operators"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "ethereal",
+  "company": "Ethereal Machines",
+  "founders": "Kaushik Mudda, Navin Jain",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Robotics & automation",
+  "tech": "Multi-axis CNC machines sold as Machining-as-a-Service, plus Vesper factory software",
+  "problem": "Precision machining capacity in India is scarce and expensive",
+  "eli12": "A CNC machine is a robot carver that cuts metal into exact shapes from a computer design. Ethereal builds machines that can cut from many angles at once, and rents out the cutting as a service. The hard part is making machines as precise as German or Japanese ones at Indian prices.",
+  "signal_type": "Funding news",
+  "signal": "$28.5M Series B led by Avataar Ventures (June 2026)",
+  "source_name": "YourStory",
+  "source_url": "https://yourstory.com/2026/06/deeptech-startup-ethereal-machines-285-million-avataar-ventures",
+  "signal_date": "2026-06",
+  "first_found": "2026-10-31",
+  "funding": "$28.5M Series B, Avataar Ventures; Peak XV participated",
+  "stage": 5,
+  "stage_label": "Early revenue",
+  "entry_window": "Next raise: Series C",
+  "next_raise": "Next raise: Series C",
+  "fit": 4,
+  "team": 4,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Manufacturing-as-a-service turns a capex product into recurring revenue; utilisation will make or break it.",
+  "rdi_sector": "Robotics",
+  "trl": "TRL 8–9",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series B/C",
+  "latest_round": "Series B · $28.5M · Jun 2026",
+  "lead_investor": "Avataar Ventures",
+  "lead_partner": "Anirudh Singh, Avataar Ventures",
+  "founder_snapshot": "Kaushik Mudda (CEO) and Navin Jain founded it in 2014. Series A of $13M in June 2024.",
+  "global_peers": [
+   {
+    "name": "DMG Mori",
+    "region": "Germany / Japan",
+    "note": "Multi-axis machine tools"
+   },
+   {
+    "name": "Hadrian",
+    "region": "US",
+    "note": "Automated precision-machining factories"
+   }
+  ],
+  "judge_on": [
+   "Machine utilisation and revenue per machine in the service model",
+   "Aerospace and defence customer qualifications",
+   "Its own CNC controller shipping"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "optimized",
+  "company": "Optimized Electrotech",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "India",
+  "sector": "Space & earth observation",
+  "tech": "Near-real-time imaging satellite constellation and a space-based platform",
+  "problem": "Imaging that arrives hours late is useless for disasters and security",
+  "eli12": "Most satellites take a picture and send it down hours later. Optimized Electrotech wants a group of satellites that can show what's happening almost live, which matters for floods, fires or borders. The hard part is having enough satellites overhead at all times.",
+  "signal_type": "Funding news",
+  "signal": "₹35 Cr raise led by Exfinity Ventures; initial orders secured (Apr 2026)",
+  "source_name": "Pulse (deal summary)",
+  "source_url": "https://www.pulse.bot/entrepreneurship/news/optimized-electrotech-raises-35-cr-to-expand-into-space-imaging-6a550ec6-e0d6-4f6e-b7c9-ca92b6cc6152/",
+  "signal_date": "2026-04-29",
+  "first_found": "2026-10-31",
+  "funding": "₹35 Cr (stage not stated), Exfinity Ventures with Blume, Mela, Venture Catalysts",
+  "stage": 3,
+  "stage_label": "Pilot / first silicon",
+  "entry_window": "Next raise: Series A",
+  "next_raise": "Next raise: Series A",
+  "fit": 4,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "Already has orders before the constellation exists, which is the right order of operations in space.",
+  "rdi_sector": "Space",
+  "trl": "TRL 6–7",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "₹35 Cr · Apr 2026",
+  "lead_investor": "Exfinity Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [
+   {
+    "name": "Satellogic",
+    "region": "Uruguay / US",
+    "note": "High-revisit imaging satellites"
+   },
+   {
+    "name": "ICEYE",
+    "region": "Finland",
+    "note": "Radar imaging constellation with fast revisit"
+   }
+  ],
+  "judge_on": [
+   "Satellite bus and AI payload delivered on schedule",
+   "Conversion of initial orders into recurring contracts",
+   "Revisit time achieved once in orbit"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "qpiai",
+  "company": "QpiAI",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Quantum",
+  "tech": "Quantum computers combined with AI for enterprise problems",
+  "problem": "India wants its own quantum computing capability",
+  "eli12": "Normal computers think in 0s and 1s. Quantum computers use particles that can be both at once, which could crack certain problems, like designing new materials, far faster. QpiAI builds these machines in India. The hard part is keeping the fragile quantum bits stable long enough to compute.",
+  "signal_type": "Funding news",
+  "signal": "$32M Series A co-led by Avataar Ventures and the National Quantum Mission",
+  "source_name": "SiliconANGLE",
+  "source_url": "https://siliconangle.com/?p=704052",
+  "signal_date": "2025-07-17",
+  "first_found": "2026-10-31",
+  "funding": "$32M Series A (Jul 2025), Avataar Ventures & National Quantum Mission",
+  "stage": 3,
+  "stage_label": "Pilot / first silicon",
+  "entry_window": "Next raise: Series B",
+  "next_raise": "Next raise: Series B",
+  "fit": 5,
+  "team": 4,
+  "market": 4,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "The government's chosen national quantum vehicle; strategic backing is strong, commercial demand is the open question.",
+  "rdi_sector": "Quantum technologies",
+  "trl": "TRL 6–7",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series A",
+  "latest_round": "Series A · $32M · Jul 2025",
+  "lead_investor": "Avataar Ventures and National Quantum Mission",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Led by CEO Nagaraja (named in coverage); assembles about 80% of its machines in-house.",
+  "global_peers": [
+   {
+    "name": "IQM",
+    "region": "Finland",
+    "note": "Superconducting quantum computers"
+   },
+   {
+    "name": "Rigetti",
+    "region": "US",
+    "note": "Superconducting quantum computers"
+   }
+  ],
+  "judge_on": [
+   "Qubit count and error rates on delivered systems",
+   "Enterprise and government paying users",
+   "Local manufacturing of quantum hardware starting in 2026"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "qnu",
+  "company": "QNu Labs",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Quantum",
+  "tech": "Quantum-safe cybersecurity: quantum key distribution and post-quantum products",
+  "problem": "Future quantum computers could break today's encryption",
+  "eli12": "Today's secret codes protect bank and government data, but future quantum computers might crack them. QNu Labs makes locks that use physics, not just maths, so they stay safe. The hard part is getting banks and governments to switch before the threat arrives.",
+  "signal_type": "Funding news",
+  "signal": "₹200 Cr Series A1 led by National Quantum Mission and Speciale Invest (Sep 2026)",
+  "source_name": "Entrepreneur India",
+  "source_url": "https://india.entrepreneur.com/?p=99494",
+  "signal_date": "2026-09-09",
+  "first_found": "2026-10-31",
+  "funding": "₹200 Cr Series A1 (Sep 2026); ₹375 Cr total",
+  "stage": 4,
+  "stage_label": "Scale-up underway",
+  "entry_window": "Next raise: Series B",
+  "next_raise": "Next raise: Series B",
+  "fit": 4,
+  "team": 4,
+  "market": 4,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Already inside an RDI-approved national project, the clearest example here of RDI money meeting VC money.",
+  "rdi_sector": "Quantum technologies",
+  "trl": "TRL 7–8",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series A",
+  "latest_round": "Series A1 · ₹200 Cr · Sep 2026",
+  "lead_investor": "National Quantum Mission and Speciale Invest",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in this coverage. Part of an RDI-approved project for India's quantum secure networks.",
+  "global_peers": [
+   {
+    "name": "ID Quantique",
+    "region": "Switzerland",
+    "note": "Quantum key distribution and random-number generators"
+   },
+   {
+    "name": "SandboxAQ",
+    "region": "US",
+    "note": "Post-quantum cryptography"
+   }
+  ],
+  "judge_on": [
+   "Government and bank deployments",
+   "Share of revenue from post-quantum software versus hardware",
+   "Delivery on the RDI quantum-network project"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "vervesemi",
+  "company": "Vervesemi Microelectronics",
+  "founders": "Rakesh Malik, Pratap Narayan Singh",
+  "institution": "",
+  "location": "Noida",
+  "sector": "Semiconductors",
+  "tech": "Analog and mixed-signal chips and IP for sensors",
+  "problem": "Analog chip design talent and products are scarce in India",
+  "eli12": "Analog chips translate the real world, like temperature, sound or pressure, into numbers computers understand. Vervesemi designs these translator chips. The hard part is that analog design is part art, and very few engineers are good at it.",
+  "signal_type": "Funding news",
+  "signal": "$10M Series A led by Ashish Kacholia and Unicorn India Ventures (Feb 2026)",
+  "source_name": "YourStory",
+  "source_url": "https://yourstory.com/2026/02/semiconductor-startup-vervesemi-raises-10m-led-by-ashish-kacholia-unicorn-india-ventures",
+  "signal_date": "2026-02-18",
+  "first_found": "2026-10-31",
+  "funding": "$10M Series A, Ashish Kacholia & Unicorn India Ventures",
+  "stage": 4,
+  "stage_label": "Scale-up underway",
+  "entry_window": "Next raise: Series B",
+  "next_raise": "Next raise: Series B",
+  "fit": 4,
+  "team": 4,
+  "market": 4,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Analog is where Indian design talent is thinnest, so a working team is itself a moat.",
+  "rdi_sector": "Semiconductors",
+  "trl": "TRL 7–8",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series A",
+  "latest_round": "Series A · $10M · Feb 2026",
+  "lead_investor": "Ashish Kacholia and Unicorn India Ventures",
+  "lead_partner": "Anil Joshi, Unicorn India Ventures (named as lead investor in one database)",
+  "founder_snapshot": "Rakesh Malik and Pratap Narayan Singh; founded 2017; several programmes in late-stage qualification.",
+  "global_peers": [
+   {
+    "name": "Analog Devices",
+    "region": "US",
+    "note": "Analog and mixed-signal chips (incumbent)"
+   },
+   {
+    "name": "Tower-based fabless analog startups",
+    "region": "Israel",
+    "note": "Analog IP design houses"
+   }
+  ],
+  "judge_on": [
+   "Products moving from qualification to volume shipments",
+   "Design wins with sensor and industrial customers",
+   "Gross margin on chips versus IP licensing"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "hrdwyr",
+  "company": "HrdWyr",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Semiconductors",
+  "tech": "AI-native edge chips for consumer electronics, EVs and industrial systems",
+  "problem": "Edge devices need local AI without draining batteries",
+  "eli12": "Smart devices often send data to the cloud to think, which is slow and uses power. HrdWyr designs chips that let devices think for themselves right where they are. The hard part is beating established chipmakers on cost and power.",
+  "signal_type": "Funding news",
+  "signal": "$13M Series A led by Ideaspring Capital (May 2026)",
+  "source_name": "Convergence Now",
+  "source_url": "https://www.convergence-now.com/?p=17891",
+  "signal_date": "2026-05-15",
+  "first_found": "2026-10-31",
+  "funding": "$13M Series A, Ideaspring Capital; Persistent Systems participated",
+  "stage": 3,
+  "stage_label": "Pilot / first silicon",
+  "entry_window": "Next raise: Series B",
+  "next_raise": "Next raise: Series B",
+  "fit": 4,
+  "team": 3,
+  "market": 5,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "A Series A two years after founding is fast for chips; silicon results will justify it or not.",
+  "rdi_sector": "Semiconductors",
+  "trl": "TRL 6–7",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series A",
+  "latest_round": "Series A · $13M · May 2026",
+  "lead_investor": "Ideaspring Capital",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founded 2023; founders not named in this coverage.",
+  "global_peers": [
+   {
+    "name": "Hailo",
+    "region": "Israel",
+    "note": "Edge AI processors"
+   },
+   {
+    "name": "Axelera AI",
+    "region": "Netherlands",
+    "note": "Edge AI acceleration chips"
+   }
+  ],
+  "judge_on": [
+   "First silicon and benchmark results",
+   "Design wins in consumer, EV or industrial products",
+   "Software stack adoption by developers"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "satsure",
+  "company": "SatSure",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Space & earth observation",
+  "tech": "Large Earth-observation AI model as India's foundation platform for remote sensing",
+  "problem": "Satellite data is hard for users to turn into decisions",
+  "eli12": "Satellites take millions of pictures of Earth. SatSure trains AI to read those pictures and answer questions, like how healthy a farm is or where a road was built. The hard part is turning pictures into answers people will pay for.",
+  "signal_type": "Grant",
+  "signal": "Selected for IN-SPACe Technology Adoption Fund (Jun 2026)",
+  "source_name": "YourStory",
+  "source_url": "https://yourstory.com/2026/06/in-space-selects-3-startups-funding-technology-adoption-fund",
+  "signal_date": "2026-06-12",
+  "first_found": "2026-10-31",
+  "funding": "Later-stage company (latest round not in this coverage); IN-SPACe TAF award",
+  "stage": 4,
+  "stage_label": "Scale-up underway",
+  "entry_window": "Next raise: not tracked yet",
+  "next_raise": "Next raise: not tracked yet",
+  "fit": 4,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "An analytics layer company getting a government grant for a national foundation model; round stage needs verifying.",
+  "rdi_sector": "Space",
+  "trl": "TRL 7–8",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series A",
+  "latest_round": "Later stage · IN-SPACe TAF award Jun 2026",
+  "lead_investor": "Not named in coverage",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in this coverage.",
+  "global_peers": [
+   {
+    "name": "Planet Labs",
+    "region": "US",
+    "note": "Earth-observation data and analytics"
+   },
+   {
+    "name": "EOS Data Analytics",
+    "region": "US / Ukraine",
+    "note": "Satellite analytics for agriculture"
+   }
+  ],
+  "judge_on": [
+   "Adoption of its Earth-observation model by government and enterprise",
+   "Recurring analytics revenue",
+   "Own satellite plans versus buying data"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "ideaforge",
+  "company": "ideaForge Technology",
+  "founders": "Not named in source",
+  "institution": "IIT Bombay origins",
+  "location": "Mumbai",
+  "sector": "Robotics & automation",
+  "tech": "Drones for defence, security and mapping",
+  "problem": "India's military and police need domestic drones",
+  "eli12": "Drones are flying robots with cameras. ideaForge builds them for the army, police and survey teams, so India doesn't have to rely on imported ones. The hard part is building drones tough enough for mountains and deserts while staying cheap.",
+  "signal_type": "Funding news",
+  "signal": "Listed on BSE and NSE in July 2023 at a 94% premium",
+  "source_name": "Inc42",
+  "source_url": "https://inc42.com/buzz/ideaforge-ipo-shares-list-premium-on-bse",
+  "signal_date": "2023-07-07",
+  "first_found": "2026-10-31",
+  "funding": "Listed (IPO July 2023)",
+  "stage": 5,
+  "stage_label": "Early revenue",
+  "entry_window": "Listed company",
+  "next_raise": "Listed company",
+  "fit": 3,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Medium",
+  "uncontested": "No: listed",
+  "diligence": false,
+  "why": "The public-market comparable for Indian drone and defence hardware; useful for valuing the private ones.",
+  "rdi_sector": "Robotics",
+  "trl": "TRL 8–9",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series D & beyond",
+  "latest_round": "Public company · IPO Jul 2023",
+  "lead_investor": "Public markets",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in this coverage.",
+  "global_peers": [
+   {
+    "name": "Skydio",
+    "region": "US",
+    "note": "Autonomous drones for defence and enterprise"
+   },
+   {
+    "name": "Elbit Systems",
+    "region": "Israel",
+    "note": "Defence drones (incumbent)"
+   }
+  ],
+  "judge_on": [
+   "Defence order book and its lumpiness",
+   "Export orders",
+   "Margins as Indian competitors multiply"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "inbound",
+  "company": "Inbound Aerospace",
+  "founders": "Not named in source",
+  "institution": "IIT Madras incubated",
+  "location": "Chennai",
+  "sector": "Space & earth observation",
+  "tech": "Autonomous re-entry spacecraft to bring cargo back from orbit",
+  "problem": "Bringing experiments and products back from space is rare and expensive",
+  "eli12": "Getting things up to space is hard, but bringing them back safely is just as hard: they get hotter than a furnace on the way down. Inbound is building a small capsule that flies itself home with experiments or materials made in space.",
+  "signal_type": "Funding news",
+  "signal": "$1M+ pre-seed led by Speciale Invest; first re-entry mission targeted Q1 2028",
+  "source_name": "Indian Startup News",
+  "source_url": "https://indianstartupnews.com/funding/iit-madras-incubated-inbound-aerospace-raises-1-million-to-build-autonomous-re-entry-spacecraft-9527902",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": ">$1M pre-seed, Speciale Invest; Piper Serica participated",
+  "stage": 2,
+  "stage_label": "Working prototype",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 5,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "Return-from-orbit is the bottleneck for in-space manufacturing; very early, very interesting.",
+  "rdi_sector": "Space",
+  "trl": "TRL 4–5",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $1M+ · 2025",
+  "lead_investor": "Speciale Invest",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage. Only Indian finalist at Japan's S-Booster 2025.",
+  "global_peers": [
+   {
+    "name": "Varda Space Industries",
+    "region": "US",
+    "note": "Re-entry capsules for in-space manufacturing"
+   },
+   {
+    "name": "The Exploration Company",
+    "region": "Germany/France",
+    "note": "Reusable cargo capsules"
+   }
+  ],
+  "judge_on": [
+   "Re-entry MVP mission on track for Q1 2028",
+   "Heat-shield test results",
+   "Customers for returned payloads (pharma, materials)"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "satleo",
+  "company": "SatLeo Labs",
+  "founders": "Shravan Bhati, Ranendu Ghosh, Urmil Bakhai",
+  "institution": "Ex-ISRO team members",
+  "location": "Ahmedabad",
+  "sector": "Space & earth observation",
+  "tech": "Thermal and optical imaging satellites in low Earth orbit",
+  "problem": "High-resolution thermal data from space is scarce",
+  "eli12": "Thermal cameras see heat instead of light, like night-vision goggles. SatLeo puts them on satellites to spot heat from cities, crops, factories or fires. The hard part is getting sharp thermal pictures from hundreds of kilometres up.",
+  "signal_type": "Funding news",
+  "signal": "$3.3M pre-seed led by Merak Ventures",
+  "source_name": "Indian Startup News",
+  "source_url": "https://indianstartupnews.com/funding/indian-startup-satleo-labs-raises-33-million-to-transform-indias-space-economy-9018308",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": "$3.3M pre-seed, Merak Ventures; Huddle participated",
+  "stage": 2,
+  "stage_label": "Working prototype",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 5,
+  "team": 4,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "Thermal is a less crowded slice of Earth observation with clear agriculture and climate buyers.",
+  "rdi_sector": "Space",
+  "trl": "TRL 4–5",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $3.3M · 2025",
+  "lead_investor": "Merak Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Shravan Bhati (CEO), Ranendu Ghosh (CTO), Urmil Bakhai (CSO); team includes former ISRO scientists.",
+  "global_peers": [
+   {
+    "name": "Hydrosat",
+    "region": "US",
+    "note": "Thermal infrared satellites for agriculture"
+   },
+   {
+    "name": "constellr",
+    "region": "Germany",
+    "note": "Thermal imaging satellites"
+   }
+  ],
+  "judge_on": [
+   "First satellite launched and image quality",
+   "Agriculture and urban-heat customers",
+   "Data price per square kilometre"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "orbitt",
+  "company": "Orbitt Space",
+  "founders": "Christopher Parmar, Anupam Kumar",
+  "institution": "Ex-ISRO founder",
+  "location": "Ahmedabad",
+  "sector": "Space & earth observation",
+  "tech": "Spacetech for India's strategic capabilities (details limited in coverage)",
+  "problem": "Strategic space capability gaps",
+  "eli12": "Orbitt builds space technology aimed at India's strategic needs. Coverage doesn't describe the exact product yet, so treat this one as a name to look into rather than an explained technology.",
+  "signal_type": "Funding news",
+  "signal": "$1M pre-seed led by pi Ventures with IIMA Ventures",
+  "source_name": "Indian Startup News",
+  "source_url": "https://indianstartupnews.com/funding/ex-isro-scientist-founded-spacetech-startup-orbitt-space-raises-1-million-in-funding-9314184",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": "$1M pre-seed, pi Ventures; IIMA Ventures participated",
+  "stage": 1,
+  "stage_label": "Lab-validated science",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 4,
+  "team": 3,
+  "market": 3,
+  "ip": 2,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "Needs primary research: strong backers, thin public detail.",
+  "rdi_sector": "Space",
+  "trl": "TRL 3–4",
+  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $1M · 2025",
+  "lead_investor": "pi Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Christopher Parmar and Anupam Kumar; ex-ISRO scientist founder.",
+  "global_peers": [],
+  "judge_on": [
+   "What the product actually is",
+   "First flight hardware",
+   "Strategic customer"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "omspace",
+  "company": "Omspace Rocket & Exploration",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Ahmedabad",
+  "sector": "Space & earth observation",
+  "tech": "Reusable small launch vehicle for ~350 kg to low Earth orbit",
+  "problem": "Small satellites wait for rideshare launches",
+  "eli12": "Omspace is building a small rocket that can come back and fly again, carrying a satellite about the weight of a motorbike-and-rider into orbit. Reusing rockets is what makes launches cheaper, but landing them is extremely hard.",
+  "signal_type": "Funding news",
+  "signal": "₹25 Cr pre-seed from a Dubai family office",
+  "source_name": "Entrepreneur India",
+  "source_url": "https://www.entrepreneur.com/en-in/news-and-trends/ahmedabad-based-spacetech-startup-omspace-raises-inr-25-cr/496340",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": "₹25 Cr ($3M) pre-seed, family office",
+  "stage": 1,
+  "stage_label": "Lab-validated science",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 3,
+  "team": 2,
+  "market": 3,
+  "ip": 2,
+  "confidence": "Low",
+  "uncontested": "No: investor-backed",
+  "diligence": true,
+  "why": "Third or fourth Indian small-launch entrant; differentiation is unclear.",
+  "rdi_sector": "Space",
+  "trl": "TRL 3–4",
+  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · ₹25 Cr · 2025",
+  "lead_investor": "Family office (Dubai)",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [
+   {
+    "name": "Rocket Lab Neutron",
+    "region": "US",
+    "note": "Reusable medium launcher"
+   },
+   {
+    "name": "Isar Aerospace",
+    "region": "Germany",
+    "note": "Small launch vehicle"
+   }
+  ],
+  "judge_on": [
+   "Engine test campaign",
+   "Team depth in propulsion",
+   "Path to orbit versus Skyroot and Agnikul"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "orbitaid",
+  "company": "OrbitAID Aerospace",
+  "founders": "Nikhil Balasubramanian, Sakthikumar R",
+  "institution": "",
+  "location": "Chennai",
+  "sector": "Space & earth observation",
+  "tech": "In-orbit docking and refuelling (SIDRP interface)",
+  "problem": "Satellites retire when fuel runs out",
+  "eli12": "OrbitAID is building a fuel port for satellites, like a petrol cap in space, so a servicing craft can dock and top them up. It's hard because docking two fast-moving spacecraft without crashing is very delicate.",
+  "signal_type": "Funding news",
+  "signal": "$1.5M pre-seed led by Unicorn India Ventures with TANSIM",
+  "source_name": "Indian Startup News",
+  "source_url": "https://indianstartupnews.com/funding/spacetech-startup-orbitaid-raises-funding-in-a-pre-seed-round-led-by-unicorn-india-ventures-8623691",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": "$1.5M pre-seed, Unicorn India Ventures; TANSIM",
+  "stage": 2,
+  "stage_label": "Working prototype",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 5,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "Refuelling interface is a standards play: whoever gets on satellites first wins.",
+  "rdi_sector": "Space",
+  "trl": "TRL 4–5",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $1.5M · ~2025",
+  "lead_investor": "Unicorn India Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Nikhil Balasubramanian and Sakthikumar R. Claims TRL 7 after a zero-gravity flight test.",
+  "global_peers": [
+   {
+    "name": "Orbit Fab",
+    "region": "US",
+    "note": "Satellite refuelling ports and fuel depots"
+   }
+  ],
+  "judge_on": [
+   "In-orbit docking demonstration",
+   "Satellite makers adopting the refuelling port",
+   "Overlap and competition with Aule Space"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "astrophel",
+  "company": "Astrophel Aerospace",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "India",
+  "sector": "Space & earth observation",
+  "tech": "Launch-vehicle propulsion (details limited in coverage)",
+  "problem": "Indigenous launch capability",
+  "eli12": "Astrophel works on rocket technology. Coverage gives little detail, so this is one to research before forming a view.",
+  "signal_type": "Funding news",
+  "signal": "₹6.84 Cr pre-seed from angels and early-stage firms",
+  "source_name": "Indian Startup News",
+  "source_url": "https://indianstartupnews.com/funding/deeptech-space-startup-astrophel-aerospace-raises-rs-684-crore-in-a-pre-seed-round-9457965",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": "₹6.84 Cr pre-seed",
+  "stage": 1,
+  "stage_label": "Lab-validated science",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 3,
+  "team": 2,
+  "market": 3,
+  "ip": 2,
+  "confidence": "Low",
+  "uncontested": "No: investor-backed",
+  "diligence": true,
+  "why": "Thin public detail; low priority until more is known.",
+  "rdi_sector": "Space",
+  "trl": "TRL 3–4",
+  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · ₹6.84 Cr · 2025",
+  "lead_investor": "Not named in coverage",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [],
+  "judge_on": [
+   "Clarity on product",
+   "Engine tests",
+   "Team"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "dashamlabs",
+  "company": "Dashamlabs",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Delhi",
+  "sector": "Advanced materials & chemistry",
+  "tech": "Aerogel materials",
+  "problem": "Insulation for industry and EVs is heavy or imported",
+  "eli12": "Aerogel is the lightest solid in the world, mostly air trapped in a tiny sponge, and it's an amazing insulator: you can hold a flame under it and touch the top. Dashamlabs makes it in India. The hard part is producing it cheaply in large amounts.",
+  "signal_type": "Funding news",
+  "signal": "₹12 Cr seed led by Speciale Invest with IIMA Ventures",
+  "source_name": "Entrackr",
+  "source_url": "https://entrackr.com/snippets/dashamlabs-raises-rs-12-cr-in-seed-round-led-by-speciale-invest-10568073",
+  "signal_date": "2025-10",
+  "first_found": "2026-10-31",
+  "funding": "₹12 Cr seed, Speciale Invest; IIMA Ventures",
+  "stage": 3,
+  "stage_label": "Pilot / first silicon",
+  "entry_window": "Next raise: Series A",
+  "next_raise": "Next raise: Series A",
+  "fit": 4,
+  "team": 3,
+  "market": 4,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Aerogels ride the EV battery-safety wave; Aspen Aerogels shows the size of the prize.",
+  "rdi_sector": "Advanced materials",
+  "trl": "TRL 6–7",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · ₹12 Cr · Oct 2025",
+  "lead_investor": "Speciale Invest",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [
+   {
+    "name": "Aspen Aerogels",
+    "region": "US",
+    "note": "Aerogel insulation for EV batteries and industry"
+   }
+  ],
+  "judge_on": [
+   "Production cost per square metre",
+   "EV battery and industrial insulation customers",
+   "Scale of the production line"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "flowatt",
+  "company": "Flowatt Battery Science",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Energy & climate",
+  "tech": "Battery technology (details limited in coverage)",
+  "problem": "Energy storage",
+  "eli12": "Flowatt works on new battery technology. Coverage is thin on the specifics, so this needs a closer look before explaining what makes it different.",
+  "signal_type": "Funding news",
+  "signal": "₹2.2 Cr pre-seed led by PedalStart",
+  "source_name": "Entrepreneur India",
+  "source_url": "https://www.entrepreneur.com/en-in/news-and-trends/dashamlabs-flowatt-battery-science-rara-barefoot-raise/498517",
+  "signal_date": "2025-10",
+  "first_found": "2026-10-31",
+  "funding": "₹2.2 Cr pre-seed, PedalStart",
+  "stage": 1,
+  "stage_label": "Lab-validated science",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 3,
+  "team": 2,
+  "market": 4,
+  "ip": 2,
+  "confidence": "Low",
+  "uncontested": "No: investor-backed",
+  "diligence": true,
+  "why": "Needs primary research.",
+  "rdi_sector": "Energy & climate action",
+  "trl": "TRL 3–4",
+  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · ₹2.2 Cr · Oct 2025",
+  "lead_investor": "PedalStart",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [],
+  "judge_on": [
+   "What chemistry it uses",
+   "Lab cell results",
+   "Team"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "neuralzome",
+  "company": "Neuralzome Cybernetics",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Robotics & automation",
+  "tech": "Autonomous robotics platform for agriculture, manufacturing and logistics",
+  "problem": "Labour shortages in farms and factories",
+  "eli12": "Neuralzome builds the 'brain' that lets machines like tractors or forklifts drive themselves. It's hard because farms and warehouses are messy and unpredictable, unlike a road with lanes.",
+  "signal_type": "Funding news",
+  "signal": "$2.4M pre-seed led by 8X Ventures; SIDBI and IIMA's CIIE participated",
+  "source_name": "Entrepreneur India",
+  "source_url": "https://www.entrepreneur.com/en-in/news-and-trends/neuralzome-cybernetic-raises-usd-24-mn-to-expand-robotic/495711",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": "$2.4M pre-seed, 8X Ventures",
+  "stage": 2,
+  "stage_label": "Working prototype",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 4,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Retrofit autonomy is capital-light; focus on which vertical pays first.",
+  "rdi_sector": "Robotics",
+  "trl": "TRL 4–5",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $2.4M · 2025",
+  "lead_investor": "8X Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [
+   {
+    "name": "Monarch Tractor",
+    "region": "US",
+    "note": "Autonomous electric tractors"
+   },
+   {
+    "name": "Bonsai Robotics",
+    "region": "US",
+    "note": "Autonomy for farm vehicles"
+   }
+  ],
+  "judge_on": [
+   "Paid deployments by vertical",
+   "Autonomy hours without intervention",
+   "Hardware-agnostic retrofit cost"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "wankel",
+  "company": "Wankel Energy Systems",
+  "founders": "Not named in source",
+  "institution": "IIT Madras incubated",
+  "location": "Chennai",
+  "sector": "Energy & climate",
+  "tech": "Recovering wasted energy in process industries",
+  "problem": "Indian process industries lose large amounts of energy as waste",
+  "eli12": "Factories throw away lots of energy as hot gas or pressure. Wankel's machine captures some of that waste and turns it back into useful power, like catching rainwater from a roof. The hard part is making it pay back quickly for factory owners.",
+  "signal_type": "Funding news",
+  "signal": "$1M pre-seed led by Shastra VC",
+  "source_name": "Millennium Post",
+  "source_url": "https://www.millenniumpost.in/k-reers/iit-madras-incubated-deep-tech-startup-raises-us1-million-funding-628686",
+  "signal_date": "",
+  "first_found": "2026-10-31",
+  "funding": "$1M pre-seed, Shastra VC",
+  "stage": 2,
+  "stage_label": "Working prototype",
+  "entry_window": "Next raise: Seed",
+  "next_raise": "Next raise: Seed",
+  "fit": 4,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Energy efficiency with a short payback sells itself if the data holds.",
+  "rdi_sector": "Energy & climate action",
+  "trl": "TRL 4–5",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Pre-seed",
+  "latest_round": "Pre-seed · $1M",
+  "lead_investor": "Shastra VC",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage; IIT Madras Energy Consortium link.",
+  "global_peers": [
+   {
+    "name": "Climeon",
+    "region": "Sweden",
+    "note": "Waste-heat-to-power systems"
+   }
+  ],
+  "judge_on": [
+   "Units deployed toward the 1,000-unit decade target",
+   "Payback period for customers",
+   "Industrial pilot results"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "h2cz",
+  "company": "H2 Carbon Zero (Umagine Hydrogen)",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "India",
+  "sector": "Energy & climate",
+  "tech": "Modular, stackable hydrogen fuel-cell systems to replace diesel generators",
+  "problem": "Telecom towers and data centres run backup power on diesel",
+  "eli12": "A fuel cell is like a battery that never runs flat as long as you feed it hydrogen, and it only gives off water. H2 Carbon Zero builds stackable fuel-cell units to replace diesel generators. The hard part is getting cheap, reliable hydrogen to the site.",
+  "signal_type": "Funding news",
+  "signal": "$850K seed led by Venture Catalysts",
+  "source_name": "Responsible US",
+  "source_url": "https://responsibleus.com/venture-catalysts-leads-850k-seed-round-in-h2-carbon-zero",
+  "signal_date": "",
+  "first_found": "2026-10-31",
+  "funding": "$850K seed, Venture Catalysts",
+  "stage": 2,
+  "stage_label": "Working prototype",
+  "entry_window": "Next raise: Pre-Series A",
+  "next_raise": "Next raise: Pre-Series A",
+  "fit": 4,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: investor-backed",
+  "diligence": false,
+  "why": "Diesel replacement for backup power is a clear buyer; hydrogen supply is the catch.",
+  "rdi_sector": "Energy & climate action",
+  "trl": "TRL 4–5",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · $850K",
+  "lead_investor": "Venture Catalysts",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [
+   {
+    "name": "Plug Power",
+    "region": "US",
+    "note": "Hydrogen fuel cells (incumbent)"
+   },
+   {
+    "name": "Ballard Power",
+    "region": "Canada",
+    "note": "Fuel-cell stacks"
+   }
+  ],
+  "judge_on": [
+   "Telecom or data-centre pilots",
+   "Hydrogen supply logistics",
+   "Cost per kWh versus diesel"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "greengrahi",
+  "company": "GreenGrahi",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "India",
+  "sector": "Agri-bio",
+  "tech": "Black soldier fly insect biotech for feed and food ingredients",
+  "problem": "Animal feed protein is expensive and imported",
+  "eli12": "Black soldier fly larvae eat food waste and turn it into protein-rich bodies that can feed fish and chickens. GreenGrahi farms them at scale in a 'bio-factory'. The hard part is running a huge insect farm cleanly and cheaply.",
+  "signal_type": "Funding news",
+  "signal": "₹32 Cr seed led by Avaana Capital",
+  "source_name": "StartupTalky",
+  "source_url": "https://migrate.startuptalky.com/?p=2637",
+  "signal_date": "",
+  "first_found": "2026-10-31",
+  "funding": "₹32 Cr seed, Avaana Capital",
+  "stage": 3,
+  "stage_label": "Pilot / first silicon",
+  "entry_window": "Next raise: Series A",
+  "next_raise": "Next raise: Series A",
+  "fit": 4,
+  "team": 3,
+  "market": 4,
+  "ip": 3,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": false,
+  "why": "Insect protein is proven technically but has burned capital in Europe; unit economics are everything.",
+  "rdi_sector": "Biotechnology (agri)",
+  "trl": "TRL 6–7",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "BIRAC",
+  "round_tab": "Seed",
+  "latest_round": "Seed · ₹32 Cr",
+  "lead_investor": "Avaana Capital",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [
+   {
+    "name": "Ÿnsect",
+    "region": "France",
+    "note": "Insect protein (filed for insolvency)"
+   },
+   {
+    "name": "Protix",
+    "region": "Netherlands",
+    "note": "Black soldier fly protein"
+   }
+  ],
+  "judge_on": [
+   "Bio-factory throughput and cost per tonne",
+   "Feed-company offtake contracts",
+   "Lessons from Ÿnsect's failure applied"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "quanfluence",
+  "company": "Quanfluence",
+  "founders": "Not named in source",
+  "institution": "",
+  "location": "Bengaluru",
+  "sector": "Quantum",
+  "tech": "Optical Ising machine for hard optimisation problems",
+  "problem": "Some optimisation problems are too slow on normal computers",
+  "eli12": "An Ising machine uses light pulses that settle into the best arrangement by themselves, like marbles rolling into the lowest dips of a bumpy tray. Each settled pattern is an answer to a hard puzzle. The hard part is beating clever software on ordinary computers.",
+  "signal_type": "Funding news",
+  "signal": "$2M seed led by pi Ventures",
+  "source_name": "Quantum Zeitgeist",
+  "source_url": "https://quantumzeitgeist.com/quanfluence-raises-2-million-in-a-seed-funds-for-optical-ising-machine",
+  "signal_date": "",
+  "first_found": "2026-10-31",
+  "funding": "$2M seed, pi Ventures; Golden Sparrow participated",
+  "stage": 2,
+  "stage_label": "Working prototype",
+  "entry_window": "Next raise: Series A",
+  "next_raise": "Next raise: Series A",
+  "fit": 4,
+  "team": 3,
+  "market": 3,
+  "ip": 4,
+  "confidence": "Low",
+  "uncontested": "No: VC-backed",
+  "diligence": true,
+  "why": "Photonic optimisation is a niche with real physics; must prove advantage on real problems.",
+  "rdi_sector": "Quantum technologies",
+  "trl": "TRL 4–5",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Seed",
+  "latest_round": "Seed · $2M",
+  "lead_investor": "pi Ventures",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in coverage.",
+  "global_peers": [
+   {
+    "name": "NTT Coherent Ising Machine",
+    "region": "Japan",
+    "note": "Optical Ising machine research"
+   },
+   {
+    "name": "LightSolver",
+    "region": "Israel",
+    "note": "Laser-based optimisation computer"
+   }
+  ],
+  "judge_on": [
+   "Benchmarks against classical solvers",
+   "Enterprise pilots",
+   "Hardware cost and size"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
+ },
+ {
+  "id": "ather",
+  "company": "Ather Energy",
+  "founders": "Not named in source",
+  "institution": "IIT Madras incubated (first IITM-incubated company to go public)",
+  "location": "Bengaluru",
+  "sector": "Energy & climate",
+  "tech": "Electric scooters with in-house battery packs, powertrain and software",
+  "problem": "Two-wheeler transport in India runs on petrol",
+  "eli12": "Ather makes electric scooters and designs the important insides itself: the battery pack, the motor controls and the software. It's hard because batteries are expensive and have to survive Indian heat, rain and potholes.",
+  "signal_type": "Funding news",
+  "signal": "Listed on the stock exchanges; first IIT Madras-incubated company to go public",
+  "source_name": "Outlook Business",
+  "source_url": "https://www.outlookbusiness.com/corporate/iit-madras-to-launch-200-cr-vc-fund-for-early-stage-deeptech-start-ups",
+  "signal_date": "2025",
+  "first_found": "2026-10-31",
+  "funding": "Listed company",
+  "stage": 5,
+  "stage_label": "Early revenue",
+  "entry_window": "Listed company",
+  "next_raise": "Listed company",
+  "fit": 3,
+  "team": 4,
+  "market": 5,
+  "ip": 4,
+  "confidence": "Medium",
+  "uncontested": "No: listed",
+  "diligence": false,
+  "why": "The public-market benchmark for Indian deep-hardware companies built out of an IIT incubator.",
+  "rdi_sector": "Energy & climate action",
+  "trl": "TRL 8–9",
+  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "rdi_route": "TDB",
+  "round_tab": "Series D & beyond",
+  "latest_round": "Public company · listed 2025",
+  "lead_investor": "Public markets",
+  "lead_partner": "Not named in coverage",
+  "founder_snapshot": "Founders not named in this coverage.",
+  "global_peers": [
+   {
+    "name": "Gogoro",
+    "region": "Taiwan",
+    "note": "Electric scooters with battery swapping"
+   },
+   {
+    "name": "NIU",
+    "region": "China",
+    "note": "Smart electric scooters"
+   }
+  ],
+  "judge_on": [
+   "Market share in electric two-wheelers",
+   "Unit economics per scooter as subsidies change",
+   "Battery cost and in-house cell strategy"
+  ],
+  "peers_source": "Claude's comparison from general knowledge, not from the cited source"
  }
 ]
