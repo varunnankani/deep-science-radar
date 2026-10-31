@@ -68,5 +68,12 @@
   "company": null,
   "kind": "Method change",
   "summary": "Ather, ideaForge, Skyroot, Pixxel, Digantara, Ethereal Machines and SatSure are now labelled benchmarks, outside the core scouting universe."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "meine",
+  "company": "Meine Electric",
+  "kind": "New signal",
+  "summary": "Independent cell validation at the CES Battery Laboratory (Jul 2026) added; TRL estimate moved from 3–4 to 4 on that basis."
  }
 ]

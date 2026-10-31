@@ -2854,9 +2854,9 @@
   "eli12": "Solar panels make power by day, but we need it at night too. Lithium batteries are great for a few hours but too pricey for a whole night. Meine's battery basically lets iron rust and un-rust, storing energy cheaply for a full day. The hard part is making it charge fast and last many years.",
   "signal_type": "Funding news",
   "signal": "$750K pre-seed from Antler, Rebalance, Venture Catalysts and others; moving from lab prototypes to pilot systems",
-  "source_name": "Indian Startup News",
-  "source_url": "https://indianstartupnews.com/funding/meine-electric-raises-rs-67-crore-in-funding-founder-says-india-will-win-the-energy-transition-when-11021713",
-  "signal_date": "2026-01-22",
+  "source_name": "The Tribune (PRNewswire release)",
+  "source_url": "https://www.tribuneindia.com/news/business/indian-deep-tech-startup-meine-electrics-fast-charging-iron-air-battery-clears-independent-validation/",
+  "signal_date": "2026-07-14",
   "first_found": "2026-10-31",
   "funding": "$750K pre-seed, Antler and others",
   "stage": 2,
@@ -2871,8 +2871,8 @@
   "diligence": true,
   "why": "Iron is cheap and Indian; if the chemistry holds, long-duration storage is the missing piece of a solar-heavy grid.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 3–4 (est.)",
-  "rdi_eligibility": "Likely below TRL 4 today; ANRF programmes may fit first",
+  "trl": "TRL 4 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $750K · Jan 2026",
@@ -2979,25 +2979,25 @@
    "status": "Completed"
   },
   "latest_signal": {
-   "kind": "Funding",
-   "summary": "$750K pre-seed to move from lab prototypes to pilot-ready iron-air systems",
-   "event_date": "2026-01-22",
-   "source_date": "2026-01-22"
+   "kind": "Technical milestone",
+   "summary": "Fast-charge, long-discharge iron-air cells pass independent testing at the CES Battery Laboratory (6-hour charge, 18-hour discharge)",
+   "event_date": "2026-07-14",
+   "source_date": "2026-07-14"
   },
-  "trl_estimate": "TRL 3–4 (est.)",
-  "trl_basis": "Stable iron-air cell and modules built in the lab (Antler); no pilot yet",
-  "rdi_status": "Likely below TRL 4 today; ANRF programmes may fit first",
+  "trl_estimate": "TRL 4 (est.)",
+  "trl_basis": "Cell-level performance validated by an independent lab (CES, Jul 2026); no system pilot yet",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "demonstrated": [
-   "Stable rechargeable iron-air cell",
-   "Six battery generations in ~10 months"
+   "Cells independently tested at the CES Battery Laboratory on a 6-hour charge, 18-hour discharge cycle (Jul 2026)",
+   "Stable rechargeable iron-air cell; six battery generations in about 10 months"
   ],
   "unproven": [
-   "Cycle life and efficiency at system scale",
-   "Cost per kWh at scale"
+   "Cycle count, round-trip efficiency and capacity retention: not published",
+   "System-scale cost (the under ₹5/kWh storage cost is the company's claim)"
   ],
   "would_change": [
-   "Pilot system data",
-   "A utility or solar-developer pilot site"
+   "Published cycle-life and efficiency data from the validation",
+   "A pilot with a utility or heavy-industry site"
   ],
   "team_factors": {
    "domain": {
