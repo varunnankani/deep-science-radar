@@ -1,0 +1,599 @@
+[
+ {
+  "id": "247vc",
+  "name": "247VC",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "3i-partners",
+  "name": "3i Partners",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "3one4-capital",
+  "name": "3one4 Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://3one4capital.com"
+ },
+ {
+  "id": "8x-ventures",
+  "name": "8X Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "aum-ventures",
+  "name": "AUM Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "aavishkaar-capital",
+  "name": "Aavishkaar Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "aditya-birla-ventures",
+  "name": "Aditya Birla Ventures",
+  "type": "Corporate venture arm",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "alkemi-growth-capital",
+  "name": "Alkemi Growth Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "ankur-capital",
+  "name": "Ankur Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://www.ankurcapital.com"
+ },
+ {
+  "id": "antler",
+  "name": "Antler",
+  "type": "Accelerator or incubator",
+  "aliases": [],
+  "website": "https://www.antler.co"
+ },
+ {
+  "id": "arkam-ventures",
+  "name": "Arkam Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "artha-access",
+  "name": "Artha Access",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "artha-venture-fund",
+  "name": "Artha Venture Fund",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "ashish-kacholia",
+  "name": "Ashish Kacholia",
+  "type": "Individual investor",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "avaana-capital",
+  "name": "Avaana Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://avaanacapital.com"
+ },
+ {
+  "id": "avataar-ventures",
+  "name": "Avataar Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "banyanco",
+  "name": "BanyanCo",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "blackrock",
+  "name": "BlackRock",
+  "type": "Sovereign or asset manager",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "bluehill-vc",
+  "name": "Bluehill.VC",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://bluehill.vc"
+ },
+ {
+  "id": "blume-ventures",
+  "name": "Blume Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "boost-vc",
+  "name": "Boost VC",
+  "type": "Accelerator or incubator",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "boundless-ventures",
+  "name": "Boundless Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "c-camp",
+  "name": "C-CAMP",
+  "type": "Accelerator or incubator",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "campus-angels-network",
+  "name": "Campus Angels Network",
+  "type": "Angel network or platform",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "capital-a",
+  "name": "Capital-A",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "chiratae-ventures",
+  "name": "Chiratae Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://www.chiratae.com"
+ },
+ {
+  "id": "climate-angels",
+  "name": "Climate Angels",
+  "type": "Angel network or platform",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "concept-ventures",
+  "name": "Concept Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "ewor",
+  "name": "EWOR",
+  "type": "Accelerator or incubator",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "entropy-industrial-ventures",
+  "name": "Entropy Industrial Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "exfinity-ventures",
+  "name": "Exfinity Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://exfinityventures.com"
+ },
+ {
+  "id": "faad-network",
+  "name": "Faad Network",
+  "type": "Angel network or platform",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "finvolve",
+  "name": "Finvolve",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "gic",
+  "name": "GIC",
+  "type": "Sovereign or asset manager",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "good-startup",
+  "name": "Good Startup",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "google",
+  "name": "Google",
+  "type": "Corporate",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "hdfc-bank",
+  "name": "HDFC Bank",
+  "type": "Bank",
+  "aliases": [],
+  "website": "https://www.hdfcbank.com"
+ },
+ {
+  "id": "ian-alpha-fund",
+  "name": "IAN Alpha Fund",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "iima-ventures",
+  "name": "IIMA Ventures",
+  "type": "Venture fund",
+  "aliases": [
+   "IIMA Ventures CIIE"
+  ],
+  "website": null
+ },
+ {
+  "id": "in-space",
+  "name": "IN-SPACe",
+  "type": "Government programme",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "ideaspring-capital",
+  "name": "Ideaspring Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://www.ideaspringcap.com"
+ },
+ {
+  "id": "incubate-fund-asia",
+  "name": "Incubate Fund Asia",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "industrial47",
+  "name": "Industrial47",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "inflexor-ventures",
+  "name": "Inflexor Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "inuka-capital",
+  "name": "Inuka Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "ivycap-ventures",
+  "name": "IvyCap Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://ivycapventures.com"
+ },
+ {
+  "id": "java-capital",
+  "name": "Java Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "kalaari-capital",
+  "name": "Kalaari Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "leo-capital",
+  "name": "Leo Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "letsventure-angel-fund",
+  "name": "LetsVenture Angel Fund",
+  "type": "Angel network or platform",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "lightspeed",
+  "name": "Lightspeed",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "mela-ventures",
+  "name": "Mela Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "merak-ventures",
+  "name": "Merak Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "mitsui-sumitomo-insurance-vc",
+  "name": "Mitsui Sumitomo Insurance VC",
+  "type": "Corporate venture arm",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "mounttech-growth-fund-kavachh",
+  "name": "MountTech Growth Fund – Kavachh",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "national-quantum-mission",
+  "name": "National Quantum Mission",
+  "type": "Government programme",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "navam-capital",
+  "name": "Navam Capital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "peak-xv-partners",
+  "name": "Peak XV Partners",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://www.peakxv.com"
+ },
+ {
+  "id": "pedalstart",
+  "name": "PedalStart",
+  "type": "Accelerator or incubator",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "persistent-systems",
+  "name": "Persistent Systems",
+  "type": "Corporate",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "piper-serica",
+  "name": "Piper Serica",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "prime-venture-partners",
+  "name": "Prime Venture Partners",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://primevp.in"
+ },
+ {
+  "id": "rainmatter",
+  "name": "Rainmatter",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://rainmatter.com"
+ },
+ {
+  "id": "rebalance",
+  "name": "Rebalance",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "reliance-industries",
+  "name": "Reliance Industries",
+  "type": "Corporate",
+  "aliases": [],
+  "website": "https://www.ril.com"
+ },
+ {
+  "id": "roots-ventures",
+  "name": "Roots Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "sbi-holdings",
+  "name": "SBI Holdings",
+  "type": "Corporate",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "sidbi",
+  "name": "SIDBI",
+  "type": "Development finance",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "seafund",
+  "name": "Seafund",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "seedcamp",
+  "name": "Seedcamp",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://seedcamp.com"
+ },
+ {
+  "id": "shastra-vc",
+  "name": "Shastra VC",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "sherpalo-ventures",
+  "name": "Sherpalo Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "speciale-invest",
+  "name": "Speciale Invest",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://www.specialeinvest.com"
+ },
+ {
+  "id": "spectrum-impact",
+  "name": "Spectrum Impact",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "stride-ventures",
+  "name": "Stride Ventures",
+  "type": "Venture debt",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "sun-icon-ventures",
+  "name": "Sun Icon Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "tansim",
+  "name": "TANSIM",
+  "type": "Government programme",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "turbostart",
+  "name": "Turbostart",
+  "type": "Accelerator or incubator",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "unicorn-india-ventures",
+  "name": "Unicorn India Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://unicornivc.com"
+ },
+ {
+  "id": "v3-ventures",
+  "name": "V3 Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "venture-catalysts",
+  "name": "Venture Catalysts",
+  "type": "Angel network or platform",
+  "aliases": [],
+  "website": "https://venturecatalysts.in"
+ },
+ {
+  "id": "vertex-ventures",
+  "name": "Vertex Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://www.vertexventures.sg"
+ },
+ {
+  "id": "a99",
+  "name": "a99",
+  "type": "Not classified",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "gradcapital",
+  "name": "gradCapital",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": null
+ },
+ {
+  "id": "pi-ventures",
+  "name": "pi Ventures",
+  "type": "Venture fund",
+  "aliases": [],
+  "website": "https://piventures.in"
+ }
+]

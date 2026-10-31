@@ -24,6 +24,7 @@ The Network tab draws companies, investors, institutions, sectors and (optionall
 ## Files
 
 - `data/leads.json`: one object per company. Key fields: `last_funding` (last confirmed round; stage can be "Undisclosed"), `latest_signal` (kind, summary, event_date, source_date), `demonstrated` / `unproven` / `would_change`, `trl_estimate` + `trl_basis` (the milestone it rests on), `rdi_status` (never "eligible"; always "eligibility unverified"), `team_factors` (each `{score, evidence}` or null = insufficient evidence), `factor_evidence`, `role` (Core or Benchmark), `investor_edges`, `institutions`, `bottlenecks`, and the dates `date_added`, `assessed_on`, `last_substantive_update`, `last_verified`.
+- `data/investors.json`: the backer registry, one entry per backer `{id, name, type, aliases, website}`. The network resolves every investor name in `leads.json` through it, so aliases (for example "IIMA Ventures CIIE") count as one backer. Types are the radar's classification; unclear ones are "Not classified".
 - `data/changes.json`: change log of meaningful changes, newest last; the Updates page and the weekly digest read it.
 - `data/firms.json`: investor firm websites used for links (only sites that were checked).
 - `data/excluded.json`: kept for compatibility; the directory now covers every stage.
@@ -42,3 +43,7 @@ python3 -m http.server 8000
 then open http://localhost:8000.
 
 Scores are judgement calls based on public reporting. Not investment advice.
+
+## Network
+
+The Network page draws every relationship on a canvas with d3-force for layout and a separate, lightweight ambient animation (bounded drift, breathing glow, travelling highlights on selected connections). Layout runs once per lens and is cached; motion never re-runs the physics. The animation loop pauses when the page is hidden, the tab is in the background, the user pauses it, or the system asks for reduced motion. `window.__radar` exposes read-only state for testing.
