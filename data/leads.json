@@ -11,9 +11,9 @@
   "eli12": "Imagine a robot arm that bends like a snake, with more than 20 joints, so it can wriggle through a gap narrower than a soda can and look around inside a tank. Today a person has to climb in. The hard part is controlling that many joints at once without the arm crashing into walls, which is where the AI navigation comes in.",
   "signal_type": "Funding news",
   "signal": "$2.1M pre-seed led by pi Ventures; reported in talks for a much larger round; targets 10–12 pilots",
-  "source_name": "YourStory",
-  "source_url": "https://yourstory.com/2026/07/armatrix-snake-robots-dangerous-tank-inspections",
-  "signal_date": "2026-07-01",
+  "source_name": "Entrackr",
+  "source_url": "https://entrackr.com/snippets/deep-tech-robotics-startup-armatrix-raises-21-mn-led-by-pi-ventures-11152392",
+  "signal_date": "2026-02-25",
   "first_found": "2026-10-31",
   "funding": "$2.1M pre-seed (Feb 2026), pi Ventures",
   "stage": 2,
@@ -22,14 +22,14 @@
   "fit": 5,
   "team": 4,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Confined-space inspection is a safety problem with a regulatory forcing function; a platform arm can sell into aviation, oil and gas, shipbuilding and nuclear without a rebuild.",
   "rdi_sector": "Robotics",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 4–5 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $2.1M · Feb 2026",
@@ -76,12 +76,6 @@
    ],
    "source": "https://inc42.com/company/armatrix/financials/",
    "note": "Small revenue, likely from early engineering or pilot work."
-  },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 2,
-   "complementarity": 3,
-   "execution": 4
   },
   "team_strengths": [
    "Three IIT Kanpur engineers with a working 3-metre arm and a second round led by a deep-tech specialist fund",
@@ -136,6 +130,114 @@
   ],
   "institution_tags": [
    "IIT Kanpur"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$2.1M",
+   "date": "2026-02",
+   "lead": "pi Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$2.1M pre-seed led by pi Ventures to finish the arm and start industrial pilots",
+   "event_date": "2026-02-25",
+   "source_date": "2026-02-25"
+  },
+  "trl_estimate": "TRL 4–5 (est.)",
+  "trl_basis": "A working 3-metre proof-of-concept arm (YourStory, Jul 2026); pre-revenue on product, no field pilot reported yet",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Working 3-metre snake-arm prototype",
+   "Small profitable FY25 on ₹54 lakh revenue"
+  ],
+  "unproven": [
+   "Survival in heat, chemicals and real tank entries",
+   "Whether industrial buyers pay per inspection at a useful price"
+  ],
+  "would_change": [
+   "A paid pilot in a refinery, shipyard or MRO shop",
+   "Field data on uptime inside confined spaces"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 4,
+    "evidence": "IIT Kanpur engineers who built a working 3-metre arm"
+   },
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "Working prototype; profitable FY25 on small revenue"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Robotics for hazardous industrial inspection: B2B, unglamorous, India has the end users"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Confined-space entry is a safety and regulatory issue across oil and gas, shipbuilding, aviation and nuclear"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "High",
+  "institutions": [
+   {
+    "name": "IIT Kanpur",
+    "relation": "Founders' education"
+   }
+  ],
+  "tech_approach": "Snake-arm robotics",
+  "investor_edges": [
+   {
+    "name": "pi Ventures",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-02"
+   },
+   {
+    "name": "Inuka Capital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Boundless Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Boost VC",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Turbostart",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "gradCapital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "2 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Robots for hard or dull work"
   ]
  },
  {
@@ -161,17 +263,17 @@
   "fit": 5,
   "team": 4,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC/angel-backed",
   "diligence": true,
   "why": "A government grant on top of private money is a co-signal that the hardest engine cycle is being taken seriously; reusability is the cost lever in launch.",
   "rdi_sector": "Space",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 4–5 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
-  "latest_round": "Seed · ~$10M · Jul 2025; IN-SPACe TAF award Jun 2026",
+  "latest_round": "Seed · ~$10M · Jul 2025",
   "lead_investor": "BanyanCo",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Co-founded by CoinDCX co-founder Neeraj Khandelwal with senior ISRO scientists Devakumar Thammisetty, Pawan Kumar and Prashant M; about 10 ex-ISRO scientists on board.",
@@ -214,12 +316,6 @@
    ],
    "source": "https://inc42.com/company/astrobase/financials/",
    "note": null
-  },
-  "team_scores": {
-   "domain": 5,
-   "commercial": 4,
-   "complementarity": 5,
-   "execution": 3
   },
   "team_strengths": [
    "Rare mix: a founder who scaled a large consumer fintech (CoinDCX) with senior ISRO propulsion scientists",
@@ -274,6 +370,94 @@
   ],
   "institution_tags": [
    "ISRO alumni"
+  ],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "~$10M",
+   "date": "2025-07",
+   "lead": "BanyanCo",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Grant",
+   "summary": "Selected for IN-SPACe's Technology Adoption Fund for its full-flow staged-combustion engine",
+   "event_date": "2026-06-12",
+   "source_date": "2026-06-12"
+  },
+  "trl_estimate": "TRL 4–5 (est.)",
+  "trl_basis": "Engine unveiled (ThePrint); IN-SPACe selected it for technology adoption support. No hot-fire duration data in coverage",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Full-flow engine design unveiled",
+   "Government co-funding through IN-SPACe"
+  ],
+  "unproven": [
+   "Sustained hot-fire tests and reuse",
+   "Cost per tonne of thrust"
+  ],
+  "would_change": [
+   "Published hot-fire durations and restart counts",
+   "A launch-vehicle customer or anchor contract"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 5,
+    "evidence": "Senior ISRO scientists; about 10 ex-ISRO staff on board"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "Co-founder co-founded CoinDCX"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "ISRO propulsion depth plus a founder who has scaled a company"
+   },
+   "execution": {
+    "score": 3,
+    "evidence": "Engine unveiled; no flight yet"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Space launch propulsion: a strategic, capital-heavy India priority in the thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Medium-lift launch demand from Indian and global satellite operators is growing"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "ISRO",
+    "relation": "Founders' previous employment"
+   },
+   {
+    "name": "CoinDCX",
+    "relation": "Founder's previous company"
+   }
+  ],
+  "tech_approach": "Staged-combustion rocket engines",
+  "investor_edges": [
+   {
+    "name": "BanyanCo",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2025-07"
+   }
+  ],
+  "team_basis": "4 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Getting to orbit cheaply"
   ]
  },
  {
@@ -297,19 +481,19 @@
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Seed",
   "fit": 5,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Edge compute in orbit is a picks-and-shovels play on India's satellite boom; the government grant is a second, independent vote.",
   "rdi_sector": "Space",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
-  "latest_round": "Pre-seed · ₹5.5 Cr · 2025; IN-SPACe TAF award Jun 2026",
+  "latest_round": "Pre-seed · ₹5.5 Cr · 2025",
   "lead_investor": "Seafund",
   "lead_partner": "Manoj Kumar Agarwal, Managing Partner",
   "founder_snapshot": "Founder-CEO Ronak Kumar Samantray started it in 2024; 17+ people; has flown payloads on ISRO's POEM platform twice.",
@@ -354,12 +538,6 @@
    "source": "https://inc42.com/company/takeme2space/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 3,
-   "complementarity": 2,
-   "execution": 4
-  },
   "team_strengths": [
    "Fast execution: payloads flown twice on ISRO's POEM platform within two years",
    "Company plus a government grant on top of private money"
@@ -398,7 +576,89 @@
    "Blume Ventures",
    "Artha Venture Fund"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "₹5.5 Cr",
+   "date": "2025",
+   "lead": "Seafund",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Grant",
+   "summary": "Selected for IN-SPACe's Technology Adoption Fund for an AI-powered star tracker",
+   "event_date": "2026-06-12",
+   "source_date": "2026-06-12"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "Payloads flown twice on ISRO's POEM platform; ran external code in orbit on its MOI-TD mission",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Two in-orbit missions on ISRO's POEM",
+   "Uplinked AI models and ran third-party code in orbit"
+  ],
+  "unproven": [
+   "Whether customers pay for compute in space",
+   "Scale beyond rideshare payloads"
+  ],
+  "would_change": [
+   "Paying users on the MOI-1 in-space AI lab",
+   "Revenue doubling over 12 months, as the company guides"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "Two in-orbit missions on ISRO's POEM within two years"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Space infrastructure (in-orbit compute): picks-and-shovels for Indian satellite growth"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Onboard processing addresses a real downlink bottleneck, but demand is still forming"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "In-orbit computing",
+  "investor_edges": [
+   {
+    "name": "Seafund",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2025"
+   },
+   {
+    "name": "Blume Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Artha Venture Fund",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Computing in space"
+  ]
  },
  {
   "id": "aule",
@@ -414,23 +674,23 @@
   "signal": "$2M pre-seed led by pi Ventures; earlier IN-SPACe seed support; defence interest",
   "source_name": "CIO Insider",
   "source_url": "https://www.cioinsiderindia.com/news/aule-space-secures-2-million-in-a-preseed-funding-round-nwid-8023.html",
-  "signal_date": "2026-01-15",
+  "signal_date": "2026-01-14",
   "first_found": "2026-10-31",
   "funding": "$2M pre-seed, pi Ventures; ~₹80L IN-SPACe seed",
   "stage": 2,
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed (~$5M signalled)",
   "fit": 5,
-  "team": 4,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Life-extension is a service with a clear buyer (satellite operators) and a dual-use defence angle in space situational awareness.",
   "rdi_sector": "Space",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $2M · Jan 2026",
@@ -469,12 +729,6 @@
    "rows": [],
    "source": null,
    "note": "No public financial filings found; founded 2024."
-  },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 2,
-   "complementarity": 3,
-   "execution": 3
   },
   "team_strengths": [
    "Angel backing from the CEO of Tonbo Imaging and a former Intelsat board member brings customer access",
@@ -522,7 +776,73 @@
   "investors": [
    "pi Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$2M",
+   "date": "2026-01",
+   "lead": "pi Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$2M pre-seed led by pi Ventures for a docking demonstration satellite",
+   "event_date": "2026-01-14",
+   "source_date": "2026-01-14"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No demonstrated hardware milestone in coverage; demo satellite planned for 2027",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised with angels from Tonbo Imaging and Intelsat's former board"
+  ],
+  "unproven": [
+   "Docking with a satellite in orbit",
+   "Operator demand for life extension"
+  ],
+  "would_change": [
+   "Demo mission launched and docking proven",
+   "A letter of intent from a GEO operator"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "In-orbit servicing: strategic space infrastructure"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "GEO life extension has a clear buyer in satellite operators, proven abroad by Northrop's MEV"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Satellite docking and servicing",
+  "investor_edges": [
+   {
+    "name": "pi Ventures",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-01"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Keeping satellites working longer"
+  ]
  },
  {
   "id": "sanyark",
@@ -545,16 +865,16 @@
   "stage_label": "Lab-validated science",
   "entry_window": "Next raise: Seed",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 3,
-  "ip": 2,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "A sovereignty bet that needs many satellites before revenue; capital intensity is the first diligence question.",
   "rdi_sector": "Space",
-  "trl": "TRL 3–4",
-  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $500K · Feb 2026",
@@ -595,7 +915,6 @@
    "source": null,
    "note": "No public financial filings found."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -633,7 +952,72 @@
   "investors": [
    "AUM Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$500K",
+   "date": "2026-02",
+   "lead": "AUM Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$500K pre-seed from AUM Ventures for a navigation and communication constellation",
+   "event_date": "2026-02-05",
+   "source_date": "2026-02-05"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No demonstrated hardware milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised"
+  ],
+  "unproven": [
+   "Everything technical: no satellite built or flown"
+  ],
+  "would_change": [
+   "First satellite built and tested",
+   "A government or defence anchor customer"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Sovereign navigation: strategic need"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Large if India funds a private constellation; capital needs are very high"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Satellite navigation constellations",
+  "investor_edges": [
+   {
+    "name": "AUM Ventures",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-02"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Secure communications"
+  ]
  },
  {
   "id": "dream-aerospace",
@@ -649,23 +1033,23 @@
   "signal": "₹10 Cr pre-Series A for thruster qualification and a demo mission",
   "source_name": "Entrackr via Pulse",
   "source_url": "https://www.pulse.bot/aerospace/news/dream-aerospace-raises-rs-10-cr-pre-series-a-round-69e3087b-5aed-4642-bcf7-59fb79523e3f/",
-  "signal_date": "2026-06-12",
+  "signal_date": "2026-06-11",
   "first_found": "2026-10-31",
   "funding": "₹10 Cr ($1.2M) pre-Series A",
   "stage": 2,
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 3,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": true,
   "why": "Propulsion is a component every small satellite needs; qualification data will decide whether this is a supplier or a science project.",
   "rdi_sector": "Space",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 4–5 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · ₹10 Cr · Jun 2026",
@@ -705,7 +1089,6 @@
    "source": null,
    "note": "No revenue figures found. Inc42 lists founders holding about 81% of the company."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -733,7 +1116,80 @@
    "247VC",
    "Campus Angels Network"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "₹10 Cr",
+   "date": "2026-06",
+   "lead": "247VC and Campus Angels Network",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹10 Cr pre-Series A for ATOM thruster qualification and a CUBEHOOD demo",
+   "event_date": "2026-06-11",
+   "source_date": "2026-06-12"
+  },
+  "trl_estimate": "TRL 4–5 (est.)",
+  "trl_basis": "Thruster exists and is entering space qualification; no flight yet in coverage",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "ATOM thruster built",
+   "Pre-Series A raised"
+  ],
+  "unproven": [
+   "Space qualification results",
+   "Flight performance"
+  ],
+  "would_change": [
+   "Qualification test results published",
+   "Repeat orders from satellite makers"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Satellite propulsion: component every smallsat needs"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Steady demand from small-satellite builders; competitive with European suppliers"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Electric propulsion",
+  "investor_edges": [
+   {
+    "name": "247VC",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-06"
+   },
+   {
+    "name": "Campus Angels Network",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-06"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Keeping satellites working longer"
+  ]
  },
  {
   "id": "tattvam",
@@ -756,16 +1212,16 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed",
   "fit": 4,
-  "team": 4,
+  "team": null,
   "market": 5,
-  "ip": 3,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Chip-design labour is the bottleneck for India's fabless ambitions; tooling sells to every chip team rather than betting on one chip.",
   "rdi_sector": "Semiconductors",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $1.7M · Feb 2026",
@@ -805,12 +1261,6 @@
    "rows": [],
    "source": null,
    "note": "Registered abroad; no Indian filings found."
-  },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 3
   },
   "team_strengths": [
    "Backed by Stan Boland, who built and sold Icera to NVIDIA, a strong signal on the founder",
@@ -858,6 +1308,95 @@
   ],
   "institution_tags": [
    "IIT Madras"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$1.7M",
+   "date": "2026-02",
+   "lead": "Seedcamp",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$1.7M pre-seed led by Seedcamp",
+   "event_date": "2026-02-25",
+   "source_date": "2026-02-25"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No product milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised from Seedcamp and semiconductor angel Stan Boland"
+  ],
+  "unproven": [
+   "Whether its AI holds up on a real tape-out",
+   "Willingness of chip teams to adopt a new tool"
+  ],
+  "would_change": [
+   "A design team using it on a production tape-out",
+   "Measured hours saved per block"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Chip-design tooling: core semiconductor thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Design labour is a bottleneck for fabless growth globally"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "IIT Madras",
+    "relation": "Founder's education"
+   }
+  ],
+  "tech_approach": "AI for chip design",
+  "investor_edges": [
+   {
+    "name": "Seedcamp",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-02"
+   },
+   {
+    "name": "EWOR",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Entropy Industrial Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Concept Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Designing chips in India"
   ]
  },
  {
@@ -881,16 +1420,16 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Series A",
   "fit": 5,
-  "team": 3,
+  "team": null,
   "market": 5,
-  "ip": 4,
+  "ip": 3,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "AI energy cost is the industry's binding constraint; in-memory plus optical is a genuinely different architecture, not a cheaper copy.",
   "rdi_sector": "Semiconductors",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 4–5 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · $1.8M · Feb 2026",
@@ -936,12 +1475,6 @@
    "source": null,
    "note": "Headquartered in Singapore with a Bengaluru team; no Indian filings found."
   },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 2,
-   "complementarity": 2,
-   "execution": 4
-  },
   "team_strengths": [
    "Already taped out a 12nm chip at TSMC, rare for a pre-Series A Indian team",
    "Partnership with Kaynes Semicon for assembly and test"
@@ -979,7 +1512,86 @@
    "Bluehill.VC",
    "a99"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "$1.8M",
+   "date": "2026-02",
+   "lead": "Bluehill.VC and a99",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Technical milestone",
+   "summary": "12nm chip taped out at TSMC; MoU with Kaynes Semicon for assembly and test",
+   "event_date": "2026-02-24",
+   "source_date": "2026-02-24"
+  },
+  "trl_estimate": "TRL 4–5 (est.)",
+  "trl_basis": "12nm tape-out at TSMC completed; silicon results not yet reported",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "12nm tape-out at TSMC",
+   "Assembly partner signed (Kaynes Semicon)"
+  ],
+  "unproven": [
+   "Returned silicon meeting energy and accuracy targets",
+   "A first customer"
+  ],
+  "would_change": [
+   "Measured energy per inference on returned chips",
+   "A data-centre or edge design-in"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "12nm tape-out at TSMC at pre-Series A"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "AI compute silicon: core semiconductor thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "AI energy cost is a binding constraint; large market but dominated by incumbents"
+   },
+   "ip": {
+    "score": 3,
+    "rationale": "Proprietary analog in-memory architecture taped out at 12nm"
+   }
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Analog in-memory computing",
+  "investor_edges": [
+   {
+    "name": "Bluehill.VC",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-02"
+   },
+   {
+    "name": "a99",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-02"
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Energy-efficient AI chips"
+  ]
  },
  {
   "id": "sensesemi",
@@ -1004,14 +1616,14 @@
   "fit": 4,
   "team": 4,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Government DLI approval de-risks part of the design cost; the test is first silicon and an OEM design win.",
   "rdi_sector": "Semiconductors",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 4–5 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Seed · ₹25 Cr · Jan 2026",
@@ -1068,12 +1680,6 @@
    "source": "https://inc42.com/company/sensesemi/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 5,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 4
-  },
   "team_strengths": [
    "CEO spent six years as a senior analog and mixed-signal designer at LSI, then ran systems engineering at Asarva Chips: exactly the skills ultra-low-power chips need",
    "DLI approval and first revenue in FY25"
@@ -1117,7 +1723,108 @@
    "LetsVenture Angel Fund",
    "Sun Icon Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "₹25 Cr",
+   "date": "2026-01",
+   "lead": "Piper Serica",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹25 Cr seed led by Piper Serica to fund 2026 tape-outs",
+   "event_date": "2026-01-20",
+   "source_date": "2026-01-20"
+  },
+  "trl_estimate": "TRL 4–5 (est.)",
+  "trl_basis": "DLI-approved design; first revenue in FY25; tape-outs planned in 2026",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "DLI approval",
+   "₹1.4 Cr revenue in FY25"
+  ],
+  "unproven": [
+   "Silicon meeting ultra-low-power targets",
+   "Design wins with device makers"
+  ],
+  "would_change": [
+   "Tape-out results",
+   "A named OEM or medical-device customer"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 5,
+    "evidence": "CEO: six years of analog and mixed-signal design at LSI; VP Systems Engineering at Asarva Chips"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "Led systems engineering and product lifecycle at Asarva, not sales"
+   },
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "Founded 2014; first revenue in FY25"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Edge AI silicon: core semiconductor thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Billions of IoT and medical devices need low-power chips"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "High",
+  "institutions": [
+   {
+    "name": "LSI",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Asarva Chips",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "NEC",
+    "relation": "Founder's previous employment"
+   }
+  ],
+  "tech_approach": "Ultra-low-power edge chips",
+  "investor_edges": [
+   {
+    "name": "Piper Serica",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-01"
+   },
+   {
+    "name": "LetsVenture Angel Fund",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Sun Icon Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "3 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Energy-efficient AI chips"
+  ]
  },
  {
   "id": "bigendian",
@@ -1133,23 +1840,23 @@
   "signal": "$6M pre-Series A led by IAN Alpha Fund with Vertex and IvyCap",
   "source_name": "YourStory",
   "source_url": "https://yourstory.com/2026/05/bigendian-semiconductors-bags-6-million-led-by-ian-alpha-fund",
-  "signal_date": "2026-05-01",
+  "signal_date": "2026-05",
   "first_found": "2026-10-31",
   "funding": "$6M pre-Series A, IAN Alpha, Vertex, IvyCap",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A (round still open for ~$4M more)",
   "fit": 5,
-  "team": 4,
+  "team": null,
   "market": 5,
-  "ip": 4,
+  "ip": 3,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "A completed tape-out moves the risk from 'can they build it' to 'can they sell it', which is the right risk to underwrite at this stage.",
   "rdi_sector": "Semiconductors",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · $6M · May 2026",
@@ -1195,12 +1902,6 @@
    ],
    "source": "https://inc42.com/company/bigendian-semiconductors/financials/",
    "note": null
-  },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 4
   },
   "team_strengths": [
    "Six co-founders, a large team for a chip startup, covering design and business",
@@ -1265,7 +1966,94 @@
    "Vertex Ventures",
    "IvyCap Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "$6M",
+   "date": "2026-05",
+   "lead": "IAN Alpha Fund",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Technical milestone",
+   "summary": "Sample surveillance SoC unveiled; first commercial chip taped out",
+   "event_date": "2026-05",
+   "source_date": "2026-05-11"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "First commercial SoC taped out and sample chipset shown (Inc42, May 2026)",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Commercial SoC taped out",
+   "Sample chipset shown",
+   "Repeat backing from Vertex"
+  ],
+  "unproven": [
+   "Performance against imported surveillance chips",
+   "Volume orders after regulatory testing"
+  ],
+  "would_change": [
+   "Camera makers committing to volume",
+   "Commercial availability in Q3–Q4 as guided"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "Commercial SoC taped out; seed investor returned in next round"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Domestic SoC design: core semiconductor thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Surveillance cameras are a large Indian market with a policy push for trusted chips"
+   },
+   "ip": {
+    "score": 3,
+    "rationale": "Own SoC designed and taped out"
+   }
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Vision SoCs",
+  "investor_edges": [
+   {
+    "name": "IAN Alpha Fund",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-05"
+   },
+   {
+    "name": "Vertex Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "IvyCap Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Energy-efficient AI chips",
+   "Designing chips in India"
+  ]
  },
  {
   "id": "nusynth",
@@ -1288,16 +2076,16 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "India manufactures the world's generics but rents much of the process know-how; owning the recipe is the higher-margin layer.",
   "rdi_sector": "Advanced materials",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Seed · ₹36.5 Cr · Oct 2026",
@@ -1337,12 +2125,6 @@
    "rows": [],
    "source": null,
    "note": "Founded 2026; no filings yet."
-  },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 3
   },
   "team_strengths": [
    "Four co-founders and a large seed round from two climate and deep-tech specialists",
@@ -1395,7 +2177,79 @@
    "Avaana Capital",
    "Shastra VC"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "₹36.5 Cr",
+   "date": "2026-10",
+   "lead": "Avaana Capital and Shastra VC",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹36.5 Cr seed co-led by Avaana Capital and Shastra VC",
+   "event_date": "2026-10-13",
+   "source_date": "2026-10-13"
+  },
+  "trl_estimate": null,
+  "trl_basis": "Founded in 2026; no demonstrated process or plant milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Seed round raised"
+  ],
+  "unproven": [
+   "Whether AI-designed routes beat incumbent processes at plant scale",
+   "Who the founders are and what they've built before"
+  ],
+  "would_change": [
+   "A process transferred to a partner plant",
+   "A first pharma or electronics-chemicals contract"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Process chemistry for pharma and electronics: unglamorous, B2B, India-relevant"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "India makes most of the world's generics; process cost is a real lever"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "AI-designed chemical processes",
+  "investor_edges": [
+   {
+    "name": "Avaana Capital",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-10"
+   },
+   {
+    "name": "Shastra VC",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-10"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Cheaper chemical manufacturing"
+  ]
  },
  {
   "id": "quintrans",
@@ -1418,16 +2272,16 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed",
   "fit": 5,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "An unglamorous import-substitution component that every automation OEM buys; distribution, not science, is the risk.",
   "rdi_sector": "Robotics",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $750K · Jan 2026",
@@ -1478,12 +2332,6 @@
    ],
    "source": "https://inc42.com/company/quintrans/financials/",
    "note": "Website domain reflects the company's earlier hyperloop focus."
-  },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 2,
-   "complementarity": 3,
-   "execution": 3
   },
   "team_strengths": [
    "Four engineers who have stayed together since MIT Pune",
@@ -1539,6 +2387,90 @@
   ],
   "institution_tags": [
    "MIT Pune"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$750K",
+   "date": "2026-01",
+   "lead": "Capital-A",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$750K pre-seed led by Capital-A for a Pune manufacturing and test facility",
+   "event_date": "2026-01-08",
+   "source_date": "2026-01-08"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No product performance or customer milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised; inside the MaXcel hardware accelerator"
+  ],
+  "unproven": [
+   "Precision and price against imported linear motors",
+   "OEM adoption"
+  ],
+  "would_change": [
+   "Pune facility running",
+   "Paid orders from automation OEMs"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 2,
+    "evidence": "FY25 revenue ₹4.3 lakh; facility still being set up"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Industrial motion components: import substitution, B2B"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Every automation OEM buys linear motion; distribution is the hard part"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "MIT Pune",
+    "relation": "Founders' education"
+   },
+   {
+    "name": "MaXcel accelerator",
+    "relation": "Accelerator"
+   }
+  ],
+  "tech_approach": "Linear motors",
+  "investor_edges": [
+   {
+    "name": "Capital-A",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-01"
+   },
+   {
+    "name": "IIMA Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Robots for hard or dull work"
   ]
  },
  {
@@ -1553,25 +2485,25 @@
   "eli12": "Service robots are the ones that guide visitors, carry things or clean in places like hospitals and malls. Alphadroid builds them in India. The hard part is making them reliable around crowds of people every day.",
   "signal_type": "Funding news",
   "signal": "$3.8M pre-Series A (categorised as seed)",
-  "source_name": "Qubit Capital",
-  "source_url": "https://qubit.capital/blog/india-seed-weekly-funding-roundup-week-2-may-2026",
-  "signal_date": "2026-05-11",
+  "source_name": "Inc42",
+  "source_url": "https://inc42.com/?p=557149",
+  "signal_date": "2026-05",
   "first_found": "2026-10-31",
   "funding": "$3.8M pre-Series A",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": 3,
+  "team": null,
   "market": 3,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": false,
   "why": "Domestic service robotics is a cost play against imports; worth checking deployments and unit economics before the technology.",
   "rdi_sector": "Robotics",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · $3.8M · May 2026",
@@ -1624,12 +2556,6 @@
    "source": "https://inc42.com/company/alphadroid/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 4,
-   "complementarity": 2,
-   "execution": 4
-  },
   "team_strengths": [
    "Named enterprise customers within two years",
    "Subscription pricing (₹25,000–₹80,000 a month) shows a clear model"
@@ -1668,6 +2594,81 @@
   ],
   "institution_tags": [
    "IIIT Lucknow"
+  ],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "$3.8M",
+   "date": "2026-05",
+   "lead": "Alkemi Growth Capital",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹36 Cr pre-Series A led by Alkemi Growth Capital",
+   "event_date": "2026-05",
+   "source_date": "2026-05-11"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "Robots in commercial use with named customers on subscription",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Named customers: Nestle, Bikanerwala, Emami, Reliance Smart",
+   "₹1.4 Cr FY25 revenue"
+  ],
+  "unproven": [
+   "Unit economics per robot",
+   "How much hardware is made in India"
+  ],
+  "would_change": [
+   "Revenue per robot per month",
+   "Fleet size and renewal rates"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "Four named enterprise customers and ₹1.4 Cr revenue within two years"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Service robotics: robotics thesis, lighter on deep science"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Large commercial-space market but competitive with Chinese imports"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [
+   {
+    "name": "IIIT Lucknow",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "Service robots",
+  "investor_edges": [
+   {
+    "name": "Alkemi Growth Capital",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-05"
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Robots for hard or dull work"
   ]
  },
  {
@@ -1691,16 +2692,16 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Pre-Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Fuel-flexible turbines hedge the hydrogen bet: they sell on today's fuels and upgrade as hydrogen gets cheaper.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Seed · >$1M · Feb 2026",
@@ -1747,7 +2748,6 @@
    "source": "https://inc42.com/company/hycosys/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -1774,7 +2774,73 @@
   "investors": [
    "MountTech Growth Fund – Kavachh"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": ">$1M",
+   "date": "2026-02",
+   "lead": "MountTech Growth Fund – Kavachh",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "Over $1M seed led by MountTech Growth Fund – Kavachh",
+   "event_date": "2026-02-23",
+   "source_date": "2026-02-23"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No turbine test data in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Seed raised"
+  ],
+  "unproven": [
+   "Running on hydrogen without damage",
+   "Efficiency versus diesel gensets"
+  ],
+  "would_change": [
+   "Running-hours data on hydrogen blends",
+   "A paid pilot replacing a diesel generator"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Clean power hardware: energy thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Backup and off-grid power is a large diesel-replacement market"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Hydrogen turbines",
+  "investor_edges": [
+   {
+    "name": "MountTech Growth Fund – Kavachh",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-02"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Clean hydrogen"
+  ]
  },
  {
   "id": "meine",
@@ -1797,16 +2863,16 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed",
   "fit": 5,
-  "team": 3,
+  "team": 4,
   "market": 5,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Iron is cheap and Indian; if the chemistry holds, long-duration storage is the missing piece of a solar-heavy grid.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 3–4 (est.)",
+  "rdi_eligibility": "Likely below TRL 4 today; ANRF programmes may fit first",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $750K · Jan 2026",
@@ -1858,12 +2924,6 @@
    "source": "https://inc42.com/company/meine-electric/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 3,
-   "complementarity": 5,
-   "execution": 4
-  },
   "team_strengths": [
    "Classic pairing: a battery researcher (fuel cells and flow batteries at CEG, Anna University) with an ex-BCG energy consultant",
    "Six battery generations in about 10 months on $25K"
@@ -1910,6 +2970,116 @@
   ],
   "institution_tags": [
    "Antler"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$750K",
+   "date": "2026-01",
+   "lead": "Antler",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$750K pre-seed to move from lab prototypes to pilot-ready iron-air systems",
+   "event_date": "2026-01-22",
+   "source_date": "2026-01-22"
+  },
+  "trl_estimate": "TRL 3–4 (est.)",
+  "trl_basis": "Stable iron-air cell and modules built in the lab (Antler); no pilot yet",
+  "rdi_status": "Likely below TRL 4 today; ANRF programmes may fit first",
+  "demonstrated": [
+   "Stable rechargeable iron-air cell",
+   "Six battery generations in ~10 months"
+  ],
+  "unproven": [
+   "Cycle life and efficiency at system scale",
+   "Cost per kWh at scale"
+  ],
+  "would_change": [
+   "Pilot system data",
+   "A utility or solar-developer pilot site"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 4,
+    "evidence": "Co-founder researched fuel cells and flow batteries at CEG, Anna University"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "Co-founder was an energy-transition consultant at BCG"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Battery researcher paired with an energy strategist"
+   },
+   "execution": {
+    "score": 4,
+    "evidence": "Six battery generations in about 10 months on $25K"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Long-duration storage: core energy thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "A solar-heavy grid needs cheap overnight storage; very large market"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "AIC Anna University",
+    "relation": "Incubation"
+   },
+   {
+    "name": "Anna University (CEG)",
+    "relation": "Founder's research"
+   },
+   {
+    "name": "BCG",
+    "relation": "Founder's previous employment"
+   }
+  ],
+  "tech_approach": "Iron-air batteries",
+  "investor_edges": [
+   {
+    "name": "Antler",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-01"
+   },
+   {
+    "name": "Rebalance",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Venture Catalysts",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "gradCapital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "4 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Storing renewable power"
   ]
  },
  {
@@ -1933,7 +3103,7 @@
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 5,
   "ip": 3,
   "confidence": "Medium",
@@ -1941,8 +3111,8 @@
   "diligence": false,
   "why": "Founder-backing from an EV founder is a useful customer-side signal; cell manufacturing is capital-heavy, so RDI debt matters here.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 5–6 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Seed · ₹27.4 Cr · Feb 2026",
@@ -1994,12 +3164,6 @@
    "source": "https://inc42.com/company/e-trnl-energy/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 3,
-   "complementarity": 3,
-   "execution": 4
-  },
   "team_strengths": [
    "Two patents granted and a 20,000 sq ft R&D and manufacturing site",
    "Backed by Ather co-founder Tarun Mehta"
@@ -2043,7 +3207,92 @@
    "Navam Capital",
    "Speciale Invest"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "₹27.4 Cr",
+   "date": "2026-02",
+   "lead": "IAN Alpha Fund",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹27.4 Cr seed for validation and pilot manufacturing",
+   "event_date": "2026-02-14",
+   "source_date": "2026-02-14"
+  },
+  "trl_estimate": "TRL 5–6 (est.)",
+  "trl_basis": "R&D and early manufacturing site running; pilot line of 250 MWh planned for 2027",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Two patents granted",
+   "20,000 sq ft R&D and early manufacturing site"
+  ],
+  "unproven": [
+   "Independent safety and cycle data",
+   "Offtake from EV or storage makers"
+  ],
+  "would_change": [
+   "250 MWh pilot line commissioned",
+   "A signed offtake agreement"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "Two patents and a manufacturing site; revenue fell in FY25"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Battery cells for Indian conditions: energy thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "EV and storage cell demand is large; manufacturing is capital-heavy"
+   },
+   "ip": {
+    "score": 3,
+    "rationale": "Two patents granted, more filed"
+   }
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Lithium-ion cell manufacturing",
+  "investor_edges": [
+   {
+    "name": "IAN Alpha Fund",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-02"
+   },
+   {
+    "name": "Navam Capital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Speciale Invest",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Storing renewable power"
+  ]
  },
  {
   "id": "newtrace",
@@ -2059,7 +3308,7 @@
   "signal": "$6.3M pre-Series A led by HDFC Bank and Mitsui Sumitomo Insurance VC, to scale manufacturing",
   "source_name": "YourStory",
   "source_url": "https://yourstory.com/2026/03/climate-tech-startup-newtrace-raises-63-million-in-pre-series-a-round",
-  "signal_date": "2026-03-10",
+  "signal_date": "2026-03",
   "first_found": "2026-10-31",
   "funding": "$6.3M pre-Series A (after $5.7M seed in 2023)",
   "stage": 4,
@@ -2068,14 +3317,14 @@
   "fit": 4,
   "team": 4,
   "market": 5,
-  "ip": 4,
+  "ip": null,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "A bank leading a climate hardware round is unusual and signals project-finance appetite; entry may already be late for a seed investor.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · $6.3M · Mar 2026",
@@ -2126,12 +3375,6 @@
    "source": "https://inc42.com/company/newtrace/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 4
-  },
   "team_strengths": [
    "Both founders are PhDs who met through Entrepreneur First and built the first prototype at IIT Madras",
    "Production-linked incentive for 30 MW a year of electrolyser manufacturing"
@@ -2180,6 +3423,112 @@
   "institution_tags": [
    "IIT Madras",
    "Entrepreneur First"
+  ],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "$6.3M",
+   "date": "2026-03",
+   "lead": "HDFC Bank and Mitsui Sumitomo Insurance VC",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$6.3M pre-Series A to scale electrode and electrolyser manufacturing",
+   "event_date": "2026-03",
+   "source_date": "2026-03-10"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "MARK 4 electrolyser in a BPCL pilot (Inc42); commercial electrode deliveries expected within 12 months",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "BPCL pilot of the MARK 4 electrolyser",
+   "PLI support for 30 MW a year"
+  ],
+  "unproven": [
+   "Electrode lifetime in commercial hours",
+   "Cost per kW versus large incumbents"
+  ],
+  "would_change": [
+   "First commercial Voltagen deliveries",
+   "ONGC Energy Centre deployment"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 4,
+    "evidence": "Both founders hold PhDs; built the first prototype at IIT Madras"
+   },
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "MARK 4 electrolyser piloted with BPCL"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Green hydrogen hardware: energy thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "National Green Hydrogen Mission creates demand; incumbents (Adani, Reliance, L&T) are formidable"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "High",
+  "institutions": [
+   {
+    "name": "IIT Madras",
+    "relation": "Research: first prototype built there"
+   },
+   {
+    "name": "Entrepreneur First",
+    "relation": "Founders met at this programme"
+   }
+  ],
+  "tech_approach": "Electrolysers",
+  "investor_edges": [
+   {
+    "name": "HDFC Bank",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-03"
+   },
+   {
+    "name": "Mitsui Sumitomo Insurance VC",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-03"
+   },
+   {
+    "name": "Peak XV Partners",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Aavishkaar Capital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Speciale Invest",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "2 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Clean hydrogen"
   ]
  },
  {
@@ -2196,23 +3545,23 @@
   "signal": "$6.8M seed co-led by pi Ventures and Ankur Capital; Industrial47 backed the pre-seed",
   "source_name": "Qubit Capital",
   "source_url": "https://qubit.capital/blog/india-seed-weekly-funding-roundup-week-5-march-2026",
-  "signal_date": "2026-03-30",
+  "signal_date": "2026-03",
   "first_found": "2026-10-31",
   "funding": "$6.8M seed, pi Ventures & Ankur Capital",
   "stage": 1,
   "stage_label": "Lab-validated science",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": 4,
   "market": 5,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "One of very few Indian magnetic-confinement efforts; the value is in milestone-gated capital, not near-term revenue.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 3–4",
-  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "trl": "TRL 2–3 (est.)",
+  "rdi_eligibility": "Likely below TRL 4 today; ANRF programmes may fit first",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Seed · $6.8M · Mar 2026",
@@ -2252,12 +3601,6 @@
    "rows": [],
    "source": null,
    "note": "Founded 2024; no filings found."
-  },
-  "team_scores": {
-   "domain": 5,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 3
   },
   "team_strengths": [
    "A JNCASR PhD physicist paired with an engineer from an energy company",
@@ -2304,6 +3647,105 @@
   ],
   "institution_tags": [
    "JNCASR"
+  ],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "$6.8M",
+   "date": "2026-03",
+   "lead": "pi Ventures and Ankur Capital",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$6.8M seed for tokamak commissioning and superconducting magnet R&D",
+   "event_date": "2026-03",
+   "source_date": "2026-03-30"
+  },
+  "trl_estimate": "TRL 2–3 (est.)",
+  "trl_basis": "Tokamak delivery targeted for 2026; HTS magnets still in R&D; no plasma or magnet test results in coverage",
+  "rdi_status": "Likely below TRL 4 today; ANRF programmes may fit first",
+  "demonstrated": [
+   "Seed raised from two deep-science investors",
+   "JENGA software in prototyping"
+  ],
+  "unproven": [
+   "Magnet field strength",
+   "Commissioning the first tokamak",
+   "Any path to revenue before fusion"
+  ],
+  "would_change": [
+   "Tokamak commissioned",
+   "Published magnet test results",
+   "JENGA pilot customers"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 5,
+    "evidence": "Co-founder holds a PhD from JNCASR"
+   },
+   "commercial": null,
+   "complementarity": {
+    "score": 4,
+    "evidence": "Physicist paired with a former principal engineer from REConnect Energy"
+   },
+   "execution": {
+    "score": 3,
+    "evidence": "Tokamak and magnets still in build"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Fusion energy: frontier deep science in the energy thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Enormous if it works; timelines run a decade or more"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "JNCASR",
+    "relation": "Founder's education (PhD)"
+   },
+   {
+    "name": "REConnect Energy",
+    "relation": "Founder's previous employment"
+   }
+  ],
+  "tech_approach": "Superconducting magnets and fusion",
+  "investor_edges": [
+   {
+    "name": "pi Ventures",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-03"
+   },
+   {
+    "name": "Ankur Capital",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-03"
+   },
+   {
+    "name": "Industrial47",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "3 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Firm clean power"
   ]
  },
  {
@@ -2320,27 +3762,27 @@
   "signal": "$3M pre-Series A led by Spectrum Impact",
   "source_name": "BioSpectrum India",
   "source_url": "https://www.biospectrumindia.com/news/96/26983/biotech-startup-crisprbits-raises-3-m-in-pre-series-a-funding-round.html",
-  "signal_date": "2025-11-26",
+  "signal_date": "2025-11-25",
   "first_found": "2026-10-31",
   "funding": "$3M pre-Series A, Spectrum Impact",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "A platform with diagnostics revenue as the near-term path and gene editing as the option value.",
   "rdi_sector": "Biotechnology",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "BIRAC",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · $3M · Nov 2025",
-  "lead_investor": "Spectrum Impact (Rajendra Gogri family office)",
+  "lead_investor": "Spectrum Impact",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Five founders listed on Inc42: Vijaya Chandru, Sunil Arora, Dr Rajeev Kohli, Bharat Jobanputra and Aditya Sarda. C-CAMP invested in the round.",
   "next_raise": "Next raise: Series A",
@@ -2388,12 +3830,6 @@
    ],
    "source": "https://inc42.com/company/crisprbits/financials/",
    "note": null
-  },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 3
   },
   "team_strengths": [
    "Large, senior founding group with a C-CAMP connection",
@@ -2453,6 +3889,87 @@
   ],
   "institution_tags": [
    "C-CAMP"
+  ],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "$3M",
+   "date": "2025-11",
+   "lead": "Spectrum Impact",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$3M pre-Series A to scale CRISPR diagnostics manufacturing",
+   "event_date": "2025-11-25",
+   "source_date": "2025-11-26"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "PathCrisp tests in commercialisation; manufacturing facility being expanded",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "PathCrisp diagnostics being sold",
+   "Revenue up about 3.5x to ₹83 lakh in FY25"
+  ],
+  "unproven": [
+   "Regulatory approvals per test",
+   "Focus across two platforms"
+  ],
+  "would_change": [
+   "Approvals and test volumes",
+   "Africa and Latin America expansion"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "Revenue up about 3.5x to ₹83 lakh in FY25"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "CRISPR tools: biotech thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Low-cost molecular tests have large public-health demand"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "C-CAMP",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "CRISPR diagnostics",
+  "investor_edges": [
+   {
+    "name": "Spectrum Impact",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2025-11"
+   },
+   {
+    "name": "C-CAMP",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Diagnosis outside big hospitals"
   ]
  },
  {
@@ -2476,19 +3993,19 @@
   "stage_label": "Scale-up underway",
   "entry_window": "Next raise: Series B",
   "fit": 5,
-  "team": 5,
+  "team": null,
   "market": 5,
-  "ip": 4,
+  "ip": null,
   "confidence": "High",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "India's cost advantage in biomanufacturing is real; this is a scale-up bet, likely past a seed investor's entry window.",
   "rdi_sector": "Biotechnology",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "BIRAC",
-  "round_tab": "Series A",
-  "latest_round": "$13M (stage not stated) · May 2026",
+  "round_tab": "Undisclosed",
+  "latest_round": "Undisclosed · $13M · May 2026",
   "lead_investor": "Prime Venture Partners and Leo Capital",
   "lead_partner": "Brij Bhushan, Managing Partner (Prime); Rajul Garg, Founder & Managing Partner (Leo)",
   "founder_snapshot": "IIT Delhi alumni Akshay Mittal (CEO) and Dr Alok Malaviya. Fermentation proven at 10,000 litres; working toward 100,000 litres.",
@@ -2520,7 +4037,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -2548,6 +4064,89 @@
   ],
   "institution_tags": [
    "IIT Delhi"
+  ],
+  "last_funding": {
+   "stage": "Undisclosed",
+   "amount": "$13M",
+   "date": "2026-05",
+   "lead": "Prime Venture Partners and Leo Capital",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$13M from Prime Venture Partners and Leo Capital as it exits stealth",
+   "event_date": "2026-05-25",
+   "source_date": "2026-05-25"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "Fermentation demonstrated at 10,000 litres (YourStory)",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Fermentation at 10,000 litres"
+  ],
+  "unproven": [
+   "Cost per kilo at 100,000 litres",
+   "Regulatory approvals per ingredient"
+  ],
+  "would_change": [
+   "Signed offtake with food or personal-care brands",
+   "Scale-up to 100,000 litres"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Synthetic biology manufacturing: biotech thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Precision fermentation is a global market where India has a cost edge"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "High",
+  "institutions": [
+   {
+    "name": "IIT Delhi",
+    "relation": "Founders' education"
+   }
+  ],
+  "tech_approach": "Precision fermentation",
+  "investor_edges": [
+   {
+    "name": "Prime Venture Partners",
+    "role": "Lead",
+    "round": "Undisclosed",
+    "date": "2026-05"
+   },
+   {
+    "name": "Leo Capital",
+    "role": "Lead",
+    "round": "Undisclosed",
+    "date": "2026-05"
+   },
+   {
+    "name": "Good Startup",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Making things with biology"
   ]
  },
  {
@@ -2571,16 +4170,16 @@
   "stage_label": "Early revenue",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 2,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Distribution-led agri-bio with revenue; the question is margin and repeatability, not science.",
   "rdi_sector": "Biotechnology (agri)",
-  "trl": "TRL 8–9",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "BIRAC",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · $1.5M · Mar 2026",
@@ -2630,7 +4229,6 @@
    "source": "https://inc42.com/company/pehle-jaisa/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -2657,7 +4255,83 @@
    "Unicorn India Ventures",
    "Climate Angels"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "$1.5M",
+   "date": "2026-03",
+   "lead": "Unicorn India Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹12 Cr pre-Series A to expand from 10 to 66 districts",
+   "event_date": "2026-03-30",
+   "source_date": "2026-03-30"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "Product sold to farmers; ₹2.8 Cr FY25 revenue",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "₹2.8 Cr FY25 revenue",
+   "Selling across 10 districts"
+  ],
+  "unproven": [
+   "Repeat purchase across seasons",
+   "Independent yield data"
+  ],
+  "would_change": [
+   "Margin per tonne as it scales",
+   "Third-party yield trials"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "₹2.8 Cr FY25 revenue across 10 districts"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Agri-biologicals: agri-bio thesis, lighter on deep science"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Large fertiliser market with a policy push for biologicals"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Agri-biologicals",
+  "investor_edges": [
+   {
+    "name": "Unicorn India Ventures",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-03"
+   },
+   {
+    "name": "Climate Angels",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Making things with biology"
+  ]
  },
  {
   "id": "bioscan",
@@ -2680,16 +4354,16 @@
   "stage_label": "Early revenue",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Triage at the ambulance or district hospital is a large unserved market; clinical evidence and reimbursement decide the outcome.",
   "rdi_sector": "Health & medical technologies",
-  "trl": "TRL 8–9",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "BIRAC",
   "round_tab": "Seed",
   "latest_round": "Seed · $1M · Jul 2026",
@@ -2742,12 +4416,6 @@
    "source": "https://inc42.com/company/bioscan-research/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 4,
-   "complementarity": 3,
-   "execution": 5
-  },
   "team_strengths": [
    "Profitable in FY25 on ₹13.4 Cr revenue, rare for a seed-stage medtech",
    "Two founders running the company since 2017"
@@ -2789,7 +4457,77 @@
   "investors": [
    "Unicorn India Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "$1M",
+   "date": "2026-07",
+   "lead": "Unicorn India Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$1M seed for market expansion and further regulatory approvals",
+   "event_date": "2026-07-22",
+   "source_date": "2026-07-22"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "CEREBO is sold: ₹13.4 Cr FY25 revenue with a profit",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "₹13.4 Cr FY25 revenue, profitable",
+   "Device on the market"
+  ],
+  "unproven": [
+   "Which approvals it holds today",
+   "Named hospital customers"
+  ],
+  "would_change": [
+   "Published clinical accuracy data",
+   "Additional approvals the round is funding"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 5,
+    "evidence": "₹13.4 Cr FY25 revenue with a profit"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Medical devices for triage: medtech thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Trauma triage outside CT-equipped hospitals is a large gap"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Portable brain-injury scanning",
+  "investor_edges": [
+   {
+    "name": "Unicorn India Ventures",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-07"
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Diagnosis outside big hospitals"
+  ]
  },
  {
   "id": "ayati",
@@ -2812,7 +4550,7 @@
   "stage_label": "Scale-up underway",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": 3,
+  "team": null,
   "market": 4,
   "ip": 3,
   "confidence": "Medium",
@@ -2820,8 +4558,8 @@
   "diligence": false,
   "why": "India's diabetes burden makes screening a volume business; the moat is clinical workflow, not the sensor.",
   "rdi_sector": "Health & medical technologies",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "BIRAC",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · ₹15 Cr · Aug 2026",
@@ -2862,12 +4600,6 @@
    "source": "https://inc42.com/company/ayati-devices/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 4,
-   "complementarity": 3,
-   "execution": 5
-  },
   "team_strengths": [
    "Profitable in FY25 and already cleared by US FDA, CE and CDSCO",
    "Devices in 30+ countries before the first institutional round"
@@ -2906,6 +4638,85 @@
   ],
   "institution_tags": [
    "IIT Bombay (SINE)"
+  ],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "₹15 Cr",
+   "date": "2026-08",
+   "lead": "Inflexor Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹15 Cr pre-Series A, its first institutional round",
+   "event_date": "2026-08-11",
+   "source_date": "2026-08-11"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "10,000+ devices in 30+ countries; US FDA, CE and CDSCO clearances",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "US FDA, CE and CDSCO clearances",
+   "Profitable FY25 on ₹4.3 Cr revenue",
+   "Used at Medicover and Aster hospitals"
+  ],
+  "unproven": [
+   "Scale of pay-per-test model",
+   "Clinical outcome data"
+  ],
+  "would_change": [
+   "Pay-per-test volumes",
+   "Angiocam uptake"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 5,
+    "evidence": "Profitable; US FDA, CE and CDSCO clearances; 10,000+ devices deployed"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Diagnostics devices: medtech thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "India's diabetes burden makes screening a volume market"
+   },
+   "ip": {
+    "score": 3,
+    "rationale": "Regulatory clearances in the US, EU and India act as a barrier"
+   }
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "SINE, IIT Bombay",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "Smartphone-based eye imaging",
+  "investor_edges": [
+   {
+    "name": "Inflexor Ventures",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-08"
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Diagnosis outside big hospitals"
   ]
  },
  {
@@ -2920,8 +4731,8 @@
   "eli12": "Hospitals depend on machines that are mostly built abroad and cost a lot to buy and fix. Pulse wants to redesign how that equipment is made in India so it's cheaper. The source doesn't describe the exact devices yet, so this one needs a closer look.",
   "signal_type": "Funding news",
   "signal": "$4M seed led by 3one4 Capital with Incubate Fund Asia and Stride Ventures",
-  "source_name": "YourStory",
-  "source_url": "https://yourstory.com/2026/02/startup-news-and-updates-daily-roundup-february-25-2026",
+  "source_name": "Inc42",
+  "source_url": "https://inc42.com/buzz/pulse-raises-4-mn-to-build-full-stack-medical-equipment-manufacturing-brand/",
   "signal_date": "2026-02-25",
   "first_found": "2026-10-31",
   "funding": "$4M seed, 3one4 Capital",
@@ -2929,16 +4740,16 @@
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 2,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Import substitution in hospital hardware is large, but the source is thin; needs primary research before scoring holds.",
   "rdi_sector": "Health & medical technologies",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "BIRAC",
   "round_tab": "Seed",
   "latest_round": "Seed · $4M · Feb 2026",
@@ -2979,7 +4790,6 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -3019,7 +4829,85 @@
    "Incubate Fund Asia",
    "Stride Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "$4M",
+   "date": "2026-02",
+   "lead": "3one4 Capital",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$4M seed led by 3one4 Capital",
+   "event_date": "2026-02-25",
+   "source_date": "2026-02-25"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No product or sales milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Network of about 20 partner manufacturers"
+  ],
+  "unproven": [
+   "Product quality and approvals",
+   "Hospital adoption"
+  ],
+  "would_change": [
+   "Named hospital customers",
+   "Regulatory clearances"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Medical equipment manufacturing: medtech, lighter on deep science"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Import substitution in hospital equipment is large"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Medical equipment manufacturing",
+  "investor_edges": [
+   {
+    "name": "3one4 Capital",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-02"
+   },
+   {
+    "name": "Incubate Fund Asia",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Stride Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Medical devices made in India"
+  ]
  },
  {
   "id": "curapod",
@@ -3042,16 +4930,16 @@
   "stage_label": "Early revenue",
   "entry_window": "Next raise: Series A",
   "fit": 2,
-  "team": 3,
+  "team": null,
   "market": 3,
-  "ip": 2,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: investor-backed",
   "diligence": false,
   "why": "Consumer-health distribution story more than deep science; outside the core of the thesis.",
   "rdi_sector": "Health & medical technologies",
-  "trl": "TRL 8–9",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "BIRAC",
   "round_tab": "Seed",
   "latest_round": "Pre-Series A · ₹20 Cr · Feb 2026",
@@ -3099,12 +4987,6 @@
    "source": "https://inc42.com/company/curapod/financials/",
    "note": null
   },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 3,
-   "complementarity": 3,
-   "execution": 3
-  },
   "team_strengths": [
    "Revenue grew about 3.7 times in FY25"
   ],
@@ -3147,7 +5029,89 @@
    "3i Partners",
    "Ideaspring Capital"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "₹20 Cr",
+   "date": "2026-02",
+   "lead": "V3 Ventures, 3i Partners and Ideaspring Capital",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹20 Cr pre-Series A to scale manufacturing",
+   "event_date": "2026-02-10",
+   "source_date": "2026-02-10"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "FDA-registered device sold to consumers; ₹1.7 Cr FY25 revenue",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Device on sale",
+   "₹1.7 Cr FY25 revenue"
+  ],
+  "unproven": [
+   "Clinical evidence",
+   "Path to profit (₹4.5 Cr FY25 loss)"
+  ],
+  "would_change": [
+   "Repeat-purchase data",
+   "Clinical studies"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "Revenue up to ₹1.7 Cr in FY25 with a ₹4.5 Cr loss"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 2,
+    "rationale": "Consumer health device: outside the core deep-science thesis"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Pain management is large but crowded"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Wearable pain therapy",
+  "investor_edges": [
+   {
+    "name": "V3 Ventures",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-02"
+   },
+   {
+    "name": "3i Partners",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-02"
+   },
+   {
+    "name": "Ideaspring Capital",
+    "role": "Lead",
+    "round": "Pre-Series A",
+    "date": "2026-02"
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Medical devices made in India"
+  ]
  },
  {
   "id": "quarkitech",
@@ -3170,19 +5134,19 @@
   "stage_label": "Working prototype",
   "entry_window": "Next raise: Seed",
   "fit": 3,
-  "team": 3,
+  "team": 4,
   "market": 3,
-  "ip": 2,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "Unclear: investors not named",
   "diligence": true,
   "why": "Small, early and incubator-based, so closer to uncontested than most here, but 'quantum-inspired' needs hard benchmarks.",
   "rdi_sector": "Quantum technologies",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
-  "latest_round": "₹2 Cr · Aug 2026",
+  "latest_round": "Pre-seed · ₹2 Cr · Aug 2026",
   "lead_investor": "Artha Access and Finvolve",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "IIT Madras professor Rajesh Narayanan (chief scientist), operator Sanyam Parashar (CEO; founding teams of Zywa and Powerplay) and researcher Shashikant Kunwar (CTO).",
@@ -3219,12 +5183,6 @@
    "rows": [],
    "source": null,
    "note": "No filings found."
-  },
-  "team_scores": {
-   "domain": 5,
-   "commercial": 4,
-   "complementarity": 5,
-   "execution": 3
   },
   "team_strengths": [
    "Textbook triangle: a professor for the science, a startup operator for sales, a researcher for engineering",
@@ -3274,6 +5232,92 @@
   ],
   "institution_tags": [
    "IIT Madras"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "₹2 Cr",
+   "date": "2026-08",
+   "lead": "Artha Access and Finvolve",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹2 Cr pre-seed",
+   "event_date": "2026-08-14",
+   "source_date": "2026-08-14"
+  },
+  "trl_estimate": null,
+  "trl_basis": "Software; no benchmark or customer milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised; strong founding mix"
+  ],
+  "unproven": [
+   "Advantage over classical solvers",
+   "Paying customers"
+  ],
+  "would_change": [
+   "Public benchmarks on customer problems",
+   "A paid pilot"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 5,
+    "evidence": "Co-founder is an IIT Madras professor; CTO researched at IIT Madras, Zhejiang and Iowa"
+   },
+   "commercial": {
+    "score": 3,
+    "evidence": "CEO was on the founding teams of Zywa and Powerplay"
+   },
+   "complementarity": {
+    "score": 5,
+    "evidence": "Science, engineering and commercial roles each covered"
+   },
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Quantum-inspired optimisation: quantum thesis"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Optimisation demand exists, but quantum-inspired claims are hard to prove"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [
+   {
+    "name": "IIT Madras",
+    "relation": "Faculty co-founder; Research Park"
+   }
+  ],
+  "tech_approach": "Quantum-inspired optimisation",
+  "investor_edges": [
+   {
+    "name": "Artha Access",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-08"
+   },
+   {
+    "name": "Finvolve",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2026-08"
+   }
+  ],
+  "team_basis": "3 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Hard optimisation problems"
   ]
  },
  {
@@ -3290,26 +5334,26 @@
   "signal": "₹30 Cr seed / pre-Series A",
   "source_name": "Qubit Capital",
   "source_url": "https://qubit.capital/?p=64538",
-  "signal_date": "2026-03-23",
+  "signal_date": "2026-03",
   "first_found": "2026-10-31",
   "funding": "₹30 Cr (~$3.6M) seed / pre-Series A",
   "stage": 3,
   "stage_label": "Pilot / first silicon",
   "entry_window": "Next raise: Series A",
   "fit": 3,
-  "team": 3,
+  "team": null,
   "market": 3,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": false,
   "why": "Niche secure-connectivity use cases fit; mass-market Li-Fi has a long history of disappointing, so focus on defence and industrial buyers.",
   "rdi_sector": "Telecom / digital economy",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 7–8 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
-  "latest_round": "Seed / pre-Series A · ₹30 Cr · Mar 2026",
+  "latest_round": "Pre-Series A · ₹30 Cr · Mar 2026",
   "lead_investor": "Not named in coverage",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders Deepak Solanki and Saurabh Garg, per Inc42.",
@@ -3348,7 +5392,6 @@
    "source": "https://inc42.com/company/velmenni/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -3383,7 +5426,69 @@
    ]
   },
   "investors": [],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-Series A",
+   "amount": "₹30 Cr",
+   "date": "2026-03",
+   "lead": "Not named in coverage",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹30 Cr pre-Series A",
+   "event_date": "2026-03",
+   "source_date": "2026-03-23"
+  },
+  "trl_estimate": "TRL 7–8 (est.)",
+  "trl_basis": "₹1.1 Cr revenue in FY24 indicates deployments",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "₹1.1 Cr FY24 revenue"
+  ],
+  "unproven": [
+   "Unit cost of Li-Fi access points",
+   "Mass adoption"
+  ],
+  "would_change": [
+   "Defence or secure-site contracts",
+   "Gross margin"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "₹1.1 Cr FY24 revenue"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Secure optical comms: photonics, niche fit"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Secure-site demand is real; mass-market Li-Fi has repeatedly disappointed"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Li-Fi optical wireless",
+  "investor_edges": [],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Secure communications"
+  ]
  },
  {
   "id": "skyroot",
@@ -3399,7 +5504,7 @@
   "signal": "~$60M round reported May 2026; India's first spacetech unicorn",
   "source_name": "Entrepreneur India",
   "source_url": "https://india.entrepreneur.com/?p=96048",
-  "signal_date": "2026-05-09",
+  "signal_date": "2026-05",
   "first_found": "2026-10-31",
   "funding": "~$50–60M Series C (May 2026); ~$150M total",
   "stage": 3,
@@ -3407,20 +5512,20 @@
   "entry_window": "Next raise: Series D or pre-IPO",
   "next_raise": "Next raise: Series D or pre-IPO",
   "fit": 5,
-  "team": 5,
+  "team": null,
   "market": 5,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "The category leader in Indian private launch; the question now is cadence and price, not whether it can be done.",
   "rdi_sector": "Space",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 7–8 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series B/C",
   "latest_round": "Series C · ~$50–60M · May 2026",
-  "lead_investor": "Investors incl. Sherpalo, GIC, BlackRock, Arkam (lead not named)",
+  "lead_investor": "Not named in coverage",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Pawan Kumar Chandana and Naga Bharath Daka, both ex-ISRO. Flew India's first private rocket (suborbital) in 2022.",
   "global_peers": [
@@ -3445,7 +5550,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -3475,6 +5579,96 @@
   ],
   "institution_tags": [
    "ISRO alumni"
+  ],
+  "last_funding": {
+   "stage": "Series C",
+   "amount": "~$50–60M",
+   "date": "2026-05",
+   "lead": "Not named in coverage",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "~$60M round; India's first spacetech unicorn",
+   "event_date": "2026-05",
+   "source_date": "2026-05-09"
+  },
+  "trl_estimate": "TRL 7–8 (est.)",
+  "trl_basis": "Flew India's first private rocket (suborbital, 2022)",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Suborbital flight in 2022",
+   "Large private capital raised"
+  ],
+  "unproven": [
+   "Orbital launch success",
+   "Launch cadence and price"
+  ],
+  "would_change": [
+   "First orbital launch",
+   "Booked launch manifest"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Launch vehicles: strategic space thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Small-satellite launch demand is real; global competition from Rocket Lab"
+   },
+   "ip": null
+  },
+  "role": "Benchmark",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "ISRO",
+    "relation": "Founders' previous employment"
+   }
+  ],
+  "tech_approach": "Small launch vehicles",
+  "investor_edges": [
+   {
+    "name": "Sherpalo Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "GIC",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "BlackRock",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Arkam Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Getting to orbit cheaply"
   ]
  },
  {
@@ -3491,7 +5685,7 @@
   "signal": "In talks for an $80–100M round at ~$400M pre-money (May 2026)",
   "source_name": "Outlook Business",
   "source_url": "https://www.outlookbusiness.com/start-up/pixxel-expands-funding-round-to-100-mn-after-deepinder-goyal-steps-back",
-  "signal_date": "2026-05-22",
+  "signal_date": "2026-05",
   "first_found": "2026-10-31",
   "funding": "~$96M raised in total; new round of $80–100M in talks",
   "stage": 4,
@@ -3499,20 +5693,20 @@
   "entry_window": "Next raise: Series C close",
   "next_raise": "Next raise: Series C close",
   "fit": 5,
-  "team": 5,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Hyperspectral data is a picks-and-shovels play on climate, agriculture and defence; revenue per satellite is the number to watch.",
   "rdi_sector": "Space",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
-  "round_tab": "Series B/C",
-  "latest_round": "Next round in talks · $80–100M · May 2026",
-  "lead_investor": "Existing investors incl. GIC, Google, Lightspeed (lead not named)",
+  "round_tab": "Undisclosed",
+  "latest_round": "Undisclosed · ~$96M total",
+  "lead_investor": "Not named in coverage",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founded 2019 by Awais Ahmed (CEO) and Kshitij Khandelwal.",
   "global_peers": [
@@ -3537,7 +5731,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -3566,7 +5759,98 @@
    "Blume Ventures",
    "Aditya Birla Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Undisclosed",
+   "amount": "~$96M total",
+   "date": "",
+   "lead": "Not named in coverage",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Reported discussions",
+   "summary": "In talks for an $80–100M round at about $400M pre-money; round not closed",
+   "event_date": "2026-05",
+   "source_date": "2026-05-22"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "Hyperspectral satellites in orbit; Pathfinder planned for Q4 2026",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Satellites in orbit",
+   "Backed by Google, GIC, Lightspeed"
+  ],
+  "unproven": [
+   "Revenue per satellite",
+   "In-orbit AI with Pathfinder"
+  ],
+  "would_change": [
+   "Round closing",
+   "Data contract revenue"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Earth-observation data: space thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Hyperspectral data serves agriculture, climate and defence"
+   },
+   "ip": null
+  },
+  "role": "Benchmark",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Hyperspectral imaging",
+  "investor_edges": [
+   {
+    "name": "GIC",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Google",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Lightspeed",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Blume Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Aditya Birla Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "New ways to see Earth from orbit"
+  ]
  },
  {
   "id": "digantara",
@@ -3582,7 +5866,7 @@
   "signal": "$50M round led by Reliance Industries (reported Feb 2026)",
   "source_name": "Angel One",
   "source_url": "https://www.angelone.in/news/unlisted-companies/reliance-industries-leads-50-million-funding-round-in-spacetech-startup-digantara",
-  "signal_date": "2026-02-01",
+  "signal_date": "2026-02",
   "first_found": "2026-10-31",
   "funding": "$50M Series B (Feb 2026), Reliance Industries; ~$200M valuation",
   "stage": 4,
@@ -3590,16 +5874,16 @@
   "entry_window": "Next raise: Series C",
   "next_raise": "Next raise: Series C",
   "fit": 5,
-  "team": 4,
+  "team": null,
   "market": 5,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Space-domain awareness has a defence buyer with budget; a strategic lead investor signals long-term capital.",
   "rdi_sector": "Space",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series B/C",
   "latest_round": "Series B · $50M · Feb 2026",
@@ -3628,7 +5912,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -3656,7 +5939,92 @@
    "Kalaari Capital",
    "SBI Holdings"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Series B",
+   "amount": "$50M",
+   "date": "2026-02",
+   "lead": "Reliance Industries",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$50M round led by Reliance Industries",
+   "event_date": "2026-02",
+   "source_date": "2026-02-01"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "Operates three satellites; selected for the US Golden Dome programme",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Three satellites in orbit",
+   "Strategic investor (Reliance)"
+  ],
+  "unproven": [
+   "Defence revenue outside India",
+   "Data subscriptions"
+  ],
+  "would_change": [
+   "New defence contracts",
+   "Constellation growth"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Space-domain awareness: strategic space thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Defence budgets fund tracking; growing global need"
+   },
+   "ip": null
+  },
+  "role": "Benchmark",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Space-domain awareness",
+  "investor_edges": [
+   {
+    "name": "Reliance Industries",
+    "role": "Lead",
+    "round": "Series B",
+    "date": "2026-02"
+   },
+   {
+    "name": "Peak XV Partners",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Kalaari Capital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "SBI Holdings",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "New ways to see Earth from orbit"
+  ]
  },
  {
   "id": "ethereal",
@@ -3680,16 +6048,16 @@
   "entry_window": "Next raise: Series C",
   "next_raise": "Next raise: Series C",
   "fit": 4,
-  "team": 4,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Manufacturing-as-a-service turns a capex product into recurring revenue; utilisation will make or break it.",
   "rdi_sector": "Robotics",
-  "trl": "TRL 8–9",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series B/C",
   "latest_round": "Series B · $28.5M · Jun 2026",
@@ -3718,7 +6086,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -3744,7 +6111,80 @@
    "Avataar Ventures",
    "Peak XV Partners"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Series B",
+   "amount": "$28.5M",
+   "date": "2026-06",
+   "lead": "Avataar Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$28.5M Series B led by Avataar Ventures",
+   "event_date": "2026-06",
+   "source_date": "2026-06-11"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "Machines sold as a service; Series A and B raised",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Machining-as-a-service in operation",
+   "Vesper factory software built"
+  ],
+  "unproven": [
+   "Machine utilisation",
+   "Own CNC controller"
+  ],
+  "would_change": [
+   "Revenue per machine",
+   "Aerospace qualifications"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Advanced manufacturing: robotics and industrial thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Precision machining capacity is scarce in India"
+   },
+   "ip": null
+  },
+  "role": "Benchmark",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "CNC machining as a service",
+  "investor_edges": [
+   {
+    "name": "Avataar Ventures",
+    "role": "Lead",
+    "round": "Series B",
+    "date": "2026-06"
+   },
+   {
+    "name": "Peak XV Partners",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Robots for hard or dull work"
+  ]
  },
  {
   "id": "optimized",
@@ -3768,20 +6208,20 @@
   "entry_window": "Next raise: Series A",
   "next_raise": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Already has orders before the constellation exists, which is the right order of operations in space.",
   "rdi_sector": "Space",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8–9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series A",
-  "latest_round": "₹35 Cr · Apr 2026 (after a $6M Series A in Apr 2025)",
-  "lead_investor": "Exfinity Ventures",
+  "latest_round": "Series A · $6M · Apr 2025",
+  "lead_investor": "Blume Ventures and Mela Ventures",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founded in 2017 by Sandeep Shah (MD), Anil Yekkala, Dharin Shah, Kuldeep Saxena and Purvi Shah. Electro-optic imaging and AI surveillance for defence and border security, now expanding into space imaging.",
   "global_peers": [
@@ -3829,7 +6269,6 @@
    "source": "https://inc42.com/company/optimized-electrotech/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -3857,7 +6296,92 @@
    "Mela Ventures",
    "Venture Catalysts"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Series A",
+   "amount": "$6M",
+   "date": "2025-04",
+   "lead": "Blume Ventures and Mela Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹35 Cr raise led by Exfinity Ventures (stage not stated) to expand into space imaging",
+   "event_date": "2026-04-29",
+   "source_date": "2026-04-29"
+  },
+  "trl_estimate": "TRL 8–9 (est.)",
+  "trl_basis": "Electro-optic surveillance systems sold to defence and security users; space imaging is new",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Surveillance products sold",
+   "Initial orders for its space platform"
+  ],
+  "unproven": [
+   "Space imaging performance",
+   "Why revenue fell from FY23 to FY25"
+  ],
+  "would_change": [
+   "Satellite bus and payload delivered",
+   "Revenue recovery"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Defence imaging moving into space: space and defence thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Defence surveillance demand is steady; space imaging is crowded"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Electro-optic imaging",
+  "investor_edges": [
+   {
+    "name": "Exfinity Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Blume Ventures",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2025-04"
+   },
+   {
+    "name": "Mela Ventures",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2025-04"
+   },
+   {
+    "name": "Venture Catalysts",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "New ways to see Earth from orbit"
+  ]
  },
  {
   "id": "qpiai",
@@ -3881,16 +6405,16 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 5,
-  "team": 4,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "The government's chosen national quantum vehicle; strategic backing is strong, commercial demand is the open question.",
   "rdi_sector": "Quantum technologies",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 5–6 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series A",
   "latest_round": "Series A · $32M · Jul 2025",
@@ -3919,7 +6443,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -3944,7 +6467,80 @@
    "Avataar Ventures",
    "National Quantum Mission"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Series A",
+   "amount": "$32M",
+   "date": "2025-07",
+   "lead": "Avataar Ventures and National Quantum Mission",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$32M Series A co-led by Avataar Ventures and the National Quantum Mission",
+   "event_date": "2025-07-17",
+   "source_date": "2025-07-17"
+  },
+  "trl_estimate": "TRL 5–6 (est.)",
+  "trl_basis": "Builds quantum machines, assembling about 80% in-house",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Quantum hardware assembled in-house",
+   "National Quantum Mission backing"
+  ],
+  "unproven": [
+   "Error rates and qubit count",
+   "Commercial demand"
+  ],
+  "would_change": [
+   "Delivered systems and benchmarks",
+   "Enterprise customers"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Quantum computing hardware: quantum thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Government demand is clear; commercial demand is early"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Superconducting qubits",
+  "investor_edges": [
+   {
+    "name": "Avataar Ventures",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2025-07"
+   },
+   {
+    "name": "National Quantum Mission",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2025-07"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Hard optimisation problems"
+  ]
  },
  {
   "id": "qnu",
@@ -3968,16 +6564,16 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": 4,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Already inside an RDI-approved national project, the clearest example here of RDI money meeting VC money.",
   "rdi_sector": "Quantum technologies",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 7–8 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series A",
   "latest_round": "Series A1 · ₹200 Cr · Sep 2026",
@@ -4006,7 +6602,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -4031,7 +6626,80 @@
    "National Quantum Mission",
    "Speciale Invest"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Series A1",
+   "amount": "₹200 Cr",
+   "date": "2026-09",
+   "lead": "National Quantum Mission and Speciale Invest",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹200 Cr Series A1; part of an RDI-approved quantum network project",
+   "event_date": "2026-09-09",
+   "source_date": "2026-09-09"
+  },
+  "trl_estimate": "TRL 7–8 (est.)",
+  "trl_basis": "Contributes to an RDI-approved national quantum network project",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Inside an RDI-approved project",
+   "Government agreements (BISAG-N MoU)"
+  ],
+  "unproven": [
+   "Commercial (non-government) demand",
+   "Post-quantum software traction"
+  ],
+  "would_change": [
+   "Bank and enterprise deployments",
+   "Project delivery"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Quantum-safe security: quantum thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Every bank and government will need post-quantum security"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Quantum key distribution",
+  "investor_edges": [
+   {
+    "name": "National Quantum Mission",
+    "role": "Lead",
+    "round": "Series A1",
+    "date": "2026-09"
+   },
+   {
+    "name": "Speciale Invest",
+    "role": "Lead",
+    "round": "Series A1",
+    "date": "2026-09"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Secure communications"
+  ]
  },
  {
   "id": "vervesemi",
@@ -4055,16 +6723,16 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": 4,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Analog is where Indian design talent is thinnest, so a working team is itself a moat.",
   "rdi_sector": "Semiconductors",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series A",
   "latest_round": "Series A · $10M · Feb 2026",
@@ -4093,7 +6761,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -4120,7 +6787,85 @@
    "Ashish Kacholia",
    "Roots Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Series A",
+   "amount": "$10M",
+   "date": "2026-02",
+   "lead": "Ashish Kacholia and Unicorn India Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$10M Series A",
+   "event_date": "2026-02-18",
+   "source_date": "2026-02-18"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "Several programmes in late-stage development and qualification",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Programmes in qualification"
+  ],
+  "unproven": [
+   "Volume shipments",
+   "Design wins"
+  ],
+  "would_change": [
+   "Products shipping in volume",
+   "Named sensor or industrial customers"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Analog chips: semiconductor thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Analog demand is broad; Indian design talent is thin"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Analog and mixed-signal chips",
+  "investor_edges": [
+   {
+    "name": "Unicorn India Ventures",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2026-02"
+   },
+   {
+    "name": "Ashish Kacholia",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2026-02"
+   },
+   {
+    "name": "Roots Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Designing chips in India"
+  ]
  },
  {
   "id": "hrdwyr",
@@ -4144,16 +6889,16 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 5,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "A Series A two years after founding is fast for chips; silicon results will justify it or not.",
   "rdi_sector": "Semiconductors",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Series A",
   "latest_round": "Series A · $13M · May 2026",
@@ -4182,7 +6927,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -4208,7 +6952,79 @@
    "Ideaspring Capital",
    "Persistent Systems"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Series A",
+   "amount": "$13M",
+   "date": "2026-05",
+   "lead": "Ideaspring Capital",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$13M Series A led by Ideaspring Capital",
+   "event_date": "2026-05-15",
+   "source_date": "2026-05-15"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No silicon milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Series A raised two years after founding"
+  ],
+  "unproven": [
+   "First silicon",
+   "Customer design wins"
+  ],
+  "would_change": [
+   "Silicon benchmarks",
+   "Design wins"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Edge AI chips: semiconductor thesis"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Edge AI is a large, crowded market"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Ultra-low-power edge chips",
+  "investor_edges": [
+   {
+    "name": "Ideaspring Capital",
+    "role": "Lead",
+    "round": "Series A",
+    "date": "2026-05"
+   },
+   {
+    "name": "Persistent Systems",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Energy-efficient AI chips"
+  ]
  },
  {
   "id": "satsure",
@@ -4232,19 +7048,19 @@
   "entry_window": "Next raise: not tracked yet",
   "next_raise": "Next raise: not tracked yet",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "An analytics layer company getting a government grant for a national foundation model; round stage needs verifying.",
   "rdi_sector": "Space",
-  "trl": "TRL 7–8",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
-  "round_tab": "Series A",
-  "latest_round": "Later stage · IN-SPACe TAF award Jun 2026",
+  "round_tab": "Undisclosed",
+  "latest_round": "Undisclosed · Not in coverage",
   "lead_investor": "Not named in coverage",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders not named in this coverage.",
@@ -4270,7 +7086,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -4295,7 +7110,73 @@
   "investors": [
    "IN-SPACe"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Undisclosed",
+   "amount": "Not in coverage",
+   "date": "",
+   "lead": "Not named in coverage",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Grant",
+   "summary": "Selected for IN-SPACe's Technology Adoption Fund for a large Earth-observation model",
+   "event_date": "2026-06-12",
+   "source_date": "2026-06-12"
+  },
+  "trl_estimate": null,
+  "trl_basis": "Grant for a foundation model; no model release in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Government grant for an Earth-observation model"
+  ],
+  "unproven": [
+   "Model adoption",
+   "Funding history in this dataset"
+  ],
+  "would_change": [
+   "Model released and used",
+   "Funding details verified"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Earth-observation analytics: space thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Analytics on satellite data serves agriculture and government"
+   },
+   "ip": null
+  },
+  "role": "Benchmark",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Earth-observation AI models",
+  "investor_edges": [
+   {
+    "name": "IN-SPACe",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "New ways to see Earth from orbit"
+  ]
  },
  {
   "id": "ideaforge",
@@ -4319,19 +7200,19 @@
   "entry_window": "Listed company",
   "next_raise": "Listed company",
   "fit": 3,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: listed",
   "diligence": false,
   "why": "The public-market comparable for Indian drone and defence hardware; useful for valuing the private ones.",
   "rdi_sector": "Robotics",
-  "trl": "TRL 8–9",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series D & beyond",
-  "latest_round": "Public company · IPO Jul 2023",
+  "latest_round": "Listed · Jul 2023",
   "lead_investor": "Public markets",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders not named in this coverage.",
@@ -4357,7 +7238,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -4382,6 +7262,70 @@
   "investors": [],
   "institution_tags": [
    "IIT Bombay"
+  ],
+  "last_funding": {
+   "stage": "Listed",
+   "amount": "IPO",
+   "date": "2023-07",
+   "lead": "Public markets",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Listing",
+   "summary": "Listed on BSE and NSE at a 94% premium",
+   "event_date": "2023-07-07",
+   "source_date": "2023-07-07"
+  },
+  "trl_estimate": "TRL 9 (est.)",
+  "trl_basis": "Drones in service with Indian forces and agencies",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Listed; drones in service"
+  ],
+  "unproven": [
+   "Order book lumpiness",
+   "Export growth"
+  ],
+  "would_change": [
+   "Defence orders",
+   "Margins"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Benchmark: listed drone maker"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Defence drones are a growing budget line"
+   },
+   "ip": null
+  },
+  "role": "Benchmark",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "IIT Bombay",
+    "relation": "Founders' education"
+   }
+  ],
+  "tech_approach": "Defence drones",
+  "investor_edges": [],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Defence drones"
   ]
  },
  {
@@ -4396,8 +7340,8 @@
   "eli12": "Getting things up to space is hard, but bringing them back safely is just as hard: they get hotter than a furnace on the way down. Inbound is building a small capsule that flies itself home with experiments or materials made in space.",
   "signal_type": "Funding news",
   "signal": "$1M+ pre-seed led by Speciale Invest; first re-entry mission targeted Q1 2028",
-  "source_name": "Indian Startup News",
-  "source_url": "https://indianstartupnews.com/funding/iit-madras-incubated-inbound-aerospace-raises-1-million-to-build-autonomous-re-entry-spacecraft-9527902",
+  "source_name": "Evertiq",
+  "source_url": "https://evertiq.com/news/2025-08-21-inbound-raises-1-million-to-build-autonomous-re-entry-spacecraft",
   "signal_date": "2025-08-21",
   "first_found": "2026-10-31",
   "funding": ">$1M pre-seed, Speciale Invest; Piper Serica participated",
@@ -4406,19 +7350,19 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 5,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Return-from-orbit is the bottleneck for in-space manufacturing; very early, very interesting.",
   "rdi_sector": "Space",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
-  "latest_round": "Pre-seed · $1M+ · 2025",
+  "latest_round": "Pre-seed · $1M+ · Aug 2025",
   "lead_investor": "Speciale Invest",
   "lead_partner": "Vishesh Rajaram, Managing Partner (Speciale Invest)",
   "founder_snapshot": "Co-founder and CEO Aravind I B; other founders not named. Incubated at IIT Madras.",
@@ -4455,7 +7399,6 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -4491,6 +7434,82 @@
   ],
   "institution_tags": [
    "IIT Madras"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$1M+",
+   "date": "2025-08",
+   "lead": "Speciale Invest",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$1M+ pre-seed led by Speciale Invest",
+   "event_date": "2025-08-21",
+   "source_date": "2025-08-21"
+  },
+  "trl_estimate": null,
+  "trl_basis": "Critical design review is the next milestone; no hardware test in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised; S-Booster 2025 finalist"
+  ],
+  "unproven": [
+   "Heat-shield and re-entry performance"
+  ],
+  "would_change": [
+   "Critical design review passed",
+   "Re-entry MVP on track for Q1 2028"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Re-entry vehicles: space thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "In-space manufacturing needs a way back; early market"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [
+   {
+    "name": "IIT Madras",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "Re-entry vehicles",
+  "investor_edges": [
+   {
+    "name": "Speciale Invest",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2025-08"
+   },
+   {
+    "name": "Piper Serica",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Getting to orbit cheaply"
   ]
  },
  {
@@ -4515,19 +7534,19 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 5,
-  "team": 4,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Thermal is a less crowded slice of Earth observation with clear agriculture and climate buyers.",
   "rdi_sector": "Space",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 8 (company-stated)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Seed",
-  "latest_round": "Seed · $2.2M · Apr 2026 (total ~$5.5M)",
+  "latest_round": "Seed · $2.2M · Apr 2026",
   "lead_investor": "Unicorn India Ventures",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Shravan Bhati (CEO), Ranendu Ghosh (CTO), Urmil Bakhai (CSO); team includes former ISRO scientists.",
@@ -4562,12 +7581,6 @@
    "rows": [],
    "source": null,
    "note": "Inc42 has a profile but no figures were readable."
-  },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 3,
-   "complementarity": 4,
-   "execution": 4
   },
   "team_strengths": [
    "Ex-ISRO scientists in the team",
@@ -4620,6 +7633,99 @@
   ],
   "institution_tags": [
    "ISRO alumni"
+  ],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "$2.2M",
+   "date": "2026-04",
+   "lead": "Unicorn India Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$2.2M seed; letters of intent over $42M; TAPAS-1 thermal payload at TRL 8",
+   "event_date": "2026-04-06",
+   "source_date": "2026-04-06"
+  },
+  "trl_estimate": "TRL 8 (company-stated)",
+  "trl_basis": "TAPAS-1 payload delivered and stated at TRL 8, preparing for launch",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "TAPAS-1 payload built in six months",
+   "City pilots in Ahmedabad and Tumkur"
+  ],
+  "unproven": [
+   "Image quality from orbit",
+   "Letters of intent converting to contracts"
+  ],
+  "would_change": [
+   "Launch and first thermal images",
+   "Paid contracts from its $42M of letters of intent"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "Payload delivered in six months; city pilots; $42M of letters of intent"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "Thermal Earth observation: space thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Urban heat and agriculture create clear buyers"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "ISRO",
+    "relation": "Team members' previous employment"
+   }
+  ],
+  "tech_approach": "Thermal imaging from orbit",
+  "investor_edges": [
+   {
+    "name": "Unicorn India Ventures",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2026-04"
+   },
+   {
+    "name": "Merak Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "IIMA Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "Java Capital",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "New ways to see Earth from orbit"
   ]
  },
  {
@@ -4636,7 +7742,7 @@
   "signal": "$1M pre-seed led by pi Ventures with IIMA Ventures",
   "source_name": "Indian Startup News",
   "source_url": "https://indianstartupnews.com/funding/ex-isro-scientist-founded-spacetech-startup-orbitt-space-raises-1-million-in-funding-9314184",
-  "signal_date": "2025",
+  "signal_date": "2025-05",
   "first_found": "2026-10-31",
   "funding": "$1M pre-seed, pi Ventures; IIMA Ventures participated",
   "stage": 1,
@@ -4644,19 +7750,19 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 3,
-  "ip": 2,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Needs primary research: strong backers, thin public detail.",
   "rdi_sector": "Space",
-  "trl": "TRL 3–4",
-  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
-  "latest_round": "Pre-seed · $1M · 2025",
+  "latest_round": "Pre-seed · $1M · May 2025",
   "lead_investor": "pi Ventures",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Christopher Parmar and Anupam Kumar; ex-ISRO scientist founder.",
@@ -4681,7 +7787,6 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Founders' backgrounds beyond ISRO experience aren't in coverage"
@@ -4722,6 +7827,82 @@
   ],
   "institution_tags": [
    "ISRO alumni"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$1M",
+   "date": "2025-05",
+   "lead": "pi Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$1M pre-seed led by pi Ventures for ultra-low orbit electric propulsion",
+   "event_date": "2025-05",
+   "source_date": "2025"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No thruster test data in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised"
+  ],
+  "unproven": [
+   "Thruster performance and life"
+  ],
+  "would_change": [
+   "Thruster test results",
+   "A satellite customer"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Satellite propulsion: space thesis"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Very low orbits are an emerging niche"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [
+   {
+    "name": "ISRO",
+    "relation": "Founder's previous employment"
+   }
+  ],
+  "tech_approach": "Electric propulsion",
+  "investor_edges": [
+   {
+    "name": "pi Ventures",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2025-05"
+   },
+   {
+    "name": "IIMA Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Keeping satellites working longer"
   ]
  },
  {
@@ -4736,8 +7917,8 @@
   "eli12": "Omspace is building a small rocket that can come back and fly again, carrying a satellite about the weight of a motorbike-and-rider into orbit. Reusing rockets is what makes launches cheaper, but landing them is extremely hard.",
   "signal_type": "Funding news",
   "signal": "₹25 Cr pre-seed from a Dubai family office",
-  "source_name": "Entrepreneur India",
-  "source_url": "https://www.entrepreneur.com/en-in/news-and-trends/ahmedabad-based-spacetech-startup-omspace-raises-inr-25-cr/496340",
+  "source_name": "Inc42",
+  "source_url": "https://inc42.com/buzz/spacetech-startup-omspace-rocket-and-exploration-bags-3-mn",
   "signal_date": "2025-07-18",
   "first_found": "2026-10-31",
   "funding": "₹25 Cr ($3M) pre-seed, family office",
@@ -4746,20 +7927,20 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 3,
-  "team": 2,
+  "team": null,
   "market": 3,
-  "ip": 2,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": true,
   "why": "Third or fourth Indian small-launch entrant; differentiation is unclear.",
   "rdi_sector": "Space",
-  "trl": "TRL 3–4",
-  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
-  "latest_round": "Pre-seed · ₹25 Cr · 2025",
-  "lead_investor": "Family office (Dubai)",
+  "latest_round": "Pre-seed · $3M · Jul 2025",
+  "lead_investor": "Undisclosed family offices and angels",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founded in 2020 by Ravindra Raj Binod Mistri, Maulik Mota and Stutika Padamshali; incubated at CrAdLE (EDII); in the AWS space accelerator.",
   "global_peers": [
@@ -4794,7 +7975,6 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -4837,6 +8017,70 @@
   "investors": [],
   "institution_tags": [
    "CrAdLE (EDII)"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$3M",
+   "date": "2025-07",
+   "lead": "Undisclosed family offices and angels",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$3M pre-seed for the Infinity One reusable launcher",
+   "event_date": "2025-07-18",
+   "source_date": "2025-07-18"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No engine test in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised; AWS space accelerator"
+  ],
+  "unproven": [
+   "Engine tests",
+   "Differentiation from Skyroot and Agnikul"
+  ],
+  "would_change": [
+   "Engine test campaign results",
+   "Team growth in propulsion"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Launch: space thesis"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Crowded Indian small-launch field"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [
+   {
+    "name": "CrAdLE, EDII",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "Reusable launch vehicles",
+  "investor_edges": [],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Getting to orbit cheaply"
   ]
  },
  {
@@ -4861,7 +8105,7 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 5,
-  "team": 3,
+  "team": null,
   "market": 4,
   "ip": 3,
   "confidence": "Low",
@@ -4869,8 +8113,8 @@
   "diligence": true,
   "why": "Refuelling interface is a standards play: whoever gets on satellites first wins.",
   "rdi_sector": "Space",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (company-stated)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $1.5M · Jan 2025",
@@ -4921,12 +8165,6 @@
    "source": "https://inc42.com/company/orbitaid/financials/",
    "note": "FY25 revenue jumped sharply; source of revenue isn't disclosed."
   },
-  "team_scores": {
-   "domain": 3,
-   "commercial": 3,
-   "complementarity": 3,
-   "execution": 4
-  },
   "team_strengths": [
    "Claims TRL 7 after a zero-gravity flight test",
    "₹4.2 Cr revenue in FY25 is unusual for a pre-seed space company"
@@ -4968,7 +8206,86 @@
    "Unicorn India Ventures",
    "TANSIM"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$1.5M",
+   "date": "2025-01",
+   "lead": "Unicorn India Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$1.5M pre-seed for docking and refuelling",
+   "event_date": "2025-01-15",
+   "source_date": "2025-01-15"
+  },
+  "trl_estimate": "TRL 6–7 (company-stated)",
+  "trl_basis": "Patented docking interface tested on a zero-gravity flight; company claims TRL 7",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Zero-gravity flight test",
+   "₹4.2 Cr FY25 revenue"
+  ],
+  "unproven": [
+   "Docking in orbit",
+   "Source of FY25 revenue"
+  ],
+  "would_change": [
+   "In-orbit docking demonstration",
+   "Satellite makers adopting its port"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "Zero-gravity test; ₹4.2 Cr FY25 revenue"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 5,
+    "rationale": "In-orbit refuelling: space thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Standards play in a nascent market"
+   },
+   "ip": {
+    "score": 3,
+    "rationale": "Patented SIDRP docking interface (company-stated)"
+   }
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Satellite docking and servicing",
+  "investor_edges": [
+   {
+    "name": "Unicorn India Ventures",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2025-01"
+   },
+   {
+    "name": "TANSIM",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Keeping satellites working longer"
+  ]
  },
  {
   "id": "astrophel",
@@ -4992,16 +8309,16 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 3,
-  "team": 2,
+  "team": null,
   "market": 3,
-  "ip": 2,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": true,
   "why": "Thin public detail; low priority until more is known.",
   "rdi_sector": "Space",
-  "trl": "TRL 3–4",
-  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · ₹6.84 Cr · 2025",
@@ -5035,7 +8352,6 @@
    "source": "https://inc42.com/company/astrophel-aerospace/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -5060,7 +8376,66 @@
    ]
   },
   "investors": [],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "₹6.84 Cr",
+   "date": "2025",
+   "lead": "Not named in coverage",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹6.84 Cr pre-seed; MoU with IN-SPACe on reusable engines",
+   "event_date": "2025",
+   "source_date": "2025"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No engine test in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised; IN-SPACe MoU"
+  ],
+  "unproven": [
+   "Product clarity",
+   "Engine tests"
+  ],
+  "would_change": [
+   "Engine test results",
+   "Team details"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Launch propulsion: space thesis"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Crowded field"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Reusable launch vehicles",
+  "investor_edges": [],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Getting to orbit cheaply"
+  ]
  },
  {
   "id": "dashamlabs",
@@ -5076,7 +8451,7 @@
   "signal": "₹12 Cr seed led by Speciale Invest with IIMA Ventures",
   "source_name": "Entrackr",
   "source_url": "https://entrackr.com/snippets/dashamlabs-raises-rs-12-cr-in-seed-round-led-by-speciale-invest-10568073",
-  "signal_date": "2025-10",
+  "signal_date": "2025-10-15",
   "first_found": "2026-10-31",
   "funding": "₹12 Cr seed, Speciale Invest; IIMA Ventures",
   "stage": 3,
@@ -5084,16 +8459,16 @@
   "entry_window": "Next raise: Series A",
   "next_raise": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Aerogels ride the EV battery-safety wave; Aspen Aerogels shows the size of the prize.",
   "rdi_sector": "Advanced materials",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Seed",
   "latest_round": "Seed · ₹12 Cr · Oct 2025",
@@ -5134,7 +8509,6 @@
    "source": "https://inc42.com/company/dashamlabs/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -5161,7 +8535,79 @@
    "Speciale Invest",
    "IIMA Ventures"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "₹12 Cr",
+   "date": "2025-10",
+   "lead": "Speciale Invest",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹12 Cr seed for aerogels",
+   "event_date": "2025-10-15",
+   "source_date": "2025-10"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No production milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Seed raised"
+  ],
+  "unproven": [
+   "Production cost and scale",
+   "Customer qualification"
+  ],
+  "would_change": [
+   "Pilot production line",
+   "EV or industrial customer"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Advanced materials: materials thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "EV battery safety creates aerogel demand"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [],
+  "tech_approach": "Aerogels",
+  "investor_edges": [
+   {
+    "name": "Speciale Invest",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2025-10"
+   },
+   {
+    "name": "IIMA Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Storing renewable power"
+  ]
  },
  {
   "id": "flowatt",
@@ -5185,16 +8631,16 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 3,
-  "team": 2,
+  "team": null,
   "market": 4,
-  "ip": 2,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": true,
   "why": "Needs primary research.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 3–4",
-  "rdi_eligibility": "Approaching (TRL 3–4)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · ₹2.2 Cr · Oct 2025",
@@ -5228,7 +8674,6 @@
    "source": "https://inc42.com/company/flowatt-battery-science/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -5255,7 +8700,75 @@
   "investors": [
    "PedalStart"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "₹2.2 Cr",
+   "date": "2025-10",
+   "lead": "PedalStart",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹2.2 Cr pre-seed",
+   "event_date": "2025-10",
+   "source_date": "2025-10"
+  },
+  "trl_estimate": null,
+  "trl_basis": "Technology not described in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "₹87 lakh FY25 revenue"
+  ],
+  "unproven": [
+   "What the technology is"
+  ],
+  "would_change": [
+   "Product details",
+   "Customers"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "₹87 lakh FY25 revenue"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Batteries: energy thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Large EV battery market"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Battery systems",
+  "investor_edges": [
+   {
+    "name": "PedalStart",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2025-10"
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Storing renewable power"
+  ]
  },
  {
   "id": "neuralzome",
@@ -5279,16 +8792,16 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Retrofit autonomy is capital-light; focus on which vertical pays first.",
   "rdi_sector": "Robotics",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
   "latest_round": "Pre-seed · $2.4M · 2025",
@@ -5339,7 +8852,6 @@
    "source": "https://inc42.com/company/neuralzome-cybernetics/financials/",
    "note": null
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -5375,7 +8887,94 @@
    "SIDBI",
    "IIMA Ventures CIIE"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$2.4M",
+   "date": "2025",
+   "lead": "8X Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$2.4M pre-seed led by 8X Ventures",
+   "event_date": "2025",
+   "source_date": "2025"
+  },
+  "trl_estimate": null,
+  "trl_basis": "No deployment milestone in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "₹44 lakh FY25 revenue"
+  ],
+  "unproven": [
+   "Autonomy reliability",
+   "Which vertical pays"
+  ],
+  "would_change": [
+   "Paid deployments",
+   "Interventions per operating hour"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "₹44 lakh FY25 revenue"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Autonomy for industry: robotics thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Labour shortages drive demand"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Autonomy software for machines",
+  "investor_edges": [
+   {
+    "name": "8X Ventures",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2025"
+   },
+   {
+    "name": "Turbostart",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "SIDBI",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "IIMA Ventures CIIE",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Robots for hard or dull work"
+  ]
  },
  {
   "id": "wankel",
@@ -5399,19 +8998,19 @@
   "entry_window": "Next raise: Seed",
   "next_raise": "Next raise: Seed",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Energy efficiency with a short payback sells itself if the data holds.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Pre-seed",
-  "latest_round": "Pre-seed · $1M",
+  "latest_round": "Pre-seed · $1M · Sep 2025",
   "lead_investor": "Shastra VC",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders not named in coverage; IIT Madras Energy Consortium link.",
@@ -5442,7 +9041,6 @@
    "source": null,
    "note": "No filings found."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -5471,6 +9069,76 @@
   ],
   "institution_tags": [
    "IIT Madras"
+  ],
+  "last_funding": {
+   "stage": "Pre-seed",
+   "amount": "$1M",
+   "date": "2025-09",
+   "lead": "Shastra VC",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$1M pre-seed for the Phoenix rotary expander",
+   "event_date": "2025-09-23",
+   "source_date": "2025-09-23"
+  },
+  "trl_estimate": null,
+  "trl_basis": "Six pilot expanders planned; no field data in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Pre-seed raised; IIT Madras incubated"
+  ],
+  "unproven": [
+   "Savings in real plants"
+  ],
+  "would_change": [
+   "Pilot results from the first six units",
+   "Payback period"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Industrial energy efficiency: energy thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Short-payback efficiency sells if the data holds"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [
+   {
+    "name": "IIT Madras",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "Rotary expanders for waste heat",
+  "investor_edges": [
+   {
+    "name": "Shastra VC",
+    "role": "Lead",
+    "round": "Pre-seed",
+    "date": "2025-09"
+   }
+  ],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Firm clean power"
   ]
  },
  {
@@ -5495,19 +9163,19 @@
   "entry_window": "Next raise: Pre-Series A",
   "next_raise": "Next raise: Pre-Series A",
   "fit": 4,
-  "team": 3,
+  "team": 4,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: investor-backed",
   "diligence": false,
   "why": "Diesel replacement for backup power is a clear buyer; hydrogen supply is the catch.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 4–5",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "Not estimable",
+  "rdi_eligibility": "Potential fit; eligibility unverified (no demonstrated milestone)",
   "rdi_route": "TDB",
   "round_tab": "Seed",
-  "latest_round": "Seed · $850K",
+  "latest_round": "Seed · $850K · Oct 2025",
   "lead_investor": "Venture Catalysts",
   "lead_partner": "Dr Apoorva Ranjan Sharma (Venture Catalysts)",
   "founder_snapshot": "Santosh Gurunath (chemical engineer; led hydrogen production and safety work at Shell; ex-McKinsey and BCG) and Laxmikant Banjarey (civil engineer; co-founded Arcatron Mobility, Frido, in 2014).",
@@ -5544,12 +9212,6 @@
    "rows": [],
    "source": null,
    "note": "No filings found."
-  },
-  "team_scores": {
-   "domain": 4,
-   "commercial": 4,
-   "complementarity": 5,
-   "execution": 3
   },
   "team_strengths": [
    "Hydrogen operations experience from Shell plus consulting, paired with a founder who has already built a hardware company",
@@ -5593,7 +9255,105 @@
    "Venture Catalysts",
    "Faad Network"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "$850K",
+   "date": "2025-10",
+   "lead": "Venture Catalysts",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$850K seed to build a fuel-cell factory",
+   "event_date": "2025-10-07",
+   "source_date": "2025-10-07"
+  },
+  "trl_estimate": null,
+  "trl_basis": "Field trials planned; no test data in coverage",
+  "rdi_status": "Potential fit; eligibility unverified (no demonstrated milestone)",
+  "demonstrated": [
+   "Seed raised; experienced founders"
+  ],
+  "unproven": [
+   "Fuel-cell performance in the field",
+   "Hydrogen supply"
+  ],
+  "would_change": [
+   "Field trials with anchor customers",
+   "Cost per kWh versus diesel"
+  ],
+  "team_factors": {
+   "domain": {
+    "score": 4,
+    "evidence": "Co-founder led hydrogen production and safety at Shell"
+   },
+   "commercial": {
+    "score": 4,
+    "evidence": "Co-founder co-founded Arcatron Mobility (Frido); ex-McKinsey and BCG"
+   },
+   "complementarity": {
+    "score": 4,
+    "evidence": "Hydrogen operator paired with a hardware-company builder"
+   },
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Hydrogen fuel cells: energy thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Diesel replacement for backup power is a clear market"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [
+   {
+    "name": "Shell",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "McKinsey",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "BCG",
+    "relation": "Founder's previous employment"
+   },
+   {
+    "name": "Arcatron Mobility (Frido)",
+    "relation": "Founder's previous company"
+   }
+  ],
+  "tech_approach": "Hydrogen fuel cells",
+  "investor_edges": [
+   {
+    "name": "Venture Catalysts",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2025-10"
+   },
+   {
+    "name": "Faad Network",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "3 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Clean hydrogen"
+  ]
  },
  {
   "id": "greengrahi",
@@ -5617,19 +9377,19 @@
   "entry_window": "Next raise: Series A",
   "next_raise": "Next raise: Series A",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 4,
-  "ip": 3,
+  "ip": null,
   "confidence": "Low",
   "uncontested": "No: VC-backed",
   "diligence": false,
   "why": "Insect protein is proven technically but has burned capital in Europe; unit economics are everything.",
   "rdi_sector": "Biotechnology (agri)",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "BIRAC",
   "round_tab": "Seed",
-  "latest_round": "Seed · ₹32 Cr",
+  "latest_round": "Seed · ₹32 Cr · Apr 2025",
   "lead_investor": "Avaana Capital",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders not named in coverage.",
@@ -5677,7 +9437,6 @@
    "source": "https://inc42.com/company/green-grahi/financials/",
    "note": "Total assets of ₹28 Cr suggest the bio-factory build is under way."
   },
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [
    "Coverage and company profiles don't give enough detail to assess the team yet."
@@ -5703,7 +9462,75 @@
   "investors": [
    "Avaana Capital"
   ],
-  "institution_tags": []
+  "institution_tags": [],
+  "last_funding": {
+   "stage": "Seed",
+   "amount": "₹32 Cr",
+   "date": "2025-04",
+   "lead": "Avaana Capital",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "₹32 Cr seed for a black soldier fly bio-factory",
+   "event_date": "2025-04-23",
+   "source_date": "2025-04"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "Selling product (₹73 lakh FY25 revenue); bio-factory under construction",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "₹73 lakh FY25 revenue"
+  ],
+  "unproven": [
+   "Cost per tonne at factory scale"
+  ],
+  "would_change": [
+   "Bio-factory throughput",
+   "Feed offtake contracts"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 3,
+    "evidence": "₹73 lakh FY25 revenue; factory under construction"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Insect protein: agri-bio thesis"
+   },
+   "market": {
+    "score": 4,
+    "rationale": "Feed protein demand is large; unit economics have sunk peers"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Low",
+  "institutions": [],
+  "tech_approach": "Insect protein (black soldier fly)",
+  "investor_edges": [
+   {
+    "name": "Avaana Capital",
+    "role": "Lead",
+    "round": "Seed",
+    "date": "2025-04"
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Making things with biology"
+  ]
  },
  {
   "id": "quanfluence",
@@ -5727,19 +9554,19 @@
   "entry_window": "Next raise: Series B",
   "next_raise": "Next raise: Series B",
   "fit": 4,
-  "team": 3,
+  "team": null,
   "market": 3,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: VC-backed",
   "diligence": true,
   "why": "Photonic optimisation is a niche with real physics; must prove advantage on real problems.",
   "rdi_sector": "Quantum technologies",
-  "trl": "TRL 6–7",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 6–7 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
-  "round_tab": "Series A",
-  "latest_round": "$10M (stage not stated) · Oct 2026",
+  "round_tab": "Undisclosed",
+  "latest_round": "Undisclosed · $10M · Oct 2026",
   "lead_investor": "Chiratae Ventures",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Six co-founders including Sujoy Chakravarty; founded 2021, IIT Madras incubated. Building a full-stack photonic quantum computer.",
@@ -5771,7 +9598,6 @@
   "website": null,
   "linkedin": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -5799,6 +9625,93 @@
   ],
   "institution_tags": [
    "IIT Madras"
+  ],
+  "last_funding": {
+   "stage": "Undisclosed",
+   "amount": "$10M",
+   "date": "2026-10",
+   "lead": "Chiratae Ventures",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Funding",
+   "summary": "$10M led by Chiratae Ventures (stage not stated); about three Ising machines sold",
+   "event_date": "2026-10-07",
+   "source_date": "2026-10-07"
+  },
+  "trl_estimate": "TRL 6–7 (est.)",
+  "trl_basis": "Optical Ising machines sold (about three) and 10–15 paid pilots",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "About three machines sold",
+   "10–15 paid pilots"
+  ],
+  "unproven": [
+   "Photonic quantum processor",
+   "Advantage over classical solvers"
+  ],
+  "would_change": [
+   "Early processors by 2027",
+   "Pilots converting to contracts"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": {
+    "score": 4,
+    "evidence": "About three machines sold and 10–15 paid pilots"
+   }
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 4,
+    "rationale": "Photonic quantum: quantum thesis"
+   },
+   "market": {
+    "score": 3,
+    "rationale": "Optimisation users exist; quantum advantage unproven"
+   },
+   "ip": null
+  },
+  "role": "Core",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "IIT Madras",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "Photonic Ising machines",
+  "investor_edges": [
+   {
+    "name": "Chiratae Ventures",
+    "role": "Lead",
+    "round": "Undisclosed",
+    "date": "2026-10"
+   },
+   {
+    "name": "Rainmatter",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   },
+   {
+    "name": "pi Ventures",
+    "role": "Participant",
+    "round": null,
+    "date": null
+   }
+  ],
+  "team_basis": "1 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Hard optimisation problems"
   ]
  },
  {
@@ -5823,19 +9736,19 @@
   "entry_window": "Listed company",
   "next_raise": "Listed company",
   "fit": 3,
-  "team": 4,
+  "team": null,
   "market": 5,
-  "ip": 4,
+  "ip": null,
   "confidence": "Medium",
   "uncontested": "No: listed",
   "diligence": false,
   "why": "The public-market benchmark for Indian deep-hardware companies built out of an IIT incubator.",
   "rdi_sector": "Energy & climate action",
-  "trl": "TRL 8–9",
-  "rdi_eligibility": "Eligible now (TRL 4+)",
+  "trl": "TRL 9 (est.)",
+  "rdi_eligibility": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
   "rdi_route": "TDB",
   "round_tab": "Series D & beyond",
-  "latest_round": "Public company · listed 2025",
+  "latest_round": "Listed · 2025",
   "lead_investor": "Public markets",
   "lead_partner": "Not named in coverage",
   "founder_snapshot": "Founders not named in this coverage.",
@@ -5861,7 +9774,6 @@
   "linkedin": null,
   "clients": null,
   "financials": null,
-  "team_scores": null,
   "team_strengths": [],
   "team_gaps": [],
   "founders_detail": [],
@@ -5886,6 +9798,69 @@
   "investors": [],
   "institution_tags": [
    "IIT Madras"
+  ],
+  "last_funding": {
+   "stage": "Listed",
+   "amount": "IPO",
+   "date": "2025",
+   "lead": "Public markets",
+   "status": "Completed"
+  },
+  "latest_signal": {
+   "kind": "Listing",
+   "summary": "Listed; first IIT Madras-incubated company to go public",
+   "event_date": "2025",
+   "source_date": "2025"
+  },
+  "trl_estimate": "TRL 9 (est.)",
+  "trl_basis": "Scooters in mass production",
+  "rdi_status": "Demonstrated milestone suggests TRL 4+; eligibility unverified",
+  "demonstrated": [
+   "Mass production; listed"
+  ],
+  "unproven": [
+   "Unit economics as subsidies change"
+  ],
+  "would_change": [
+   "Market share",
+   "Battery cost"
+  ],
+  "team_factors": {
+   "domain": null,
+   "commercial": null,
+   "complementarity": null,
+   "execution": null
+  },
+  "factor_evidence": {
+   "fit": {
+    "score": 3,
+    "rationale": "Benchmark: listed EV maker from an IIT incubator"
+   },
+   "market": {
+    "score": 5,
+    "rationale": "Electric two-wheelers are a large market"
+   },
+   "ip": null
+  },
+  "role": "Benchmark",
+  "assessed_on": "2026-10-31",
+  "last_verified": "2026-10-31",
+  "last_changed": "2026-10-31",
+  "evidence_confidence": "Medium",
+  "institutions": [
+   {
+    "name": "IIT Madras",
+    "relation": "Incubation"
+   }
+  ],
+  "tech_approach": "Electric two-wheelers",
+  "investor_edges": [],
+  "team_basis": "0 of 4 team factors have evidence",
+  "date_added": "2026-10-31",
+  "last_substantive_update": "2026-10-31",
+  "dates_note": "Event date is when it happened; source date is when it was reported.",
+  "bottlenecks": [
+   "Electric mobility"
   ]
  }
 ]

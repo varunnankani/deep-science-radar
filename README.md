@@ -23,7 +23,8 @@ The Network tab draws companies, investors, institutions, sectors and (optionall
 
 ## Files
 
-- `data/leads.json`: one object per company, with source URL, scores (fit, team, market, IP, each 1–5), de-risking stage, explainer and RDI fields.
+- `data/leads.json`: one object per company. Key fields: `last_funding` (last confirmed round; stage can be "Undisclosed"), `latest_signal` (kind, summary, event_date, source_date), `demonstrated` / `unproven` / `would_change`, `trl_estimate` + `trl_basis` (the milestone it rests on), `rdi_status` (never "eligible"; always "eligibility unverified"), `team_factors` (each `{score, evidence}` or null = insufficient evidence), `factor_evidence`, `role` (Core or Benchmark), `investor_edges`, `institutions`, `bottlenecks`, and the dates `date_added`, `assessed_on`, `last_substantive_update`, `last_verified`.
+- `data/changes.json`: change log of meaningful changes, newest last; the Updates page and the weekly digest read it.
 - `data/firms.json`: investor firm websites used for links (only sites that were checked).
 - `data/excluded.json`: kept for compatibility; the directory now covers every stage.
 - `data/runs.json`: run log, newest first.

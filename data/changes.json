@@ -1,0 +1,72 @@
+[
+ {
+  "date": "2026-10-31",
+  "company_id": "nusynth",
+  "company": "NuSynth Technologies",
+  "kind": "Assessment withdrawn",
+  "summary": "Team scores removed: no founder backgrounds found. RDI changed from 'Eligible now' to 'Potential fit; eligibility unverified'."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "quanfluence",
+  "company": "Quanfluence",
+  "kind": "Stage reclassified",
+  "summary": "Moved from Series A to Undisclosed: coverage of the $10M round does not state a stage."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "strainx",
+  "company": "StrainX Bioworks",
+  "kind": "Stage reclassified",
+  "summary": "Moved from Series A to Undisclosed: coverage of the $13M round does not state a stage."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "pixxel",
+  "company": "Pixxel",
+  "kind": "Stage reclassified",
+  "summary": "Last confirmed stage set to Undisclosed. The $80–100M round is reported discussions, not a closed round."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "satsure",
+  "company": "SatSure",
+  "kind": "Stage reclassified",
+  "summary": "Last confirmed funding not in the sources used; latest signal is an IN-SPACe grant."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "velmenni",
+  "company": "Velmenni",
+  "kind": "Stage reclassified",
+  "summary": "Set to pre-Series A (₹30 Cr), per StartupIntros."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": "optimized",
+  "company": "Optimized Electrotech",
+  "kind": "Stage confirmed",
+  "summary": "Last confirmed stage is a $6M Series A (Apr 2025); the ₹35 Cr 2026 raise did not state a stage."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": null,
+  "company": null,
+  "kind": "Method change",
+  "summary": "All TRL estimates now cite a demonstrated milestone; companies without one show 'Not estimable'. RDI labels now read 'eligibility unverified'."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": null,
+  "company": null,
+  "kind": "Method change",
+  "summary": "Each scored factor now shows its evidence. Factors without evidence show 'Insufficient evidence' and the radar score is marked partial."
+ },
+ {
+  "date": "2026-10-31",
+  "company_id": null,
+  "company": null,
+  "kind": "Method change",
+  "summary": "Ather, ideaForge, Skyroot, Pixxel, Digantara, Ethereal Machines and SatSure are now labelled benchmarks, outside the core scouting universe."
+ }
+]

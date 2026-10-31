@@ -3,141 +3,230 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deep Science Radar · Indian deeptech companies by stage</title>
-<meta name="description" content="A directory of Indian deep science companies from pre-seed to listed, with founders, lead investors, global parallels and what to judge each one on. Updated daily.">
+<title>Deep Science Radar · India's emerging deeptech companies</title>
+<meta name="description" content="Discover India's emerging deeptech companies: what each has demonstrated, what is still unproven, who backs it, and the evidence behind every assessment. Updated daily.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 <style>
   :root {
     --paper: #f3f4f1; --sheet: #ffffff; --ink: #1a1f24; --soft: #5d6670; --rule: #dde0dc;
-    --oxide: #2a4d9b; --oxide-wash: #e8edf7; --signal: #d9a400; --ok: #2f7a4f; --chip: #eceeeb;
+    --oxide: #2a4d9b; --oxide-wash: #e8edf7; --signal: #d9a400; --signal-wash: #fbf3d9; --ok: #2f7a4f; --warn: #a15c00; --chip: #eceeeb;
     --sans: "IBM Plex Sans", system-ui, sans-serif; --serif: "Source Serif 4", Georgia, serif;
   }
   @media (prefers-color-scheme: dark) {
     :root { --paper: #12161b; --sheet: #1a2027; --ink: #e9ecef; --soft: #9aa4ae; --rule: #2b333c;
-      --oxide: #8fb0f2; --oxide-wash: #1f2a3f; --signal: #f0c43a; --ok: #6cc394; --chip: #232a32; }
+      --oxide: #8fb0f2; --oxide-wash: #1f2a3f; --signal: #f0c43a; --signal-wash: #3a3218; --ok: #6cc394; --warn: #f0b45a; --chip: #232a32; }
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
   body { margin: 0; background: var(--paper); color: var(--ink); font: 400 15px/1.55 var(--sans); }
   a { color: var(--oxide); text-underline-offset: 2px; }
   :focus-visible { outline: 2px solid var(--oxide); outline-offset: 2px; border-radius: 4px; }
-  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  button { font: inherit; color: inherit; }
 
-  /* masthead */
-  .mast { border-bottom: 1px solid var(--rule); background: var(--sheet); }
-  .mast .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 60px; }
-  .brand { font: 600 17px/1 var(--serif); letter-spacing: -.01em; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
-  .brand svg { flex: none; }
-  .mast nav { display: flex; gap: 4px; }
-  .mast nav button { font: 500 14px var(--sans); color: var(--soft); background: none; border: 0; padding: 8px 12px; border-radius: 6px; cursor: pointer; }
-  .mast nav button[aria-current="page"] { color: var(--ink); background: var(--chip); }
+  .mast { border-bottom: 1px solid var(--rule); background: var(--sheet); position: sticky; top: 0; z-index: 10; }
+  .mast .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; flex-wrap: wrap; }
+  .brand { font: 600 17px/1 var(--serif); color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+  .mast nav { display: flex; gap: 2px; flex-wrap: wrap; }
+  .mast nav a { font: 500 14px var(--sans); color: var(--soft); text-decoration: none; padding: 7px 11px; border-radius: 6px; }
+  .mast nav a[aria-current="page"] { color: var(--ink); background: var(--chip); }
+  .count { display: inline-block; min-width: 18px; padding: 0 5px; margin-left: 4px; border-radius: 9px; background: var(--signal); color: #1a1f24; font-size: 11px; font-weight: 600; text-align: center; line-height: 18px; }
 
-  /* intro */
-  .intro { padding: 44px 0 28px; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; align-items: end; }
-  .intro h1 { font: 400 clamp(32px, 4.6vw, 50px)/1.08 var(--serif); letter-spacing: -.02em; margin: 0 0 14px; max-width: 16ch; }
-  .intro p { margin: 0; color: var(--soft); max-width: 52ch; font-size: 16px; }
-  .facts { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); }
-  .fact { padding: 12px 12px 0 0; }
-  .fact b { display: block; font: 400 32px/1.1 var(--serif); font-variant-numeric: tabular-nums; }
-  .fact span { font-size: 13px; color: var(--soft); }
-  .updated { grid-column: 1 / -1; font-size: 13px; color: var(--soft); margin-top: -8px; }
-  .updated i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--signal); margin-right: 6px; vertical-align: 1px; font-style: normal; }
-  @media (max-width: 820px) { .intro { grid-template-columns: 1fr; gap: 24px; } }
+  /* home */
+  .hero { padding: 40px 0 8px; }
+  .hero h1 { font: 400 clamp(30px, 4.2vw, 44px)/1.1 var(--serif); letter-spacing: -.02em; margin: 0 0 8px; }
+  .hero p { margin: 0 0 18px; color: var(--soft); max-width: 62ch; }
+  .finder { display: flex; gap: 8px; flex-wrap: wrap; }
+  .finder input, .finder select, .ctl, .search { font: 15px var(--sans); background: var(--sheet); color: var(--ink); border: 1px solid var(--rule); border-radius: 8px; padding: 9px 12px; }
+  .finder input { flex: 1 1 320px; max-width: 520px; }
+  .finder button, .btn { font: 500 14px var(--sans); background: var(--ink); color: var(--paper); border: 0; border-radius: 8px; padding: 9px 16px; cursor: pointer; }
+  .btn.ghost { background: var(--sheet); color: var(--ink); border: 1px solid var(--rule); }
+  .btn.small { padding: 5px 10px; font-size: 13px; }
+  .strip { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 18px 0 0; padding: 10px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-size: 13px; color: var(--soft); }
+  .strip b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .strip i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--signal); margin-right: 6px; vertical-align: 1px; }
 
   h2.sec { font: 600 22px/1.2 var(--serif); margin: 0 0 4px; }
-  .sec-note { color: var(--soft); font-size: 14px; margin: 0 0 16px; max-width: 70ch; }
-  section.block { padding: 28px 0; }
+  .sec-note { color: var(--soft); font-size: 14px; margin: 0 0 16px; max-width: 74ch; }
+  section.block { padding: 26px 0; }
 
-  /* new on the radar: rows */
   .feed { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; }
-  .feed-row { display: grid; grid-template-columns: 10px minmax(0, 1.25fr) minmax(0, 1.6fr) minmax(0, 1fr); gap: 20px; align-items: start; padding: 18px 20px; border-top: 1px solid var(--rule); cursor: pointer; text-align: left; width: 100%; background: none; border-left: 0; border-right: 0; border-bottom: 0; font: inherit; color: inherit; }
-  .feed-row:first-child { border-top: 0; }
+  .feed-head, .feed-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr) minmax(0, .8fr) minmax(0, .8fr); gap: 18px; padding: 14px 20px; }
+  .feed-head { font-size: 12px; color: var(--soft); border-bottom: 1px solid var(--rule); padding-top: 10px; padding-bottom: 10px; }
+  .feed-row { border-top: 1px solid var(--rule); align-items: start; }
+  .feed-row:nth-child(2) { border-top: 0; }
   .feed-row:hover { background: var(--oxide-wash); }
-  .feed-row .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--signal); margin-top: 8px; }
-  .co-name { font: 600 18px/1.25 var(--serif); margin: 0; }
+  .co-btn { background: none; border: 0; padding: 0; text-align: left; cursor: pointer; }
+  .co-name { font: 600 17px/1.25 var(--serif); margin: 0; }
+  .co-btn:hover .co-name { text-decoration: underline; text-underline-offset: 3px; }
   .co-meta { font-size: 13px; color: var(--soft); margin-top: 2px; }
-  .co-tech { font-size: 14px; margin: 0; }
-  .founder-line { display: flex; gap: 10px; align-items: flex-start; margin-top: 8px; font-size: 13px; color: var(--soft); }
-  .initials { display: flex; flex: none; }
-  .initials span { width: 26px; height: 26px; border-radius: 50%; background: var(--oxide-wash); color: var(--oxide); font: 600 11px/26px var(--sans); text-align: center; border: 2px solid var(--sheet); margin-left: -6px; }
-  .initials span:first-child { margin-left: 0; }
-  .money { font-size: 13px; }
-  .money b { display: block; font-weight: 600; font-size: 14px; }
-  .money span { color: var(--soft); }
-  @media (max-width: 820px) { .feed-row { grid-template-columns: 10px 1fr; } .feed-row > .co-tech-wrap, .feed-row > .money { grid-column: 2; } }
+  .what { margin: 0; font-size: 14px; }
+  .whymat { margin: 4px 0 0; font-size: 13px; color: var(--soft); }
+  .when { font-size: 13px; } .when span { display: block; color: var(--soft); font-size: 12px; }
+  .src { font-size: 13px; }
+  .kind { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .02em; border-radius: 4px; padding: 0 6px; margin-right: 6px; background: var(--chip); color: var(--soft); vertical-align: 1px; }
+  .kind.Funding { background: var(--oxide-wash); color: var(--oxide); }
+  .kind.Grant { background: #e3f3ea; color: #1f6b42; }
+  .kind.Technical { background: var(--signal-wash); color: var(--warn); }
+  .kind.Reported { background: #f6e6e3; color: #9a3b2a; }
+  @media (prefers-color-scheme: dark) { .kind.Grant { background: #1d3a2a; color: #8fdcb0; } .kind.Reported { background: #3d2420; color: #f0a596; } }
+  @media (max-width: 820px) { .feed-head { display: none; } .feed-row { grid-template-columns: 1fr; gap: 6px; } }
 
-  /* stage rail: the signature element */
-  .rail { position: relative; display: grid; grid-template-columns: repeat(5, 1fr); margin: 8px 0 22px; }
-  .rail::before { content: ""; position: absolute; left: 10%; right: 10%; top: 17px; height: 2px; background: var(--rule); }
-  .rail button { position: relative; background: none; border: 0; cursor: pointer; font: inherit; color: var(--soft); display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 0 4px 6px; }
-  .rail .node { width: 36px; height: 36px; border-radius: 50%; background: var(--sheet); border: 2px solid var(--rule); display: grid; place-items: center; font: 600 13px var(--sans); color: var(--soft); font-variant-numeric: tabular-nums; transition: background .2s, border-color .2s, color .2s; }
-  .rail .lbl { font-size: 14px; font-weight: 500; }
+  .rail { position: relative; display: grid; grid-template-columns: repeat(6, 1fr); margin: 8px 0 22px; }
+  .rail::before { content: ""; position: absolute; left: 8%; right: 8%; top: 17px; height: 2px; background: var(--rule); }
+  .rail button { position: relative; background: none; border: 0; cursor: pointer; color: var(--soft); display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 0 4px 6px; }
+  .rail .node { width: 36px; height: 36px; border-radius: 50%; background: var(--sheet); border: 2px solid var(--rule); display: grid; place-items: center; font: 600 13px var(--sans); font-variant-numeric: tabular-nums; }
+  .rail .lbl { font-size: 14px; font-weight: 500; text-align: center; }
+  .rail button.undis .node { border-style: dashed; }
   .rail button[aria-selected="true"] { color: var(--ink); }
   .rail button[aria-selected="true"] .node { background: var(--oxide); border-color: var(--oxide); color: #fff; }
-  .rail button:hover .node { border-color: var(--oxide); }
-  @media (max-width: 560px) { .rail .lbl { font-size: 12px; } .rail .node { width: 30px; height: 30px; } .rail::before { top: 14px; } }
+  @media (max-width: 620px) { .rail .lbl { font-size: 11px; } .rail .node { width: 28px; height: 28px; } .rail::before { top: 13px; } }
 
   .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; align-items: center; }
   .chipbtn { font: 500 13px var(--sans); background: var(--sheet); color: var(--soft); border: 1px solid var(--rule); padding: 5px 12px; border-radius: 999px; cursor: pointer; }
   .chipbtn[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-  .search { flex: 1 1 220px; max-width: 320px; margin-left: auto; font: 14px var(--sans); background: var(--sheet); color: var(--ink); border: 1px solid var(--rule); border-radius: 8px; padding: 7px 12px; }
+  .search { flex: 1 1 220px; max-width: 340px; font-size: 14px; padding: 7px 12px; }
+  .ctl { font-size: 14px; padding: 7px 10px; }
+  label.chk { font-size: 13px; color: var(--soft); display: inline-flex; gap: 6px; align-items: center; }
 
   .dir { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; }
-  .dir-head, .dir-row { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.8fr) minmax(0, 1.1fr) minmax(0, 1.1fr); gap: 16px; padding: 12px 20px; align-items: start; }
+  .dir-head, .dir-row { display: grid; grid-template-columns: 30px minmax(0, 1.15fr) minmax(0, 1.7fr) minmax(0, 1.1fr) minmax(0, 1.2fr); gap: 14px; padding: 12px 18px; align-items: start; }
   .dir-head { font-size: 12px; color: var(--soft); border-bottom: 1px solid var(--rule); }
-  .dir-row { border-top: 1px solid var(--rule); width: 100%; background: none; border-left: 0; border-right: 0; border-bottom: 0; text-align: left; font: inherit; color: inherit; cursor: pointer; }
-  .dir-row:first-of-type { border-top: 0; }
+  .dir-row { border-top: 1px solid var(--rule); }
+  .dir-head + .dir-row { border-top: 0; }
   .dir-row:hover { background: var(--oxide-wash); }
   .dir-row .co-name { font-size: 16px; }
-  .dir-row .cell { font-size: 13px; color: var(--soft); }
-  .dir-row .cell b { color: var(--ink); font-weight: 500; }
+  .cell { font-size: 13px; color: var(--soft); } .cell b { color: var(--ink); font-weight: 500; }
   .empty { padding: 28px 20px; color: var(--soft); font-size: 14px; }
-  @media (max-width: 820px) { .dir-head { display: none; } .dir-row { grid-template-columns: 1fr; gap: 4px; } }
+  .bench { font-size: 11px; font-weight: 600; color: var(--soft); border: 1px solid var(--rule); border-radius: 4px; padding: 0 5px; margin-left: 6px; vertical-align: 2px; font-family: var(--sans); }
+  @media (max-width: 820px) { .dir-head { display: none; } .dir-row { grid-template-columns: 30px 1fr; gap: 4px 10px; } .dir-row > .cell { grid-column: 2; } }
 
-  /* profile drawer */
+  .star { width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--rule); background: var(--sheet); cursor: pointer; display: grid; place-items: center; padding: 0; color: var(--soft); }
+  .star[aria-pressed="true"] { color: var(--signal); border-color: var(--signal); background: var(--signal-wash); }
+  .star svg { width: 15px; height: 15px; }
+
+  /* drawer */
   .scrim { position: fixed; inset: 0; background: rgba(15, 20, 26, .38); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 20; }
   .scrim.open { opacity: 1; pointer-events: auto; }
-  .drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(720px, 100%); background: var(--paper); z-index: 21; transform: translateX(100%); transition: transform .25s ease; overflow-y: auto; box-shadow: -12px 0 40px rgba(0,0,0,.12); }
+  .drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(760px, 100%); background: var(--paper); z-index: 21; transform: translateX(100%); transition: transform .25s ease; overflow-y: auto; box-shadow: -12px 0 40px rgba(0,0,0,.12); }
   .drawer.open { transform: none; }
-  .d-top { position: sticky; top: 0; background: var(--sheet); border-bottom: 1px solid var(--rule); padding: 20px 28px 18px; z-index: 1; }
-  .d-close { position: absolute; top: 16px; right: 18px; background: none; border: 0; font: 22px/1 var(--sans); color: var(--soft); cursor: pointer; padding: 6px 10px; border-radius: 6px; }
+  .d-top { background: var(--sheet); border-bottom: 1px solid var(--rule); padding: 20px 28px 18px; position: relative; }
+  .d-close { position: absolute; top: 14px; right: 16px; background: none; border: 0; font: 22px/1 var(--sans); color: var(--soft); cursor: pointer; padding: 6px 10px; border-radius: 6px; }
   .d-sector { font-size: 13px; color: var(--soft); }
-  .d-name { font: 400 32px/1.1 var(--serif); letter-spacing: -.015em; margin: 4px 0 12px; padding-right: 40px; }
-  .d-high { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .d-name { font: 400 32px/1.1 var(--serif); letter-spacing: -.015em; margin: 4px 0 10px; padding-right: 40px; }
+  .d-links { display: flex; gap: 8px; margin: 0 0 14px; font-size: 13px; color: var(--soft); align-items: center; flex-wrap: wrap; }
+  .glance { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  .glance div { padding: 10px 14px; border-top: 1px solid var(--rule); }
+  .glance div:nth-child(-n+2) { border-top: 0; }
+  .glance div:nth-child(even) { border-left: 1px solid var(--rule); }
+  .glance small { display: block; font-size: 12px; color: var(--soft); margin-bottom: 2px; }
+  .glance p { margin: 0; font-size: 14px; line-height: 1.4; }
+  @media (max-width: 560px) { .glance { grid-template-columns: 1fr; } .glance div:nth-child(even) { border-left: 0; } .glance div:nth-child(2) { border-top: 1px solid var(--rule); } }
+  .d-body { padding: 4px 28px 48px; }
+  .d-sec { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+  .d-sec:last-child { border-bottom: 0; }
+  .d-sec h3 { font: 600 17px/1.3 var(--serif); margin: 0 0 10px; }
+  .d-sec p { margin: 0 0 6px; max-width: 66ch; }
+  .lede-tech { font-size: 17px; line-height: 1.5; }
+  .muted { color: var(--soft); font-size: 13px; }
+  .d-high { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--sheet); margin-bottom: 10px; }
   .d-high div { padding: 10px 12px; border-left: 1px solid var(--rule); }
   .d-high div:first-child { border-left: 0; }
   .d-high small { display: block; font-size: 12px; color: var(--soft); }
   .d-high strong { font-size: 14px; font-weight: 600; display: block; line-height: 1.35; }
+  .d-high a { color: inherit; }
   @media (max-width: 560px) { .d-high { grid-template-columns: 1fr; } .d-high div { border-left: 0; border-top: 1px solid var(--rule); } .d-high div:first-child { border-top: 0; } }
-  .d-body { padding: 8px 28px 48px; }
-  .d-sec { padding: 20px 0; border-bottom: 1px solid var(--rule); }
-  .d-sec:last-child { border-bottom: 0; }
-  .d-sec h3 { font: 600 17px/1.3 var(--serif); margin: 0 0 8px; }
-  .d-sec p { margin: 0 0 6px; max-width: 64ch; }
-  .lede-tech { font-size: 17px; line-height: 1.5; }
-  .muted { color: var(--soft); font-size: 14px; }
-  .eli { background: var(--oxide-wash); border-radius: 12px; padding: 18px 20px 18px 56px; position: relative; font: 400 17px/1.6 var(--serif); }
-  .eli svg { position: absolute; left: 18px; top: 20px; }
+  .eli { background: var(--oxide-wash); border-radius: 12px; padding: 16px 20px; font: 400 16px/1.6 var(--serif); margin-top: 12px; }
   .eli strong { display: block; font: 600 13px var(--sans); color: var(--oxide); margin-bottom: 4px; }
-  .peers { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
-  .peer { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; }
-  .peer b { display: block; font-weight: 600; }
-  .peer .rg { display: inline-block; font-size: 12px; color: var(--oxide); background: var(--oxide-wash); border-radius: 4px; padding: 0 6px; margin: 2px 0 6px; }
-  .peer p { font-size: 13px; color: var(--soft); margin: 0; }
-  ol.judge { margin: 0; padding: 0; list-style: none; counter-reset: j; display: flex; flex-direction: column; gap: 10px; }
-  ol.judge li { counter-increment: j; display: grid; grid-template-columns: 28px 1fr; gap: 8px; align-items: baseline; }
-  ol.judge li::before { content: counter(j); width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid var(--ink); display: grid; place-items: center; font: 600 12px var(--sans); }
+  .ev3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  @media (max-width: 620px) { .ev3 { grid-template-columns: 1fr; } }
+  .ev3 > div { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; }
+  .ev3 h4 { margin: 0 0 6px; font: 600 13px var(--sans); }
+  .ev3 h4.d { color: var(--ok); } .ev3 h4.u { color: var(--warn); } .ev3 h4.c { color: var(--oxide); }
+  .ev3 ul, .sg ul { margin: 0; padding-left: 16px; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+  table.fx { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.fx th, table.fx td { text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  table.fx th { font-size: 12px; font-weight: 500; color: var(--soft); }
+  table.fx td.sc { white-space: nowrap; font-variant-numeric: tabular-nums; font-weight: 600; width: 1%; }
+  .ins { font-weight: 500; color: var(--warn); font-size: 13px; white-space: nowrap; }
+  .pips { display: inline-flex; gap: 2px; margin-left: 6px; vertical-align: 1px; } .pips i { width: 8px; height: 6px; border-radius: 1px; background: var(--rule); } .pips i.on { background: var(--oxide); }
+  .scoreline { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; margin-bottom: 10px; }
+  .scoreline b { font: 400 28px/1 var(--serif); font-variant-numeric: tabular-nums; }
+  .sg { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 14px 0; }
+  @media (max-width: 560px) { .sg { grid-template-columns: 1fr; } }
+  .sg h4 { margin: 0 0 6px; font: 600 13px var(--sans); } .sg h4.s { color: var(--ok); } .sg h4.g { color: var(--warn); }
+  .people { display: flex; flex-direction: column; gap: 8px; }
+  .person { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+  .person b { font-weight: 600; } .person span { display: block; font-size: 13px; color: var(--soft); }
+  .lisearch { display: inline-flex; gap: 5px; align-items: center; font-size: 12px; color: #0a66c2; text-decoration: none; border: 1px solid #0a66c2; border-radius: 5px; padding: 1px 7px; white-space: nowrap; flex: none; }
+  .lisearch svg, .ico svg { width: 13px; height: 13px; flex: none; }
+  .ico { display: inline-flex; gap: 5px; align-items: center; font-size: 13px; text-decoration: none; border-radius: 5px; padding: 2px 8px; }
+  .ico.li { background: #0a66c2; color: #fff; } .ico.web { background: var(--chip); color: var(--ink); }
+  @media (prefers-color-scheme: dark) { .lisearch { color: #7fb5f0; border-color: #7fb5f0; } }
+  .clientlist { display: flex; flex-wrap: wrap; gap: 6px; }
+  .client { font-size: 13px; background: var(--sheet); border: 1px solid var(--rule); border-radius: 999px; padding: 4px 12px; }
+  .status { font-size: 12px; font-weight: 600; border-radius: 4px; padding: 1px 8px; margin-left: 8px; vertical-align: 2px; font-family: var(--sans); }
+  .status.named { background: #e3f3ea; color: #1f6b42; } .status.potential { background: var(--chip); color: var(--soft); }
   dl.kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0; font-size: 14px; }
-  dl.kv dt { color: var(--soft); }
-  dl.kv dd { margin: 0; }
-  .why { font: 400 18px/1.5 var(--serif); margin: 0; padding-left: 16px; border-left: 3px solid var(--signal); }
+  dl.kv dt { color: var(--soft); } dl.kv dd { margin: 0; }
+  .why { font: 400 17px/1.5 var(--serif); margin: 0; padding-left: 16px; border-left: 3px solid var(--signal); }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
   .tag { font-size: 12px; background: var(--chip); border-radius: 999px; padding: 2px 10px; color: var(--soft); }
+  .peers { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+  .peer { background: var(--sheet); border: 1px dashed var(--rule); border-radius: 10px; padding: 12px 14px; }
+  .peer b { display: block; } .peer .rg { display: inline-block; font-size: 12px; color: var(--oxide); background: var(--oxide-wash); border-radius: 4px; padding: 0 6px; margin: 2px 0 6px; }
+  .peer p { font-size: 13px; color: var(--soft); margin: 0; }
+  details.gen summary { cursor: pointer; font-weight: 500; font-size: 14px; }
+  .rub { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+  @media (max-width: 620px) { .rub { grid-template-columns: 1fr; } }
+  .rub div { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; } .rub h4 { margin: 0 0 4px; font: 600 13px var(--sans); }
+  .rub ul { margin: 0; padding-left: 16px; font-size: 13px; }
+  table.fin { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+  table.fin th, table.fin td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--rule); }
+  table.fin th { font-size: 12px; font-weight: 500; color: var(--soft); }
+  .d-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .copied { font-size: 12px; color: var(--ok); }
 
-  /* method */
+  /* network */
+  .net-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+  .seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--sheet); }
+  .seg button { border: 0; background: none; padding: 7px 12px; font-size: 13px; font-weight: 500; color: var(--soft); cursor: pointer; border-left: 1px solid var(--rule); }
+  .seg button:first-child { border-left: 0; }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+  .starters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center; font-size: 13px; color: var(--soft); }
+  .net-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 12px; }
+  @media (max-width: 900px) { .net-grid { grid-template-columns: 1fr; } }
+  .net-wrap { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; position: relative; overflow: hidden; height: min(70vh, 720px); min-height: 440px; }
+  .net-wrap svg { width: 100%; height: 100%; display: block; }
+  .net-wrap circle { cursor: pointer; }
+  .net-tip { position: absolute; pointer-events: none; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 6px 10px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,.12); max-width: 260px; z-index: 2; }
+  .net-tip span { display: block; color: var(--soft); font-size: 12px; }
+  .net-ctl { position: absolute; right: 10px; top: 10px; display: flex; gap: 6px; }
+  .net-foot { position: absolute; left: 12px; bottom: 8px; right: 12px; font-size: 12px; color: var(--soft); pointer-events: none; }
+  .panel { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 16px; height: min(70vh, 720px); min-height: 440px; overflow-y: auto; font-size: 14px; }
+  @media (max-width: 900px) { .panel { height: auto; min-height: 0; } }
+  .panel h3 { font: 600 19px/1.25 var(--serif); margin: 2px 0 4px; }
+  .panel .ty { font-size: 12px; color: var(--soft); text-transform: uppercase; letter-spacing: .04em; }
+  .panel h4 { font: 600 13px var(--sans); margin: 14px 0 6px; color: var(--soft); }
+  .conn { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .conn li { border: 1px solid var(--rule); border-radius: 8px; padding: 7px 9px; }
+  .conn li.recent { border-color: var(--signal); }
+  .conn button { background: none; border: 0; padding: 0; cursor: pointer; font-weight: 600; text-align: left; color: var(--ink); }
+  .conn button:hover { text-decoration: underline; }
+  .conn small { display: block; font-size: 12px; color: var(--soft); }
+  .legend-e { display: grid; grid-template-columns: 34px 1fr; gap: 6px 8px; font-size: 13px; align-items: center; margin: 6px 0; }
+  .legend-e svg { width: 34px; height: 10px; }
+  .sw { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px; vertical-align: 0; }
+
+  /* shortlist / compare */
+  .cmp { overflow-x: auto; background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; }
+  table.cmpt { border-collapse: collapse; font-size: 14px; min-width: 640px; width: 100%; }
+  table.cmpt th, table.cmpt td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+  table.cmpt th[scope="row"] { color: var(--soft); font-weight: 500; font-size: 13px; width: 160px; background: var(--paper); }
+  table.cmpt thead th { font: 600 16px var(--serif); }
+  /* method / updates */
   .m-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
   .m-card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 20px; }
   .m-card h3 { font: 600 18px var(--serif); margin: 0 0 10px; }
@@ -145,57 +234,12 @@
   table.t { width: 100%; border-collapse: collapse; font-size: 14px; }
   table.t th, table.t td { text-align: left; padding: 7px 8px 7px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
   table.t th { font-weight: 500; color: var(--soft); font-size: 13px; }
-
+  .log { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; }
+  .log-row { display: grid; grid-template-columns: 110px 170px minmax(0, 1fr); gap: 14px; padding: 12px 18px; border-top: 1px solid var(--rule); font-size: 14px; }
+  .log-row:first-child { border-top: 0; }
+  @media (max-width: 700px) { .log-row { grid-template-columns: 1fr; gap: 2px; } }
   footer { border-top: 1px solid var(--rule); margin-top: 32px; padding: 20px 0 48px; font-size: 13px; color: var(--soft); }
   .err { color: #b3261e; padding: 20px; }
-
-  .ico { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 5px; vertical-align: -5px; margin-left: 6px; text-decoration: none; }
-  .ico svg { width: 15px; height: 15px; flex: none; min-width: 15px; }
-  .ico.li { background: #0a66c2; color: #fff; }
-  .ico.web { background: var(--chip); color: var(--ink); }
-  .ico.li.search { background: transparent; color: #0a66c2; border: 1.5px solid #0a66c2; }
-  .d-links { display: flex; gap: 4px; margin: -6px 0 12px; font-size: 13px; color: var(--soft); align-items: center; }
-  .d-links .ico { margin-left: 0; }
-  .d-high a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
-  .scores { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 14px; }
-  .score-b { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; }
-  .score-b small { display: block; font-size: 12px; color: var(--soft); }
-  .score-b .bar { display: flex; gap: 3px; margin-top: 6px; }
-  .score-b .bar i { flex: 1; height: 6px; border-radius: 2px; background: var(--rule); }
-  .score-b .bar i.on { background: var(--oxide); }
-  .score-b b { font: 400 22px/1.1 var(--serif); }
-  .sg { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 14px; }
-  @media (max-width: 560px) { .sg { grid-template-columns: 1fr; } }
-  .sg h4 { margin: 0 0 6px; font: 600 13px var(--sans); }
-  .sg h4.s { color: var(--ok); } .sg h4.g { color: #a15c00; }
-  @media (prefers-color-scheme: dark) { .sg h4.g { color: #f0b45a; } }
-  .sg ul { margin: 0; padding-left: 18px; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
-  .people { display: flex; flex-direction: column; gap: 8px; }
-  .person { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: start; background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; }
-  .person .av { width: 34px; height: 34px; border-radius: 50%; background: var(--oxide-wash); color: var(--oxide); font: 600 12px/34px var(--sans); text-align: center; }
-  .person b { font-weight: 600; } .person span { display: block; font-size: 13px; color: var(--soft); }
-  .clientlist { display: flex; flex-wrap: wrap; gap: 6px; }
-  .client { font-size: 13px; background: var(--sheet); border: 1px solid var(--rule); border-radius: 999px; padding: 4px 12px; }
-  .status { font-size: 12px; font-weight: 600; border-radius: 4px; padding: 1px 8px; margin-left: 8px; vertical-align: 2px; }
-  .status.named { background: #e3f3ea; color: #1f6b42; } .status.potential { background: var(--chip); color: var(--soft); }
-  @media (prefers-color-scheme: dark) { .status.named { background: #1d3a2a; color: #8fdcb0; } }
-  table.fin { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
-  table.fin th, table.fin td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--rule); }
-  table.fin th { font-size: 12px; font-weight: 500; color: var(--soft); }
-  .rub { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
-  @media (max-width: 620px) { .rub { grid-template-columns: 1fr; } }
-  .rub div { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; }
-  .rub h4 { margin: 0 0 6px; font: 600 13px var(--sans); }
-  .rub ul { margin: 0; padding-left: 16px; font-size: 13px; display: flex; flex-direction: column; gap: 4px; }
-  /* network */
-  .net-wrap { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; position: relative; overflow: hidden; height: min(72vh, 760px); }
-  .net-wrap svg { width: 100%; height: 100%; display: block; cursor: grab; }
-  .net-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; align-items: center; }
-  .net-legend button { display: inline-flex; align-items: center; gap: 6px; }
-  .net-legend .sw { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
-  .net-tip { position: absolute; pointer-events: none; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 6px 10px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,.12); max-width: 260px; }
-  .net-tip span { display: block; color: var(--soft); font-size: 12px; }
-  .net-hint { position: absolute; left: 14px; bottom: 10px; font-size: 12px; color: var(--soft); }
   [hidden] { display: none !important; }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
@@ -203,47 +247,44 @@
 <body>
 <header class="mast">
   <div class="wrap">
-    <a class="brand" href="#home" data-go="home">
+    <a class="brand" href="#home">
       <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9.5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".55"/><circle cx="15.5" cy="6.5" r="2.2" fill="#d9a400"/></svg>
       Deep Science Radar
     </a>
     <nav aria-label="Pages">
-      <button data-go="home" aria-current="page">Radar</button>
-      <button data-go="directory">Directory</button>
-      <button data-go="network">Network</button>
-      <button data-go="method">Method</button>
+      <a href="#home" data-page="home">Radar</a>
+      <a href="#directory" data-page="directory">Directory</a>
+      <a href="#network" data-page="network">Network</a>
+      <a href="#shortlist" data-page="shortlist">Shortlist<span class="count" id="sl-count" hidden></span></a>
+      <a href="#updates" data-page="updates">Updates</a>
+      <a href="#method" data-page="method">Method</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
   <div id="page-home">
-    <section class="intro">
-      <div>
-        <h1>India's deep science companies, as they surface</h1>
-        <p>New companies building hard technology in space, chips, energy, biology, robotics and quantum. Each profile covers what they build, who founded it, who backed it, who's doing the same thing abroad, and what to judge them on next.</p>
-      </div>
-      <div>
-        <div class="facts">
-          <div class="fact"><b id="f-total">—</b><span>companies tracked</span></div>
-          <div class="fact"><b id="f-sectors">—</b><span>sectors</span></div>
-          <div class="fact"><b id="f-early">—</b><span>at pre-seed or seed</span></div>
-        </div>
-        <p class="updated" id="updated" style="margin-top:14px"></p>
-      </div>
+    <section class="hero">
+      <h1>Discover India's emerging deeptech companies</h1>
+      <p>What each company has demonstrated, what is still unproven, and who backs it. Every assessment shows its evidence.</p>
+      <form class="finder" id="finder" role="search">
+        <input type="search" id="f-q" placeholder="Search a company, technology, founder or investor" aria-label="Search">
+        <select id="f-sector" aria-label="Sector"></select>
+        <button type="submit">Search</button>
+      </form>
+      <div class="strip" id="strip"></div>
     </section>
 
     <section class="block" aria-labelledby="h-new">
-      <h2 class="sec" id="h-new">New on the radar</h2>
-      <p class="sec-note">The most recent signals first: a new round, a grant or an incubator cohort. Open a company for the full profile.</p>
+      <h2 class="sec" id="h-new">Latest signals</h2>
+      <p class="sec-note">Newest events first. Event date is when it happened; where the report came later, both dates are shown.</p>
       <div class="feed" id="feed"></div>
     </section>
 
     <section class="block" aria-labelledby="h-stage">
-      <h2 class="sec" id="h-stage">Browse by stage</h2>
-      <p class="sec-note">Every company sits at the stage of its latest known round. Pre-Series A rounds are grouped with seed.</p>
+      <h2 class="sec" id="h-stage">Browse by last confirmed round</h2>
+      <p class="sec-note">Companies sit at their last confirmed round. Pre-Series A is grouped with seed. "Undisclosed" holds rounds whose stage the coverage doesn't state.</p>
       <div class="rail" role="tablist" id="rail"></div>
-      <div class="tools" id="tools"></div>
       <div class="dir" id="dir"></div>
     </section>
   </div>
@@ -251,7 +292,7 @@
   <div id="page-directory" hidden>
     <section class="block">
       <h2 class="sec">Directory</h2>
-      <p class="sec-note">All companies, newest signal first. Filter by sector or search by name, technology, founder or investor.</p>
+      <p class="sec-note">The filters are kept in the address bar, so you can share this view.</p>
       <div class="tools" id="tools-all"></div>
       <div class="dir" id="dir-all"></div>
     </section>
@@ -260,63 +301,101 @@
   <div id="page-network" hidden>
     <section class="block">
       <h2 class="sec">Network</h2>
-      <p class="sec-note">Who backs whom, where founders came from and how sectors cluster. Drag to move, scroll to zoom, click a company to open its profile, click an investor or institution to highlight its connections.</p>
-      <div class="net-legend" id="net-legend"></div>
-      <div class="net-wrap" id="net-wrap"><div class="net-tip" id="net-tip" hidden></div><div class="net-hint">Larger circles have more connections. Zoom in to see company names.</div></div>
+      <p class="sec-note">Each view answers one question. Hover a circle for its name, click it to see every connection and where it comes from, and open a company profile from the panel. All counts are within this dataset.</p>
+      <div class="net-bar" id="net-bar"></div>
+      <div class="starters" id="starters"></div>
+      <div class="net-grid">
+        <div class="net-wrap" id="net-wrap">
+          <div class="net-tip" id="net-tip" hidden></div>
+          <div class="net-ctl"><button class="btn ghost small" id="n-fit" type="button">Fit selection</button><button class="btn ghost small" id="n-reset" type="button">Reset view</button></div>
+          <div class="net-foot" id="net-foot"></div>
+        </div>
+        <aside class="panel" id="panel" aria-live="polite"></aside>
+      </div>
+    </section>
+  </div>
+
+  <div id="page-shortlist" hidden>
+    <section class="block">
+      <h2 class="sec">Shortlist</h2>
+      <p class="sec-note">Star companies from any list or profile. The shortlist stays in this browser only. Compare up to four side by side.</p>
+      <div id="shortlist"></div>
+    </section>
+  </div>
+
+  <div id="page-updates" hidden>
+    <section class="block">
+      <h2 class="sec">Updates</h2>
+      <p class="sec-note">Meaningful changes to companies and to the method, newest first. A weekly digest of these changes goes out by email.</p>
+      <div class="log" id="changes"></div>
+    </section>
+    <section class="block">
+      <h2 class="sec">Run log</h2>
+      <table class="t" id="runs"></table>
     </section>
   </div>
 
   <div id="page-method" hidden>
     <section class="block">
       <h2 class="sec">How the radar works</h2>
-      <p class="sec-note">A scheduled run searches public signals every morning, adds or updates companies, and publishes the changes here.</p>
+      <p class="sec-note">A scheduled run checks public signals every morning, then adds or updates companies here.</p>
       <div class="m-grid">
         <div class="m-card">
-          <h3>Where companies come from</h3>
+          <h3>Who is included</h3>
           <ul>
-            <li>Government grants: BIRAC, DST NIDHI, IN-SPACe, National Quantum Mission.</li>
-            <li>Incubators: Venture Center, C-CAMP, IIT Madras, SINE IIT Bombay, IISc SID and others.</li>
-            <li>Funding news across Inc42, Entrackr, YourStory, BioSpectrum and similar.</li>
-            <li>Patents and research papers, where a spin-out is named.</li>
+            <li><b>Core scouting universe:</b> Indian companies building hard technology (space, chips, energy, biology, robotics, quantum, materials, medtech) whose last confirmed round is Series A or earlier, or whose stage is undisclosed.</li>
+            <li><b>Benchmarks:</b> later-stage or listed companies (for example Ather, ideaForge, Skyroot, Pixxel) kept for comparison. They are labelled and left out of the default lists.</li>
+            <li>Companies come from funding news, government grants (IN-SPACe, BIRAC, National Quantum Mission) and incubator announcements. This means coverage leans towards companies that already have investors.</li>
           </ul>
         </div>
         <div class="m-card">
-          <h3>What each profile holds</h3>
+          <h3>How assessments work</h3>
           <ul>
-            <li>Latest round, lead investor, and the partner who led it where coverage names one.</li>
-            <li>A founder snapshot from public reporting.</li>
-            <li>A plain-English explanation of the technology.</li>
-            <li>Parallel companies abroad. These are the radar's own comparisons, not claims from the source.</li>
-            <li>What to judge the company on next: the milestones that would change the view.</li>
+            <li>Each factor is scored 1 to 5 only when there is public evidence for it, and the evidence is shown next to the score.</li>
+            <li>A factor without evidence shows <b>Insufficient evidence</b>. It is never filled with an average.</li>
+            <li>The radar score is the weighted average of the factors that have evidence. It needs at least three of the four; with three it is marked partial, and with fewer there is no overall score.</li>
+            <li><b>Evidence confidence</b> rates the sources, separately from the assessment.</li>
+          </ul>
+          <table class="t" style="margin-top:12px"><thead><tr><th>Factor</th><th>Weight</th></tr></thead><tbody id="weights"></tbody></table>
+        </div>
+        <div class="m-card">
+          <h3>Stage and signals</h3>
+          <ul>
+            <li><b>Last confirmed round</b> is the most recent round reported as closed, with its stage as the coverage states it. If no stage is stated it reads Undisclosed.</li>
+            <li><b>Latest signal</b> is the newest event of any kind: funding, a grant, a technical milestone or reported discussions. Reported discussions never change the confirmed stage.</li>
+            <li>Event date is when it happened; source date is when it was reported.</li>
           </ul>
         </div>
         <div class="m-card">
-          <h3>Radar score</h3>
-          <table class="t"><thead><tr><th>Factor</th><th>Weight</th></tr></thead><tbody id="weights"></tbody></table>
-          <p class="muted" style="margin:10px 0 0">Each factor is scored 1 to 5 from public reporting, then weighted to a score out of 100. It's a judgement call to sort the list, not a rating.</p>
+          <h3>TRL and the RDI scheme</h3>
+          <ul>
+            <li>The ₹1 lakh crore Research, Development and Innovation fund lends long-term at low or nil interest to R&amp;D at TRL 4 and above, through fund managers such as TDB and BIRAC.</li>
+            <li>Each TRL estimate cites the milestone it rests on. Without a demonstrated milestone the TRL reads Not estimable.</li>
+            <li>The radar never confirms eligibility. Labels read "eligibility unverified" until a fund manager says otherwise.</li>
+          </ul>
         </div>
         <div class="m-card">
-          <h3>Mapping to the RDI scheme</h3>
+          <h3>Dates on every profile</h3>
           <ul>
-            <li>The ₹1 lakh crore Research, Development and Innovation fund lends long-term at low or nil interest to private R&amp;D in strategic sectors.</li>
-            <li>It funds work at TRL 4 and above, through fund managers: TDB across sectors, BIRAC for biotech.</li>
-            <li>TRL on each profile is estimated from the company's stage, so eligibility is a first read.</li>
+            <li><b>Assessed on:</b> when the scores were last set.</li>
+            <li><b>Last substantive update:</b> when facts on the profile last changed.</li>
+            <li><b>Last verified:</b> when the sources were last re-checked, even if nothing changed.</li>
+            <li><b>Date added:</b> when the company entered the dataset. In the network this is kept apart from the date of a relationship.</li>
           </ul>
         </div>
         <div class="m-card">
           <h3>Limits</h3>
           <ul>
-            <li>Most companies surface through funding news, after an investor has already arrived.</li>
-            <li>Grant lists and incubator pages are often undated PDFs, so some signal dates are approximate.</li>
-            <li>Where coverage doesn't name founders or partners, the profile says so rather than guessing.</li>
-            <li>The radar does not judge whether the science works.</li>
+            <li>The radar does not judge whether the science works. It reports what has been demonstrated publicly.</li>
+            <li>International peers and technology groupings are the radar's own comparisons and are drawn as dashed lines.</li>
+            <li>LinkedIn links for people open a LinkedIn search, not a confirmed profile.</li>
           </ul>
         </div>
       </div>
     </section>
   </div>
 
-  <footer id="foot">Built and maintained by Varun Nankani. Every company links to its source. Scores and comparisons are judgement calls, not investment advice.</footer>
+  <footer>Built and maintained by Varun Nankani. Every company links to its sources. Assessments are judgement calls from public information, not investment advice.</footer>
 </main>
 
 <div class="scrim" id="scrim"></div>
@@ -330,47 +409,48 @@
     { f: 'Market size and urgency', k: 'market', w: 0.25 },
     { f: 'IP defensibility', k: 'ip', w: 0.20 },
   ];
-  const STAGES = ['Pre-seed', 'Seed', 'Series A', 'Series B/C', 'Series D & beyond'];
-  const NEW_COUNT = 6;
+  const TABS = ['Pre-seed', 'Seed', 'Series A', 'Series B/C', 'Series D & beyond', 'Undisclosed'];
+  const PAGES = ['home', 'directory', 'network', 'shortlist', 'updates', 'method'];
   const $ = (id) => document.getElementById(id);
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
-  const fmtDate = (s) => {
-    if (!s) return 'Undated';
+  const fmtDate = (s, long) => {
+    if (!s) return 'Date not stated';
     if (/^\d{4}$/.test(s)) return s;
     if (/^\d{4}-\d{2}$/.test(s)) return new Date(s + '-01T00:00:00Z').toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' });
     const d = new Date(s + 'T00:00:00Z');
     return isNaN(d) ? s : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
   };
-  const named = (s) => s && !/^not named/i.test(s);
-  const initials = (founders) => (named(founders) ? founders.split(/,| and /).map((n) => n.replace(/\(.*?\)/g, '').trim()).filter(Boolean).slice(0, 3)
-    .map((n) => n.split(/\s+/).filter((w) => !/^(dr\.?|with)$/i.test(w)).slice(0, 2).map((w) => w[0]).join('').toUpperCase()) : []);
-  let ALL = [];
-  const st = { stage: 'Seed', sector: '', q: '', sectorAll: '', qAll: '' };
+  const dateVal = (s) => { if (!s) return null; const t = /^\d{4}$/.test(s) ? s + '-07-01' : /^\d{4}-\d{2}$/.test(s) ? s + '-15' : s; const d = new Date(t + 'T00:00:00Z'); return isNaN(d) ? null : d; };
+  const named = (s) => s && !/^(not named|undisclosed)/i.test(s);
+  let ALL = [], BY = {}, CHANGES = [], RUNS = [];
 
-  // ---------- pages
-  const go = (name) => {
-    ['home', 'directory', 'network', 'method'].forEach((p) => { $('page-' + p).hidden = p !== name; });
-    if (name === 'network') drawNetwork();
-    document.querySelectorAll('.mast nav button').forEach((b) => b.setAttribute('aria-current', b.dataset.go === name ? 'page' : 'false'));
-    if (location.hash.slice(1) !== name) history.replaceState(null, '', '#' + name);
-    window.scrollTo(0, 0);
+  // ---------- storage (shortlist)
+  const SL_KEY = 'dsr.shortlist';
+  let SL = [];
+  try { SL = JSON.parse(localStorage.getItem(SL_KEY) || '[]'); if (!Array.isArray(SL)) SL = []; } catch (e) { SL = []; }
+  const saveSL = () => { try { localStorage.setItem(SL_KEY, JSON.stringify(SL)); } catch (e) {} const n = $('sl-count'); n.hidden = !SL.length; n.textContent = SL.length; };
+  const STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>';
+  const starBtn = (c) => {
+    const b = el('button', 'star'); b.type = 'button'; b.innerHTML = STAR;
+    const sync = () => { const on = SL.includes(c.id); b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', (on ? 'Remove ' : 'Add ') + c.company + (on ? ' from' : ' to') + ' shortlist'); b.title = on ? 'On your shortlist' : 'Add to shortlist'; };
+    b.addEventListener('click', (e) => { e.stopPropagation(); SL = SL.includes(c.id) ? SL.filter((x) => x !== c.id) : [...SL, c.id]; saveSL(); sync(); document.querySelectorAll('.star[data-id="' + c.id + '"]').forEach((s) => s !== b && s.dispatchEvent(new Event('sync'))); if (!$('page-shortlist').hidden) renderShortlist(); });
+    b.dataset.id = c.id; b.addEventListener('sync', sync); sync(); return b;
   };
-  document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', (e) => { e.preventDefault(); go(b.dataset.go); }));
 
-  // ---------- drawer
-  const drawer = $('drawer'), scrim = $('scrim');
-  let lastFocus = null;
-  const closeDrawer = () => { drawer.classList.remove('open'); scrim.classList.remove('open'); setTimeout(() => { drawer.hidden = true; }, 250); if (lastFocus) lastFocus.focus(); };
-  scrim.addEventListener('click', closeDrawer);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer(); });
+  // ---------- scores
+  const scoreOf = (c) => {
+    const have = WEIGHTS.filter((w) => c[w.k] != null);
+    if (have.length < 3) return { value: null, n: have.length, missing: WEIGHTS.filter((w) => c[w.k] == null).map((w) => w.f) };
+    const wsum = have.reduce((s, w) => s + w.w, 0);
+    return { value: Math.round(have.reduce((s, w) => s + c[w.k] * w.w, 0) / wsum * 20), n: have.length, missing: WEIGHTS.filter((w) => c[w.k] == null).map((w) => w.f) };
+  };
+  const scoreText = (c) => { const s = c._score; if (s.value == null) return 'Not scored: evidence on ' + s.n + ' of 4 factors'; return s.value + '/100' + (s.n < 4 ? ' · partial, ' + s.n + ' of 4 factors' : ''); };
 
-  const sec = (title, ...kids) => { const s = el('section', 'd-sec'); if (title) s.append(el('h3', null, title)); s.append(...kids); return s; };
-  // ---------- link helpers
-  const LI_SVG = '<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>';
-  const WEB_SVG = '<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
-  const ico = (href, kind, label) => { const a = el('a', 'ico ' + kind); a.href = href; a.target = '_blank'; a.rel = 'noopener'; a.innerHTML = kind.startsWith('li') ? LI_SVG : WEB_SVG; a.setAttribute('aria-label', label); a.title = label; return a; };
-  const liPerson = (name, ctx) => ico('https://www.linkedin.com/search/results/people/?keywords=' + encodeURIComponent(name + (ctx ? ' ' + ctx : '')), 'li search', 'Find ' + name + ' on LinkedIn');
-  const liFirm = (name) => ico('https://www.linkedin.com/search/results/companies/?keywords=' + encodeURIComponent(name), 'li search', 'Find ' + name + ' on LinkedIn');
+  // ---------- links
+  const LI_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>';
+  const WEB_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+  const extA = (href, cls, html, label) => { const a = el('a', cls); a.href = href; a.target = '_blank'; a.rel = 'noopener'; a.innerHTML = html; if (label) { a.setAttribute('aria-label', label); a.title = label; } return a; };
+  const liSearch = (q, kind, label) => extA('https://www.linkedin.com/search/results/' + kind + '/?keywords=' + encodeURIComponent(q), 'lisearch', LI_SVG + '<span>Search LinkedIn</span>', label || 'Search LinkedIn for ' + q);
   let FIRMS = {};
   const firmNodes = (str) => {
     const frag = document.createDocumentFragment();
@@ -380,135 +460,186 @@
       if (i) frag.append(i === parts.length - 1 ? ' and ' : ', ');
       const known = Object.keys(FIRMS).find((k) => k.toLowerCase() === p.toLowerCase());
       if (known && FIRMS[known]) { const a = el('a', null, p); a.href = FIRMS[known]; a.target = '_blank'; a.rel = 'noopener'; frag.append(a); } else frag.append(p);
-      frag.append(liFirm(p));
-    });
-    return frag;
-  };
-  const partnerNodes = (str, firm) => {
-    const frag = document.createDocumentFragment();
-    if (!named(str)) { frag.append(str || 'Not named in coverage'); return frag; }
-    str.split(/;\s*/).forEach((chunk, i) => {
-      if (i) frag.append(el('br'));
-      frag.append(chunk);
-      const nm = chunk.split(',')[0].replace(/\(.*?\)/g, '').trim();
-      const fm = (chunk.match(/\(([^)]+)\)/) || [])[1] || firm || '';
-      if (nm && !/^not named/i.test(nm)) frag.append(liPerson(nm, fm.replace(/[()]/g, '')));
     });
     return frag;
   };
 
-  function openProfile(c) {
+  // ---------- routing
+  const parseHash = () => {
+    const h = decodeURIComponent(location.hash.slice(1));
+    if (h.startsWith('company/')) return { page: null, company: h.slice(8) };
+    const [p, qs] = h.split('?');
+    return { page: PAGES.includes(p) ? p : 'home', params: new URLSearchParams(qs || '') };
+  };
+  let curPage = 'home';
+  const showPage = (name) => {
+    curPage = name;
+    PAGES.forEach((p) => { $('page-' + p).hidden = p !== name; });
+    document.querySelectorAll('.mast nav a').forEach((a) => a.setAttribute('aria-current', a.dataset.page === name ? 'page' : 'false'));
+  };
+  const setHash = (h) => { if (location.hash !== '#' + h) history.replaceState(null, '', '#' + h); };
+  let suppressRoute = false;
+  function route() {
+    if (suppressRoute) { suppressRoute = false; return; }
+    const r = parseHash();
+    if (r.company) { if (BY[r.company]) { if (!drawer.classList.contains('open') || drawer.dataset.id !== r.company) { if (curPage === 'home' && $('page-home').hidden) showPage('directory'); openProfile(BY[r.company], true); } } return; }
+    if (drawer.classList.contains('open')) closeDrawer(true);
+    showPage(r.page);
+    if (r.page === 'directory') { const p = r.params; dst.q = p.get('q') || ''; dst.sector = p.get('sector') || ''; dst.tab = p.get('stage') || ''; dst.bench = p.get('bench') === '1'; dst.sort = p.get('sort') || 'signal'; renderDirectory(); }
+    if (r.page === 'network') { const p = r.params; if (p.get('view')) net.view = p.get('view'); if (p.get('sector') != null) net.sector = p.get('sector'); if (p.get('stage')) net.stage = p.get('stage'); net.sel = p.get('sel') || null; drawNetwork(); }
+    if (r.page === 'shortlist') renderShortlist();
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', route);
+
+  // ---------- drawer
+  const drawer = $('drawer'), scrim = $('scrim');
+  let lastFocus = null, beforeProfile = '#home';
+  const closeDrawer = (silent) => {
+    drawer.classList.remove('open'); scrim.classList.remove('open'); setTimeout(() => { if (!drawer.classList.contains('open')) drawer.hidden = true; }, 250);
+    if (!silent && location.hash.startsWith('#company/')) { suppressRoute = true; history.replaceState(null, '', beforeProfile); suppressRoute = false; }
+    if (lastFocus && !silent) lastFocus.focus();
+  };
+  scrim.addEventListener('click', () => closeDrawer());
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer(); });
+  const sec = (title, ...kids) => { const s = el('section', 'd-sec'); if (title) s.append(el('h3', null, title)); s.append(...kids); return s; };
+  const list = (arr) => { const u = el('ul'); (arr || []).forEach((t) => u.append(el('li', null, t))); return u; };
+  const kindCls = (k) => (k || '').split(' ')[0];
+
+  function openProfile(c, fromRoute) {
     lastFocus = document.activeElement;
+    if (!fromRoute) { if (!location.hash.startsWith('#company/')) beforeProfile = location.hash || '#home'; history.replaceState(null, '', '#company/' + c.id); }
+    else if (!location.hash.startsWith('#company/')) beforeProfile = location.hash || '#home';
+    drawer.dataset.id = c.id;
     drawer.replaceChildren();
     const top = el('div', 'd-top');
-    const x = el('button', 'd-close', '×'); x.setAttribute('aria-label', 'Close profile'); x.addEventListener('click', closeDrawer);
+    const x = el('button', 'd-close', '×'); x.setAttribute('aria-label', 'Close profile'); x.addEventListener('click', () => closeDrawer());
     const nm = el('h2', 'd-name', c.company); nm.id = 'd-name';
+    if (c.role === 'Benchmark') nm.append(el('span', 'bench', 'Benchmark'));
     const links = el('div', 'd-links');
-    if (c.website) links.append(ico(c.website, 'web', c.company + ' website'));
-    links.append(c.linkedin ? ico(c.linkedin, 'li', c.company + ' on LinkedIn') : liFirm(c.company));
-    if (c.website) { const w = el('span', null, c.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')); w.style.marginLeft = '6px'; links.append(w); }
-    const hi = el('div', 'd-high');
-    const cell = (k, node) => { const d = el('div'); const s = el('strong'); s.append(node); d.append(el('small', null, k), s); return d; };
-    hi.append(cell('Latest round', document.createTextNode(c.latest_round)), cell('Lead investor', firmNodes(c.lead_investor)), cell('Partner who led', partnerNodes(c.lead_partner, c.lead_investor)));
-    top.append(x, el('div', 'd-sector', c.sector + ', ' + c.location), nm, links, hi);
+    links.append(starBtn(c));
+    if (c.website) links.append(extA(c.website, 'ico web', WEB_SVG + '<span>' + c.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') + '</span>', c.company + ' website'));
+    links.append(c.linkedin ? extA(c.linkedin, 'ico li', LI_SVG + '<span>LinkedIn page</span>', c.company + ' on LinkedIn') : liSearch(c.company, 'companies'));
+    const share = el('button', 'btn ghost small', 'Copy link'); share.type = 'button';
+    const done = el('span', 'copied');
+    share.addEventListener('click', () => { const u = location.href.split('#')[0] + '#company/' + c.id; (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(() => { done.textContent = 'Copied'; }, () => { done.textContent = u; }); });
+    links.append(share, done);
+
+    const g = el('div', 'glance');
+    const gl = (k, v) => { const d = el('div'); d.append(el('small', null, k)); if (typeof v === 'string') d.append(el('p', null, v)); else d.append(v); return d; };
+    const srcP = el('p'); const sa = el('a', null, c.source_name || 'Source'); sa.href = c.source_url; sa.target = '_blank'; sa.rel = 'noopener'; srcP.append(sa);
+    if (c.financials && c.financials.source) { const fa = el('a', null, 'Inc42 Datalabs'); fa.href = c.financials.source; fa.target = '_blank'; fa.rel = 'noopener'; srcP.append(' · ', fa); }
+    if (c.website) { const wa = el('a', null, 'Company site'); wa.href = c.website; wa.target = '_blank'; wa.rel = 'noopener'; srcP.append(' · ', wa); }
+    g.append(gl('Verified progress', (c.demonstrated || [])[0] || 'Nothing demonstrated publicly yet'), gl('Biggest uncertainty', (c.unproven || [])[0] || '—'),
+      gl('Next milestone to watch', (c.would_change || [])[0] || '—'), gl('Sources', srcP));
+    top.append(x, el('div', 'd-sector', c.sector + ' · ' + c.location), nm, links, g);
 
     const body = el('div', 'd-body');
-    const tags = el('div', 'tags');
-    [c.stage_label, c.next_raise, 'Radar score ' + c.combined + '/100', c.confidence + ' confidence'].forEach((t) => t && tags.append(el('span', 'tag', t)));
-    if (c.diligence) tags.append(el('span', 'tag', 'Needs technical diligence'));
-    body.append(sec('What they are building', el('p', 'lede-tech', c.tech), el('p', 'muted', 'The problem: ' + c.problem), tags));
+    // funding
+    const lf = c.last_funding || {}, ls = c.latest_signal || {};
+    const hi = el('div', 'd-high');
+    const cell = (k, node) => { const d = el('div'); const s = el('strong'); s.append(node); d.append(el('small', null, k), s); return d; };
+    const lfText = lf.stage === 'Listed' ? 'Listed · ' + fmtDate(lf.date) : [lf.stage, lf.amount !== 'Not in coverage' ? lf.amount : null, lf.date ? fmtDate(lf.date) : null].filter(Boolean).join(' · ');
+    hi.append(cell('Last confirmed round', document.createTextNode(lfText || 'Not in coverage')), cell('Lead investor', firmNodes(lf.lead)), cell('Partner who led', document.createTextNode(named(c.lead_partner) ? c.lead_partner : 'Not named in coverage')));
+    const sig = el('p'); sig.append(el('span', 'kind ' + kindCls(ls.kind), ls.kind || 'Signal'), ls.summary || c.signal);
+    const sd = el('p', 'muted', 'Happened ' + fmtDate(ls.event_date) + (ls.source_date && ls.source_date !== ls.event_date ? '; reported ' + fmtDate(ls.source_date) : '') + '.');
+    if (lf.stage === 'Undisclosed') sd.append(' The coverage does not state the stage of the last round.');
+    const fs = el('div'); fs.append(hi, el('h4', 'muted', 'Latest signal'), sig, sd);
+    if (c.next_raise) fs.append(el('p', 'muted', c.next_raise.replace(/^Next raise:\s*/i, 'Possible next round: ')));
+    body.append(sec('Funding', fs));
 
-    const eli = el('div', 'eli');
-    eli.innerHTML = '<svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 16.5h5M9.5 19.5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
-    eli.append(el('strong', null, 'Explain it simply'), document.createTextNode(c.eli12));
-    body.append(sec(null, eli));
+    // building
+    const eli = el('div', 'eli'); eli.append(el('strong', null, 'Explain it simply'), document.createTextNode(c.eli12));
+    const tags = el('div', 'tags'); [c.tech_approach, ...(c.bottlenecks || [])].forEach((t) => t && tags.append(el('span', 'tag', t)));
+    body.append(sec('What they are building', el('p', 'lede-tech', c.tech), el('p', 'muted', 'The problem: ' + c.problem), tags, eli));
+
+    // evidence
+    const ev = el('div', 'ev3');
+    [['d', 'What has been demonstrated', c.demonstrated], ['u', 'What remains unproven', c.unproven], ['c', 'Evidence that would change the view', c.would_change]].forEach(([k, t, arr]) => { const d = el('div'); d.append(el('h4', k, t), list(arr)); ev.append(d); });
+    body.append(sec('Evidence', ev));
+
+    // assessment
+    const as = el('div');
+    const sl = el('div', 'scoreline'); const sv = el('b', null, c._score.value == null ? '—' : String(c._score.value));
+    sl.append(sv, el('span', 'muted', c._score.value == null ? 'No overall score: only ' + c._score.n + ' of 4 factors have evidence, and the radar needs at least 3' : 'Radar score out of 100' + (c._score.n < 4 ? ' · partial: uses ' + c._score.n + ' of 4 factors' : '')), el('span', 'tag', 'Evidence confidence: ' + (c.evidence_confidence || c.confidence)));
+    as.append(sl);
+    const t = el('table', 'fx'); const th = el('thead'); const hr = el('tr'); ['Factor', 'Score', 'Evidence and rationale'].forEach((h) => hr.append(el('th', null, h))); th.append(hr);
+    const tb = el('tbody');
+    const fe = c.factor_evidence || {};
+    const row = (name, score, text) => { const tr = el('tr'); const sc = el('td', 'sc'); if (score == null) sc.append(el('span', 'ins', 'Insufficient evidence')); else { sc.append(score + '/5'); const p = el('span', 'pips'); for (let i = 1; i <= 5; i++) p.append(el('i', i <= score ? 'on' : '')); sc.append(p); } tr.append(el('td', null, name), sc, el('td', null, text || 'No public evidence found yet.')); tb.append(tr); };
+    row('Fit with deeptech thesis', c.fit, fe.fit && fe.fit.rationale);
+    row('Founder and team strength', c.team, c.team == null ? 'Fewer than two team factors have evidence (see Founders).' : 'Average of the team factors with evidence: ' + c.team_basis + '.');
+    row('Market size and urgency', c.market, fe.market && fe.market.rationale);
+    row('IP defensibility', c.ip, fe.ip ? fe.ip.rationale : 'No patents or proprietary technology claims found in coverage.');
+    t.append(th, tb); as.append(t, el('p', 'muted', 'Assessed on ' + fmtDate(c.assessed_on) + '. Scores are judgement calls from public information.'));
+    if (c.diligence) as.append(el('p', 'muted', 'Needs technical diligence: the core claim can only be checked by a specialist.'));
+    body.append(sec('Assessment', as));
 
     // founders
-    const fs = el('div');
-    const ts = c.team_scores;
-    if (ts) {
-      const g = el('div', 'scores');
-      [['Domain depth', ts.domain], ['Has sold before', ts.commercial], ['Skills that complement', ts.complementarity], ['Execution so far', ts.execution]].forEach(([k, v]) => {
-        const b = el('div', 'score-b'); const bar = el('div', 'bar');
-        for (let i = 1; i <= 5; i++) bar.append(el('i', i <= v ? 'on' : ''));
-        b.append(el('small', null, k), el('b', null, v + '/5'), bar); g.append(b);
-      });
-      fs.append(g);
-    }
+    const fd = el('div');
+    const tf = c.team_factors || {};
+    const t2 = el('table', 'fx'); const tb2 = el('tbody');
+    [['Domain depth', tf.domain], ['Has sold or scaled before', tf.commercial], ['Complementary skills', tf.complementarity], ['Execution so far', tf.execution]].forEach(([k, v]) => {
+      const tr = el('tr'); const sc = el('td', 'sc'); if (!v) sc.append(el('span', 'ins', 'Insufficient evidence')); else { sc.append(v.score + '/5'); const p = el('span', 'pips'); for (let i = 1; i <= 5; i++) p.append(el('i', i <= v.score ? 'on' : '')); sc.append(p); }
+      tr.append(el('td', null, k), sc, el('td', null, v ? v.evidence : 'Not enough public information.')); tb2.append(tr);
+    });
+    t2.append(tb2); fd.append(t2);
     if ((c.team_strengths || []).length || (c.team_gaps || []).length) {
       const sg = el('div', 'sg');
-      if ((c.team_strengths || []).length) { const d = el('div'); const u = el('ul'); c.team_strengths.forEach((t) => u.append(el('li', null, t))); d.append(el('h4', 's', 'Strengths'), u); sg.append(d); }
-      if ((c.team_gaps || []).length) { const d = el('div'); const u = el('ul'); c.team_gaps.forEach((t) => u.append(el('li', null, t))); d.append(el('h4', 'g', 'Gaps to close'), u); sg.append(d); }
-      fs.append(sg);
+      if ((c.team_strengths || []).length) { const d = el('div'); d.append(el('h4', 's', 'Strengths'), list(c.team_strengths)); sg.append(d); }
+      if ((c.team_gaps || []).length) { const d = el('div'); d.append(el('h4', 'g', 'Gaps to close'), list(c.team_gaps)); sg.append(d); }
+      fd.append(sg);
     }
-    const ppl = (c.founders_detail && c.founders_detail.length) ? c.founders_detail
-      : (named(c.founders) ? c.founders.split(/,| and /).map((n) => ({ name: n.replace(/\(.*?\)/g, '').trim(), role: 'Founder', background: '' })).filter((p) => p.name) : []);
+    const ppl = (c.founders_detail || []).length ? c.founders_detail : (named(c.founders) ? c.founders.split(/,| and /).map((n) => ({ name: n.replace(/\(.*?\)/g, '').trim(), role: 'Founder', background: '' })).filter((p) => p.name) : []);
     if (ppl.length) {
-      const list = el('div', 'people');
-      ppl.forEach((p) => {
-        const r = el('div', 'person'); const av = el('div', 'av', initials(p.name)[0] || '');
-        const info = el('div'); const b = el('b', null, p.name); info.append(b, liPerson(p.name, c.company.replace(/\(.*?\)/g, '').trim()));
-        info.append(el('span', null, [p.role, p.background].filter(Boolean).join('. ')));
-        r.append(av, info); list.append(r);
-      });
-      fs.append(list);
-    } else fs.append(el('p', null, c.founder_snapshot || 'Founders not named in coverage.'));
-    if (!ts) fs.append(el('p', 'muted', 'Team scores appear once there is enough public information about the founders.'));
-    fs.append(el('p', 'muted', 'LinkedIn icons open a search for the person at this company, so you can confirm the right profile.'));
-    body.append(sec('Founders', fs));
+      const pl = el('div', 'people');
+      ppl.forEach((p) => { const r = el('div', 'person'); const info = el('div'); info.append(el('b', null, p.name), el('span', null, [p.role, p.background].filter(Boolean).join('. ') || 'Background not in coverage')); r.append(info, liSearch(p.name + ' ' + c.company.replace(/\(.*?\)/g, '').trim(), 'people', 'Search LinkedIn for ' + p.name)); pl.append(r); });
+      fd.append(pl, el('p', 'muted', '"Search LinkedIn" opens a search for the person and company. It is not a confirmed profile.'));
+    } else fd.append(el('p', null, 'Founders not named in coverage.'));
+    body.append(sec('Founders', fd));
 
     body.append(sec('Why it matters', el('p', 'why', c.why)));
 
-    // clients
     if (c.clients && (c.clients.items || []).length) {
-      const h = el('h3', null, 'Clients'); h.append(el('span', 'status ' + (c.clients.status === 'Named' ? 'named' : 'potential'), c.clients.status === 'Named' ? 'Named in coverage' : 'Potential'));
-      const s = el('section', 'd-sec'); const cl = el('div', 'clientlist');
-      c.clients.items.forEach((t) => cl.append(el('span', 'client', t)));
-      s.append(h, cl); if (c.clients.note) s.append(el('p', 'muted', c.clients.note));
-      body.append(s);
+      const s = el('section', 'd-sec'); const h = el('h3', null, 'Clients');
+      h.append(el('span', 'status ' + (c.clients.status === 'Named' ? 'named' : 'potential'), c.clients.status === 'Named' ? 'Named in coverage' : 'Potential, not confirmed'));
+      const cl = el('div', 'clientlist'); c.clients.items.forEach((x) => cl.append(el('span', 'client', x)));
+      s.append(h, cl); if (c.clients.note) s.append(el('p', 'muted', c.clients.note)); body.append(s);
     }
-
-    // financials
-    const f = c.financials;
-    const fsec = el('div');
+    const f = c.financials; const fsec = el('div');
     if (f && (f.rows || []).length) {
-      const t = el('table', 'fin'); const th = el('tr'); ['Year', 'Revenue', 'Net profit or loss'].forEach((x) => th.append(el('th', null, x)));
-      const tb = el('tbody'); f.rows.forEach((r) => { const tr = el('tr'); tr.append(el('td', null, r.fy), el('td', null, r.revenue), el('td', null, r.net)); tb.append(tr); });
-      const thead = el('thead'); thead.append(th); t.append(thead, tb); fsec.append(t);
+      const ft = el('table', 'fin'); const fh = el('tr'); ['Year', 'Revenue', 'Net profit or loss'].forEach((h) => fh.append(el('th', null, h)));
+      const fb = el('tbody'); f.rows.forEach((r) => { const tr = el('tr'); tr.append(el('td', null, r.fy), el('td', null, r.revenue), el('td', null, r.net)); fb.append(tr); });
+      const thd = el('thead'); thd.append(fh); ft.append(thd, fb); fsec.append(ft);
     } else fsec.append(el('p', null, 'No public financial figures found.'));
     if (f && f.note) fsec.append(el('p', 'muted', f.note));
-    if (f && f.source) { const p = el('p', 'muted'); const a = el('a', null, 'Inc42 Datalabs'); a.href = f.source; a.target = '_blank'; a.rel = 'noopener'; p.append('Figures from company filings as compiled by ', a, '. Indian fiscal years end in March.'); fsec.append(p); }
+    if (f && f.source) { const p = el('p', 'muted'); const a = el('a', null, 'Inc42 Datalabs'); a.href = f.source; a.target = '_blank'; a.rel = 'noopener'; p.append('From company filings, compiled by ', a, '. Indian fiscal years end in March.'); fsec.append(p); }
     body.append(sec('Financials', fsec));
 
-    // rubric
-    const rsec = el('div');
-    if (c.rubric) {
-      const rb = el('div', 'rub');
-      [['Business', c.rubric.business], ['Financial', c.rubric.financial], ['Technical', c.rubric.technical]].forEach(([k, arr]) => {
-        const d = el('div'); const u = el('ul'); (arr || []).forEach((t) => u.append(el('li', null, t))); d.append(el('h4', null, k), u); rb.append(d);
-      });
-      rsec.append(el('p', 'muted', 'The metrics that matter for a ' + c.sector.toLowerCase() + ' company, then the milestones specific to ' + c.company + '.'), rb);
-    }
-    const ol = el('ol', 'judge'); (c.judge_on || []).forEach((j) => ol.append(el('li', null, j)));
-    const nh = el('h4', null, 'Next milestones for ' + c.company); nh.style.cssText = 'margin:4px 0 10px;font:600 13px var(--sans)';
-    rsec.append(nh, ol);
-    body.append(sec('How to judge this company', rsec));
+    const kv = el('dl', 'kv');
+    [['Estimated TRL', c.trl_estimate || 'Not estimable'], ['Based on', c.trl_basis], ['RDI sector', c.rdi_sector], ['RDI status', c.rdi_status], ['Likely route', (c.rdi_route || 'TDB') + ', or a VC fund manager once named']]
+      .forEach(([k, v]) => kv.append(el('dt', null, k), el('dd', null, v || '—')));
+    body.append(sec('Technology readiness and the RDI scheme', kv));
 
     const peers = c.global_peers || [];
-    if (peers.length) {
-      const g = el('div', 'peers');
-      peers.forEach((p) => { const d = el('div', 'peer'); d.append(el('b', null, p.name), el('span', 'rg', p.region), el('p', null, p.note)); g.append(d); });
-      body.append(sec('Who is doing this elsewhere', g, el('p', 'muted', "The radar's own comparison, not taken from the source.")));
-    } else if (c.peers_note) body.append(sec('Who is doing this elsewhere', el('p', 'muted', c.peers_note)));
+    if (peers.length) { const pg = el('div', 'peers'); peers.forEach((p) => { const d = el('div', 'peer'); d.append(el('b', null, p.name), el('span', 'rg', p.region), el('p', null, p.note)); pg.append(d); }); body.append(sec('Who is doing this elsewhere', pg, el('p', 'muted', "The radar's own comparison, not taken from the source."))); }
 
-    const kv = el('dl', 'kv');
-    [['RDI sector', c.rdi_sector], ['Estimated TRL', c.trl], ['Eligibility', c.rdi_eligibility], ['Likely route', c.rdi_route + ', or a VC fund manager once named']]
-      .forEach(([k, v]) => kv.append(el('dt', null, k), el('dd', null, v)));
-    body.append(sec('Fit with the RDI scheme', kv));
+    if (c.rubric) {
+      const d = el('details', 'gen'); d.append(el('summary', null, 'General metrics for ' + c.sector.toLowerCase() + ' companies'));
+      const rb = el('div', 'rub'); [['Business', c.rubric.business], ['Financial', c.rubric.financial], ['Technical', c.rubric.technical]].forEach(([k, arr]) => { const x2 = el('div'); x2.append(el('h4', null, k), list(arr)); rb.append(x2); });
+      d.append(rb, el('p', 'muted', 'A sector checklist. The company-specific view is in Evidence above.'));
+      body.append(sec(null, d));
+    }
 
-    const src = el('a', null, c.source_name); src.href = c.source_url; src.target = '_blank'; src.rel = 'noopener';
-    const sp = el('p', 'muted'); sp.append(c.signal_type + ': ' + c.signal + '. ', src, ', ' + fmtDate(c.signal_date) + '.');
-    body.append(sec('Signal and source', sp));
+    const rec = el('dl', 'kv');
+    [['Date added', fmtDate(c.date_added)], ['Last substantive update', fmtDate(c.last_substantive_update)], ['Last verified', fmtDate(c.last_verified)], ['Assessed on', fmtDate(c.assessed_on)]].forEach(([k, v]) => rec.append(el('dt', null, k), el('dd', null, v)));
+    const chg = CHANGES.filter((x) => x.company_id === c.id);
+    const rs = el('div'); rs.append(rec);
+    if (chg.length) { rs.append(el('h4', 'muted', 'Changes')); rs.append(list(chg.map((x) => fmtDate(x.date) + ': ' + x.summary))); }
+    const nb = el('a', null, 'See this company in the network'); nb.href = '#network?view=local&sel=' + encodeURIComponent('c:' + c.id);
+    nb.addEventListener('click', () => closeDrawer(true));
+    rs.append(el('p', null, '')); rs.lastChild.append(nb);
+    body.append(sec('Record', rs));
 
     drawer.append(top, body);
     drawer.hidden = false;
@@ -516,181 +647,406 @@
     drawer.scrollTop = 0;
   }
 
-  // ---------- network graph
-  let netDrawn = false;
-  const NET_TYPES = [
-    { k: 'company', label: 'Companies', color: '#2a4d9b', on: true },
-    { k: 'investor', label: 'Investors', color: '#d9a400', on: true },
-    { k: 'institution', label: 'Institutions', color: '#2f7a4f', on: true },
-    { k: 'sector', label: 'Sectors', color: '#8a929b', on: true },
-    { k: 'founder', label: 'Founders', color: '#b07ac9', on: false },
-  ];
-  function drawNetwork() {
-    if (!ALL.length || typeof d3 === 'undefined') return;
-    if (netDrawn) return; netDrawn = true;
-    const wrap = $('net-wrap'), tip = $('net-tip');
-    const W = wrap.clientWidth, H = wrap.clientHeight;
-    const nodesAll = new Map(), linksAll = [];
-    const add = (id, type, label, extra) => { if (!nodesAll.has(id)) nodesAll.set(id, { id, type, label, deg: 0, ...extra }); return nodesAll.get(id); };
-    ALL.forEach((c) => {
-      const cn = add('c:' + c.id, 'company', c.company, { ref: c });
-      const link = (id, type, label) => { add(id, type, label); linksAll.push({ source: cn.id, target: id, type }); };
-      (c.investors || []).forEach((i) => link('i:' + i, 'investor', i));
-      (c.institution_tags || []).forEach((u) => link('u:' + u, 'institution', u));
-      link('s:' + c.sector, 'sector', c.sector);
-      const ppl = (c.founders_detail && c.founders_detail.length) ? c.founders_detail.map((p) => p.name) : (named(c.founders) ? c.founders.split(/,| and /).map((n) => n.replace(/\(.*?\)/g, '').trim()).filter(Boolean) : []);
-      ppl.forEach((p) => link('f:' + p, 'founder', p));
-    });
-    linksAll.forEach((l) => { nodesAll.get(l.source).deg++; nodesAll.get(l.target).deg++; });
-    const on = Object.fromEntries(NET_TYPES.map((t) => [t.k, t.on]));
-    const color = Object.fromEntries(NET_TYPES.map((t) => [t.k, t.color]));
-    const leg = $('net-legend'); leg.replaceChildren();
-    NET_TYPES.forEach((t) => {
-      const b = el('button', 'chipbtn'); b.setAttribute('aria-pressed', String(t.on));
-      const sw = el('span', 'sw'); sw.style.background = t.color; b.append(sw, t.label);
-      b.addEventListener('click', () => { on[t.k] = !on[t.k]; b.setAttribute('aria-pressed', String(on[t.k])); update(); });
-      leg.append(b);
-    });
-    const svg = d3.select(wrap).append('svg').attr('viewBox', [0, 0, W, H]);
-    const g = svg.append('g');
-    const linkG = g.append('g').attr('stroke', 'currentColor').style('color', 'var(--soft)');
-    const nodeG = g.append('g');
-    const labelG = g.append('g').style('font', '11px var(--sans)').style('pointer-events', 'none');
-    const zoom = d3.zoom().scaleExtent([0.3, 4]).on('zoom', (e) => { g.attr('transform', e.transform); labelG.selectAll('text').style('display', (d) => d.type === 'company' && e.transform.k < 1.4 ? 'none' : null); });
-    svg.call(zoom);
-    const fit = () => {
-      const ns = sim.nodes(); if (!ns.length) return;
-      const x0 = d3.min(ns, (d) => d.x) - 40, x1 = d3.max(ns, (d) => d.x) + 120, y0 = d3.min(ns, (d) => d.y) - 30, y1 = d3.max(ns, (d) => d.y) + 30;
-      const k = Math.min(1.6, 0.95 / Math.max((x1 - x0) / W, (y1 - y0) / H));
-      svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k));
-    };
-    const sim = d3.forceSimulation().force('charge', d3.forceManyBody().strength((d) => d.type === 'sector' ? -140 : -45))
-      .force('center', d3.forceCenter(W / 2, H / 2)).force('x', d3.forceX(W / 2).strength(0.04)).force('y', d3.forceY(H / 2).strength(0.06)).force('collide', d3.forceCollide().radius((d) => r(d) + 3))
-      .force('link', d3.forceLink().id((d) => d.id).distance((l) => l.type === 'sector' ? 90 : 45).strength(0.5));
-    const r = (d) => d.type === 'company' ? 6 + Math.min(d.deg, 8) * 0.5 : d.type === 'founder' ? 3.5 : 4 + Math.sqrt(d.deg) * 2.6;
-    let focus = null;
-    function update() {
-      const nodes = [...nodesAll.values()].filter((n) => on[n.type]);
-      const ids = new Set(nodes.map((n) => n.id));
-      const links = linksAll.filter((l) => ids.has(l.source.id || l.source) && ids.has(l.target.id || l.target)).map((l) => ({ source: l.source.id || l.source, target: l.target.id || l.target, type: l.type }));
-      const ls = linkG.selectAll('line').data(links, (d) => d.source + '>' + d.target).join('line').attr('stroke-width', 1).attr('stroke-opacity', 0.25);
-      const ns = nodeG.selectAll('circle').data(nodes, (d) => d.id).join('circle')
-        .attr('r', r).attr('fill', (d) => color[d.type]).attr('stroke', 'var(--sheet)').attr('stroke-width', 1.5).style('cursor', 'pointer')
-        .on('mouseenter', (e, d) => { tip.hidden = false; tip.replaceChildren(document.createTextNode(d.label), el('span', null, d.type === 'company' ? d.ref.sector + ' · ' + d.ref.latest_round : d.deg + ' connection' + (d.deg === 1 ? '' : 's'))); })
-        .on('mousemove', (e) => { const [mx, my] = d3.pointer(e, wrap); tip.style.left = Math.min(mx + 14, wrap.clientWidth - 270) + 'px'; tip.style.top = (my + 12) + 'px'; })
-        .on('mouseleave', () => { tip.hidden = true; })
-        .on('click', (e, d) => { if (d.type === 'company') openProfile(d.ref); else { focus = focus === d.id ? null : d.id; highlight(); } })
-        .call(d3.drag().on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-          .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; }).on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
-      const labelled = nodes.filter((n) => n.type === 'sector' || n.type === 'institution' || (n.type === 'investor' && n.deg >= 2) || n.type === 'company');
-      const lb = labelG.selectAll('text').data(labelled, (d) => d.id).join('text').text((d) => d.label)
-        .attr('fill', (d) => d.type === 'company' ? 'var(--soft)' : 'var(--ink)').attr('font-weight', (d) => d.type === 'company' ? 400 : 600)
-        .attr('font-size', (d) => d.type === 'company' ? 10 : 11.5).attr('dx', (d) => r(d) + 3).attr('dy', '0.35em')
-        .style('display', (d) => d.type === 'company' && d3.zoomTransform(svg.node()).k < 1.4 ? 'none' : null);
-      function highlight() {
-        if (!focus) { ns.attr('opacity', 1); ls.attr('stroke-opacity', 0.25); lb.attr('opacity', 1); return; }
-        const nb = new Set([focus]); links.forEach((l) => { const s = l.source.id || l.source, t = l.target.id || l.target; if (s === focus) nb.add(t); if (t === focus) nb.add(s); });
-        ns.attr('opacity', (d) => nb.has(d.id) ? 1 : 0.12); lb.attr('opacity', (d) => nb.has(d.id) ? 1 : 0.08);
-        ls.attr('stroke-opacity', (l) => ((l.source.id || l.source) === focus || (l.target.id || l.target) === focus) ? 0.9 : 0.05);
-      }
-      update.highlight = highlight; highlight();
-      sim.nodes(nodes).on('tick', () => {
-        ls.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y);
-        ns.attr('cx', (d) => d.x).attr('cy', (d) => d.y); lb.attr('x', (d) => d.x).attr('y', (d) => d.y);
-      });
-      sim.force('link').links(links);
-      sim.on('end', fit); sim.alpha(0.9).restart();
-    }
-    update();
-  }
-
-  // ---------- render pieces
-  const byDate = (a, b) => String(b.signal_date || '').localeCompare(String(a.signal_date || '')) || b.combined - a.combined;
+  // ---------- lists
+  const signalDate = (c) => (c.latest_signal && (c.latest_signal.event_date || c.latest_signal.source_date)) || '';
+  const byDate = (a, b) => String(signalDate(b)).localeCompare(String(signalDate(a))) || ((b._score.value || 0) - (a._score.value || 0));
+  const coBtn = (c) => { const b = el('button', 'co-btn'); b.type = 'button'; const n = el('p', 'co-name', c.company); if (c.role === 'Benchmark') n.append(el('span', 'bench', 'Benchmark')); b.append(n, el('div', 'co-meta', c.sector + ' · ' + c.location)); b.addEventListener('click', () => openProfile(c)); return b; };
 
   function feedRow(c) {
-    const b = el('button', 'feed-row'); b.type = 'button';
-    const left = el('div'); left.append(el('p', 'co-name', c.company), el('div', 'co-meta', c.sector + ', ' + c.location));
-    const mid = el('div', 'co-tech-wrap'); mid.append(el('p', 'co-tech', c.tech));
-    const fl = el('div', 'founder-line'); const ini = initials(c.founders);
-    if (ini.length) { const r = el('div', 'initials'); ini.forEach((i) => r.append(el('span', null, i))); fl.append(r); }
-    fl.append(el('span', null, named(c.founders) ? c.founders : 'Founders not named in coverage'));
-    mid.append(fl);
-    const m = el('div', 'money'); m.append(el('b', null, c.latest_round), el('span', null, named(c.lead_investor) ? 'Led by ' + c.lead_investor : 'Lead investor not named in coverage'));
-    if (named(c.lead_partner)) { m.append(el('br')); m.append(el('span', null, c.lead_partner)); }
-    b.append(el('span', 'dot'), left, mid, m);
-    b.addEventListener('click', () => openProfile(c));
-    return b;
+    const r = el('div', 'feed-row'); const ls = c.latest_signal || {};
+    const w = el('div'); const p = el('p', 'what'); p.append(el('span', 'kind ' + kindCls(ls.kind), ls.kind), ls.summary); w.append(p);
+    const firstSentence = (c.why || '').split(/(?<=[.;])\s/)[0].replace(/;$/, '.');
+    w.append(el('p', 'whymat', 'Why it matters: ' + firstSentence));
+    const wh = el('div', 'when', fmtDate(ls.event_date)); if (ls.source_date && ls.source_date !== ls.event_date) wh.append(el('span', null, 'Reported ' + fmtDate(ls.source_date)));
+    const s = el('div', 'src'); const a = el('a', null, c.source_name || 'Source'); a.href = c.source_url; a.target = '_blank'; a.rel = 'noopener'; s.append(a);
+    r.append(coBtn(c), w, wh, s); return r;
   }
 
-  function dirTable(box, rows) {
+  function dirTable(box, rows, emptyMsg) {
     box.replaceChildren();
-    const h = el('div', 'dir-head'); ['Company', 'What they build', 'Latest round', 'Lead investor'].forEach((t) => h.append(el('div', null, t)));
+    const h = el('div', 'dir-head'); ['', 'Company', 'What they build', 'Last confirmed round', 'Latest signal'].forEach((t) => h.append(el('div', null, t)));
     box.append(h);
-    if (!rows.length) { box.append(el('div', 'empty', 'No companies here yet. Try another stage or clear the filters.')); return; }
+    if (!rows.length) { box.append(el('div', 'empty', emptyMsg || 'No companies match. Try clearing a filter.')); return; }
     rows.forEach((c) => {
-      const r = el('button', 'dir-row'); r.type = 'button';
-      const a = el('div'); a.append(el('p', 'co-name', c.company), el('div', 'co-meta', c.sector));
-      const t = el('div', 'cell', c.tech);
-      const lr = el('div', 'cell'); lr.append(el('b', null, c.latest_round));
-      const li = el('div', 'cell'); li.append(el('b', null, c.lead_investor)); if (named(c.lead_partner)) { li.append(el('br'), document.createTextNode(c.lead_partner)); }
-      r.append(a, t, lr, li);
-      r.addEventListener('click', () => openProfile(c));
-      box.append(r);
+      const r = el('div', 'dir-row'); const lf = c.last_funding || {}, ls = c.latest_signal || {};
+      const lr = el('div', 'cell'); lr.append(el('b', null, c.latest_round)); lr.append(el('br'), document.createTextNode(named(lf.lead) ? 'Led by ' + lf.lead : 'Lead not named'));
+      const sg = el('div', 'cell'); sg.append(el('span', 'kind ' + kindCls(ls.kind), ls.kind), fmtDate(ls.event_date)); sg.append(el('br'), document.createTextNode(c._score.value == null ? 'Not scored' : 'Score ' + c._score.value + (c._score.n < 4 ? ' (partial)' : '')));
+      r.append(starBtn(c), coBtn(c), el('div', 'cell', c.tech), lr, sg); box.append(r);
     });
   }
 
-  function sectorChips(box, list, current, onPick, extra) {
-    box.replaceChildren();
-    const sectors = [...new Set(list.map((c) => c.sector))].sort();
-    const mk = (label, val) => { const b = el('button', 'chipbtn', label); b.setAttribute('aria-pressed', String(current === val)); b.addEventListener('click', () => onPick(val)); return b; };
-    box.append(mk('All sectors', ''), ...sectors.map((s) => mk(s, s)));
-    if (extra) box.append(extra);
-  }
+  const sectors = () => [...new Set(ALL.map((c) => c.sector))].sort();
+  const matches = (c, q) => !q || [c.company, c.tech, c.tech_approach, (c.bottlenecks || []).join(' '), c.founders, (c.founders_detail || []).map((p) => p.name).join(' '), (c.investors || []).join(' '), c.lead_partner, c.location, c.sector].join(' ').toLowerCase().includes(q.toLowerCase());
 
-  const matches = (c, q) => !q || [c.company, c.tech, c.founders, c.lead_investor, c.lead_partner, c.location].join(' ').toLowerCase().includes(q);
-
-  function renderStage() {
+  let homeTab = 'Seed';
+  function renderRail() {
     const rail = $('rail'); rail.replaceChildren();
-    STAGES.forEach((s) => {
+    const core = ALL.filter((c) => c.role !== 'Benchmark' || homeTab === 'Series B/C' || homeTab === 'Series D & beyond');
+    TABS.forEach((s) => {
       const n = ALL.filter((c) => c.round_tab === s).length;
-      const b = el('button'); b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', String(st.stage === s));
+      const b = el('button', s === 'Undisclosed' ? 'undis' : ''); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', String(homeTab === s));
       b.append(el('span', 'node', String(n)), el('span', 'lbl', s));
-      b.addEventListener('click', () => { st.stage = s; st.sector = ''; renderStage(); });
+      b.addEventListener('click', () => { homeTab = s; renderRail(); });
       rail.append(b);
     });
-    const inStage = ALL.filter((c) => c.round_tab === st.stage);
-    const search = el('input', 'search'); search.type = 'search'; search.placeholder = 'Search this stage'; search.setAttribute('aria-label', 'Search this stage'); search.value = st.q;
-    search.addEventListener('input', () => { st.q = search.value.trim().toLowerCase(); draw(); });
-    sectorChips($('tools'), inStage, st.sector, (v) => { st.sector = v; renderStage(); }, search);
-    const draw = () => dirTable($('dir'), inStage.filter((c) => (!st.sector || c.sector === st.sector) && matches(c, st.q)).sort(byDate));
-    draw();
+    const rows = ALL.filter((c) => c.round_tab === homeTab).sort(byDate);
+    dirTable($('dir'), rows, 'No companies at this stage yet.');
+    void core;
   }
 
-  function renderAll() {
-    const search = el('input', 'search'); search.type = 'search'; search.placeholder = 'Search company, founder, investor'; search.setAttribute('aria-label', 'Search all companies'); search.value = st.qAll;
-    search.addEventListener('input', () => { st.qAll = search.value.trim().toLowerCase(); draw(); });
-    sectorChips($('tools-all'), ALL, st.sectorAll, (v) => { st.sectorAll = v; renderAll(); }, search);
-    const draw = () => dirTable($('dir-all'), ALL.filter((c) => (!st.sectorAll || c.sector === st.sectorAll) && matches(c, st.qAll)).sort(byDate));
-    draw();
+  const dst = { q: '', sector: '', tab: '', bench: false, sort: 'signal' };
+  function renderDirectory() {
+    const box = $('tools-all'); box.replaceChildren();
+    const q = el('input', 'search'); q.type = 'search'; q.placeholder = 'Search company, technology, founder, investor'; q.setAttribute('aria-label', 'Search'); q.value = dst.q;
+    const sel = (opts, val, label) => { const s = el('select', 'ctl'); s.setAttribute('aria-label', label); opts.forEach(([v, t]) => { const o = el('option', null, t); o.value = v; if (v === val) o.selected = true; s.append(o); }); return s; };
+    const ss = sel([['', 'All sectors'], ...sectors().map((s) => [s, s])], dst.sector, 'Sector');
+    const st = sel([['', 'All rounds'], ...TABS.map((s) => [s, s])], dst.tab, 'Last confirmed round');
+    const so = sel([['signal', 'Newest signal first'], ['score', 'Highest radar score'], ['name', 'Name A–Z']], dst.sort, 'Sort');
+    const bl = el('label', 'chk'); const bc = el('input'); bc.type = 'checkbox'; bc.checked = dst.bench; bl.append(bc, 'Include benchmarks');
+    const count = el('span', 'muted');
+    box.append(q, ss, st, so, bl, count);
+    const sync = () => {
+      const p = new URLSearchParams(); if (dst.q) p.set('q', dst.q); if (dst.sector) p.set('sector', dst.sector); if (dst.tab) p.set('stage', dst.tab); if (dst.bench) p.set('bench', '1'); if (dst.sort !== 'signal') p.set('sort', dst.sort);
+      setHash('directory' + (p.toString() ? '?' + p.toString() : ''));
+      let rows = ALL.filter((c) => (dst.bench || c.role !== 'Benchmark') && (!dst.sector || c.sector === dst.sector) && (!dst.tab || c.round_tab === dst.tab) && matches(c, dst.q));
+      rows.sort(dst.sort === 'score' ? (a, b) => (b._score.value || 0) - (a._score.value || 0) : dst.sort === 'name' ? (a, b) => a.company.localeCompare(b.company) : byDate);
+      count.textContent = rows.length + ' of ' + ALL.length + (dst.bench ? '' : ' (benchmarks hidden)');
+      dirTable($('dir-all'), rows);
+    };
+    q.addEventListener('input', () => { dst.q = q.value.trim(); sync(); });
+    ss.addEventListener('change', () => { dst.sector = ss.value; sync(); });
+    st.addEventListener('change', () => { dst.tab = st.value; if (st.value === 'Series B/C' || st.value === 'Series D & beyond') { dst.bench = true; bc.checked = true; } sync(); });
+    so.addEventListener('change', () => { dst.sort = so.value; sync(); });
+    bc.addEventListener('change', () => { dst.bench = bc.checked; sync(); });
+    sync();
+  }
+
+  // ---------- shortlist & compare
+  let cmpSel = null;
+  function renderShortlist() {
+    const box = $('shortlist'); box.replaceChildren();
+    const items = SL.map((id) => BY[id]).filter(Boolean);
+    if (!items.length) { box.append(el('div', 'empty', 'Nothing on your shortlist yet. Use the star next to any company.')); return; }
+    if (!cmpSel) cmpSel = items.slice(0, 4).map((c) => c.id);
+    cmpSel = cmpSel.filter((id) => SL.includes(id));
+    const picks = el('div', 'tools');
+    items.forEach((c) => { const l = el('label', 'chk'); const cb = el('input'); cb.type = 'checkbox'; cb.checked = cmpSel.includes(c.id); cb.disabled = !cb.checked && cmpSel.length >= 4;
+      cb.addEventListener('change', () => { cmpSel = cb.checked ? [...cmpSel, c.id] : cmpSel.filter((x) => x !== c.id); renderShortlist(); }); l.append(cb, c.company); picks.append(l); });
+    const clr = el('button', 'btn ghost small', 'Clear shortlist'); clr.type = 'button'; clr.addEventListener('click', () => { SL = []; cmpSel = null; saveSL(); renderShortlist(); });
+    picks.append(clr);
+    box.append(el('p', 'muted', 'Choose up to four to compare:'), picks);
+    const cs = cmpSel.map((id) => BY[id]);
+    if (!cs.length) return;
+    const wrapT = el('div', 'cmp'); const t = el('table', 'cmpt'); const th = el('thead'); const hr = el('tr'); hr.append(el('th'));
+    cs.forEach((c) => { const h = el('th'); const b = el('button', 'co-btn'); b.type = 'button'; b.append(el('span', 'co-name', c.company)); b.addEventListener('click', () => openProfile(c)); h.append(b); hr.append(h); });
+    th.append(hr); const tb = el('tbody');
+    const rev = (c) => { const r = c.financials && c.financials.rows && c.financials.rows[0]; return r ? r.fy + ': ' + r.revenue + ' (' + r.net + ')' : 'Not found'; };
+    const ROWS = [
+      ['Sector', (c) => c.sector], ['Builds', (c) => c.tech], ['Last confirmed round', (c) => c.latest_round], ['Lead investor', (c) => (c.last_funding || {}).lead || '—'],
+      ['Latest signal', (c) => (c.latest_signal || {}).kind + ', ' + fmtDate((c.latest_signal || {}).event_date) + ': ' + (c.latest_signal || {}).summary],
+      ['Verified progress', (c) => (c.demonstrated || []).join('; ')], ['Biggest uncertainty', (c) => (c.unproven || [])[0] || '—'], ['Next milestone', (c) => (c.would_change || [])[0] || '—'],
+      ['Estimated TRL', (c) => (c.trl_estimate || 'Not estimable')], ['RDI status', (c) => c.rdi_status], ['Latest revenue', rev],
+      ['Radar score', (c) => scoreText(c)], ['Team', (c) => c.team == null ? 'Insufficient evidence' : c.team + '/5'], ['Evidence confidence', (c) => c.evidence_confidence || c.confidence],
+    ];
+    ROWS.forEach(([k, fn]) => { const tr = el('tr'); const h = el('th', null, k); h.scope = 'row'; tr.append(h); cs.forEach((c) => tr.append(el('td', null, fn(c)))); tb.append(tr); });
+    t.append(th, tb); wrapT.append(t); box.append(wrapT);
+  }
+
+  // ---------- network
+  const NODE = { company: { label: 'Company', color: '#2a4d9b' }, investor: { label: 'Investor', color: '#d9a400' }, institution: { label: 'Institution or employer', color: '#2f7a4f' },
+    founder: { label: 'Founder', color: '#b07ac9' }, bottleneck: { label: 'Technical bottleneck', color: '#c2573a' }, peer: { label: 'International peer', color: '#8a929b' }, sector: { label: 'Sector', color: '#8a929b' } };
+  const VIEWS = {
+    funding: { label: 'Funding', q: 'Who backs these companies, and who invests together?', kinds: ['funding'] },
+    talent: { label: 'Talent', q: 'Which institutions and employers connect founders and companies?', kinds: ['founder', 'talent', 'institution'] },
+    technology: { label: 'Technology', q: 'Which companies work on the same technical bottleneck?', kinds: ['tech'] },
+    local: { label: 'Local graph', q: 'What connects directly to one company or investor?', kinds: ['funding', 'founder', 'talent', 'institution', 'tech'] },
+  };
+  const net = { founders: false, view: 'funding', sector: '', stage: '', sel: null, level: 1, only: false, sectors: false, peers: false, recent: 0, built: false, pos: {}, pinned: new Set() };
+  let G = null;
+  function buildGraph() {
+    const nodes = new Map(), edges = [];
+    const add = (id, type, label, extra) => { if (!nodes.has(id)) nodes.set(id, { id, type, label, ...extra }); return nodes.get(id); };
+    ALL.forEach((c) => {
+      const cid = 'c:' + c.id; add(cid, 'company', c.company, { ref: c });
+      const src = { name: c.source_name, url: c.source_url };
+      (c.investor_edges || []).forEach((e) => { add('i:' + e.name, 'investor', e.name); edges.push({ s: 'i:' + e.name, t: cid, kind: 'funding', label: e.role === 'Lead' ? 'Led the ' + (e.round || '') + ' round' + (e.date ? ', ' + fmtDate(e.date) : '') : 'Investor named in coverage; round not stated', date: e.role === 'Lead' ? e.date : null, src }); });
+      const ppl = (c.founders_detail || []);
+      ppl.forEach((p) => { add('f:' + p.name, 'founder', p.name, { desc: p.background }); edges.push({ s: 'f:' + p.name, t: cid, kind: 'founder', label: p.role || 'Founder', src }); });
+      (c.institutions || []).forEach((u) => { const k = /incubat|accelerat|programme|research park/i.test(u.relation) && !/faculty/i.test(u.relation) ? 'institution' : 'talent';
+        add('u:' + u.name, 'institution', u.name); edges.push({ s: 'u:' + u.name, t: cid, kind: k, label: u.relation, src }); });
+      (c.bottlenecks || []).forEach((b) => { add('b:' + b, 'bottleneck', b); edges.push({ s: cid, t: 'b:' + b, kind: 'tech', dashed: true, label: 'Analyst grouping. Its approach: ' + c.tech_approach }); });
+      add('s:' + c.sector, 'sector', c.sector); edges.push({ s: cid, t: 's:' + c.sector, kind: 'sector', label: 'Sector' });
+      (c.global_peers || []).forEach((p) => { add('p:' + p.name, 'peer', p.name, { desc: p.region + '. ' + p.note }); edges.push({ s: cid, t: 'p:' + p.name, kind: 'peer', dashed: true, label: 'Analyst comparison (' + p.region + '): ' + p.note }); });
+    });
+    nodes.forEach((n) => { if (n.type === 'investor') n.portfolio = new Set(edges.filter((e) => e.s === n.id && e.kind === 'funding').map((e) => e.t)).size; });
+    G = { nodes, edges };
+  }
+  const radius = (n) => n.type === 'investor' ? Math.min(15, 4.5 + 2.6 * Math.sqrt(n.portfolio || 1)) : n.type === 'company' ? 6.5 : n.type === 'bottleneck' ? 7 : n.type === 'sector' ? 8 : 4.5;
+  const stageOK = (c) => !net.stage || (net.stage === 'early' ? ['Pre-seed', 'Seed'].includes(c.round_tab) : net.stage === 'later' ? ['Series A', 'Series B/C', 'Series D & beyond'].includes(c.round_tab) : c.round_tab === net.stage);
+  const recentOK = (e) => { if (!net.recent || !e.date) return false; const d = dateVal(e.date); return d && (TODAY - d) / 864e5 <= net.recent; };
+  let TODAY = new Date();
+
+  function currentSubgraph() {
+    const v = VIEWS[net.view];
+    const kinds = new Set(v.kinds); if (net.sectors) kinds.add('sector'); if (net.peers) kinds.add('peer'); if (net.view === 'talent' && !net.founders) kinds.delete('founder');
+    const okCo = (n) => n.type !== 'company' || ((!net.sector || n.ref.sector === net.sector) && stageOK(n.ref));
+    let edges = G.edges.filter((e) => kinds.has(e.kind) && okCo(G.nodes.get(e.s)) && okCo(G.nodes.get(e.t)));
+    if (net.view === 'local') {
+      if (!net.sel || !G.nodes.has(net.sel)) return { nodes: [], edges: [] };
+      let frontier = new Set([net.sel]), keep = new Set([net.sel]);
+      for (let i = 0; i < net.level; i++) { const nx = new Set(); edges.forEach((e) => { if (frontier.has(e.s) && !keep.has(e.t)) nx.add(e.t); if (frontier.has(e.t) && !keep.has(e.s)) nx.add(e.s); }); nx.forEach((x) => keep.add(x)); frontier = nx; }
+      edges = edges.filter((e) => keep.has(e.s) && keep.has(e.t));
+    }
+    const ids = new Set(); edges.forEach((e) => { ids.add(e.s); ids.add(e.t); });
+    return { nodes: [...ids].map((id) => G.nodes.get(id)), edges };
+  }
+
+  let svg, gRoot, zoom, W = 800, H = 600, SUB = null, nodeSel, linkSel, labelSel;
+  function drawNetwork() {
+    if (!ALL.length || typeof d3 === 'undefined') { if (typeof d3 === 'undefined') $('panel').replaceChildren(el('p', 'err', 'The graph library did not load. Check your connection and reload.')); return; }
+    if (!G) buildGraph();
+    renderNetBar();
+    const wrap = $('net-wrap'); W = wrap.clientWidth || 800; H = wrap.clientHeight || 600;
+    if (!svg) {
+      svg = d3.select(wrap).insert('svg', ':first-child').attr('viewBox', [0, 0, W, H]);
+      gRoot = svg.append('g');
+      gRoot.append('g').attr('class', 'links'); gRoot.append('g').attr('class', 'nodes'); gRoot.append('g').attr('class', 'labels').style('pointer-events', 'none');
+      zoom = d3.zoom().scaleExtent([0.25, 5]).on('zoom', (e) => { gRoot.attr('transform', e.transform); placeLabels(); });
+      svg.call(zoom).on('dblclick.zoom', null);
+      svg.on('click', (e) => { if (e.target === svg.node() && net.view !== 'local') { select(null); } });
+      $('n-fit').addEventListener('click', () => fitTo(net.sel ? neighbourIds(net.sel, true) : null));
+      $('n-reset').addEventListener('click', () => { net.sel = null; net.only = false; net.level = 1; net.pinned.clear(); net.pos = {}; drawNetwork(); });
+    }
+    SUB = currentSubgraph();
+    const key = net.view;
+    const P = net.pos[key] || (net.pos[key] = {});
+    const nodes = SUB.nodes.map((n) => { const p = P[n.id]; return Object.assign(n, p ? { x: p.x, y: p.y } : { x: undefined, y: undefined }, { fx: net.pinned.has(n.id) && p ? p.x : null, fy: net.pinned.has(n.id) && p ? p.y : null }); });
+    const links = SUB.edges.map((e) => ({ ...e, source: e.s, target: e.t }));
+    const fresh = nodes.some((n) => n.x === undefined);
+    if (fresh && nodes.length) {
+      // seed new nodes near a placed neighbour so existing layout is preserved
+      nodes.forEach((n) => { if (n.x === undefined) { const nb = links.find((l) => (l.s === n.id && P[l.t]) || (l.t === n.id && P[l.s])); const q = nb ? P[nb.s === n.id ? nb.t : nb.s] : null; n.x = q ? q.x + (Math.random() - .5) * 40 : W / 2 + (Math.random() - .5) * W * .5; n.y = q ? q.y + (Math.random() - .5) * 40 : H / 2 + (Math.random() - .5) * H * .5; n._new = true; } });
+      const placed = nodes.filter((n) => !n._new); placed.forEach((n) => { n.fx = n.x; n.fy = n.y; });
+      const sim = d3.forceSimulation(nodes).stop()
+        .force('charge', d3.forceManyBody().strength((d) => d.type === 'company' ? -60 : -110))
+        .force('link', d3.forceLink(links).id((d) => d.id).distance((l) => net.view === 'local' ? 110 : l.kind === 'tech' ? 50 : 42).strength(0.6))
+        .force('x', d3.forceX(W / 2).strength(0.05)).force('y', d3.forceY(H / 2).strength(0.07))
+        .force('collide', d3.forceCollide().radius((d) => radius(d) + 4));
+      for (let i = 0; i < (placed.length ? 160 : 320); i++) sim.tick();
+      placed.forEach((n) => { if (!net.pinned.has(n.id)) { n.fx = null; n.fy = null; } });
+      nodes.forEach((n) => { delete n._new; P[n.id] = { x: n.x, y: n.y }; });
+    } else {
+      const byId = new Map(nodes.map((n) => [n.id, n])); links.forEach((l) => { l.source = byId.get(l.s); l.target = byId.get(l.t); });
+    }
+    if (fresh) links.forEach((l) => { if (typeof l.source === 'string') { l.source = G.nodes.get(l.s); l.target = G.nodes.get(l.t); } });
+    render(nodes, links, fresh);
+    renderPanel();
+    syncNetHash();
+  }
+
+  function render(nodes, links, refit) {
+    const tip = $('net-tip'), wrap = $('net-wrap');
+    linkSel = gRoot.select('.links').selectAll('line').data(links, (d) => d.s + '>' + d.t + d.kind).join('line')
+      .attr('stroke', (d) => recentOK(d) ? 'var(--signal)' : 'currentColor').style('color', 'var(--soft)')
+      .attr('stroke-dasharray', (d) => d.dashed ? '4 3' : null).attr('stroke-width', (d) => recentOK(d) ? 2.2 : 1);
+    nodeSel = gRoot.select('.nodes').selectAll('circle').data(nodes, (d) => d.id).join('circle')
+      .attr('r', radius).attr('fill', (d) => NODE[d.type].color).attr('stroke', (d) => net.pinned.has(d.id) ? 'var(--ink)' : 'var(--sheet)').attr('stroke-width', (d) => net.pinned.has(d.id) ? 2 : 1.5)
+      .attr('tabindex', 0).attr('role', 'button').attr('aria-label', (d) => NODE[d.type].label + ': ' + d.label)
+      .on('mouseenter focus', (e, d) => { tip.hidden = false; tip.replaceChildren(document.createTextNode(d.label), el('span', null, brief(d))); const [mx, my] = d3.pointer(e, wrap); tip.style.left = Math.min(mx + 14, wrap.clientWidth - 270) + 'px'; tip.style.top = (my + 12) + 'px'; })
+      .on('mousemove', (e) => { const [mx, my] = d3.pointer(e, wrap); tip.style.left = Math.min(mx + 14, wrap.clientWidth - 270) + 'px'; tip.style.top = (my + 12) + 'px'; })
+      .on('mouseleave blur', () => { tip.hidden = true; })
+      .on('click', (e, d) => { e.stopPropagation(); select(d.id); })
+      .on('keydown', (e, d) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(d.id); } })
+      .call(d3.drag().on('drag', (e, d) => { d.x = e.x; d.y = e.y; net.pos[net.view][d.id] = { x: d.x, y: d.y }; position(); }).on('end', (e, d) => { net.pinned.add(d.id); d3.select(e.sourceEvent.target).attr('stroke', 'var(--ink)').attr('stroke-width', 2); }));
+    labelSel = gRoot.select('.labels').selectAll('text').data(nodes, (d) => d.id).join('text').text((d) => d.label)
+      .attr('font-size', (d) => d.type === 'company' ? 11 : 11.5).attr('font-weight', (d) => d.type === 'company' ? 500 : 600).attr('fill', 'var(--ink)')
+      .attr('paint-order', 'stroke').attr('stroke', 'var(--sheet)').attr('stroke-width', 3).attr('stroke-linejoin', 'round').attr('dy', '0.35em').style('font-family', 'var(--sans)');
+    position(); highlight();
+    if (refit) fitTo(net.sel && nodes.find((n) => n.id === net.sel) && net.view !== 'local' ? neighbourIds(net.sel, true) : null, true);
+    const nIso = ALL.length - nodes.filter((n) => n.type === 'company').length;
+    const inv = nodes.filter((n) => n.type === 'investor'); const maxP = d3.max(inv, (n) => n.portfolio) || 0;
+    const foot = $('net-foot');
+    foot.textContent = net.view === 'local' && !net.sel ? '' : (net.view === 'funding' ? 'Investor circles are sized by the number of companies they back within this dataset (1 to ' + maxP + '). Other circles are a fixed size. ' : 'Circle size is fixed by type. ') + (nIso ? nIso + ' companies have no connections of this kind (or are filtered out) and are not shown.' : '');
+  }
+  const brief = (d) => {
+    if (d.type === 'company') return d.ref.sector + ' · ' + d.ref.latest_round;
+    if (d.type === 'investor') return 'Investor · backs ' + d.portfolio + ' compan' + (d.portfolio === 1 ? 'y' : 'ies') + ' within this dataset';
+    if (d.type === 'founder') return 'Founder' + (d.desc ? ' · ' + d.desc : '');
+    if (d.type === 'peer') return 'International peer · ' + (d.desc || '');
+    return NODE[d.type].label;
+  };
+  function position() {
+    linkSel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y);
+    nodeSel.attr('cx', (d) => d.x).attr('cy', (d) => d.y);
+    placeLabels();
+  }
+  const neighbourIds = (id, includeSelf) => { const s = new Set(includeSelf ? [id] : []); SUB.edges.forEach((e) => { if (e.s === id) s.add(e.t); if (e.t === id) s.add(e.s); }); return s; };
+  function placeLabels() {
+    if (!labelSel) return;
+    const t = d3.zoomTransform(svg.node());
+    const nb = net.sel && SUB.nodes.some((n) => n.id === net.sel) ? neighbourIds(net.sel, true) : null;
+    const prio = (d) => (d.id === net.sel ? 0 : nb && nb.has(d.id) ? 1 : d.type === 'bottleneck' || d.type === 'sector' ? 2 : d.type === 'investor' ? 3 - Math.min(d.portfolio, 3) * 0.2 + 1 : d.type === 'institution' ? 4 : d.type === 'company' ? (t.k >= 1.3 ? 5 : 9) : 8);
+    const items = labelSel.data().slice().sort((a, b) => prio(a) - prio(b) || (b.portfolio || 0) - (a.portfolio || 0));
+    const boxes = []; const show = new Set();
+    const hit = (b) => boxes.some((o) => b.x0 < o.x1 && b.x1 > o.x0 && b.y0 < o.y1 && b.y1 > o.y0);
+    const off = {};
+    items.forEach((d) => {
+      const p = prio(d); if (p >= 9) return; if (nb && !nb.has(d.id) && net.only) return;
+      if (p > 1 && nb && !nb.has(d.id)) return;
+      const x = t.applyX(d.x) + radius(d) * t.k + 4, y = t.applyY(d.y), w = d.label.length * 6.4 + 4, h = 14;
+      let b = null;
+      for (const dy of p <= 1 ? [0, -14, 14, -28, 28, -42, 42] : [0]) { const c = { x0: x, x1: x + w, y0: y + dy - h / 2, y1: y + dy + h / 2 }; if (!hit(c)) { b = c; off[d.id] = dy; break; } }
+      if (!b && p <= 1) { b = { x0: x, x1: x + w, y0: y - h / 2, y1: y + h / 2 }; off[d.id] = 0; }
+      if (!b) return;
+      boxes.push(b); show.add(d.id);
+    });
+    labelSel.style('display', (d) => show.has(d.id) ? null : 'none')
+      .attr('font-size', (d) => (d.type === 'company' ? 11 : 11.5) / t.k).attr('stroke-width', 3 / t.k)
+      .attr('x', (d) => d.x + radius(d) + 4 / t.k).attr('y', (d) => d.y + (off[d.id] || 0) / t.k);
+  }
+  function highlight() {
+    if (!nodeSel) return;
+    if (!net.sel || !SUB.nodes.find((n) => n.id === net.sel)) { nodeSel.attr('opacity', 1).style('display', null); linkSel.attr('stroke-opacity', 0.28).style('display', null); placeLabels(); return; }
+    const nb = neighbourIds(net.sel, true);
+    const inc = (l) => l.s === net.sel || l.t === net.sel;
+    nodeSel.attr('opacity', (d) => nb.has(d.id) ? 1 : 0.12).style('display', (d) => net.only && !nb.has(d.id) ? 'none' : null)
+      .attr('r', (d) => d.id === net.sel ? radius(d) + 3 : radius(d));
+    linkSel.attr('stroke-opacity', (l) => inc(l) ? 0.9 : 0.05).style('display', (l) => net.only && !inc(l) ? 'none' : null);
+    placeLabels();
+  }
+  function fitTo(ids, instant) {
+    const ns = SUB.nodes.filter((n) => !ids || ids.has(n.id)); if (!ns.length) return;
+    const x0 = d3.min(ns, (d) => d.x) - 30, x1 = d3.max(ns, (d) => d.x) + 140, y0 = d3.min(ns, (d) => d.y) - 30, y1 = d3.max(ns, (d) => d.y) + 30;
+    const k = Math.min(1.6, 0.92 / Math.max((x1 - x0) / W, (y1 - y0) / H));
+    const tr = d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k);
+    (instant ? svg : svg.transition().duration(500)).call(zoom.transform, tr);
+  }
+  function select(id) {
+    if (net.view === 'local' && id && id !== net.sel) { net.sel = id; drawNetwork(); return; }
+    net.sel = id; highlight(); renderPanel(); syncNetHash();
+  }
+  function syncNetHash() {
+    if (curPage !== 'network') return;
+    const p = new URLSearchParams(); p.set('view', net.view); if (net.sector) p.set('sector', net.sector); if (net.stage) p.set('stage', net.stage); if (net.sel) p.set('sel', net.sel);
+    setHash('network?' + p.toString());
+  }
+
+  function renderNetBar() {
+    const bar = $('net-bar'); bar.replaceChildren();
+    const seg = el('div', 'seg'); seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'View');
+    Object.entries(VIEWS).forEach(([k, v]) => { const b = el('button', null, v.label); b.type = 'button'; b.setAttribute('aria-pressed', String(net.view === k)); b.title = v.q; b.addEventListener('click', () => { net.view = k; if (k !== 'local') net.level = 1; drawNetwork(); }); seg.append(b); });
+    const search = el('input', 'search'); search.type = 'search'; search.placeholder = 'Find a company, investor, founder…'; search.setAttribute('aria-label', 'Find in network'); search.setAttribute('list', 'net-dl');
+    const dl = el('datalist'); dl.id = 'net-dl'; [...G.nodes.values()].filter((n) => n.type !== 'sector').sort((a, b) => a.label.localeCompare(b.label)).forEach((n) => { const o = el('option'); o.value = n.label; o.label = NODE[n.type].label; dl.append(o); });
+    search.addEventListener('change', () => { const v = search.value.trim().toLowerCase(); const n = [...G.nodes.values()].find((x) => x.label.toLowerCase() === v) || [...G.nodes.values()].find((x) => x.label.toLowerCase().includes(v)); if (!n) return;
+      if (!SUB.nodes.find((x) => x.id === n.id)) { net.view = 'local'; net.sel = n.id; drawNetwork(); } else { select(n.id); fitTo(neighbourIds(n.id, true)); } });
+    const ss = el('select', 'ctl'); ss.setAttribute('aria-label', 'Sector filter'); [['', 'All sectors'], ...sectors().map((s) => [s, s])].forEach(([v, t]) => { const o = el('option', null, t); o.value = v; o.selected = v === net.sector; ss.append(o); });
+    ss.addEventListener('change', () => { net.sector = ss.value; drawNetwork(); });
+    const sg = el('select', 'ctl'); sg.setAttribute('aria-label', 'Stage filter'); [['', 'All rounds'], ['early', 'Pre-seed and seed'], ['later', 'Series A and later'], ['Undisclosed', 'Undisclosed']].forEach(([v, t]) => { const o = el('option', null, t); o.value = v; o.selected = v === net.stage; sg.append(o); });
+    sg.addEventListener('change', () => { net.stage = sg.value; drawNetwork(); });
+    const chk = (label, key, after) => { const l = el('label', 'chk'); const c = el('input'); c.type = 'checkbox'; c.checked = net[key]; c.addEventListener('change', () => { net[key] = c.checked; after ? after() : drawNetwork(); }); l.append(c, label); return l; };
+    const rc = el('select', 'ctl'); rc.setAttribute('aria-label', 'Highlight new connections'); [[0, 'New connections: off'], [30, 'New in last 30 days'], [90, 'New in last 90 days']].forEach(([v, t]) => { const o = el('option', null, t); o.value = v; o.selected = +v === net.recent; rc.append(o); });
+    rc.addEventListener('change', () => { net.recent = +rc.value; drawNetwork(); });
+    bar.append(seg, search, dl, ss, sg, chk('Connections only', 'only', () => { highlight(); }), chk('Sector layer', 'sectors'), ...(net.view === 'technology' || net.view === 'local' ? [chk('International peers', 'peers')] : []), ...(net.view === 'talent' ? [chk('Founders', 'founders')] : []), rc);
+    const st = $('starters'); st.replaceChildren(el('span', null, 'Try:'));
+    const starter = (label, cfg) => { const b = el('button', 'chipbtn', label); b.type = 'button'; b.addEventListener('click', () => { Object.assign(net, { sector: '', stage: '', sel: null, only: false, level: 1, sectors: false, peers: false }, cfg); drawNetwork(); if (net.sel) fitTo(neighbourIds(net.sel, true)); }); st.append(b); };
+    starter('Investors backing seed-stage semiconductor companies', { view: 'funding', sector: 'Semiconductors', stage: 'early' });
+    starter('Who funds early space companies', { view: 'funding', sector: 'Space & earth observation', stage: 'early' });
+    starter("pi Ventures' portfolio", { view: 'funding', sel: 'i:pi Ventures', only: true });
+    starter('Where ISRO and IIT Madras talent went', { view: 'talent' });
+    starter('Companies on the same bottleneck', { view: 'technology' });
+    starter('Energy companies and their global peers', { view: 'technology', sector: 'Energy & climate', peers: true });
+  }
+
+  function renderPanel() {
+    const p = $('panel'); p.replaceChildren();
+    const v = VIEWS[net.view];
+    if (!net.sel || !G.nodes.has(net.sel) || (net.view !== 'local' && !SUB.nodes.find((n) => n.id === net.sel))) {
+      p.append(el('div', 'ty', v.label + ' view'), el('h3', null, v.q));
+      if (net.view === 'local') p.append(el('p', null, 'Search for a company or investor above, or open "See this company in the network" from any profile.'));
+      else p.append(el('p', 'muted', 'Click any circle to select it. Its direct connections stay lit and are listed here with what each connection means and where it comes from.'));
+      const lg = el('div'); lg.append(el('h4', null, 'Circles'));
+      const types = [...new Set(SUB.nodes.map((n) => n.type))];
+      types.forEach((t) => { const d = el('div', 'muted'); const s = el('span', 'sw'); s.style.background = NODE[t].color; d.append(s, NODE[t].label + ' (' + SUB.nodes.filter((n) => n.type === t).length + ' within this view)'); lg.append(d); });
+      lg.append(el('h4', null, 'Lines'));
+      const le = el('div', 'legend-e');
+      le.innerHTML = '<svg><line x1="0" y1="5" x2="34" y2="5" stroke="currentColor" stroke-width="1.5"/></svg><span>A relationship reported in a source</span><svg><line x1="0" y1="5" x2="34" y2="5" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/></svg><span>The radar\'s own grouping or comparison</span><svg><line x1="0" y1="5" x2="34" y2="5" stroke="#d9a400" stroke-width="2.5"/></svg><span>Relationship dated in the chosen window</span>';
+      lg.append(le);
+      lg.append(el('p', 'muted', net.view === 'funding' ? 'Investor size = unique portfolio companies within this dataset, capped so large funds don\'t dominate.' : 'Circle size is fixed by type.'));
+      if (net.recent) { const n = SUB.edges.filter(recentOK).length; lg.append(el('p', 'muted', n + ' connection' + (n === 1 ? '' : 's') + ' dated in the last ' + net.recent + ' days. This uses the relationship date (for example, when a round closed), not the date the company was added to the dataset (' + fmtDate(ALL[0].date_added) + ' for the current records).')); }
+      p.append(lg); return;
+    }
+    const n = G.nodes.get(net.sel);
+    p.append(el('div', 'ty', NODE[n.type].label), el('h3', null, n.label));
+    p.append(el('p', 'muted', brief(n)));
+    const acts = el('div', 'd-actions');
+    if (n.type === 'company') { const o = el('button', 'btn small', 'Open profile'); o.type = 'button'; o.addEventListener('click', () => openProfile(n.ref)); acts.append(o, starBtn(n.ref)); }
+    const pin = el('button', 'btn ghost small', net.pinned.has(n.id) ? 'Unpin' : 'Pin'); pin.type = 'button';
+    pin.addEventListener('click', () => { if (net.pinned.has(n.id)) net.pinned.delete(n.id); else net.pinned.add(n.id); nodeSel.filter((d) => d.id === n.id).attr('stroke', net.pinned.has(n.id) ? 'var(--ink)' : 'var(--sheet)').attr('stroke-width', net.pinned.has(n.id) ? 2 : 1.5); renderPanel(); });
+    const fit = el('button', 'btn ghost small', 'Fit selection'); fit.type = 'button'; fit.addEventListener('click', () => fitTo(neighbourIds(n.id, true)));
+    const exp = el('button', 'btn ghost small', net.view === 'local' && net.level === 2 ? 'Show 1 level' : 'Expand to 2 levels'); exp.type = 'button';
+    exp.addEventListener('click', () => { if (net.view === 'local') net.level = net.level === 2 ? 1 : 2; else { net.view = 'local'; net.level = 2; } drawNetwork(); });
+    acts.append(pin, fit, exp);
+    if (net.view !== 'local') { const lo = el('button', 'btn ghost small', 'Local graph'); lo.type = 'button'; lo.addEventListener('click', () => { net.view = 'local'; net.level = 1; drawNetwork(); }); acts.append(lo); }
+    p.append(acts);
+    const inc = SUB.edges.filter((e) => e.s === n.id || e.t === n.id);
+    const KL = { funding: n.type === 'company' ? 'Investors' : 'Portfolio within this dataset', founder: n.type === 'company' ? 'Founders' : 'Companies founded', talent: n.type === 'company' ? 'Education and past employers' : 'People and companies connected', institution: n.type === 'company' ? 'Incubators and programmes' : 'Companies incubated or supported', tech: n.type === 'company' ? 'Technical bottleneck' : 'Companies working on this', sector: 'Sector', peer: n.type === 'company' ? 'International peers' : 'Indian companies compared' };
+    const groups = {}; inc.forEach((e) => (groups[e.kind] = groups[e.kind] || []).push(e));
+    if (!inc.length) p.append(el('p', 'muted', 'No connections of this kind in the current view.'));
+    Object.entries(groups).forEach(([k, es]) => {
+      p.append(el('h4', null, KL[k] + ' (' + es.length + ')'));
+      const ul = el('ul', 'conn');
+      es.sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))).forEach((e) => {
+        const other = G.nodes.get(e.s === n.id ? e.t : e.s);
+        const li = el('li', recentOK(e) ? 'recent' : ''); const b = el('button', null, other.label); b.type = 'button';
+        b.addEventListener('click', () => { select(other.id); });
+        li.append(b, el('small', null, e.label + (e.dashed ? '' : '')));
+        if (e.src && e.src.url) { const s = el('small'); const a = el('a', null, 'Source: ' + (e.src.name || 'link')); a.href = e.src.url; a.target = '_blank'; a.rel = 'noopener'; s.append(a); li.append(s); }
+        else if (e.dashed) li.append(el('small', null, 'Analyst comparison, not from a source'));
+        ul.append(li);
+      });
+      p.append(ul);
+    });
+    if (n.type === 'investor') p.append(el('p', 'muted', 'Lead roles and rounds come from the latest round coverage. Other investors are listed as named in coverage, without a round.'));
+  }
+
+  // ---------- updates
+  function renderUpdates() {
+    const box = $('changes'); box.replaceChildren();
+    CHANGES.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).forEach((x) => {
+      const r = el('div', 'log-row'); const who = el('div');
+      if (x.company_id && BY[x.company_id]) { const b = el('button', 'co-btn'); b.type = 'button'; b.append(el('b', null, x.company)); b.addEventListener('click', () => openProfile(BY[x.company_id])); who.append(b); } else who.append(el('b', null, 'Method'));
+      r.append(el('div', 'muted', fmtDate(x.date)), who, el('div', null, x.kind + '. ' + x.summary)); box.append(r);
+    });
+    const t = $('runs'); t.replaceChildren();
+    const h = el('tr'); ['Date', 'Run', 'Added', 'Updated', 'Sources checked'].forEach((x) => h.append(el('th', null, x))); const th = el('thead'); th.append(h);
+    const tb = el('tbody'); RUNS.forEach((r) => { const tr = el('tr'); tr.append(el('td', null, fmtDate(r.run_at)), el('td', null, r.mode), el('td', null, String(r.leads_added)), el('td', null, String(r.leads_updated)), el('td', 'muted', r.sources_checked)); tb.append(tr); });
+    t.append(th, tb);
   }
 
   $('weights').replaceChildren(...WEIGHTS.map((w) => { const tr = el('tr'); tr.append(el('td', null, w.f), el('td', null, Math.round(w.w * 100) + '%')); return tr; }));
+  $('finder').addEventListener('submit', (e) => { e.preventDefault(); const p = new URLSearchParams(); const q = $('f-q').value.trim(), s = $('f-sector').value; if (q) p.set('q', q); if (s) p.set('sector', s); location.hash = 'directory' + (p.toString() ? '?' + p : ''); });
+  $('f-sector').addEventListener('change', () => $('finder').requestSubmit());
 
   // ---------- load
   const get = (p) => fetch(p + '?v=' + Date.now(), { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(p + ' returned ' + r.status); return r.json(); });
-  Promise.all([get('data/leads.json'), get('data/runs.json'), get('data/firms.json').catch(() => ({}))]).then(([leads, runs, firms]) => {
-    FIRMS = firms || {};
-    ALL = leads.map((l) => ({ ...l, round_tab: l.round_tab || 'Seed', combined: Math.round(WEIGHTS.reduce((s, w) => s + Number(l[w.k] || 0) * w.w, 0) * 20) }));
-    $('f-total').textContent = ALL.length;
-    $('f-sectors').textContent = new Set(ALL.map((c) => c.sector)).size;
-    $('f-early').textContent = ALL.filter((c) => c.round_tab === 'Pre-seed' || c.round_tab === 'Seed').length;
-    const last = runs && runs[0];
-    if (last) { const u = $('updated'); u.append(el('i'), 'Updated ' + fmtDate(last.run_at) + '. Checked every morning.'); }
-    const feed = $('feed');
-    feed.replaceChildren(...ALL.slice().sort(byDate).slice(0, NEW_COUNT).map(feedRow));
-    renderStage(); renderAll();
-    const h = location.hash.slice(1); if (['directory', 'network', 'method'].includes(h)) go(h);
+  Promise.all([get('data/leads.json'), get('data/runs.json'), get('data/firms.json').catch(() => ({})), get('data/changes.json').catch(() => [])]).then(([leads, runs, firms, changes]) => {
+    FIRMS = firms || {}; RUNS = runs || []; CHANGES = changes || [];
+    ALL = leads.map((l) => { const c = { ...l, round_tab: l.round_tab || 'Seed' }; c._score = scoreOf(c); return c; });
+    BY = Object.fromEntries(ALL.map((c) => [c.id, c]));
+    const fs = $('f-sector'); [['', 'All sectors'], ...sectors().map((s) => [s, s])].forEach(([v, t]) => { const o = el('option', null, t); o.value = v; fs.append(o); });
+    const core = ALL.filter((c) => c.role !== 'Benchmark');
+    const lastRun = RUNS[0] ? RUNS[0].run_at : '';
+    const lastVer = ALL.map((c) => c.last_verified || '').sort().pop();
+    const strip = $('strip');
+    const item = (b, t) => { const s = el('span'); s.append(el('b', null, b), ' ' + t); return s; };
+    const upd = el('span'); upd.append(el('i'), 'Updated ', el('b', null, fmtDate(lastRun)));
+    strip.append(item(core.length, 'core companies'), item(ALL.length - core.length, 'benchmarks'), item(new Set(ALL.map((c) => c.sector)).size, 'sectors'), item(core.filter((c) => ['Pre-seed', 'Seed'].includes(c.round_tab)).length, 'at pre-seed or seed'), upd, item(fmtDate(lastVer), 'last verified'));
+    $('feed').replaceChildren((() => { const h = el('div', 'feed-head'); ['Company', 'What happened, and why it matters', 'When', 'Source'].forEach((t) => h.append(el('div', null, t))); return h; })(), ...core.slice().sort(byDate).slice(0, 8).map(feedRow));
+    saveSL(); renderRail(); renderUpdates();
+    route();
+    if (!location.hash) setHash('home');
   }).catch((err) => {
+    console.error(err);
     $('feed').replaceChildren(el('p', 'err', 'The radar data did not load (' + err.message + '). If you opened this file from disk, serve the folder with "python3 -m http.server" and open it from localhost.'));
   });
 })();
