@@ -1,0 +1,62 @@
+{
+ "week_ending": "31 Oct 2026",
+ "headline": "Pixxel closes $100M, Skyroot reaches orbit, and a fusion start-up makes plasma",
+ "headline_accent": "$100M",
+ "dek": "Almost every profile on the radar now shows the evidence behind its scores, and new TRL estimates are based on real tests.",
+ "stats": [
+  {"value": "52", "label": "companies tracked", "tone": "ink"},
+  {"value": "33", "label": "gained team evidence", "tone": "funding"},
+  {"value": "33", "label": "gained an IP score", "tone": "ip"},
+  {"value": "6", "label": "first TRL milestone", "tone": "milestone"}
+ ],
+ "sections": [
+  {"kind": "funding", "title": "Money moved", "note": "Closed rounds only. Reported talks never count.", "items": [
+   {"name": "Pixxel", "id": "pixxel", "chip": "Series C · $100M", "meta": "Co-led by Temasek and Seraphim · 7 Sep 2026",
+    "body": "Builds hyperspectral satellites. A normal camera sees red, green and blue. Pixxel's cameras see hundreds of colour bands, enough to tell a healthy crop from a stressed one, or spot a gas leak from space. Earlier reports had this round only \"in talks\". It's now confirmed closed."},
+   {"name": "Quanfluence", "id": "quanfluence", "chip": "Series A · $10M", "meta": "Led by Chiratae Ventures, with pi Ventures and Rainmatter · Oct 2026",
+    "body": "Its machine uses light instead of electrons to find the best answer among huge numbers of options, like routing trucks or scheduling a factory. It's the strongest team on the radar this week, with evidence for all 4 team factors. Three founders are ex-Texas Instruments chip designers who built Silabtech and sold it to Synopsys. Two are physics professors at IIT Madras and IISER Mohali. It also holds a granted Indian patent."},
+   {"name": "TakeMe2Space", "id": "takeme2space", "chip": "Seed · $5M", "meta": "Led by Chiratae Ventures · Jan 2026",
+    "body": "Puts computers on satellites so images can be processed in orbit before they're sent down. This replaces the 2025 pre-seed as its last confirmed round."},
+   {"lead": "Lead investors confirmed:", "text": "pi Ventures led Velmenni's ₹30 Cr pre-Series A (Li-Fi, which sends data through light). GIC and Sherpalo Ventures co-led Skyroot's Series C."}
+  ]},
+  {"kind": "milestone", "title": "Things that actually worked", "note": "Each TRL now rests on a dated, public milestone.", "items": [
+   {"name": "Skyroot · Vikram-1 reached orbit", "id": "skyroot", "chip_from": "TRL 7–8", "chip": "TRL 8–9", "meta": "18 Jul 2026",
+    "body": "Reached orbit on its first orbital launch, from Sriharikota."},
+   {"name": "Pranos Fusion · first plasma", "id": "pranos", "chip_from": "TRL 2–3", "chip": "TRL 3–4", "meta": "Built Aug 2026 · plasma reported Sep 2026",
+    "body": "Built PRAGYA, a small tokamak: a doughnut-shaped chamber that uses magnets to hold extremely hot gas. It then reported producing plasma inside it. That's step one on a very long road to fusion power."},
+   {"name": "SatLeo · thermal camera in space", "id": "satleo", "chip_from": "TRL 8 claimed", "chip": "TRL 7", "meta": "2 Oct 2026",
+    "body": "Its TAPAS-1 payload launched aboard Dhruva Space's LEAP-2 satellite. No images from orbit yet, so the radar puts it one level below the company's own claim until results come in."},
+   {"name": "Aule Space · docking test at ISRO", "id": "aule", "chip": "TRL 5–6", "meta": "Aug 2026",
+    "body": "Tested its guidance and docking system in ISRO's Rendezvous Simulation Lab. Aule wants to dock with ageing satellites and keep them working for longer."},
+   {"lead": "Omspace", "id": "omspace", "text": "flew a sounding rocket to about 3 km (Mar 2026).", "chip": "TRL 4"},
+   {"lead": "Astrophel", "id": "astrophel", "text": "test-fired a semi-cryogenic engine and tested cryo-pumps at ISRO.", "chip": "TRL 4"},
+   {"lead": "Flowatt", "id": "flowatt", "text": "has about 1,500 EV batteries out on rental to delivery fleets.", "chip": "TRL 6–7"},
+   {"lead": "Hycosys", "id": "hycosys", "text": "is testing hydrogen turbine parts at IIT-BHU.", "chip": "TRL 3–4"},
+   {"lead": "Quarkitech", "id": "quarkitech", "text": "ran a lab drone trial that shrank image data 26 times.", "chip": "TRL 3–4"},
+   {"name": "OrbitAID · demo lost on PSLV-C62", "id": "orbitaid", "chip": "Setback", "chip_tone": "watch", "meta": "12 Jan 2026",
+    "body": "Its in-orbit refuelling demo was on PSLV-C62, which failed and didn't reach orbit. Its profile now notes this."}
+  ]},
+  {"kind": "ip", "title": "Who has real IP", "note": "Most other IP scores rest on companies' own claims, so they're scored conservatively.", "items": [
+   {"lead": "Ather", "id": "ather", "text": "338 granted patents.", "chip": "IP 5/5"},
+   {"lead": "ideaForge", "id": "ideaforge", "text": "32 granted patents.", "chip": "IP 5/5"},
+   {"lead": "QpiAI", "id": "qpiai", "text": "granted US patent US12585973B1, for calibrating quantum computers.", "chip": "IP 4/5"},
+   {"lead": "Quanfluence", "id": "quanfluence", "text": "Indian patent on its optical machine, granted Mar 2026.", "chip": "IP 4/5"},
+   {"lead": "e-TRNL", "id": "etrnl", "text": "two patents granted on its 3D battery cell (up from 3).", "chip": "IP 4/5"},
+   {"lead": "CrisprBits", "id": "crisprbits", "text": "European patent application filed, not yet granted.", "chip": "IP 3/5"}
+  ]},
+  {"kind": "correction", "title": "Corrections", "note": "Where the record was wrong or unsupported.", "items": [
+   {"lead": "SatSure:", "id": "satsure", "text": "its last closed round is a $15M Series A (Aug 2023), co-led by Baring PE India and Promus Ventures. The IN-SPACe money in Jun 2026 is a grant, not a round."},
+   {"lead": "StrainX:", "id": "strainx", "text": "stays Undisclosed, because no credible source states the stage of its $13M round."},
+   {"lead": "Ethereal Machines:", "id": "ethereal", "text": "lead partner reset to \"not named\", since coverage only quotes him."},
+   {"lead": "Ayati:", "id": "ayati", "text": "IP score goes from 3 to 2, because regulatory clearances aren't IP."},
+   {"lead": "Locations:", "text": "Bioscan is in Ahmedabad, Astrophel in Pune, Dream Aerospace in Chennai and NuSynth in Mysuru."}
+  ]},
+  {"kind": "watch", "title": "Watching next", "note": "Open questions that would change a profile.", "items": [
+   {"lead": "Sanyark Space:", "id": "sanyark", "text": "may have raised a $2M pre-seed led by Avaana and AUM Ventures. Only one outlet reports it, so it isn't on the profile yet."},
+   {"lead": "Digantara:", "id": "digantara", "text": "sources disagree on whether Reliance led its $50M Series B."},
+   {"lead": "SatLeo:", "id": "satleo", "text": "first thermal images from orbit would confirm TRL 7 or above."},
+   {"lead": "11 companies", "text": "still have no demonstrated milestone, including Tattvam, NuSynth, HrdWyr, Inbound, Wankel and H2CZ."}
+  ]}
+ ],
+ "coverage": "52 companies tracked: 45 core, 7 benchmarks. 4 core companies still lack team evidence."
+}
