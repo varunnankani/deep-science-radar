@@ -243,107 +243,159 @@
   footer { border-top: 1px solid var(--line); margin-top: 32px; padding: 20px 0 48px; font-size: 13px; color: var(--text-3); }
   body.net-page footer { display: none; }
 
-  /* ================= observatory (network) ================= */
-  body.net-page main.wrap { max-width: none; padding: 0; }
-  .obs { height: calc(100vh - var(--mast)); height: calc(100dvh - var(--mast)); display: flex; flex-direction: column; }
-  .obs-bar { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-bottom: 1px solid var(--line); background: rgba(10, 18, 31, .85); flex-wrap: wrap; position: relative; z-index: 3; }
-  .seg { display: inline-flex; border: 1px solid var(--line-2); border-radius: 9px; overflow: hidden; background: var(--bg-2); flex: none; }
-  .seg button { border: 0; background: none; padding: 6px 11px; font: 500 13px var(--sans); color: var(--text-2); cursor: pointer; border-left: 1px solid var(--line); white-space: nowrap; }
-  .seg button:first-child { border-left: 0; }
-  .seg button:hover { color: var(--text); }
-  .seg button[aria-pressed="true"] { background: var(--cyan-wash); color: var(--cyan); box-shadow: inset 0 -2px 0 var(--cyan); }
-  .seg button:disabled { opacity: .45; cursor: not-allowed; }
-  .bar-lbl { font: 500 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-3); margin: 0 2px 0 6px; }
-  .obs-bar .search { width: 220px; padding: 6px 10px; font-size: 13px; }
-  .obs-bar .grow { flex: 1; }
-  .obs-filters { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; padding: 10px 14px; border-bottom: 1px solid var(--line); background: rgba(13, 22, 36, .92); position: relative; z-index: 3; }
-  .obs-filters .ctl { padding-top: 5px; padding-bottom: 5px; font-size: 13px; }
-  .obs-main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 380px; }
-  .stage { position: relative; min-height: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 45%, #0C1828 0%, #080E18 70%); touch-action: none; }
-  .stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; outline: none; cursor: grab; }
-  .stage canvas.grabbing { cursor: grabbing; } .stage canvas.pointer { cursor: pointer; }
-  .stage canvas:focus-visible { box-shadow: inset 0 0 0 2px rgba(109, 228, 238, .55); }
-  .stage-hud { position: absolute; left: 14px; top: 12px; right: 14px; display: flex; justify-content: space-between; gap: 12px; pointer-events: none; }
-  .hud-q { font: 500 15px/1.3 var(--head); color: var(--text); max-width: 70ch; text-shadow: 0 1px 8px rgba(0, 0, 0, .8); }
-  .hud-q small { display: block; font: 400 12px var(--mono); color: var(--text-2); margin-top: 4px; letter-spacing: -.01em; }
-  .hud-notice { pointer-events: auto; align-self: flex-start; font-size: 12.5px; color: var(--warn); background: rgba(242, 178, 102, .1); border: 1px solid rgba(242, 178, 102, .35); border-radius: 8px; padding: 5px 9px; max-width: 360px; }
-  .hud-notice button { background: none; border: 0; color: var(--cyan); cursor: pointer; padding: 0; text-decoration: underline; font-size: 12.5px; }
-  .net-tip { position: absolute; pointer-events: none; background: rgba(13, 22, 36, .96); border: 1px solid var(--line-2); border-radius: 9px; padding: 7px 11px; font-size: 13px; box-shadow: 0 8px 24px rgba(0, 0, 0, .5); max-width: 280px; z-index: 4; }
-  .net-tip b { font-weight: 600; } .net-tip span { display: block; color: var(--text-2); font-size: 12px; margin-top: 2px; }
-  .legend { position: absolute; left: 12px; bottom: 12px; z-index: 2; background: rgba(13, 22, 36, .9); border: 1px solid var(--line); border-radius: 10px; font-size: 12px; color: var(--text-2); max-width: 300px; backdrop-filter: blur(6px); }
-  .legend summary { cursor: pointer; padding: 7px 11px; font: 500 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-3); list-style: none; }
-  .legend summary::-webkit-details-marker { display: none; }
-  .legend summary::before { content: "+ "; } .legend[open] summary::before { content: "– "; }
-  .legend-body { padding: 0 12px 11px; display: grid; gap: 5px; }
-  .lg { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: center; }
-  .lg svg { width: 22px; height: 14px; overflow: visible; }
-  .legend p { margin: 4px 0 0; font-size: 11.5px; color: var(--text-3); }
-  .stage-ctl { position: absolute; right: 12px; bottom: 12px; display: flex; gap: 6px; z-index: 2; }
-  .stage-ctl .btn { background: rgba(13, 22, 36, .9); backdrop-filter: blur(6px); }
-  .inspector { border-left: 1px solid var(--line); background: linear-gradient(180deg, var(--panel-2), var(--panel)); display: flex; flex-direction: column; min-height: 0; z-index: 5; }
-  .insp-handle { display: none; }
-  .insp-tabs { display: flex; border-bottom: 1px solid var(--line); flex: none; }
-  .insp-tabs button { flex: 1; background: none; border: 0; padding: 11px 8px; font: 500 13px var(--sans); color: var(--text-2); cursor: pointer; border-bottom: 2px solid transparent; }
-  .insp-tabs button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--cyan); }
-  .insp-body { padding: 16px 18px 28px; overflow-y: auto; flex: 1; font-size: 14px; }
-  .insp-body h3 { font: 600 20px/1.2 var(--head); margin: 6px 0 4px; letter-spacing: -.02em; }
-  .insp-body h4 { font: 500 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-3); margin: 18px 0 8px; display: flex; justify-content: space-between; gap: 8px; }
-  .insp-body h4 .n { color: var(--text-2); }
-  .insp-body p { margin: 0 0 8px; }
-  .ty { display: inline-flex; align-items: center; gap: 6px; font: 500 10.5px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--text-2); }
-  .ty i { width: 9px; height: 9px; display: inline-block; }
-  .meta { font: 12.5px var(--mono); color: var(--text-2); margin-bottom: 12px; }
-  .conn { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
-  .conn li { border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; background: rgba(8, 14, 24, .35); }
-  .conn li.hl { border-color: rgba(237, 200, 141, .45); }
-  .conn li.v { border-color: rgba(179, 160, 255, .5); background: var(--violet-wash); }
-  .conn li.recent { box-shadow: inset 2px 0 0 var(--amber); }
-  .conn .row1 { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
-  .conn button.nm { background: none; border: 0; padding: 0; cursor: pointer; font-weight: 600; text-align: left; color: var(--text); }
-  .conn button.nm:hover { color: var(--cyan); }
-  .conn small { display: block; font-size: 12px; color: var(--text-2); margin-top: 2px; }
-  .conn .dt { font: 11.5px var(--mono); color: var(--text-3); white-space: nowrap; }
-  .note { font-size: 12.5px; color: var(--text-2); border: 1px dashed var(--line-2); border-radius: 9px; padding: 8px 10px; margin: 8px 0; }
-  .note.warn { color: var(--warn); border-color: rgba(242, 178, 102, .4); }
-  .note button { background: none; border: 0; color: var(--cyan); padding: 0; cursor: pointer; text-decoration: underline; font-size: 12.5px; }
-  .cta { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
-  .cta .btn { justify-content: flex-start; white-space: normal; text-align: left; line-height: 1.35; }
-  .tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 14px; }
-  .tool-grid button { text-align: left; background: var(--bg-2); border: 1px solid var(--line-2); border-radius: 9px; padding: 8px 10px; cursor: pointer; color: var(--text); font: 500 13px var(--sans); }
-  .tool-grid button small { display: block; font-weight: 400; color: var(--text-3); font-size: 11.5px; margin-top: 2px; }
-  .tool-grid button[aria-pressed="true"] { border-color: var(--violet); background: var(--violet-wash); }
-  .form { display: grid; gap: 8px; margin-bottom: 12px; }
-  .form label { font: 500 10.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); display: grid; gap: 4px; }
-  .form label.chk { display: inline-flex; font: 400 13px var(--sans); letter-spacing: 0; text-transform: none; color: var(--text-2); }
-  .form .ctl { width: 100%; text-transform: none; letter-spacing: 0; font-family: var(--sans); color: var(--text); }
-  .form input[type=range] { accent-color: var(--violet); width: 100%; }
-  .keyrow { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--text-2); margin: 6px 0 10px; }
-  .keyrow span { display: inline-flex; align-items: center; gap: 5px; }
-  .keyrow i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
-  .stat { display: flex; gap: 14px; margin: 6px 0 10px; }
-  .stat div { flex: 1; background: var(--bg-2); border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; }
-  .stat b { display: block; font: 500 20px var(--mono); color: var(--text); }
-  .stat span { font-size: 11.5px; color: var(--text-3); }
-  .path { list-style: none; margin: 0; padding: 0; }
-  .path li { position: relative; padding: 0 0 12px 18px; }
-  .path li::before { content: ""; position: absolute; left: 4px; top: 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 8px var(--violet); }
-  .path li::after { content: ""; position: absolute; left: 7px; top: 16px; bottom: 0; width: 1px; background: rgba(179, 160, 255, .35); }
-  .path li:last-child::after { display: none; }
-  .path small { display: block; color: var(--text-2); font-size: 12px; margin-top: 2px; }
-  .hist { width: 100%; height: 56px; display: block; margin: 6px 0 2px; }
-  @media (max-width: 900px) {
-    .obs-main { grid-template-columns: 1fr; }
-    .obs-bar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
-    .obs-bar::-webkit-scrollbar { display: none; }
-    .obs-bar .search { width: 160px; flex: none; }
-    .inspector { position: fixed; left: 0; right: 0; bottom: 0; height: 64vh; border-left: 0; border-top: 1px solid var(--line-2); border-radius: 16px 16px 0 0; transform: translateY(calc(100% - 52px)); transition: transform .28s cubic-bezier(.2, .8, .2, 1); box-shadow: 0 -16px 40px rgba(0, 0, 0, .55); }
-    .inspector.open { transform: none; }
-    .insp-handle { display: flex; align-items: center; justify-content: center; gap: 10px; height: 52px; flex: none; background: none; border: 0; border-bottom: 1px solid var(--line); cursor: pointer; color: var(--text); font: 500 14px var(--sans); width: 100%; }
-    .insp-handle::before { content: ""; position: absolute; top: 7px; left: 50%; width: 36px; height: 4px; margin-left: -18px; border-radius: 2px; background: var(--line-2); }
-    .legend { bottom: 64px; max-width: calc(100% - 24px); }
-    .stage-ctl { bottom: 64px; }
-    .hud-q { font-size: 13.5px; }
-  }
+  #dsr-observatory{--dsr-bg:#080e18;--dsr-panel:#0d1624;--dsr-line:#1d2a3b;--dsr-text:#edf3fa;--dsr-muted:#a1b0c4;--dsr-company:#6de4ee;--dsr-investor:#edc88d;--dsr-violet:#b3a0ff;--dsr-faint:#65788e;color-scheme:dark;background:var(--dsr-bg);color:var(--dsr-text);font-family:"Inter","Segoe UI",sans-serif;border-radius:18px;overflow:hidden;isolation:isolate;width:100%;font-size:13px;line-height:1.5;box-sizing:border-box}
+  #dsr-observatory *,#dsr-observatory *:before,#dsr-observatory *:after{box-sizing:border-box}
+  #dsr-observatory button,#dsr-observatory select{font:inherit;color:inherit}
+  #dsr-observatory button{touch-action:manipulation}
+  #dsr-observatory button:focus-visible,#dsr-observatory select:focus-visible{outline:2px solid var(--dsr-company);outline-offset:4px}
+  #dsr-observatory button:disabled{opacity:.4;cursor:default}
+  #dsr-observatory [hidden]{display:none!important}
+  #dsr-observatory .dsr-header{min-height:65px;padding:16px 28px;display:flex;align-items:center;gap:24px;border-bottom:1px solid var(--dsr-line);background:#0a111d}
+  #dsr-observatory .dsr-brand{display:flex;align-items:center;gap:10px;font-size:16px;letter-spacing:-.4px;font-weight:500;white-space:nowrap}
+  #dsr-observatory .dsr-brand>svg{width:23px;height:23px;color:var(--dsr-company)}
+  #dsr-observatory .dsr-brand-dot{color:var(--dsr-company)}
+  #dsr-observatory .dsr-navigation{display:flex;gap:24px;margin-left:auto;color:var(--dsr-muted);font-size:12px}
+  #dsr-observatory .dsr-current{color:var(--dsr-text);position:relative}
+  #dsr-observatory .dsr-current:after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:2px;background:var(--dsr-company)}
+  #dsr-observatory .dsr-example{font-size:11px;border:1px solid #304052;border-radius:5px;color:var(--dsr-muted);padding:3px 7px;white-space:nowrap}
+  #dsr-observatory .dsr-page-heading{padding:28px 28px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:radial-gradient(ellipse at 10% 0%,#142b383b,transparent 65%)}
+  #dsr-observatory .dsr-overline{font-family:ui-monospace,monospace;color:var(--dsr-muted);font-size:11px;letter-spacing:2px;margin-bottom:7px}
+  #dsr-observatory h2{font-size:30px;letter-spacing:-1.2px;font-weight:500;line-height:1.15;margin:0}
+  #dsr-observatory .dsr-motion-state{display:flex;align-items:center;gap:8px;color:var(--dsr-muted);font-family:ui-monospace,monospace;font-size:11px;white-space:nowrap}
+  #dsr-observatory .dsr-motion-state>span:first-child{height:5px;width:5px;border-radius:50%;background:var(--dsr-company);box-shadow:0 0 10px #6de4ee80}
+  #dsr-observatory .dsr-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 28px 18px;flex-wrap:wrap}
+  #dsr-observatory .dsr-segment{display:flex;gap:3px;padding:4px;border:1px solid var(--dsr-line);border-radius:8px;background:#0c1522}
+  #dsr-observatory .dsr-segment button{border:0;background:transparent;padding:6px 12px;color:var(--dsr-muted);border-radius:5px;font-size:12px}
+  #dsr-observatory .dsr-segment button[aria-pressed="true"]{background:#263343;color:var(--dsr-text);box-shadow:0 1px 4px #0005}
+  #dsr-observatory .dsr-toolbar-right{display:flex;gap:8px;align-items:center}
+  #dsr-observatory .dsr-action{display:flex;align-items:center;gap:6px;background:transparent;border:1px solid var(--dsr-line);border-radius:7px;padding:8px 10px;font-size:12px;white-space:nowrap}
+  #dsr-observatory .dsr-action svg{width:14px;height:14px;color:var(--dsr-muted)}
+  #dsr-observatory .dsr-action[aria-pressed="true"]{border-color:#6c5da0;background:#242037}
+  #dsr-observatory .dsr-action:hover,#dsr-observatory .dsr-expand:hover{background:#1b2839}
+  #dsr-observatory .dsr-compare-bar{margin:0 28px 16px;display:flex;gap:12px;align-items:end;flex-wrap:wrap}
+  #dsr-observatory .dsr-compare-bar label{display:grid;gap:5px;color:var(--dsr-muted);font-size:11px;flex:1;min-width:150px}
+  #dsr-observatory .dsr-compare-bar select{background:#111d2c;border:1px solid #334359;border-radius:5px;padding:7px;width:100%;font-size:12px;color:var(--dsr-text)}
+  #dsr-observatory .dsr-compare-symbol{font-size:22px;color:var(--dsr-violet);padding-bottom:2px}
+  #dsr-observatory .dsr-shared-count{padding-bottom:8px;color:var(--dsr-violet);font-size:12px}
+  #dsr-observatory .dsr-workspace{display:grid;grid-template-columns:minmax(0,1fr) 254px;gap:1px;background:var(--dsr-line);border-top:1px solid var(--dsr-line);border-bottom:1px solid var(--dsr-line)}
+  #dsr-observatory .dsr-field{position:relative;min-width:0;background:radial-gradient(ellipse at 47% 42%,#122e3c70,transparent 60%),var(--dsr-bg)}
+  #dsr-observatory .dsr-field-top{position:absolute;top:18px;left:22px;right:22px;display:flex;justify-content:space-between;gap:10px;font-family:ui-monospace,monospace;letter-spacing:1px;color:var(--dsr-muted);font-size:11px;pointer-events:none;z-index:2}
+  #dsr-observatory .dsr-graph{height:508px;position:relative;overflow:hidden;touch-action:pan-y}
+  #dsr-observatory .dsr-edges{position:absolute;inset:0;width:100%;height:100%;z-index:1;overflow:hidden}
+  #dsr-observatory .dsr-orbital{position:absolute;pointer-events:none;border:1px solid #49637720;border-radius:50%;left:50%;top:47%;transform:translate(-50%,-50%) rotate(-20deg);height:64%;width:78%}
+  #dsr-observatory .dsr-orbital-two{height:79%;width:95%;border-color:#49637713;transform:translate(-50%,-50%) rotate(20deg)}
+  #dsr-observatory .dsr-nodes{position:absolute;inset:0;z-index:3}
+  #dsr-observatory .dsr-node{position:absolute;top:0;left:0;width:44px;height:44px;display:grid;place-items:center;border:0;background:none;padding:0;will-change:transform;transition:opacity .45s ease;color:var(--dsr-text)}
+  #dsr-observatory .dsr-node-dot{width:13px;height:13px;background:var(--dsr-company);border-radius:50%;box-shadow:0 0 10px #6de4ee48,0 0 24px #6de4ee20;position:relative;transition:box-shadow .4s}
+  #dsr-observatory .dsr-node.vc .dsr-node-dot{width:11px;height:11px;border-radius:2px;background:var(--dsr-investor);transform:rotate(45deg);box-shadow:0 0 10px #edc88d40,0 0 24px #edc88d16}
+  #dsr-observatory .dsr-node.selected .dsr-node-dot{width:19px;height:19px;box-shadow:0 0 16px #6de4ee90,0 0 45px #6de4ee40}
+  #dsr-observatory .dsr-node.vc.selected .dsr-node-dot{background:var(--dsr-investor);box-shadow:0 0 16px #edc88da0,0 0 45px #edc88d40}
+  #dsr-observatory .dsr-node.selected:before{content:"";position:absolute;inset:3px;border:1px solid #6de4ee77;border-radius:50%}
+  #dsr-observatory .dsr-node.selected:after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px dashed #6de4ee35}
+  #dsr-observatory .dsr-node.vc.selected:before,#dsr-observatory .dsr-node.vc.selected:after{border-color:#edc88d65}
+  #dsr-observatory .dsr-node-label{position:absolute;top:43px;left:50%;transform:translateX(-50%);font-size:11px;white-space:nowrap;letter-spacing:.05px;text-shadow:0 2px 5px #080e18,0 0 6px #080e18;font-weight:400;pointer-events:none}
+  #dsr-observatory .dsr-node.selected .dsr-node-label{font-size:12px;color:var(--dsr-text);font-weight:500}
+  #dsr-observatory .dsr-field-footer{min-height:44px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:8px 20px 14px;font-size:11px;color:var(--dsr-muted)}
+  #dsr-observatory .dsr-legend{display:flex;gap:18px}
+  #dsr-observatory .dsr-legend span{display:flex;align-items:center;gap:6px}
+  #dsr-observatory .dsr-legend b{width:7px;height:7px;display:inline-block;font-weight:400}
+  #dsr-observatory .dsr-legend-company{border-radius:50%;background:var(--dsr-company)}
+  #dsr-observatory .dsr-legend-vc{background:var(--dsr-investor);transform:rotate(45deg);border-radius:1px}
+  #dsr-observatory .dsr-inspector{padding:22px 20px;background:var(--dsr-panel);min-width:0}
+  #dsr-observatory .dsr-inspector-top{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;color:var(--dsr-muted);letter-spacing:1.3px;font-family:ui-monospace,monospace}
+  #dsr-observatory .dsr-selection-indicator{font-size:11px;letter-spacing:0;text-transform:none;color:var(--dsr-company)}
+  #dsr-observatory h3{font-size:23px;font-weight:500;letter-spacing:-.7px;line-height:1.25;margin:16px 0 9px;overflow-wrap:anywhere}
+  #dsr-observatory .dsr-detail-description{font-size:12px;color:var(--dsr-muted);margin:0 0 16px;line-height:1.6}
+  #dsr-observatory .dsr-selection-meta{display:flex;flex-wrap:wrap;gap:8px;font-family:ui-monospace,monospace;font-size:11px;color:var(--dsr-muted);padding-bottom:20px;border-bottom:1px solid #233043}
+  #dsr-observatory .dsr-selection-meta span+span:before{content:"·";padding-right:8px}
+  #dsr-observatory .dsr-detail-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:21px 0 8px;font-size:12px;font-weight:500}
+  #dsr-observatory .dsr-detail-heading>span:last-child{font-family:ui-monospace,monospace;color:var(--dsr-muted)}
+  #dsr-observatory .dsr-connection-list{display:grid}
+  #dsr-observatory .dsr-connection{display:flex;align-items:center;gap:10px;padding:13px 0;text-align:left;background:none;border:0;border-bottom:1px solid #1d2a3b;width:100%}
+  #dsr-observatory .dsr-connection:hover{background:#162334}
+  #dsr-observatory .dsr-connection-mark{height:7px;width:7px;flex-shrink:0;background:var(--dsr-investor);transform:rotate(45deg);border-radius:1px}
+  #dsr-observatory .dsr-connection.company .dsr-connection-mark{background:var(--dsr-company);transform:none;border-radius:50%}
+  #dsr-observatory .dsr-connection-copy{display:grid;gap:3px;min-width:0}
+  #dsr-observatory .dsr-connection-name{font-size:12px;overflow-wrap:anywhere}
+  #dsr-observatory .dsr-connection-caption{font-size:11px;color:var(--dsr-muted)}
+  #dsr-observatory .dsr-connection-arrow{margin-left:auto;color:var(--dsr-faint);font-size:14px;flex-shrink:0}
+  #dsr-observatory .dsr-expand{width:100%;display:flex;align-items:center;gap:8px;text-align:left;background:#172436;border:1px solid #2a3a50;border-radius:6px;padding:10px;margin-top:22px;font-size:11px}
+  #dsr-observatory .dsr-expand svg{width:15px;height:15px;color:var(--dsr-muted);flex-shrink:0}
+  #dsr-observatory .dsr-expand>span:last-child{margin-left:auto}
+  #dsr-observatory .dsr-evidence-note{font-size:11px;line-height:1.6;margin-top:14px;color:var(--dsr-muted)}
+  #dsr-observatory .dsr-bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 22px;font-family:ui-monospace,monospace;color:var(--dsr-muted);font-size:11px}
+  #dsr-observatory .dsr-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  @media(max-width:720px){#dsr-observatory .dsr-header{padding:14px 18px;gap:12px}#dsr-observatory .dsr-navigation{gap:14px}#dsr-observatory .dsr-page-heading{padding:24px 18px 20px}#dsr-observatory .dsr-toolbar{padding-left:18px;padding-right:18px}#dsr-observatory .dsr-compare-bar{margin-left:18px;margin-right:18px}#dsr-observatory .dsr-workspace{grid-template-columns:minmax(0,1fr)}#dsr-observatory .dsr-inspector{padding:20px}#dsr-observatory .dsr-graph{height:440px}#dsr-observatory .dsr-navigation{display:none}#dsr-observatory .dsr-example{margin-left:auto}#dsr-observatory .dsr-motion-state{font-size:11px}#dsr-observatory h2{font-size:27px}#dsr-observatory .dsr-connection-list{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:22px}#dsr-observatory .dsr-expand{width:auto}#dsr-observatory .dsr-selection-meta{padding-bottom:12px}}
+  @media(max-width:430px){#dsr-observatory .dsr-page-heading{align-items:start;flex-direction:column;gap:12px}#dsr-observatory .dsr-toolbar{align-items:stretch;gap:10px}#dsr-observatory .dsr-toolbar-right{width:100%;justify-content:space-between}#dsr-observatory .dsr-brand{font-size:14px}#dsr-observatory .dsr-example{font-size:11px;padding:3px 4px}#dsr-observatory .dsr-connection-list{grid-template-columns:minmax(0,1fr)}#dsr-observatory .dsr-compare-symbol{display:none}#dsr-observatory .dsr-compare-bar select{font-size:16px}#dsr-observatory .dsr-field-top{left:16px;right:16px;font-size:11px}#dsr-observatory .dsr-field-footer{padding-left:16px;padding-right:16px}#dsr-observatory .dsr-graph{height:400px}}
+  /* ---- Inter, self-hosted so every computer renders the same face ---- */
+  @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/inter-latin-400-normal.woff2") format("woff2")}
+  @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/inter-latin-500-normal.woff2") format("woff2")}
+  /* ---- isolation from site-wide styles ---- */
+  #dsr-observatory h2,#dsr-observatory h3{font-family:inherit}
+  #dsr-observatory a{color:inherit;text-decoration:none}
+  #dsr-observatory input{font:inherit;color:inherit}
+  #dsr-observatory svg{display:inline-block;vertical-align:middle}
+  #dsr-observatory :focus-visible{border-radius:0}
+  #dsr-observatory footer{margin:0;border:0;font-size:11px}
+  body.net-page .mast{display:none}
+  body.net-page main.wrap{max-width:1280px;padding:24px 24px 32px}
+  @media(max-width:720px){body.net-page main.wrap{padding:10px 8px 24px}}
+  /* ---- additions styled from the reference's own tokens ---- */
+  #dsr-observatory .dsr-brand{color:var(--dsr-text)}
+  #dsr-observatory .dsr-navigation a{color:var(--dsr-muted)}
+  #dsr-observatory .dsr-navigation a:hover{color:var(--dsr-text)}
+  #dsr-observatory .dsr-navigation a.dsr-current{color:var(--dsr-text)}
+  #dsr-observatory .dsr-toolbar-left{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  #dsr-observatory .dsr-toolbar-right{flex-wrap:wrap}
+  #dsr-observatory .dsr-search{background:#111d2c;border:1px solid #334359;border-radius:5px;padding:7px;font-size:12px;color:var(--dsr-text);width:190px}
+  #dsr-observatory .dsr-search::placeholder{color:var(--dsr-faint)}
+  #dsr-observatory .dsr-action.dsr-icon{padding:6px}
+  #dsr-observatory .dsr-compare-bar label.dsr-check{display:flex;align-items:center;gap:6px;flex:0 0 auto;min-width:0;padding-bottom:8px;font-size:12px}
+  #dsr-observatory .dsr-compare-bar label.dsr-check input{accent-color:var(--dsr-company);margin:0}
+  #dsr-observatory .dsr-compare-bar input[type=range]{accent-color:var(--dsr-violet);width:100%;margin:6px 0 0}
+  #dsr-observatory .dsr-compare-bar .dsr-action{margin-bottom:1px}
+  #dsr-observatory .dsr-field-footer .dsr-zoom{display:flex;gap:6px;align-items:center}
+  #dsr-observatory .dsr-field-footer .dsr-zoom>span{margin-right:8px}
+  #dsr-observatory .dsr-inspector-actions .dsr-action{padding:6px 8px;font-size:11px}
+  #dsr-observatory .dsr-field-footer .dsr-zoom .dsr-action{padding:3px;border-radius:5px}
+  #dsr-observatory .dsr-field-footer .dsr-zoom .dsr-action svg{width:13px;height:13px}
+  #dsr-observatory .dsr-graph{cursor:grab}
+  #dsr-observatory .dsr-graph.dsr-grabbing{cursor:grabbing}
+  #dsr-observatory .dsr-node{cursor:pointer}
+  #dsr-observatory .dsr-node-label.dsr-off{visibility:hidden}
+  #dsr-observatory .dsr-node:hover,#dsr-observatory .dsr-node:focus-visible{z-index:2}
+  #dsr-observatory .dsr-node:hover .dsr-node-label,#dsr-observatory .dsr-node:focus-visible .dsr-node-label{visibility:visible}
+  #dsr-observatory .dsr-node.inst .dsr-node-dot{width:10px;height:10px;border-radius:2px;background:#7fd6a8;box-shadow:0 0 10px #7fd6a840,0 0 24px #7fd6a816}
+  #dsr-observatory .dsr-node.founder .dsr-node-dot{width:8px;height:8px;background:#e7a6d1;box-shadow:0 0 10px #e7a6d140,0 0 24px #e7a6d116}
+  #dsr-observatory .dsr-node.bottleneck .dsr-node-dot{width:12px;height:11px;border-radius:0;background:#f29a7a;clip-path:polygon(50% 0,100% 100%,0 100%);box-shadow:none}
+  #dsr-observatory .dsr-node.peer .dsr-node-dot{width:10px;height:10px;background:transparent;border:1px dashed #a1b0c4;box-shadow:none}
+  #dsr-observatory .dsr-node.sector .dsr-node-dot{width:14px;height:14px;background:transparent;border:1px solid #65788e;box-shadow:none}
+  #dsr-observatory .dsr-node.inst.selected .dsr-node-dot{width:15px;height:15px;box-shadow:0 0 16px #7fd6a8a0,0 0 45px #7fd6a840}
+  #dsr-observatory .dsr-node.founder.selected .dsr-node-dot{width:13px;height:13px;box-shadow:0 0 16px #e7a6d1a0,0 0 45px #e7a6d140}
+  #dsr-observatory .dsr-node.bottleneck.selected .dsr-node-dot{width:17px;height:16px}
+  #dsr-observatory .dsr-node.inst.selected:before,#dsr-observatory .dsr-node.inst.selected:after{border-color:#7fd6a865}
+  #dsr-observatory .dsr-node.founder.selected:before,#dsr-observatory .dsr-node.founder.selected:after{border-color:#e7a6d165}
+  #dsr-observatory .dsr-node.bottleneck.selected:before,#dsr-observatory .dsr-node.bottleneck.selected:after{border-color:#f29a7a65}
+  #dsr-observatory .dsr-node.peer.selected:before,#dsr-observatory .dsr-node.peer.selected:after,#dsr-observatory .dsr-node.sector.selected:before,#dsr-observatory .dsr-node.sector.selected:after{border-color:#a1b0c465}
+  #dsr-observatory .dsr-legend-inst{border-radius:1px;background:#7fd6a8}
+  #dsr-observatory .dsr-legend-founder{border-radius:50%;background:#e7a6d1}
+  #dsr-observatory .dsr-legend-bottleneck{background:#f29a7a;clip-path:polygon(50% 0,100% 100%,0 100%)}
+  #dsr-observatory .dsr-legend-analyst{width:14px!important;height:0!important;border-top:1px dashed #a1b0c4}
+  #dsr-observatory .dsr-connection-mark.inst{background:#7fd6a8;transform:none;border-radius:1px}
+  #dsr-observatory .dsr-connection-mark.founder{background:#e7a6d1;transform:none;border-radius:50%}
+  #dsr-observatory .dsr-connection-mark.bottleneck{background:#f29a7a;transform:none;border-radius:0;clip-path:polygon(50% 0,100% 100%,0 100%)}
+  #dsr-observatory .dsr-connection-mark.peer{background:transparent;border:1px dashed #a1b0c4;transform:none;border-radius:50%}
+  #dsr-observatory .dsr-connection-caption .dsr-date{font-family:ui-monospace,monospace}
+  #dsr-observatory .dsr-evidence-note a{color:var(--dsr-company);text-decoration:underline;text-decoration-color:#6de4ee55;text-underline-offset:2px}
+  #dsr-observatory .dsr-evidence-note.dsr-warn{color:#f2b266}
+  #dsr-observatory .dsr-evidence-note button{background:none;border:0;padding:0;color:var(--dsr-company);text-decoration:underline;font-size:11px}
+  #dsr-observatory .dsr-inspector-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  #dsr-observatory .dsr-inspector-actions .dsr-expand{margin-top:0}
+  #dsr-observatory .dsr-expand.dsr-secondary{background:transparent;border-color:var(--dsr-line)}
+  #dsr-observatory .dsr-expand[aria-pressed="true"]{border-color:#c79d4e;color:var(--dsr-investor)}
+  @media(min-width:721px){#dsr-observatory .dsr-inspector{height:0;min-height:100%;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#2a3a50 transparent}}
+  @media(max-width:720px){#dsr-observatory .dsr-zoom .dsr-action{display:none}#dsr-observatory .dsr-field-footer .dsr-zoom>span{margin-right:0}}
+  #dsr-observatory .dsr-hist{display:block;width:100%;height:34px;margin-top:6px}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 </head>
@@ -409,35 +461,62 @@
   </div>
 
   <div id="page-network" hidden>
-    <div class="obs">
-      <div class="obs-bar" id="obs-bar">
-        <span class="bar-lbl">Lens</span>
-        <div class="seg" id="lens-seg" role="group" aria-label="Relationship lens"></div>
-        <span class="bar-lbl">Scope</span>
-        <div class="seg" id="scope-seg" role="group" aria-label="Scope"></div>
-        <div class="seg" id="hop-seg" role="group" aria-label="Focus depth"></div>
-        <input class="search" type="search" id="net-search" placeholder="Find a company, investor, founder…" aria-label="Find in network" list="net-dl">
-        <datalist id="net-dl"></datalist>
-        <button class="btn ghost small" id="filters-btn" type="button" aria-expanded="false" aria-controls="obs-filters">Filters</button>
-        <span class="grow"></span>
-        <button class="btn ghost small" id="pause-btn" type="button"></button>
+    <div id="dsr-observatory">
+      <header class="dsr-header">
+        <a class="dsr-brand" href="#home"><svg class="lucide lucide-orbit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" /> <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" /> <circle cx="12" cy="12" r="3" /> <circle cx="19" cy="5" r="2" /> <circle cx="5" cy="19" r="2" /></svg><span>deep science radar<span class="dsr-brand-dot">.</span></span></a>
+        <nav class="dsr-navigation" aria-label="Pages"><a href="#home">Radar</a><a href="#network" class="dsr-current" aria-current="page">Network</a><a href="#directory">Directory</a><a href="#shortlist">Shortlist</a><a href="#updates">Updates</a><a href="#method">Method</a></nav>
+        <span class="dsr-example" id="dsr-badge">Sourced data</span>
+      </header>
+      <div class="dsr-page-heading">
+        <div><div class="dsr-overline" id="dsr-overline">ECOSYSTEM / FUNDING</div><h2>The connected frontier.</h2></div>
+        <span class="dsr-motion-state"><span></span><span data-motion-status>Ambient motion</span></span>
       </div>
-      <div class="obs-filters" id="obs-filters" hidden></div>
-      <div class="obs-main">
-        <div class="stage" id="stage">
-          <canvas id="net-canvas" tabindex="0" role="application" aria-roledescription="network graph" aria-label="Network graph. Use arrow keys to move between entities, Enter to select, F for focus view, Escape to clear, P to pause motion."></canvas>
-          <div class="stage-hud"><div class="hud-q" id="hud-q"></div><div class="hud-notice" id="hud-notice" hidden></div></div>
-          <div class="net-tip" id="net-tip" hidden></div>
-          <details class="legend" id="legend"><summary>Legend</summary><div class="legend-body" id="legend-body"></div></details>
-          <div class="stage-ctl"><button class="btn ghost small" id="fit-btn" type="button">Fit</button><button class="btn ghost small" id="reset-btn" type="button">Reset</button></div>
-          <div class="sr-only" id="net-live" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></div>
+      <div class="dsr-toolbar">
+        <div class="dsr-toolbar-left">
+          <div class="dsr-segment" id="dsr-scope" aria-label="Network scope"><button type="button" data-scope="global" aria-pressed="true">Entire network</button><button type="button" data-scope="local" aria-pressed="false">Local graph</button></div>
+          <div class="dsr-segment" id="dsr-lens" aria-label="Relationship lens"></div>
         </div>
-        <aside class="inspector" id="inspector" aria-label="Inspector">
-          <button class="insp-handle" id="insp-handle" type="button" aria-expanded="false"><span id="insp-handle-lbl">Inspector</span></button>
-          <div class="insp-tabs" role="tablist"><button role="tab" id="tab-details" aria-selected="true" type="button">Details</button><button role="tab" id="tab-analyze" aria-selected="false" type="button">Analyze</button></div>
-          <div class="insp-body" id="insp-body"></div>
+        <div class="dsr-toolbar-right">
+          <input class="dsr-search" id="dsr-search" type="search" placeholder="Find a company or investor" aria-label="Find a company, investor, founder or institution" list="dsr-dl"><datalist id="dsr-dl"></datalist>
+          <button type="button" class="dsr-action" id="dsr-filters-btn" aria-pressed="false"><svg class="lucide lucide-sliders-horizontal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5H3" /> <path d="M12 19H3" /> <path d="M14 3v4" /> <path d="M16 17v4" /> <path d="M21 12h-9" /> <path d="M21 19h-5" /> <path d="M21 5h-7" /> <path d="M8 10v4" /> <path d="M8 12H3" /></svg><span>Filters</span></button>
+          <button type="button" class="dsr-action" id="dsr-tools-btn" aria-pressed="false"><svg class="lucide lucide-waypoints" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10.586 5.414-5.172 5.172" /> <path d="m18.586 13.414-5.172 5.172" /> <path d="M6 12h12" /> <circle cx="12" cy="20" r="2" /> <circle cx="12" cy="4" r="2" /> <circle cx="20" cy="12" r="2" /> <circle cx="4" cy="12" r="2" /></svg>Analyze</button>
+          <button type="button" class="dsr-action" data-compare aria-pressed="false"><svg class="lucide lucide-git-compare-arrows" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="3" /> <path d="M12 6h5a2 2 0 0 1 2 2v7" /> <path d="m15 9-3-3 3-3" /> <circle cx="19" cy="18" r="3" /> <path d="M12 18H7a2 2 0 0 1-2-2V9" /> <path d="m9 15 3 3-3 3" /></svg>Compare VCs</button>
+          <button type="button" class="dsr-action dsr-pause" data-pause aria-label="Pause ambient motion"><svg class="lucide lucide-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="3" width="5" height="18" rx="1" /> <rect x="5" y="3" width="5" height="18" rx="1" /></svg><span data-pause-label>Pause</span></button>
+        </div>
+      </div>
+      <div class="dsr-compare-bar" data-compare-bar hidden>
+        <label>First investor<select data-investor-a aria-label="First investor"></select></label>
+        <span class="dsr-compare-symbol">∩</span>
+        <label>Second investor<select data-investor-b aria-label="Second investor"></select></label>
+        <span data-shared-count class="dsr-shared-count"></span>
+      </div>
+      <div class="dsr-compare-bar" id="dsr-filter-bar" hidden></div>
+      <div class="dsr-compare-bar" id="dsr-tool-bar" hidden></div>
+      <div class="dsr-workspace">
+        <section class="dsr-field" aria-label="Animated investment network">
+          <div class="dsr-field-top"><span data-scope-label>GLOBAL NETWORK</span><span data-network-count></span></div>
+          <div class="dsr-graph" data-graph>
+            <svg class="dsr-edges" aria-hidden="true" data-edges></svg>
+            <div class="dsr-orbital dsr-orbital-one" aria-hidden="true"></div><div class="dsr-orbital dsr-orbital-two" aria-hidden="true"></div>
+            <div class="dsr-nodes" data-nodes></div>
+          </div>
+          <div class="dsr-field-footer"><div class="dsr-legend" id="dsr-legend"></div><div class="dsr-zoom"><span data-graph-context>Direct connections illuminated</span><button type="button" class="dsr-action dsr-icon" id="dsr-zoom-in" aria-label="Zoom in"><svg class="lucide lucide-zoom-in" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <line x1="21" x2="16.65" y1="21" y2="16.65" /> <line x1="11" x2="11" y1="8" y2="14" /> <line x1="8" x2="14" y1="11" y2="11" /></svg></button><button type="button" class="dsr-action dsr-icon" id="dsr-zoom-out" aria-label="Zoom out"><svg class="lucide lucide-zoom-out" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <line x1="21" x2="16.65" y1="21" y2="16.65" /> <line x1="8" x2="14" y1="11" y2="11" /></svg></button><button type="button" class="dsr-action dsr-icon" id="dsr-fit" aria-label="Fit to view"><svg class="lucide lucide-scan" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /></svg></button><button type="button" class="dsr-action dsr-icon" id="dsr-reset" aria-label="Reset view, pins and filters"><svg class="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /> <path d="M3 3v5h5" /></svg></button></div>
+          </div>
+        </section>
+        <aside class="dsr-inspector" aria-label="Selected network details">
+          <div class="dsr-inspector-top"><span data-detail-type>COMPANY</span><span class="dsr-selection-indicator">Selected</span></div>
+          <h3 data-detail-name></h3><p class="dsr-detail-description" data-detail-description></p>
+          <div class="dsr-selection-meta" data-detail-meta></div>
+          <div class="dsr-detail-heading"><span data-connections-heading></span><span data-connections-number></span></div>
+          <div class="dsr-connection-list" data-connection-list></div>
+          <div data-detail-notes></div>
+          <button type="button" class="dsr-expand" data-expand><svg class="lucide lucide-network" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1" /> <rect x="2" y="16" width="6" height="6" rx="1" /> <rect x="9" y="2" width="6" height="6" rx="1" /> <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /> <path d="M12 12V8" /></svg><span data-expand-label>Explore two connections away</span><span aria-hidden="true">↗</span></button>
+          <div class="dsr-inspector-actions" data-detail-actions></div>
+          <div class="dsr-evidence-note" data-evidence-note></div>
         </aside>
       </div>
+      <footer class="dsr-bottom"><span data-totals></span><span>Selection reveals connections. Animation is visual only.</span></footer>
+      <div class="dsr-sr" aria-live="polite" data-announcement></div>
     </div>
   </div>
 
@@ -908,25 +987,27 @@
      NETWORK: data model, layout, ambient renderer, inspector, analysis
      ===================================================================== */
   const NET = (() => {
-    const COL = { company: '#6DE4EE', investor: '#EDC88D', institution: '#7FD6A8', founder: '#E7A6D1', bottleneck: '#F29A7A', peer: '#9AA9C0', sector: '#5F7290', violet: '#B3A0FF', rose: '#F3A6C8', line: '#A1B0C4' };
-    const TYPE_LABEL = { company: 'Company', investor: 'Backer', institution: 'Institution or employer', founder: 'Founder', bottleneck: 'Technical bottleneck', peer: 'International peer', sector: 'Sector' };
+    /* Visual rules ported from Deep_Science_Radar_Exact_Reference.html: DOM button nodes,
+       SVG quadratic edges, the reference drift / smoothing / breathing / particle maths. */
+    const ICON = {"square-arrow-out-up-right": "<path d=\"M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6\" /> <path d=\"m21 3-9 9\" /> <path d=\"M15 3h6v6\" />", "orbit": "<path d=\"M20.341 6.484A10 10 0 0 1 10.266 21.85\" /> <path d=\"M3.659 17.516A10 10 0 0 1 13.74 2.152\" /> <circle cx=\"12\" cy=\"12\" r=\"3\" /> <circle cx=\"19\" cy=\"5\" r=\"2\" /> <circle cx=\"5\" cy=\"19\" r=\"2\" />", "git-compare-arrows": "<circle cx=\"5\" cy=\"6\" r=\"3\" /> <path d=\"M12 6h5a2 2 0 0 1 2 2v7\" /> <path d=\"m15 9-3-3 3-3\" /> <circle cx=\"19\" cy=\"18\" r=\"3\" /> <path d=\"M12 18H7a2 2 0 0 1-2-2V9\" /> <path d=\"m9 15 3 3-3 3\" />", "pause": "<rect x=\"14\" y=\"3\" width=\"5\" height=\"18\" rx=\"1\" /> <rect x=\"5\" y=\"3\" width=\"5\" height=\"18\" rx=\"1\" />", "network": "<rect x=\"16\" y=\"16\" width=\"6\" height=\"6\" rx=\"1\" /> <rect x=\"2\" y=\"16\" width=\"6\" height=\"6\" rx=\"1\" /> <rect x=\"9\" y=\"2\" width=\"6\" height=\"6\" rx=\"1\" /> <path d=\"M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3\" /> <path d=\"M12 12V8\" />", "sliders-horizontal": "<path d=\"M10 5H3\" /> <path d=\"M12 19H3\" /> <path d=\"M14 3v4\" /> <path d=\"M16 17v4\" /> <path d=\"M21 12h-9\" /> <path d=\"M21 19h-5\" /> <path d=\"M21 5h-7\" /> <path d=\"M8 10v4\" /> <path d=\"M8 12H3\" />", "search": "<path d=\"m21 21-4.34-4.34\" /> <circle cx=\"11\" cy=\"11\" r=\"8\" />", "zoom-in": "<circle cx=\"11\" cy=\"11\" r=\"8\" /> <line x1=\"21\" x2=\"16.65\" y1=\"21\" y2=\"16.65\" /> <line x1=\"11\" x2=\"11\" y1=\"8\" y2=\"14\" /> <line x1=\"8\" x2=\"14\" y1=\"11\" y2=\"11\" />", "zoom-out": "<circle cx=\"11\" cy=\"11\" r=\"8\" /> <line x1=\"21\" x2=\"16.65\" y1=\"21\" y2=\"16.65\" /> <line x1=\"8\" x2=\"14\" y1=\"11\" y2=\"11\" />", "scan": "<path d=\"M3 7V5a2 2 0 0 1 2-2h2\" /> <path d=\"M17 3h2a2 2 0 0 1 2 2v2\" /> <path d=\"M21 17v2a2 2 0 0 1-2 2h-2\" /> <path d=\"M7 21H5a2 2 0 0 1-2-2v-2\" />", "waypoints": "<path d=\"m10.586 5.414-5.172 5.172\" /> <path d=\"m18.586 13.414-5.172 5.172\" /> <path d=\"M6 12h12\" /> <circle cx=\"12\" cy=\"20\" r=\"2\" /> <circle cx=\"12\" cy=\"4\" r=\"2\" /> <circle cx=\"20\" cy=\"12\" r=\"2\" /> <circle cx=\"4\" cy=\"12\" r=\"2\" />", "star": "<path d=\"M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z\" />", "rotate-ccw": "<path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\" /> <path d=\"M3 3v5h5\" />", "x": "<path d=\"M18 6 6 18\" /> <path d=\"m6 6 12 12\" />", "play": "<path d=\"M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z\" />"};
+    const icon = (n) => '<svg class="lucide lucide-' + n + '" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICON[n] + '</svg>';
     const LENSES = {
-      funding: { label: 'Funding', q: 'Who backs these companies, and who invests together?', kinds: ['funding'] },
-      talent: { label: 'Talent', q: 'Which institutions and employers connect founders and companies?', kinds: ['founder', 'talent', 'institution'] },
-      technology: { label: 'Technology', q: 'Which companies work on the same technical bottleneck?', kinds: ['tech'] },
-      all: { label: 'All', q: 'Every recorded relationship, across funding, talent and technology.', kinds: ['funding', 'founder', 'talent', 'institution', 'tech'] },
+      funding: { label: 'Funding', kinds: ['funding'] },
+      talent: { label: 'Talent', kinds: ['founder', 'talent', 'institution'] },
+      technology: { label: 'Technology', kinds: ['tech'] },
+      all: { label: 'All', kinds: ['funding', 'founder', 'talent', 'institution', 'tech'] },
     };
+    const CLS = { company: 'company', investor: 'vc', institution: 'inst', founder: 'founder', bottleneck: 'bottleneck', peer: 'peer', sector: 'sector' };
+    const TYPE_UP = { company: 'COMPANY', investor: 'INVESTOR', institution: 'INSTITUTION', founder: 'FOUNDER', bottleneck: 'TECHNICAL BOTTLENECK', peer: 'INTERNATIONAL PEER', sector: 'SECTOR' };
     const KIND_LABEL = { funding: 'Investment', founder: 'Founder', talent: 'Education or employment', institution: 'Incubation or programme', tech: 'Analyst grouping', peer: 'Analyst comparison', sector: 'Sector' };
-    const EDGE_COL = { funding: COL.investor, founder: COL.founder, talent: COL.institution, institution: COL.institution, tech: COL.bottleneck, peer: COL.violet, sector: COL.sector };
+    const S = { lens: 'funding', scope: 'global', focus: null, hops: 1, expanded: new Set(), sel: null, compare: false, a: null, b: null, tool: null, bar: null,
+      sector: '', stage: '', btype: '', isolated: false, founders: false, peers: false, sectors: false, recent: 0, paused: reduceMQ.matches, hover: null };
+    let G = null, root = null, graph, svg, nodeLayer;
+    const q = (s) => root.querySelector(s);
+    const txt = (s, v) => { q(s).textContent = v; };
+    const other = (e, id) => (e.s === id ? e.t : e.s);
 
-    let G = null; // {nodes: Map, edges: [], adj: Map id -> edges[]}
-    const S = { lens: 'funding', scope: 'network', focus: null, hops: 1, expanded: new Set(), collapsed: new Set(), sel: null, selEdge: null,
-      sector: '', stage: '', btype: '', isolated: false, sectors: false, peers: false, paused: reduceMQ.matches, userResumed: false, tool: null, filtersOpen: false, tab: 'details' };
-    let VIEW = { ids: new Set(), edges: [] };
-    let HL = null; // emphasis maps
-    const today = new Date();
-
-    // ---------- graph build
+    // ---------- data: structured relationships from the real records
     function build() {
       const nodes = new Map(), edges = [];
       const addN = (id, type, label, extra) => { let n = nodes.get(id); if (!n) { n = { id, type, label, ...extra }; nodes.set(id, n); } return n; };
@@ -940,36 +1021,37 @@
           const inv = resolveInv(e.name); if (seen.has(inv.id)) return; seen.add(inv.id);
           addN('i:' + inv.id, 'investor', inv.name, { inv });
           const lead = e.role === 'Lead';
-          const stageTxt = lf.stage === 'Undisclosed' ? 'a round of undisclosed stage' : 'the ' + lf.stage + ' round';
-          edges.push({ id: 'fund|' + c.id + '|' + inv.id, s: 'i:' + inv.id, t: cid, kind: 'funding', documented: true, company_id: c.id, investor_id: inv.id,
+          edges.push({ _i: e._i, id: 'fund|' + c.id + '|' + inv.id, s: 'i:' + inv.id, t: cid, kind: 'funding', documented: true, company_id: c.id, investor_id: inv.id,
             role: lead ? 'Lead' : 'Participant', round_id: lead ? roundId : null, round: lead ? lf.stage : null, amount: lead ? lf.amount : null, date: lead ? (lf.date || null) : null,
-            label: lead ? 'Led ' + stageTxt + (lf.amount && lf.amount !== 'Not in coverage' ? ' (' + lf.amount + ')' : '') : 'Investor named in coverage; round not recorded', sources: src });
+            label: lead ? 'Led ' + (lf.stage === 'Undisclosed' ? 'a round of undisclosed stage' : lf.stage) : 'Recorded investment', sources: src });
         });
         (c.founders_detail || []).forEach((p) => { const fid = 'f:' + slugify(p.name); addN(fid, 'founder', p.name, { desc: p.background });
           edges.push({ id: 'fdr|' + c.id + '|' + fid, s: fid, t: cid, kind: 'founder', documented: true, label: p.role || 'Founder', sources: src }); });
         (c.institutions || []).forEach((u) => { const k = /incubat|accelerat|programme|research park/i.test(u.relation) && !/faculty/i.test(u.relation) ? 'institution' : 'talent'; const uid = 'u:' + slugify(u.name);
           addN(uid, 'institution', u.name); edges.push({ id: 'ins|' + c.id + '|' + uid, s: uid, t: cid, kind: k, documented: true, label: u.relation, sources: src }); });
         (c.bottlenecks || []).forEach((b) => { const bid = 'b:' + slugify(b); addN(bid, 'bottleneck', b);
-          edges.push({ id: 'tec|' + c.id + '|' + bid, s: cid, t: bid, kind: 'tech', documented: false, label: 'Analyst grouping. Its approach: ' + c.tech_approach, sources: [] }); });
-        const sid = 's:' + slugify(c.sector); addN(sid, 'sector', c.sector); edges.push({ id: 'sec|' + c.id, s: cid, t: sid, kind: 'sector', documented: false, label: 'Sector', sources: [] });
+          edges.push({ id: 'tec|' + c.id + '|' + bid, s: bid, t: cid, kind: 'tech', documented: false, label: 'Analyst grouping · approach: ' + c.tech_approach, sources: [] }); });
+        const sid = 's:' + slugify(c.sector); addN(sid, 'sector', c.sector); edges.push({ id: 'sec|' + c.id, s: sid, t: cid, kind: 'sector', documented: false, label: 'Sector', sources: [] });
         (c.global_peers || []).forEach((p) => { const pid = 'p:' + slugify(p.name); addN(pid, 'peer', p.name, { desc: p.region + '. ' + p.note });
-          edges.push({ id: 'peer|' + c.id + '|' + pid, s: cid, t: pid, kind: 'peer', documented: false, label: 'Analyst comparison (' + p.region + '): ' + p.note, sources: [] }); });
+          edges.push({ id: 'peer|' + c.id + '|' + pid, s: pid, t: cid, kind: 'peer', documented: false, label: 'Analyst comparison (' + p.region + ')', sources: [] }); });
       });
-      edges.forEach((e) => { e.dv = dateVal(e.date); });
+      edges.forEach((e, i) => { e.dv = dateVal(e.date); e.phase = (e._i != null ? e._i : i) * .23; });
       const adj = new Map(); nodes.forEach((n) => adj.set(n.id, []));
       edges.forEach((e) => { adj.get(e.s).push(e); adj.get(e.t).push(e); });
-      nodes.forEach((n) => {
-        n.ph = [Math.random() * 6.28, Math.random() * 6.28, Math.random() * 6.28, Math.random() * 6.28]; n.w = [0.21 + Math.random() * 0.16, 0.17 + Math.random() * 0.16];
-        n.a = 0; n.ta = 0; n.drawn = false;
-        if (n.type === 'investor') { const port = adj.get(n.id).filter((e) => e.kind === 'funding'); n.portfolio = new Set(port.map((e) => e.t)).size; n.leads = port.filter((e) => e.role === 'Lead').length; }
-      });
+      let i = 0; nodes.forEach((n) => { const fx = (n.ref && n.ref._xy) || (n.inv && n.inv._xy); n.phase = (fx && fx.i != null ? fx.i : i) * 1.71; i++; if (n.type === 'investor') { const p = adj.get(n.id).filter((e) => e.kind === 'funding'); n.portfolio = new Set(p.map((e) => e.t)).size; n.leads = p.filter((e) => e.role === 'Lead').length; } });
       G = { nodes, edges, adj };
     }
-    const other = (e, id) => (e.s === id ? e.t : e.s);
     function companyInvestors(cid) { if (!G) build(); return (G.adj.get('c:' + cid) || []).filter((e) => e.kind === 'funding').map((e) => ({ e, inv: G.nodes.get(e.s).inv })); }
+    const portfolio = (iid) => new Map((G.adj.get(iid) || []).filter((e) => e.kind === 'funding').map((e) => [e.t, e]));
+    const investorNodes = () => [...G.nodes.values()].filter((n) => n.type === 'investor').sort((a, b) => b.portfolio - a.portfolio || a.label.localeCompare(b.label));
+    function coInvestors(iid) {
+      const m = new Map();
+      portfolio(iid).forEach((e, cid) => (G.adj.get(cid) || []).forEach((e2) => { if (e2.kind === 'funding' && e2.s !== iid) { if (!m.has(e2.s)) m.set(e2.s, { n: G.nodes.get(e2.s), shared: [] }); m.get(e2.s).shared.push(cid); } }));
+      return [...m.values()].sort((a, b) => b.shared.length - a.shared.length || a.n.label.localeCompare(b.n.label));
+    }
 
-    // ---------- view computation
-    const lensKinds = () => { const k = new Set(LENSES[S.lens].kinds); if (S.peers && (S.lens === 'technology' || S.lens === 'all')) k.add('peer'); if (S.sectors) k.add('sector'); return k; };
+    // ---------- lenses, filters, visibility
+    const lensKinds = () => { const k = new Set(LENSES[S.lens].kinds); if (S.lens === 'talent' && !S.founders) k.delete('founder'); if (S.peers && (S.lens === 'technology' || S.lens === 'all')) k.add('peer'); if (S.sectors) k.add('sector'); return k; };
     const stageOK = (c) => !S.stage || (S.stage === 'early' ? ['Pre-seed', 'Seed'].includes(c.round_tab) : S.stage === 'later' ? ['Series A', 'Series B/C', 'Series D & beyond'].includes(c.round_tab) : c.round_tab === S.stage);
     const companyPasses = (c) => (!S.sector || c.sector === S.sector) && stageOK(c);
     const filtersActive = () => !!(S.sector || S.stage || S.btype);
@@ -981,774 +1063,497 @@
       const t = tl(); if (t && (e.kind !== 'funding' || !e.dv || e.dv > t.cursorEnd)) return 'timeline';
       return null;
     }
-    function computeView() {
+    let V = { vis: new Set(), edges: [], edgeIds: new Set(), lensEdges: [], lit: new Set(), active: new Set(), litEdges: new Set(), violet: false, model: null, selOutside: false };
+    function compute() {
       const kinds = lensKinds();
       const lensEdges = G.edges.filter((e) => kinds.has(e.kind));
       const edges = lensEdges.filter((e) => !filterReason(e));
-      const ids = new Set();
-      if (S.scope === 'focus' && S.focus && G.nodes.has(S.focus)) {
-        const nb = new Map(); edges.forEach((e) => { (nb.get(e.s) || nb.set(e.s, []).get(e.s)).push(e); (nb.get(e.t) || nb.set(e.t, []).get(e.t)).push(e); });
-        const depth = new Map([[S.focus, 0]]); const q = [S.focus];
-        while (q.length) { const v = q.shift(); const d = depth.get(v);
-          const expand = v === S.focus || ((d < S.hops || S.expanded.has(v)) && !S.collapsed.has(v));
-          if (!expand) continue;
-          (nb.get(v) || []).forEach((e) => { const o = other(e, v); if (!depth.has(o)) { depth.set(o, d + 1); q.push(o); } }); }
-        depth.forEach((d, id) => ids.add(id));
-        VIEW = { ids, edges: edges.filter((e) => ids.has(e.s) && ids.has(e.t)), depth, lensEdges };
-      } else {
-        edges.forEach((e) => { ids.add(e.s); ids.add(e.t); });
-        if (S.isolated) ALL.forEach((c) => { if (companyPasses(c) && !tl()) ids.add('c:' + c.id); });
-        VIEW = { ids, edges, depth: null, lensEdges };
-      }
-      if (S.sel && G.nodes.has(S.sel) && !ids.has(S.sel)) { ids.add(S.sel); VIEW.selOutside = true; } else VIEW.selOutside = false;
-      VIEW.edgeIds = new Set(VIEW.edges.map((e) => e.id));
-    }
-
-    // ---------- layouts (physics only here; ambient motion is separate)
-    const layouts = new Map(); const pins = new Map();
-    const radius = (n) => n.type === 'investor' ? Math.min(14, 5.5 + 2.4 * Math.sqrt(n.portfolio || 1)) : n.type === 'company' ? 7 : n.type === 'bottleneck' ? 7.5 : n.type === 'institution' ? 6.5 : n.type === 'sector' ? 10 : n.type === 'peer' ? 5 : 4.5;
-    function networkLayout() {
-      const kinds = lensKinds(); const key = 'net|' + [...kinds].sort().join(',');
-      if (layouts.has(key)) return { key, pos: layouts.get(key) };
-      const edges = G.edges.filter((e) => kinds.has(e.kind));
-      const ids = new Set(ALL.map((c) => 'c:' + c.id)); edges.forEach((e) => { ids.add(e.s); ids.add(e.t); });
-      const nodes = [...ids].map((id) => ({ id, type: G.nodes.get(id).type, n: G.nodes.get(id) }));
-      const links = edges.map((e) => ({ source: e.s, target: e.t, kind: e.kind }));
-      const sim = d3.forceSimulation(nodes).stop()
-        .force('charge', d3.forceManyBody().strength((d) => d.type === 'investor' ? -110 : d.type === 'company' ? -70 : d.type === 'sector' ? -260 : -45).distanceMax(420))
-        .force('link', d3.forceLink(links).id((d) => d.id).distance((l) => l.kind === 'sector' ? 110 : l.kind === 'tech' ? 52 : 48).strength(0.55))
-        .force('x', d3.forceX(0).strength(0.045)).force('y', d3.forceY(0).strength(0.06))
-        .force('collide', d3.forceCollide().radius((d) => radius(d.n) + 6));
-      for (let i = 0; i < 340; i++) sim.tick();
-      const pos = new Map(nodes.map((d) => [d.id, { x: d.x, y: d.y }]));
-      layouts.set(key, pos); return { key, pos };
-    }
-    function focusLayout() {
-      const key = 'focus|' + S.lens + '|' + S.focus;
-      const base = layouts.get(key) || new Map();
-      const prevNet = networkLayout().pos;
-      const nodes = [...VIEW.ids].map((id) => { const p = base.get(id) || (G.nodes.get(id).drawn ? { x: G.nodes.get(id).bx, y: G.nodes.get(id).by } : prevNet.get(id)) || { x: (Math.random() - .5) * 200, y: (Math.random() - .5) * 200 };
-        return { id, n: G.nodes.get(id), x: p.x, y: p.y, depth: VIEW.depth.get(id) || 0 }; });
-      const fx = nodes.find((d) => d.id === S.focus); if (fx) { fx.fx = 0; fx.fy = 0; }
-      const R = (d) => d.depth === 0 ? 0 : d.depth === 1 ? 170 : 170 + (d.depth - 1) * 150;
-      const sim = d3.forceSimulation(nodes).stop()
-        .force('charge', d3.forceManyBody().strength(-90).distanceMax(300))
-        .force('link', d3.forceLink(VIEW.edges.map((e) => ({ source: e.s, target: e.t }))).id((d) => d.id).distance(90).strength(0.08))
-        .force('r', d3.forceRadial(R, 0, 0).strength(0.9))
-        .force('collide', d3.forceCollide().radius((d) => radius(d.n) + 14));
-      for (let i = 0; i < 260; i++) sim.tick();
-      const pos = new Map(nodes.map((d) => [d.id, { x: d.x, y: d.y }]));
-      layouts.set(key, pos); return { key, pos };
-    }
-
-    // ---------- applying a view: transitions are separate from ambient motion
-    let LKEY = null; const drawSet = new Set(); const edgeDraw = new Map();
-    const reduced = () => reduceMQ.matches;
-    function applyView(opts = {}) {
-      computeView();
-      const L = S.scope === 'focus' ? focusLayout() : networkLayout(); LKEY = L.key;
-      const now = performance.now();
-      const pin = pins.get(LKEY) || new Map();
-      G.nodes.forEach((n) => {
-        const inView = VIEW.ids.has(n.id);
-        if (inView) {
-          let p = pin.get(n.id) || L.pos.get(n.id);
-          if (!p) { const nb = (G.adj.get(n.id) || []).map((e) => L.pos.get(other(e, n.id))).find(Boolean); p = nb ? { x: nb.x + 20, y: nb.y + 20 } : { x: 0, y: 0 }; L.pos.set(n.id, p); }
-          if (!n.drawn) { n.bx = p.x; n.by = p.y; n.a = 0; n.t0 = null; }
-          else if (Math.abs(n.ax - p.x) > .5 || Math.abs(n.ay - p.y) > .5) { if (reduced()) { n.bx = p.x; n.by = p.y; n.t0 = null; } else { n.fromx = n.bx; n.fromy = n.by; n.t0 = now; n.dur = 750; } }
-          n.ax = p.x; n.ay = p.y; n.drawn = true; drawSet.add(n);
-        } else if (n.drawn) { n.ta = 0; }
-      });
-      VIEW.edges.forEach((e) => { if (!edgeDraw.has(e.id)) { e.a = 0; edgeDraw.set(e.id, e); } });
-      edgeDraw.forEach((e) => { if (!VIEW.edgeIds.has(e.id)) e.ta = 0; });
-      computeEmphasis();
-      renderBar(); renderHUD(); renderInspector(); renderLegend(); syncHash();
-      if (opts.fit) fit(opts.fit === 'sel' ? emphasisIds() : null, opts.instant);
-      kick();
-    }
-
-    // ---------- emphasis (selection / analysis)
-    function neighbours(id, edges) { const s = new Set(); (edges || VIEW.edges).forEach((e) => { if (e.s === id) s.add(e.t); if (e.t === id) s.add(e.s); }); return s; }
-    function computeEmphasis() {
-      HL = { nodes: new Map(), edges: new Map(), active: false };
-      if (S.tool && S.tool.result && S.tool.result.nodes.size) { const r = S.tool.result; HL.active = true; r.nodes.forEach((v, k) => HL.nodes.set(k, v)); r.edges.forEach((v, k) => HL.edges.set(k, v)); }
-      else if (S.selEdge && VIEW.edgeIds.has(S.selEdge)) { const e = VIEW.edges.find((x) => x.id === S.selEdge); HL.active = true; HL.nodes.set(e.s, { role: 'sel' }); HL.nodes.set(e.t, { role: 'sel' }); HL.edges.set(e.id, { color: EDGE_COL[e.kind], flow: true }); }
-      else if (S.sel && VIEW.ids.has(S.sel)) {
-        HL.active = true; HL.nodes.set(S.sel, { role: 'sel' });
-        VIEW.edges.forEach((e) => { if (e.s === S.sel || e.t === S.sel) { const o = other(e, S.sel); HL.nodes.set(o, { role: 'nb' }); HL.edges.set(e.id, { color: EDGE_COL[e.kind], flow: true, from: S.sel }); } });
-        // in Focus view centred on the selection, further rings stay legible as a second tier
-        if (S.scope === 'focus' && S.sel === S.focus) VIEW.edges.forEach((e) => { if (!HL.edges.has(e.id)) { [e.s, e.t].forEach((id) => { if (!HL.nodes.has(id)) HL.nodes.set(id, { role: 'nb2' }); }); HL.edges.set(e.id, { color: EDGE_COL[e.kind], flow: false, tier: 2 }); } });
-      }
-      G.nodes.forEach((n) => {
-        if (!VIEW.ids.has(n.id)) { n.ta = 0; return; }
-        const h = HL.nodes.get(n.id);
-        n.role = h ? h.role : null; n.ring = h ? h.ring : null; n.badge = h ? h.badge : null;
-        n.ta = !HL.active ? (n.type === 'founder' ? .85 : 1) : h ? (h.role === 'nb2' ? .72 : 1) : .14;
-      });
-      VIEW.edges.forEach((e) => { const h = HL.edges.get(e.id); e.hl = h || null; e.ta = !HL.active ? (e.documented ? .34 : .24) : h ? (h.tier === 2 ? .4 : .95) : .045; });
-      if (!reduced()) {} else { drawSet.forEach((n) => { n.a = n.ta; }); edgeDraw.forEach((e) => { e.a = e.ta; }); }
-      kick();
-    }
-    const emphasisIds = () => { if (!HL || !HL.active) return null; const s = new Set(HL.nodes.keys()); return s.size ? s : null; };
-
-    /* ---------------- renderer + single animation loop ---------------- */
-    let canvas, ctx, stage, W = 800, H = 600, DPR = 1, T = d3.zoomIdentity, zoom;
-    const LOOP = { running: false, raf: 0, active: 0, frames: 0, starts: 0, last: 0, ambT: 0, needs: true, inView: true };
-    const ambientOn = () => !S.paused;
-    let hover = null, kbIdx = -1, kbNode = null, drag = null;
-    function pageVisible() { return curPage === 'network' && !document.hidden && LOOP.inView; }
-    function kick() { LOOP.needs = true; if (!LOOP.running && canvas && pageVisible()) { LOOP.running = true; LOOP.active++; LOOP.starts++; LOOP.last = performance.now(); LOOP.raf = requestAnimationFrame(frame); } }
-    function frame(now) {
-      const dt = Math.min(0.05, Math.max(0, (now - LOOP.last) / 1000)); LOOP.last = now;
-      if (ambientOn()) LOOP.ambT += dt;
-      const busy = step(dt, now); draw(now); LOOP.frames++; LOOP.needs = false;
-      if (pageVisible() && (ambientOn() || busy || LOOP.needs)) LOOP.raf = requestAnimationFrame(frame);
-      else { LOOP.running = false; LOOP.active--; LOOP.raf = 0; }
-    }
-    const ease = (k) => k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
-    function step(dt, now) {
-      let busy = false; const rate = Math.min(1, dt * 7);
-      drawSet.forEach((n) => {
-        if (n.t0 != null) { const k = (now - n.t0) / n.dur; if (k >= 1) { n.bx = n.ax; n.by = n.ay; n.t0 = null; } else { const e = ease(k); n.bx = n.fromx + (n.ax - n.fromx) * e; n.by = n.fromy + (n.ay - n.fromy) * e; busy = true; } }
-        else if (!drag || drag.n !== n) { n.bx = n.ax; n.by = n.ay; }
-        if (reduced()) n.a = n.ta; else if (Math.abs(n.ta - n.a) > .004) { n.a += (n.ta - n.a) * rate; busy = true; } else n.a = n.ta;
-        if (n.frozenBlend > 0) { n.frozenBlend = Math.max(0, n.frozenBlend - dt * 1.6); busy = true; }
-        if (n.ta === 0 && n.a < .01) { drawSet.delete(n); n.drawn = false; }
-      });
-      edgeDraw.forEach((e) => { if (reduced()) e.a = e.ta; else if (Math.abs(e.ta - e.a) > .004) { e.a += (e.ta - e.a) * rate; busy = true; } else e.a = e.ta; if (e.ta === 0 && e.a < .01) edgeDraw.delete(e.id); });
-      return busy;
-    }
-    // ambient drift: bounded offsets around stable anchors, no physics
-    function drift(n) {
-      if (reduced() && !S.userResumed) return [0, 0];
-      const t = LOOP.ambT, A = n.type === 'company' ? 3.2 : n.type === 'investor' ? 2.6 : 3.6;
-      const live = [A * (Math.sin(t * n.w[0] + n.ph[0]) + .45 * Math.sin(t * n.w[1] * 1.7 + n.ph[1])) / 1.45, A * (Math.cos(t * n.w[1] + n.ph[2]) + .45 * Math.sin(t * n.w[0] * 1.9 + n.ph[3])) / 1.45];
-      if (n.frozen) { if (n === hover || (drag && drag.n === n)) return n.frozen; const b = n.frozenBlend || 0; if (b <= 0) { n.frozen = null; return live; } return [n.frozen[0] * b + live[0] * (1 - b), n.frozen[1] * b + live[1] * (1 - b)]; }
-      return live;
-    }
-    const pos = (n) => { const d = drift(n); return { x: n.bx + d[0], y: n.by + d[1] }; };
-
-    // glow sprites
-    const sprites = {};
-    function sprite(color) {
-      if (sprites[color]) return sprites[color];
-      const c = document.createElement('canvas'); c.width = c.height = 128; const g = c.getContext('2d');
-      const gr = g.createRadialGradient(64, 64, 0, 64, 64, 64); gr.addColorStop(0, color + 'AA'); gr.addColorStop(.25, color + '44'); gr.addColorStop(1, color + '00');
-      g.fillStyle = gr; g.fillRect(0, 0, 128, 128); sprites[color] = c; return c;
-    }
-    function shapePath(c, type, x, y, r) {
-      c.beginPath();
-      if (type === 'investor') { const q = r * 1.25; c.moveTo(x, y - q); c.lineTo(x + q, y); c.lineTo(x, y + q); c.lineTo(x - q, y); c.closePath(); }
-      else if (type === 'institution') { for (let i = 0; i < 6; i++) { const a = Math.PI / 6 + i * Math.PI / 3; const px = x + r * 1.1 * Math.cos(a), py = y + r * 1.1 * Math.sin(a); i ? c.lineTo(px, py) : c.moveTo(px, py); } c.closePath(); }
-      else if (type === 'bottleneck') { const q = r * 1.3; c.moveTo(x, y - q); c.lineTo(x + q * .9, y + q * .62); c.lineTo(x - q * .9, y + q * .62); c.closePath(); }
-      else c.arc(x, y, r, 0, Math.PI * 2);
-    }
-    const hexA = (hex, a) => { const v = parseInt(hex.slice(1), 16); return 'rgba(' + (v >> 16 & 255) + ',' + (v >> 8 & 255) + ',' + (v & 255) + ',' + a.toFixed(3) + ')'; };
-
-    function draw(now) {
-      const c = ctx; c.setTransform(DPR, 0, 0, DPR, 0, 0); c.clearRect(0, 0, W, H);
-      const t = LOOP.ambT; const k = T.k;
-      c.save(); c.translate(T.x, T.y); c.scale(k, k);
-      // orbital guides
-      c.lineWidth = 1 / k;
-      const center = S.scope === 'focus' && S.focus && G.nodes.get(S.focus) && G.nodes.get(S.focus).drawn ? pos(G.nodes.get(S.focus)) : { x: 0, y: 0 };
-      const rings = S.scope === 'focus' ? [170, 320, 470] : [180, 360, 540, 720];
-      rings.forEach((R, i) => { c.beginPath(); c.setLineDash(i % 2 ? [2 / k, 7 / k] : []); c.strokeStyle = 'rgba(109,228,238,' + (S.scope === 'focus' ? .09 : .045) + ')'; c.arc(center.x, center.y, R, 0, Math.PI * 2); c.stroke(); });
-      c.setLineDash([]);
-      // edges
-      const flows = [];
-      edgeDraw.forEach((e) => {
-        if (e.a < .01) return; const sn = G.nodes.get(e.s), tn = G.nodes.get(e.t); if (!sn.drawn || !tn.drawn) return;
-        const p1 = pos(sn), p2 = pos(tn); const a = e.a * (sn.ta > 0 && tn.ta > 0 ? Math.min(1, sn.a / sn.ta, tn.a / tn.ta) : Math.min(sn.a, tn.a));
-        const col = e.hl ? (e.hl.color || EDGE_COL[e.kind]) : COL.line;
-        c.setLineDash(e.documented ? [] : [4 / k, 4 / k]);
-        if (e.hl && e.hl.tier !== 2) { c.strokeStyle = hexA(col, Math.min(1, a) * .22); c.lineWidth = 5 / k; c.beginPath(); c.moveTo(p1.x, p1.y); c.lineTo(p2.x, p2.y); c.stroke(); }
-        c.strokeStyle = hexA(col, Math.min(1, a)); c.lineWidth = (e.hl && e.hl.tier !== 2 ? 1.6 : 1) / k;
-        c.beginPath(); c.moveTo(p1.x, p1.y); c.lineTo(p2.x, p2.y); c.stroke();
-        if (e.hl && e.hl.flow !== false && e.a > .5) flows.push([e, p1, p2, col]);
-        if (recentEdge(e)) { c.setLineDash([]); c.strokeStyle = hexA(COL.investor, .55 * a); c.lineWidth = 2.4 / k; c.beginPath(); c.moveTo(p1.x, p1.y); c.lineTo(p2.x, p2.y); c.stroke(); }
-      });
-      c.setLineDash([]);
-      // travelling highlights along selected connections
-      if (!(reduced() && !S.userResumed)) {
-        flows.slice(0, 160).forEach(([e, p1, p2, col], i) => {
-          let a = p1, b = p2; if (e.hl.from && e.t === e.hl.from) { a = p2; b = p1; }
-          const L = Math.hypot(b.x - a.x, b.y - a.y) || 1; const sp = 46 / L;
-          for (let j = 0; j < 2; j++) { const f = ((t * sp + j * .5 + (i * .137)) % 1); const x = a.x + (b.x - a.x) * f, y = a.y + (b.y - a.y) * f; const fade = Math.sin(f * Math.PI);
-            c.globalAlpha = .9 * fade; c.drawImage(sprite(col), x - 7 / k, y - 7 / k, 14 / k, 14 / k); c.globalAlpha = 1; c.fillStyle = hexA('#FFFFFF', .85 * fade); c.beginPath(); c.arc(x, y, 1.3 / k, 0, 6.283); c.fill(); }
-        });
-      }
-      // nodes
-      const order = [...drawSet].sort((a, b) => (a.role ? 1 : 0) - (b.role ? 1 : 0) || a.a - b.a);
-      order.forEach((n) => {
-        if (n.a < .01) return; const p = pos(n); const r = radius(n); const col = nodeColor(n);
-        const breathe = (reduced() && !S.userResumed) ? 1 : 1 + .14 * Math.sin(t * 1.1 + n.ph[0]);
-        const gR = r * (n.role && n.role !== 'nb2' ? 4.2 : 2.8) * breathe;
-        c.globalAlpha = n.a * (n.role ? .95 : .55); c.drawImage(sprite(col), p.x - gR, p.y - gR, gR * 2, gR * 2); c.globalAlpha = 1;
-        shapePath(c, n.type, p.x, p.y, r);
-        if (n.type === 'peer' || n.type === 'sector') { c.strokeStyle = hexA(col, n.a); c.lineWidth = 1.4 / k; c.setLineDash([2 / k, 2 / k]); c.stroke(); c.setLineDash([]); }
-        else { c.fillStyle = hexA(n.type === 'founder' ? col : col, n.a * (n.type === 'investor' && n.inv && BTYPE_GROUP(n.inv.type) !== 'vc' ? .55 : 1)); c.fill(); c.strokeStyle = hexA('#080E18', .9 * n.a); c.lineWidth = 1.2 / k; c.stroke();
-          if (n.type === 'investor' && n.inv && BTYPE_GROUP(n.inv.type) !== 'vc') { c.strokeStyle = hexA(col, n.a); c.lineWidth = 1.3 / k; c.stroke(); } }
-        if (n.type === 'company' && n.ref.role === 'Benchmark') { c.beginPath(); c.arc(p.x, p.y, r + 3 / k + 1, 0, 6.283); c.strokeStyle = hexA(COL.violet, .55 * n.a); c.lineWidth = 1 / k; c.stroke(); }
-        if (n.ring) { c.beginPath(); c.arc(p.x, p.y, r + 5 / k + 2, 0, 6.283); c.strokeStyle = hexA(n.ring, .95 * n.a); c.lineWidth = 2 / k; c.stroke(); }
-        if (n.role === 'sel') { const rr = r + 9 / k + 3; c.save(); c.translate(p.x, p.y); c.rotate((reduced() && !S.userResumed) ? 0 : t * .35); c.setLineDash([5 / k, 5 / k]); c.beginPath(); c.arc(0, 0, rr, 0, 6.283); c.strokeStyle = hexA('#EDF3FA', .8); c.lineWidth = 1.2 / k; c.stroke(); c.restore(); c.setLineDash([]); }
-        if (net.pinnedHas(n.id)) { c.beginPath(); c.arc(p.x + r * .9, p.y - r * .9, 2.2 / k + .6, 0, 6.283); c.fillStyle = '#EDF3FA'; c.fill(); }
-        if (kbNode === n) { c.beginPath(); c.arc(p.x, p.y, r + 7 / k + 2, 0, 6.283); c.strokeStyle = '#6DE4EE'; c.lineWidth = 2 / k; c.setLineDash([3 / k, 3 / k]); c.stroke(); c.setLineDash([]); }
-      });
-      c.restore();
-      drawLabels();
-      if (hover && hover.drawn) placeTip(hover);
-    }
-    function nodeColor(n) { if (n.ringFill) return n.ringFill; if (n.role && HL && HL.nodes.get(n.id) && HL.nodes.get(n.id).fill) return HL.nodes.get(n.id).fill; return COL[n.type] || COL.company; }
-    const recentEdge = (e) => { const d = S.recent; return d && e.dv && (today - e.dv) / 864e5 <= d; };
-
-    // labels: screen space, collision-aware; selected entity and its neighbours always shown
-    function drawLabels() {
-      const c = ctx; c.setTransform(DPR, 0, 0, DPR, 0, 0);
-      const k = T.k; const many = VIEW.ids.size > 60;
-      const prio = (n) => {
-        if (n.role === 'sel') return 0; if (n.role === 'nb2') return 1.5; if (n.role || n.badge) return 1; if (kbNode === n || hover === n) return 0;
-        if (HL && HL.active) return 99;
-        if (n.type === 'bottleneck' || n.type === 'sector') return 2;
-        if (n.type === 'investor') return n.portfolio >= 3 ? 2.5 : n.portfolio === 2 ? 4 : (k > 1.5 || !many ? 5 : 99);
-        if (n.type === 'institution') return 3.5;
-        if (n.type === 'company') return k > 1.25 || !many ? 4.5 : 99;
-        return k > 2 ? 6 : 99;
-      };
-      const items = []; drawSet.forEach((n) => { if (n.a > .05 && n.ta > 0) { const p = prio(n); if (p < 99) items.push([p, n]); } });
-      items.sort((a, b) => a[0] - b[0]);
-      const boxes = [];
-      const hit = (b) => boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]);
-      items.forEach(([p, n]) => {
-        const q = pos(n); const sx = T.applyX(q.x), sy = T.applyY(q.y);
-        if (sx < -50 || sx > W + 50 || sy < -20 || sy > H + 20) return;
-        const strong = p <= 1; c.font = (strong ? '600 ' : '500 ') + (strong ? 12.5 : 11.5) + 'px "IBM Plex Sans", system-ui, sans-serif';
-        const txt = n.label + (n.badge ? '  ' + n.badge : ''); const w = c.measureText(txt).width + 10, h = strong ? 19 : 17;
-        const x0 = sx + radius(n) * k + 6;
-        let box = null;
-        for (const dy of strong ? [0, -16, 16, -32, 32, -48, 48] : [0]) { const b = [x0, sy + dy - h / 2, x0 + w, sy + dy + h / 2]; if (!hit(b)) { box = b; break; } }
-        if (!box && strong) box = [x0, sy - h / 2, x0 + w, sy + h / 2];
-        if (!box) return; boxes.push(box);
-        const al = strong ? 1 : Math.min(1, n.a) * .9;
-        c.fillStyle = 'rgba(8,14,24,' + (.78 * al).toFixed(3) + ')'; roundRect(c, box[0], box[1], w, h, 5); c.fill();
-        if (strong) { c.strokeStyle = hexA(nodeColor(n), .45); c.lineWidth = 1; c.stroke(); }
-        c.fillStyle = strong ? 'rgba(237,243,250,' + al + ')' : 'rgba(184,198,216,' + al.toFixed(3) + ')'; c.textBaseline = 'middle';
-        c.fillText(txt, box[0] + 5, (box[1] + box[3]) / 2 + .5);
-      });
-    }
-    function roundRect(c, x, y, w, h, r) { c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
-
-    /* ---------------- interaction ---------------- */
-    const toGraph = (px, py) => [(px - T.x) / T.k, (py - T.y) / T.k];
-    function nodeAt(px, py) {
-      const [gx, gy] = toGraph(px, py); let best = null, bd = Infinity;
-      drawSet.forEach((n) => { if (n.ta <= 0) return; const p = pos(n); const d = Math.hypot(p.x - gx, p.y - gy); const rr = radius(n) + 6 / T.k; if (d < rr && d < bd) { bd = d; best = n; } });
-      return best;
-    }
-    function edgeAt(px, py) {
-      const [gx, gy] = toGraph(px, py); let best = null, bd = 6 / T.k;
-      VIEW.edges.forEach((e) => { const a = pos(G.nodes.get(e.s)), b = pos(G.nodes.get(e.t)); const dx = b.x - a.x, dy = b.y - a.y; const L2 = dx * dx + dy * dy || 1; let u = ((gx - a.x) * dx + (gy - a.y) * dy) / L2; u = Math.max(0, Math.min(1, u)); const d = Math.hypot(a.x + u * dx - gx, a.y + u * dy - gy); if (d < bd) { bd = d; best = e; } });
-      return best;
-    }
-    const localXY = (ev) => { const r = canvas.getBoundingClientRect(); const pt = ev.touches ? ev.touches[0] : ev; return [pt.clientX - r.left, pt.clientY - r.top]; };
-    function setHover(n) {
-      if (hover === n) return;
-      if (hover) { hover.frozenBlend = 1; }
-      hover = n;
-      if (n) { n.frozen = drift(n); n.frozenBlend = 1; canvas.classList.add('pointer'); } else { canvas.classList.remove('pointer'); $('net-tip').hidden = true; }
-      kick();
-    }
-    function placeTip(n) {
-      const tip = $('net-tip'); const p = pos(n); const sx = T.applyX(p.x), sy = T.applyY(p.y);
-      if (tip.dataset.id !== n.id) { tip.dataset.id = n.id; tip.replaceChildren(el('b', null, n.label), el('span', null, brief(n))); }
-      tip.hidden = false; tip.style.left = Math.min(sx + 16, W - 290) + 'px'; tip.style.top = Math.max(8, sy + 14) + 'px';
-    }
-    function brief(n) {
-      if (n.type === 'company') { const c = n.ref; const nInv = companyInvestors(c.id).length; return c.sector + ' · ' + c.latest_round + ' · ' + nInv + ' recorded investor' + (nInv === 1 ? '' : 's'); }
-      if (n.type === 'investor') return (n.inv.type || 'Backer') + ' · backs ' + n.portfolio + ' compan' + (n.portfolio === 1 ? 'y' : 'ies') + ' within this dataset';
-      if (n.type === 'founder') return 'Founder' + (n.desc ? ' · ' + n.desc : '');
-      if (n.type === 'peer') return 'International peer (analyst comparison) · ' + (n.desc || '');
-      const cnt = (G.adj.get(n.id) || []).filter((e) => e.kind !== 'sector').length;
-      return TYPE_LABEL[n.type] + ' · ' + cnt + ' compan' + (cnt === 1 ? 'y' : 'ies') + ' within this dataset';
-    }
-    const net = { pinnedHas: (id) => { const m = pins.get(LKEY); return !!(m && m.has(id)); } };
-
-    function setupCanvas() {
-      canvas = $('net-canvas'); stage = $('stage'); ctx = canvas.getContext('2d');
-      const resize = () => { const r = stage.getBoundingClientRect(); const w = Math.max(200, r.width), h = Math.max(200, r.height); const changed = Math.abs(w - W) > 1 || Math.abs(h - H) > 1; W = w; H = h; DPR = Math.min(2, window.devicePixelRatio || 1); canvas.width = Math.round(W * DPR); canvas.height = Math.round(H * DPR); if (changed && LKEY && !userMoved) fit(null, true); kick(); };
-      new ResizeObserver(resize).observe(stage); resize();
-      if ('IntersectionObserver' in window) new IntersectionObserver((ents) => { LOOP.inView = ents[0].isIntersecting; if (LOOP.inView) kick(); }).observe(stage);
-      document.addEventListener('visibilitychange', () => { if (!document.hidden) kick(); });
-      zoom = d3.zoom().scaleExtent([0.15, 6]).clickDistance(4)
-        .filter((ev) => { if (ev.type === 'wheel') return !ev.ctrlKey || true; if (ev.type === 'dblclick') return false; if (ev.button) return false; const [x, y] = localXY(ev); return !nodeAt(x, y); })
-        .on('start', (ev) => { if (ev.sourceEvent) { canvas.classList.add('grabbing'); userMoved = true; } })
-        .on('zoom', (ev) => { T = ev.transform; kick(); })
-        .on('end', () => canvas.classList.remove('grabbing'));
-      d3.select(canvas).call(zoom).on('dblclick.zoom', null);
-      let down = null;
-      canvas.addEventListener('pointerdown', (ev) => {
-        const [x, y] = localXY(ev); const n = nodeAt(x, y);
-        down = { x, y, n, moved: false, id: ev.pointerId, type: ev.pointerType, t: performance.now() };
-        if (n) { canvas.setPointerCapture(ev.pointerId); drag = { n }; n.frozen = drift(n); n.frozenBlend = 1; ev.preventDefault(); }
-      });
-      canvas.addEventListener('pointermove', (ev) => {
-        const [x, y] = localXY(ev);
-        if (down && down.n && (Math.abs(x - down.x) > 4 || Math.abs(y - down.y) > 4)) {
-          down.moved = true; const [gx, gy] = toGraph(x, y); const n = down.n; const d = n.frozen || [0, 0];
-          n.ax = n.bx = gx - d[0]; n.ay = n.by = gy - d[1]; n.t0 = null; let m = pins.get(LKEY); if (!m) pins.set(LKEY, m = new Map()); m.set(n.id, { x: n.ax, y: n.ay }); kick(); return;
+      let vis = new Set(); edges.forEach((e) => { vis.add(e.s); vis.add(e.t); });
+      if (S.isolated && !tl()) ALL.forEach((c) => { if (companyPasses(c)) vis.add('c:' + c.id); });
+      const em = (S.compare || S.tool) ? analysis(edges) : null;
+      if (S.scope === 'local') {
+        if (em) vis = new Set(em.lit);
+        else if (S.focus && G.nodes.has(S.focus)) {
+          const nb = new Map(); edges.forEach((e) => { (nb.get(e.s) || nb.set(e.s, []).get(e.s)).push(e); (nb.get(e.t) || nb.set(e.t, []).get(e.t)).push(e); });
+          const depth = new Map([[S.focus, 0]]); const qq = [S.focus];
+          while (qq.length) { const v = qq.shift(); const d = depth.get(v); if (!(d < S.hops || S.expanded.has(v))) continue; (nb.get(v) || []).forEach((e) => { const o = other(e, v); if (!depth.has(o)) { depth.set(o, d + 1); qq.push(o); } }); }
+          vis = new Set(depth.keys()); V.depth = depth;
         }
-        if (down && !down.n && (Math.abs(x - down.x) > 4 || Math.abs(y - down.y) > 4)) down.moved = true;
-        if (ev.pointerType === 'mouse' && !down) setHover(nodeAt(x, y));
-      });
-      const up = (ev) => {
-        if (!down) return; const [x, y] = localXY(ev); const d = down; down = null;
-        if (drag) { drag.n.frozenBlend = 1; drag = null; }
-        if (d.moved) { if (d.n) renderInspector(); return; }
-        if (ev.type === 'pointercancel') return;
-        const n = d.n || nodeAt(x, y);
-        if (n) { select(n.id); if (d.type !== 'mouse') openSheet(true); }
-        else { const e = edgeAt(x, y); if (e) selectEdge(e.id); else if (S.scope === 'network' && !S.tool) select(null); }
-      };
-      canvas.addEventListener('pointerup', up); canvas.addEventListener('pointercancel', up);
-      canvas.addEventListener('pointerleave', () => { if (!down) setHover(null); });
-      canvas.addEventListener('dblclick', (ev) => { const [x, y] = localXY(ev); const n = nodeAt(x, y); if (!n) return; if (S.scope === 'focus' && n.id !== S.focus) toggleBranch(n.id); else enterFocus(n.id); });
-      canvas.addEventListener('keydown', onKey);
-      canvas.addEventListener('blur', () => { kbNode = null; kick(); });
-      reduceMQ.addEventListener && reduceMQ.addEventListener('change', () => { if (reduceMQ.matches && !S.userResumed) S.paused = true; renderPause(); kick(); });
-    }
-    let userMoved = false;
-    function onKey(ev) {
-      const listN = [...drawSet].filter((n) => n.ta > 0).sort((a, b) => (a.role === 'sel' ? -1 : 0) - (b.role === 'sel' ? -1 : 0) || (b.role ? 1 : 0) - (a.role ? 1 : 0) || a.label.localeCompare(b.label));
-      const k = ev.key;
-      if (['ArrowRight', 'ArrowDown', 'ArrowLeft', 'ArrowUp'].includes(k)) {
-        ev.preventDefault(); if (!listN.length) return;
-        kbIdx = kbNode ? listN.indexOf(kbNode) : -1; kbIdx = (kbIdx + (k === 'ArrowRight' || k === 'ArrowDown' ? 1 : -1) + listN.length) % listN.length; kbNode = listN[kbIdx];
-        ensureOnScreen(kbNode); announce(kbNode.label + ', ' + brief(kbNode)); setHover(kbNode); kick();
-      } else if ((k === 'Enter' || k === ' ') && kbNode) { ev.preventDefault(); select(kbNode.id); }
-      else if ((k === 'f' || k === 'F') && (kbNode || S.sel)) { ev.preventDefault(); enterFocus((kbNode && kbNode.id) || S.sel); }
-      else if (k === 'Escape') { if (S.tool) clearTool(); else select(null); kbNode = null; }
-      else if (k === 'p' || k === 'P') togglePause();
-      else if (k === '+' || k === '=') d3.select(canvas).transition().duration(250).call(zoom.scaleBy, 1.3);
-      else if (k === '-' || k === '_') d3.select(canvas).transition().duration(250).call(zoom.scaleBy, 1 / 1.3);
-    }
-    function ensureOnScreen(n) { const p = pos(n); const sx = T.applyX(p.x), sy = T.applyY(p.y); if (sx < 40 || sx > W - 40 || sy < 60 || sy > H - 40) panTo(n); }
-    function panTo(n) { const p = pos(n); const tr = d3.zoomIdentity.translate(W / 2 - T.k * p.x, H / 2 - T.k * p.y).scale(T.k); d3.select(canvas).transition().duration(reduced() ? 0 : 500).call(zoom.transform, tr); }
-    const announce = (t) => { $('net-live').textContent = t; };
-    function fit(ids, instant) {
-      const ns = [...drawSet].filter((n) => n.ta > 0 && (!ids || ids.has(n.id))); if (!ns.length) return;
-      const x0 = d3.min(ns, (d) => d.ax) - 40, x1 = d3.max(ns, (d) => d.ax) + 150, y0 = d3.min(ns, (d) => d.ay) - 50, y1 = d3.max(ns, (d) => d.ay) + 40;
-      const k = Math.max(.2, Math.min(ids ? 1.8 : 1.4, .9 / Math.max((x1 - x0) / W, (y1 - y0) / H)));
-      const tr = d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2 + 14).scale(k);
-      d3.select(canvas).transition().duration(instant || reduced() ? 0 : 650).call(zoom.transform, tr);
-    }
-
-    /* ---------------- state changes ---------------- */
-    function select(id) { S.sel = id; S.selEdge = null; computeView(); computeEmphasis(); renderInspector(); renderHUD(); syncHash(); if (id) announce('Selected ' + G.nodes.get(id).label); }
-    function selectEdge(eid) { S.selEdge = eid; S.sel = null; computeEmphasis(); renderInspector(); syncHash(); }
-    function enterFocus(id) { if (!id) return; S.scope = 'focus'; S.focus = id; S.sel = id; S.expanded.clear(); S.collapsed.clear(); applyView({ fit: true }); }
-    function toggleBranch(id) { if (S.collapsed.has(id)) S.collapsed.delete(id); else if (S.expanded.has(id)) { S.expanded.delete(id); S.collapsed.add(id); } else if ((VIEW.depth.get(id) || 0) >= S.hops) S.expanded.add(id); else S.collapsed.add(id); applyView({}); }
-    function setLens(l) { S.lens = l; if (S.tool && !toolLensOK(S.tool.type, l)) clearTool(true); applyView({ fit: S.scope === 'focus' || !userMoved }); }
-    function setScope(sc) {
-      if (sc === 'focus') { const f = S.sel || S.focus; if (!f) { S.scope = 'focus'; S.focus = null; applyView({}); return; } enterFocus(f); return; }
-      S.scope = 'network'; if (S.focus) S.sel = S.focus; applyView({ fit: S.sel ? 'sel' : true });
-    }
-    function togglePause() { S.paused = !S.paused; if (!S.paused && reduced()) S.userResumed = true; renderPause(); kick(); }
-    function renderPause() { const b = $('pause-btn'); b.textContent = S.paused ? '▶ Resume motion' : '❚❚ Pause motion'; b.setAttribute('aria-pressed', String(S.paused)); b.title = reduced() && !S.userResumed ? 'Motion is off because your system asks for reduced motion' : 'Ambient motion is decorative and does not show live activity'; }
-
-    // ---------- HUD, legend, toolbar, filters
-    function renderHUD() {
-      const q = $('hud-q'); q.replaceChildren();
-      const comp = [...VIEW.ids].filter((id) => id.startsWith('c:')).length, inv = [...VIEW.ids].filter((id) => id.startsWith('i:')).length;
-      const head = S.scope === 'focus' && S.focus && G.nodes.get(S.focus) ? 'Focus view: ' + G.nodes.get(S.focus).label : LENSES[S.lens].q;
-      const sm = el('small'); sm.textContent = comp + ' compan' + (comp === 1 ? 'y' : 'ies') + (inv ? ' · ' + inv + ' backer' + (inv === 1 ? '' : 's') : '') + ' · ' + VIEW.edges.length + ' relationships shown · within this dataset' + (S.scope === 'focus' ? ' · ' + S.hops + ' hop' + (S.hops > 1 ? 's' : '') + ' · ' + LENSES[S.lens].label + ' lens' : '');
-      q.append(head, sm);
-      const nt = $('hud-notice'); nt.replaceChildren();
-      const hidden = VIEW.lensEdges.filter((e) => filterReason(e)).length;
-      if (filtersActive() && hidden) { nt.hidden = false; nt.append(hidden + ' relationship' + (hidden === 1 ? ' is' : 's are') + ' hidden by your filters (' + filterSummary() + '). '); const b = el('button', null, 'Clear filters'); b.type = 'button'; b.addEventListener('click', clearFilters); nt.append(b); }
-      else if (S.scope === 'focus' && !S.focus) { nt.hidden = false; nt.textContent = 'Pick an entity to focus on: search above, or select a circle in the entire network.'; }
-      else nt.hidden = true;
-    }
-    const filterSummary = () => [S.sector, S.stage && { early: 'pre-seed and seed', later: 'Series A and later' }[S.stage] || S.stage, S.btype && BTYPES.find((b) => b[0] === S.btype)[1]].filter(Boolean).join(', ');
-    function clearFilters() { S.sector = ''; S.stage = ''; S.btype = ''; renderFilters(); applyView({}); }
-    function renderBar() {
-      const ls = $('lens-seg'); ls.replaceChildren();
-      Object.entries(LENSES).forEach(([k, v]) => { const b = el('button', null, v.label); b.type = 'button'; b.title = v.q; b.setAttribute('aria-pressed', String(S.lens === k)); b.addEventListener('click', () => setLens(k)); ls.append(b); });
-      const ss = $('scope-seg'); ss.replaceChildren();
-      [['network', 'Entire network'], ['focus', 'Focus view']].forEach(([k, v]) => { const b = el('button', null, v); b.type = 'button'; b.setAttribute('aria-pressed', String(S.scope === k)); b.addEventListener('click', () => setScope(k)); ss.append(b); });
-      const hs = $('hop-seg'); hs.replaceChildren(); hs.hidden = S.scope !== 'focus';
-      [1, 2].forEach((h) => { const b = el('button', null, h + ' hop' + (h > 1 ? 's' : '')); b.type = 'button'; b.setAttribute('aria-pressed', String(S.hops === h)); b.addEventListener('click', () => { S.hops = h; S.expanded.clear(); S.collapsed.clear(); applyView({ fit: true }); }); hs.append(b); });
-      const fb = $('filters-btn'); const n = [S.sector, S.stage, S.btype].filter(Boolean).length; fb.textContent = 'Filters' + (n ? ' · ' + n : ''); fb.setAttribute('aria-expanded', String(S.filtersOpen)); fb.setAttribute('aria-pressed', String(!!n));
-      renderPause();
-    }
-    function renderFilters() {
-      const box = $('obs-filters'); box.hidden = !S.filtersOpen; box.replaceChildren();
-      const sel = (opts, val, label, on) => { const s = selectCtl(opts, val, label); s.addEventListener('change', () => on(s.value)); return s; };
-      box.append(sel([['', 'All sectors'], ...sectors().map((s) => [s, s])], S.sector, 'Company sector', (v) => { S.sector = v; applyView({}); renderBar(); }));
-      box.append(sel([['', 'All rounds'], ['early', 'Pre-seed and seed'], ['later', 'Series A and later'], ['Undisclosed', 'Undisclosed stage']], S.stage, 'Company stage', (v) => { S.stage = v; applyView({}); renderBar(); }));
-      box.append(sel([['', 'All backer types'], ...BTYPES], S.btype, 'Backer type', (v) => { S.btype = v; applyView({}); renderBar(); }));
-      const chk = (label, key, extra) => { const l = el('label', 'chk'); const c = el('input'); c.type = 'checkbox'; c.checked = S[key]; c.addEventListener('change', () => { S[key] = c.checked; applyView({}); }); l.append(c, label); if (extra) l.title = extra; return l; };
-      box.append(chk('Companies without relationships', 'isolated', 'Show companies with no relationships in this lens'), chk('Sector hubs', 'sectors', 'Optional layer: every company linked to its sector'), chk('International peers', 'peers', 'Technology and All lenses'));
-      const rc = sel([['0', 'Recent: off'], ['30', 'Dated in last 30 days'], ['90', 'Dated in last 90 days']], String(S.recent || 0), 'Highlight recent relationships', (v) => { S.recent = +v; renderLegend(); kick(); });
-      box.append(rc);
-      if (filtersActive()) { const b = el('button', 'btn ghost small', 'Clear filters'); b.type = 'button'; b.addEventListener('click', clearFilters); box.append(b); }
-      box.append(el('span', 'faint', 'Sector and stage filter companies; investors stay visible when they back a matching company.'));
-    }
-    function renderLegend() {
-      const b = $('legend-body'); b.replaceChildren();
-      const sh = (type, col, label) => { const d = el('div', 'lg'); const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); s.setAttribute('viewBox', '-11 -7 22 14');
-        const p = { company: '<circle r="5" fill="' + col + '"/>', investor: '<path d="M0 -6 L6 0 L0 6 L-6 0Z" fill="' + col + '"/>', investorOut: '<path d="M0 -6 L6 0 L0 6 L-6 0Z" fill="' + col + '" fill-opacity=".5" stroke="' + col + '"/>', institution: '<path d="M5 0 L2.5 4.3 L-2.5 4.3 L-5 0 L-2.5 -4.3 L2.5 -4.3Z" fill="' + col + '"/>', founder: '<circle r="3.4" fill="' + col + '"/>', bottleneck: '<path d="M0 -5.5 L5 3.5 L-5 3.5Z" fill="' + col + '"/>', peer: '<circle r="4.5" fill="none" stroke="' + col + '" stroke-dasharray="2 2"/>', solid: '<line x1="-11" x2="11" stroke="' + col + '" stroke-width="1.5"/>', dashed: '<line x1="-11" x2="11" stroke="' + col + '" stroke-width="1.5" stroke-dasharray="3 3"/>', flow: '<line x1="-11" x2="11" stroke="' + col + '" stroke-width="2"/><circle cx="3" r="2.2" fill="#fff"/>' }[type];
-        s.innerHTML = p; d.append(s, el('span', null, label)); b.append(d); };
-      const types = new Set([...VIEW.ids].map((id) => G.nodes.get(id).type));
-      if (types.has('company')) sh('company', COL.company, 'Company (violet ring = benchmark)');
-      if (types.has('investor')) { sh('investor', COL.investor, 'Venture fund'); sh('investorOut', COL.investor, 'Other backer: bank, corporate, government, angels'); }
-      if (types.has('institution')) sh('institution', COL.institution, 'Institution or employer');
-      if (types.has('founder')) sh('founder', COL.founder, 'Founder');
-      if (types.has('bottleneck')) sh('bottleneck', COL.bottleneck, 'Technical bottleneck (analyst grouping)');
-      if (types.has('peer')) sh('peer', COL.peer, 'International peer (analyst comparison)');
-      sh('solid', COL.line, 'Documented relationship, with a source');
-      sh('dashed', COL.line, "The radar's own grouping or comparison");
-      sh('flow', COL.investor, 'Selected connection');
-      if (S.recent) sh('solid', COL.investor, 'Dated in the last ' + S.recent + ' days (relationship date, not date added)');
-      b.append(el('p', null, (S.lens === 'funding' || S.lens === 'all' ? 'Backer size = unique portfolio companies within this dataset (capped). ' : '') + 'Motion is decorative; it does not show live activity.'));
-    }
-
-    /* ---------------- inspector ---------------- */
-    let sheetOpen = false;
-    function openSheet(v) { sheetOpen = v; $('inspector').classList.toggle('open', v); $('insp-handle').setAttribute('aria-expanded', String(v)); }
-    function setTab(t) { S.tab = t; $('tab-details').setAttribute('aria-selected', String(t === 'details')); $('tab-analyze').setAttribute('aria-selected', String(t === 'analyze')); renderInspector(); }
-    const typeChip = (n) => { const t = el('div', 'ty'); const i = el('i'); i.style.background = COL[n.type]; if (n.type === 'investor') i.style.transform = 'rotate(45deg) scale(.8)'; else if (n.type !== 'institution') i.style.borderRadius = '50%'; t.append(i, n.type === 'investor' ? (n.inv.type || 'Backer') : TYPE_LABEL[n.type]); return t; };
-    function connItem(e, fromId, cls) {
-      const o = G.nodes.get(other(e, fromId)); const li = el('li', cls || ''); if (recentEdge(e)) li.classList.add('recent');
-      const r1 = el('div', 'row1'); const b = el('button', 'nm', o.label); b.type = 'button'; b.addEventListener('click', () => focusOn(o.id)); r1.append(b);
-      if (e.date) r1.append(el('span', 'dt', fmtDate(e.date))); li.append(r1);
-      li.append(el('small', null, e.label + (o.type === 'investor' ? ' · ' + o.inv.type : '')));
-      if (e.sources && e.sources.length) { const s = el('small'); e.sources.forEach((x, i) => { if (i) s.append(' · '); s.append(srcLink('Source: ' + x.name, x.url)); }); li.append(s); }
-      else if (!e.documented) li.append(el('small', null, 'Analyst comparison, not from a source'));
-      return li;
-    }
-    function focusOn(id) {
-      const n = G.nodes.get(id); if (!n) return;
-      if (!VIEW.ids.has(id) || (VIEW.selOutside && S.sel === id)) {
-        const lensFor = { investor: 'funding', founder: 'talent', institution: 'talent', bottleneck: 'technology', peer: 'technology' }[n.type];
-        if (lensFor && !LENSES[S.lens].kinds.some((k) => (G.adj.get(id) || []).some((e) => e.kind === k))) { S.lens = lensFor; }
-        if (S.scope === 'focus') { S.focus = id; S.expanded.clear(); S.collapsed.clear(); }
-        S.sel = id; applyView({ fit: S.scope === 'focus' }); const nn = G.nodes.get(id); if (nn.drawn && S.scope !== 'focus') panTo(nn); return;
       }
-      select(id); ensureOnScreen(n);
-    }
-    function hiddenByFilters(id) { const hid = VIEW.lensEdges.filter((e) => (e.s === id || e.t === id) && filterReason(e)); return hid; }
-    function renderInspector() {
-      const body = $('insp-body'); body.replaceChildren();
-      $('insp-handle-lbl').textContent = S.sel && G.nodes.get(S.sel) ? G.nodes.get(S.sel).label : S.tool ? TOOLS[S.tool.type].label : 'Inspector';
-      if (S.tab === 'analyze') { renderAnalyze(body); return; }
-      if (S.selEdge) { const e = G.edges.find((x) => x.id === S.selEdge); if (e) { renderEdge(body, e); return; } }
-      if (!S.sel || !G.nodes.get(S.sel)) { renderIdle(body); return; }
-      const n = G.nodes.get(S.sel);
-      body.append(typeChip(n), el('h3', null, n.label));
-      if (VIEW.selOutside) { const no = el('div', 'note warn'); no.append(TYPE_LABEL[n.type] + ' has no relationships shown with the current lens and filters. '); if (filtersActive()) { const b = el('button', null, 'Clear filters'); b.type = 'button'; b.addEventListener('click', clearFilters); no.append(b); } body.append(no); }
-      const acts = el('div', 'd-actions');
-      const btn = (t, f, cls) => { const b = el('button', 'btn ghost small' + (cls ? ' ' + cls : ''), t); b.type = 'button'; b.addEventListener('click', f); acts.append(b); return b; };
-      if (n.type === 'company') { const o = el('button', 'btn small', 'Open profile'); o.type = 'button'; o.addEventListener('click', () => openProfile(n.ref)); acts.append(o, starBtn(n.ref)); }
-      if (S.scope === 'focus' && S.focus === n.id) btn('Back to entire network', () => setScope('network'));
-      else btn('Focus view', () => enterFocus(n.id));
-      if (S.scope === 'focus' && S.focus !== n.id) { const isExp = S.expanded.has(n.id) || (!S.collapsed.has(n.id) && (VIEW.depth.get(n.id) || 0) < S.hops); btn(isExp ? 'Collapse branch' : 'Expand branch', () => toggleBranch(n.id)); }
-      btn(net.pinnedHas(n.id) ? 'Unpin' : 'Pin', () => { let m = pins.get(LKEY); if (!m) pins.set(LKEY, m = new Map()); if (m.has(n.id)) m.delete(n.id); else m.set(n.id, { x: n.ax, y: n.ay }); renderInspector(); kick(); });
-      btn('Fit', () => fit(neighbours(n.id, VIEW.edges).add(n.id)));
-      body.append(acts);
-      if (n.type === 'company') renderCompany(body, n); else if (n.type === 'investor') renderInvestor(body, n); else renderOther(body, n);
-    }
-    function renderCompany(body, n) {
-      const c = n.ref; const rel = companyInvestors(c.id);
-      const m = el('div', 'meta'); m.textContent = c.sector + ' · ' + c.latest_round; body.insertBefore(m, body.children[2]);
-      const lf = c.last_funding || {};
-      const h = el('h4'); h.append('Recorded investors', el('span', 'n', String(rel.length))); body.append(h);
-      if (!rel.length) body.append(el('div', 'note', 'No investors recorded in this dataset. ' + (named(lf.lead) ? '' : 'Coverage of the last round does not name a lead.')));
-      const ul = el('ul', 'conn');
-      rel.sort((a, b) => (a.e.role === 'Lead' ? -1 : 0) - (b.e.role === 'Lead' ? -1 : 0) || a.inv.name.localeCompare(b.inv.name)).forEach(({ e }) => ul.append(connItem(e, n.id, 'hl')));
-      body.append(ul);
-      const leads = rel.filter((r) => r.e.role === 'Lead');
-      if (rel.length && !leads.length) body.append(el('div', 'note', named(lf.lead) ? 'The lead named in coverage (' + lf.lead + ') is not matched to a recorded investor.' : 'Lead investor not identified in coverage' + (lf.lead && /family|angel/i.test(lf.lead) ? ' (' + lf.lead + ')' : '') + '.'));
-      if (leads.length > 1) body.append(el('div', 'note', leads.map((l) => l.inv.name).join(' and ') + ' are both recorded as leading the same round.'));
-      if (rel.some((r) => r.e.role !== 'Lead')) body.append(el('p', 'faint', 'Rounds and dates are recorded only for lead investors. Others are named in coverage without a round.'));
-      const hid = hiddenByFilters(n.id).filter((e) => e.kind === 'funding'); if (hid.length) body.append(hiddenNote(hid, n.id));
-      if (S.lens !== 'funding' && S.lens !== 'all' && rel.length) body.append(el('div', 'note', 'Investors are shown in the Funding and All lenses.'));
-      const cta = el('div', 'cta');
-      if (rel.length) { const b = el('button', 'btn ghost small', "Show these investors' other portfolio companies"); b.type = 'button'; b.addEventListener('click', () => { S.lens = 'funding'; S.scope = 'focus'; S.focus = n.id; S.sel = n.id; S.hops = 2; S.expanded.clear(); S.collapsed.clear(); applyView({ fit: true }); }); cta.append(b); }
-      const cb = el('button', 'btn ghost small', 'Compare with another company'); cb.type = 'button'; cb.addEventListener('click', () => startTool('cmpco', { a: n.id })); cta.append(cb);
-      body.append(cta);
-      const groups = [['founder', 'Founders'], ['talent', 'Education and past employers'], ['institution', 'Incubators and programmes'], ['tech', 'Technical bottleneck (analyst grouping)']];
-      groups.forEach(([k, t]) => { const es = (G.adj.get(n.id) || []).filter((e) => e.kind === k); if (!es.length) return; const h2 = el('h4'); h2.append(t, el('span', 'n', String(es.length))); const u = el('ul', 'conn'); es.forEach((e) => u.append(connItem(e, n.id))); body.append(h2, u); });
-    }
-    function renderInvestor(body, n) {
-      const inv = n.inv; const port = (G.adj.get(n.id) || []).filter((e) => e.kind === 'funding');
-      const m = el('div', 'meta'); m.textContent = 'Backs ' + port.length + ' compan' + (port.length === 1 ? 'y' : 'ies') + ' within this dataset · led ' + n.leads; body.insertBefore(m, body.children[2]);
-      if (inv.website) { const p = el('p', 'muted'); p.append(srcLink(inv.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''), inv.website)); body.append(p); }
-      if (inv.type === 'Not classified') body.append(el('div', 'note', 'Backer type not classified: the sources do not make it clear.'));
-      const h = el('h4'); h.append('Portfolio within this dataset', el('span', 'n', String(port.length))); body.append(h);
-      const ul = el('ul', 'conn'); port.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')) || G.nodes.get(a.t).label.localeCompare(G.nodes.get(b.t).label)).forEach((e) => ul.append(connItem(e, n.id, VIEW.edgeIds.has(e.id) ? 'hl' : ''))); body.append(ul);
-      const hid = hiddenByFilters(n.id); if (hid.length) body.append(hiddenNote(hid, n.id));
-      const cta = el('div', 'cta');
-      const b = el('button', 'btn ghost small', 'Show other investors backing these companies'); b.type = 'button'; b.addEventListener('click', () => { S.lens = 'funding'; S.scope = 'focus'; S.focus = n.id; S.sel = n.id; S.hops = 2; S.expanded.clear(); S.collapsed.clear(); applyView({ fit: true }); }); cta.append(b);
-      const cv = el('button', 'btn ghost small', 'Compare with another backer'); cv.type = 'button'; cv.addEventListener('click', () => startTool('cmpvc', { a: n.id })); cta.append(cv);
-      const ci = el('button', 'btn ghost small', 'Explore co-investors'); ci.type = 'button'; ci.addEventListener('click', () => startTool('coinv', { a: n.id })); cta.append(ci);
-      body.append(cta);
-      const co = coInvestors(n.id).slice(0, 6);
-      if (co.length) { const h2 = el('h4'); h2.append('Top co-investors', el('span', 'n', String(coInvestors(n.id).length))); body.append(h2); const u = el('ul', 'conn');
-        co.forEach((x) => { const li = el('li'); const r1 = el('div', 'row1'); const bb = el('button', 'nm', x.inv.label); bb.type = 'button'; bb.addEventListener('click', () => startTool('cmpvc', { a: n.id, b: x.inv.id })); r1.append(bb, el('span', 'dt', x.shared.length + ' shared')); li.append(r1, el('small', null, x.shared.map((s) => G.nodes.get(s).label).join(', '))); u.append(li); }); body.append(u); }
-    }
-    function renderOther(body, n) {
-      if (n.desc) body.append(el('p', 'muted', n.desc));
-      const es = (G.adj.get(n.id) || []).filter((e) => e.kind !== 'sector');
-      const h = el('h4'); h.append(n.type === 'founder' ? 'Companies' : 'Connected companies within this dataset', el('span', 'n', String(es.length))); body.append(h);
-      const u = el('ul', 'conn'); es.forEach((e) => u.append(connItem(e, n.id, VIEW.edgeIds.has(e.id) ? 'hl' : ''))); body.append(u);
-      if (!es.some((e) => e.documented)) body.append(el('p', 'faint', "These links are the radar's own comparison, not from a source."));
-    }
-    function renderEdge(body, e) {
-      const s = G.nodes.get(e.s), t = G.nodes.get(e.t);
-      body.append(el('div', 'ty', KIND_LABEL[e.kind] + (e.documented ? ' · documented' : ' · analyst comparison')));
-      const h = el('h3'); h.append(s.label, ' → ', t.label); body.append(h);
-      const kv = el('dl', 'kv'); const add = (k, v) => { kv.append(el('dt', null, k)); const dd = el('dd'); dd.append(v); kv.append(dd); };
-      add('Relationship', e.label); if (e.kind === 'funding') { add('Role', e.role === 'Lead' ? 'Lead investor' : 'Investor (round not recorded)'); add('Round', e.round ? e.round + (e.amount ? ' · ' + e.amount : '') : 'Not recorded'); add('Date', mono(e.date ? fmtDate(e.date) : 'Not recorded')); }
-      add('Source', e.sources && e.sources.length ? srcLink(e.sources[0].name, e.sources[0].url) : document.createTextNode(e.documented ? 'Not recorded' : 'Analyst comparison, no source'));
-      body.append(kv);
-      const a = el('div', 'd-actions'); a.style.marginTop = '14px'; [s, t].forEach((n) => { const b = el('button', 'btn ghost small', 'Select ' + n.label); b.type = 'button'; b.addEventListener('click', () => select(n.id)); a.append(b); }); body.append(a);
-    }
-    function hiddenNote(hid, id) {
-      const by = {}; hid.forEach((e) => { const r = filterReason(e); (by[r] = by[r] || []).push(G.nodes.get(other(e, id)).label); });
-      const d = el('div', 'note warn'); d.append(Object.entries(by).map(([r, names]) => names.length + ' more hidden by the ' + r + ' filter: ' + names.slice(0, 6).join(', ') + (names.length > 6 ? '…' : '')).join('. ') + '. ');
-      if (filtersActive()) { const b = el('button', null, 'Clear filters'); b.type = 'button'; b.addEventListener('click', clearFilters); d.append(b); }
-      return d;
-    }
-    function renderIdle(body) {
-      body.append(el('div', 'ty', LENSES[S.lens].label + ' lens · ' + (S.scope === 'focus' ? 'Focus view' : 'Entire network')), el('h3', null, LENSES[S.lens].q));
-      body.append(el('p', 'muted', 'Select a circle to see every recorded connection, with its round, date and source. Double-click to centre a Focus view on it. Drag a circle to pin it.'));
-      const comp = [...VIEW.ids].filter((id) => id.startsWith('c:')).length;
-      const st = el('div', 'stat'); [[comp, 'companies shown'], [[...VIEW.ids].filter((id) => id.startsWith('i:')).length, 'backers shown'], [VIEW.edges.length, 'relationships']].forEach(([v, l]) => { const d = el('div'); d.append(el('b', null, String(v)), el('span', null, l)); st.append(d); }); body.append(st);
-      body.append(el('p', 'faint', 'Counts are within this dataset. ' + G.edges.filter((e) => e.kind === 'funding').length + ' investment relationships are recorded across ' + ALL.length + ' companies and ' + [...G.nodes.values()].filter((n) => n.type === 'investor').length + ' backers.'));
-      body.append(el('h4', null, 'Start here'));
-      const u = el('div', 'cta');
-      const starter = (t, f) => { const b = el('button', 'btn ghost small', t); b.type = 'button'; b.addEventListener('click', f); u.append(b); };
-      starter('Companies backed by several investors', () => startTool('multi', { k: 3 }));
-      starter('Compare two venture funds', () => startTool('cmpvc', {}));
-      starter('Investors backing seed-stage semiconductor companies', () => { S.lens = 'funding'; S.scope = 'network'; S.sector = 'Semiconductors'; S.stage = 'early'; S.sel = null; clearTool(true); renderFilters(); renderBar(); applyView({ fit: true }); });
-      starter('How investments accumulated over time', () => startTool('timeline', {}));
-      starter('Where ISRO and IIT Madras talent went', () => { S.lens = 'talent'; S.scope = 'network'; clearTool(true); S.sel = 'u:isro'; applyView({ fit: true }); });
-      body.append(u);
-      body.append(el('h4', null, 'Keyboard'));
-      body.append(el('p', 'faint', 'Tab into the graph, then arrow keys to move between entities, Enter to select, F for Focus view, Esc to clear, P to pause motion, + and − to zoom.'));
+      let selOutside = false;
+      if (!em && S.sel && G.nodes.has(S.sel) && !vis.has(S.sel)) { vis.add(S.sel); selOutside = true; }
+      const visEdges = edges.filter((e) => vis.has(e.s) && vis.has(e.t));
+      let lit, active, litEdges, violet = false;
+      if (em) { lit = em.lit; active = em.active; litEdges = new Set([...em.litEdges].filter((id) => visEdges.some((e) => e.id === id))); violet = em.violet; }
+      else if (S.sel && G.nodes.has(S.sel)) {
+        lit = new Set([S.sel]); active = new Set([S.sel]); litEdges = new Set();
+        visEdges.forEach((e) => { if (e.s === S.sel || e.t === S.sel) { lit.add(other(e, S.sel)); litEdges.add(e.id); } });
+      } else { lit = new Set(vis); active = new Set(); litEdges = new Set(); }
+      V = { ...V, vis, edges: visEdges, edgeIds: new Set(visEdges.map((e) => e.id)), lensEdges, lit, active, litEdges, violet, em, selOutside, allEdges: edges };
+      V.model = em ? em.model : S.sel && G.nodes.has(S.sel) ? entityModel(G.nodes.get(S.sel)) : idleModel();
     }
 
-    /* ---------------- analysis tools ---------------- */
-    const TOOLS = {
-      cmpvc: { label: 'Compare backers', d: 'Shared and unique portfolio companies', lens: 'funding' },
-      cmpco: { label: 'Compare companies', d: 'Shared investors, institutions, technology', lens: 'all' },
-      multi: { label: 'Multi-investor', d: 'Companies with several backers', lens: 'funding' },
-      coinv: { label: 'Co-investors', d: 'Funds linked by shared companies', lens: 'funding' },
-      path: { label: 'Connection path', d: 'How two entities connect', lens: 'all' },
-      timeline: { label: 'Timeline', d: 'Dated investments over time', lens: 'funding' },
-    };
-    const toolLensOK = (t, l) => TOOLS[t].lens === l || (TOOLS[t].lens === 'funding' && l === 'all');
-    function startTool(type, args) {
-      S.tool = { type, ...(args || {}) }; S.selEdge = null;
-      if (!toolLensOK(type, S.lens)) S.lens = TOOLS[type].lens;
-      if (type === 'timeline') { S.scope = 'network'; const ds = G.edges.filter((e) => e.kind === 'funding' && e.dv).map((e) => e.dv).sort((a, b) => a - b); const months = []; if (ds.length) { const d = new Date(Date.UTC(ds[0].getUTCFullYear(), ds[0].getUTCMonth(), 1)); const end = ds[ds.length - 1]; while (d <= end) { months.push(new Date(d)); d.setUTCMonth(d.getUTCMonth() + 1); } } S.tool.months = months; if (S.tool.idx == null) S.tool.idx = months.length - 1; setCursor(); }
-      runTool(); setTab('analyze'); openSheet(true); applyView({ fit: type === 'timeline' ? false : 'sel' });
+    // ---------- layout (physics runs once per lens; motion never re-runs it)
+    const layouts = new Map(), pins = new Map();
+    const layoutKey = () => 'net|' + [...lensKinds()].sort().join(',');
+    function layout() {
+      const key = layoutKey(); if (layouts.has(key)) return layouts.get(key);
+      const kinds = lensKinds(); const edges = G.edges.filter((e) => kinds.has(e.kind));
+      const ids = new Set(ALL.map((c) => 'c:' + c.id)); edges.forEach((e) => { ids.add(e.s); ids.add(e.t); });
+      const ns = [...ids].map((id) => ({ id, n: G.nodes.get(id) }));
+      const fixed = ns.every((d) => fixedXY(d.n));
+      const pos = new Map();
+      if (fixed) ns.forEach((d) => pos.set(d.id, fixedXY(d.n)));
+      else {
+        const sim = d3.forceSimulation(ns).stop()
+          .force('charge', d3.forceManyBody().strength((d) => d.n.type === 'investor' ? -120 : d.n.type === 'company' ? -80 : -50).distanceMax(420))
+          .force('link', d3.forceLink(edges.map((e) => ({ source: e.s, target: e.t }))).id((d) => d.id).distance(50).strength(0.55))
+          .force('x', d3.forceX(0).strength(0.035)).force('y', d3.forceY(0).strength(0.07)).force('collide', d3.forceCollide(16));
+        for (let i = 0; i < 340; i++) sim.tick();
+        const xs = ns.map((d) => d.x), ys = ns.map((d) => d.y);
+        const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+        ns.forEach((d) => pos.set(d.id, { x: .06 + .88 * (d.x - x0) / Math.max(1, x1 - x0), y: .11 + .76 * (d.y - y0) / Math.max(1, y1 - y0) }));
+      }
+      layouts.set(key, pos); return pos;
     }
-    function clearTool(silent) { if (S.tool && S.tool.timer) clearInterval(S.tool.timer); S.tool = null; if (!silent) { applyView({}); } }
-    function setCursor() { const t = S.tool; const m = t.months[t.idx]; t.cursorEnd = m ? new Date(Date.UTC(m.getUTCFullYear(), m.getUTCMonth() + 1, 0, 23)) : new Date(0); }
-    const investorNodes = () => [...G.nodes.values()].filter((n) => n.type === 'investor').sort((a, b) => b.portfolio - a.portfolio || a.label.localeCompare(b.label));
-    const portfolio = (iid) => new Map((G.adj.get(iid) || []).filter((e) => e.kind === 'funding').map((e) => [e.t, e]));
-    function coInvestors(iid) {
-      const mine = portfolio(iid); const m = new Map();
-      mine.forEach((e, cid) => (G.adj.get(cid) || []).forEach((e2) => { if (e2.kind === 'funding' && e2.s !== iid) { if (!m.has(e2.s)) m.set(e2.s, { inv: G.nodes.get(e2.s), shared: [] }); m.get(e2.s).shared.push(cid); } }));
-      return [...m.values()].sort((a, b) => b.shared.length - a.shared.length || a.inv.label.localeCompare(b.inv.label));
+    const fixedXY = (n) => (n.ref && n.ref._xy) || (n.inv && n.inv._xy) || null;
+    let BASE = new Map();
+    function computeBase() {
+      const L = layout(); const pin = pins.get(layoutKey()) || new Map();
+      const shown = [...V.vis];
+      const raw = new Map(shown.map((id) => [id, pin.get(id) || L.get(id) || { x: .5, y: .5 }]));
+      if (S.scope === 'local' && shown.length) { // the reference's local remap
+        const xs = shown.map((id) => raw.get(id).x), ys = shown.map((id) => raw.get(id).y);
+        const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+        shown.forEach((id) => { const p = raw.get(id); raw.set(id, { x: .22 + (p.x - minX) / Math.max(.01, maxX - minX) * .56, y: .17 + (p.y - minY) / Math.max(.01, maxY - minY) * .60 }); });
+      }
+      BASE = raw;
     }
-    function runTool() {
-      const t = S.tool; if (!t) return; const nodes = new Map(), edges = new Map(); let info = {};
-      if (t.type === 'cmpvc') {
-        if (!t.a) { const top = investorNodes().filter((n) => n.inv.type === 'Venture fund'); t.a = top[0].id; }
-        if (!t.b || t.b === t.a) { const co = coInvestors(t.a); t.b = (co[0] && co[0].inv.id) || investorNodes().find((n) => n.id !== t.a).id; }
-        const A = portfolio(t.a), B = portfolio(t.b); const shared = [...A.keys()].filter((k) => B.has(k)), onlyA = [...A.keys()].filter((k) => !B.has(k)), onlyB = [...B.keys()].filter((k) => !A.has(k));
-        nodes.set(t.a, { role: 'sel', ring: COL.investor, badge: 'A' }); nodes.set(t.b, { role: 'sel', ring: COL.rose, badge: 'B' });
-        shared.forEach((k) => nodes.set(k, { role: 'nb', ring: COL.violet, fill: COL.violet }));
-        onlyA.forEach((k) => nodes.set(k, { role: 'nb', badge: 'A' })); onlyB.forEach((k) => nodes.set(k, { role: 'nb', badge: 'B' }));
-        A.forEach((e) => edges.set(e.id, { color: COL.investor, flow: true, from: t.a })); B.forEach((e) => edges.set(e.id, { color: COL.rose, flow: true, from: t.b }));
-        info = { shared, onlyA, onlyB, A, B };
-      } else if (t.type === 'cmpco') {
-        const comps = [...G.nodes.values()].filter((n) => n.type === 'company');
-        if (!t.a) t.a = S.sel && S.sel.startsWith('c:') ? S.sel : comps[0].id;
-        if (!t.b || t.b === t.a) { const nbA = new Set((G.adj.get(t.a) || []).filter((e) => e.kind !== 'sector' && e.kind !== 'peer').map((e) => other(e, t.a))); let best = null, bs = -1; comps.forEach((c) => { if (c.id === t.a) return; const s = (G.adj.get(c.id) || []).filter((e) => e.kind !== 'sector' && e.kind !== 'peer' && nbA.has(other(e, c.id))).length; if (s > bs) { bs = s; best = c.id; } }); t.b = best; }
+
+    // ---------- analysis tools (compare VCs + Analyze)
+    function analysis(edges) {
+      const lit = new Set(), active = new Set(), litEdges = new Set(); let model;
+      const fund = edges.filter((e) => e.kind === 'funding');
+      const port = (iid) => new Map(fund.filter((e) => e.s === iid).map((e) => [e.t, e]));
+      if (S.compare) {
+        const A = port(S.a), B = port(S.b); const common = [...A.keys()].filter((k) => B.has(k));
+        [S.a, S.b, ...common].forEach((id) => { lit.add(id); active.add(id); });
+        common.forEach((cid) => { litEdges.add(A.get(cid).id); litEdges.add(B.get(cid).id); });
+        const na = G.nodes.get(S.a).label, nb = G.nodes.get(S.b).label;
+        model = { type: 'PORTFOLIO OVERLAP', name: 'Common ground.', desc: na + ' and ' + nb, meta: ['Shared backing', 'All recorded rounds'], heading: 'Shared investments',
+          rows: common.map((cid) => { const c = G.nodes.get(cid); const ea = A.get(cid), eb = B.get(cid); const same = ea.round_id && ea.round_id === eb.round_id;
+            return { id: cid, name: c.label, cls: 'company', caption: c.ref.sector + ' · ' + c.ref.round_tab + (same ? ' · Same round: both led the ' + ea.round : '') }; }),
+          empty: 'No shared companies recorded.',
+          evidence: ['Overlap across all recorded rounds. Shared company backing does not establish participation in the same round.', 'Only ' + na + ': ' + [...A.keys()].filter((k) => !B.has(k)).length + ' · Only ' + nb + ': ' + [...B.keys()].filter((k) => !A.has(k)).length + (filtersActive() ? ' · within your filters' : '')],
+          sources: common.flatMap((cid) => A.get(cid).sources), noExpand: true };
+        return { lit, active, litEdges, violet: true, model };
+      }
+      const t = S.tool;
+      if (t.type === 'cmpco') {
         const kinds = new Set(['funding', 'founder', 'talent', 'institution', 'tech']);
-        const nb = (id) => new Map((G.adj.get(id) || []).filter((e) => kinds.has(e.kind)).map((e) => [other(e, id), e]));
+        const nb = (id) => new Map(edges.filter((e) => kinds.has(e.kind) && (e.s === id || e.t === id)).map((e) => [other(e, id), e]));
         const NA = nb(t.a), NB = nb(t.b); const shared = [...NA.keys()].filter((k) => NB.has(k));
-        nodes.set(t.a, { role: 'sel', ring: COL.company, badge: 'A' }); nodes.set(t.b, { role: 'sel', ring: COL.rose, badge: 'B' });
-        shared.forEach((k) => { nodes.set(k, { role: 'nb', ring: COL.violet }); edges.set(NA.get(k).id, { color: COL.violet, flow: true, from: t.a }); edges.set(NB.get(k).id, { color: COL.violet, flow: true, from: t.b }); });
-        NA.forEach((e, k) => { if (!shared.includes(k)) { nodes.set(k, nodes.get(k) || { role: 'nb' }); edges.set(e.id, { color: EDGE_COL[e.kind], flow: false }); } });
-        NB.forEach((e, k) => { if (!shared.includes(k)) { nodes.set(k, nodes.get(k) || { role: 'nb' }); edges.set(e.id, { color: EDGE_COL[e.kind], flow: false }); } });
-        info = { shared, NA, NB };
+        [t.a, t.b].forEach((id) => { lit.add(id); active.add(id); }); shared.forEach((id) => { lit.add(id); litEdges.add(NA.get(id).id); litEdges.add(NB.get(id).id); });
+        model = { type: 'COMPANY OVERLAP', name: 'Shared ground.', desc: G.nodes.get(t.a).label + ' and ' + G.nodes.get(t.b).label, meta: ['Investors', 'Institutions', 'Technology'], heading: 'Shared connections',
+          rows: shared.map((id) => { const n = G.nodes.get(id); const ea = NA.get(id); return { id, name: n.label, cls: CLS[n.type], caption: KIND_LABEL[ea.kind] + (ea.documented ? '' : ' · not from a source') }; }),
+          empty: 'No shared investors, institutions or technology groupings recorded.', evidence: ['Technology groupings are analyst comparisons; the others are sourced relationships.'], sources: shared.flatMap((id) => NA.get(id).sources), noExpand: true };
       } else if (t.type === 'multi') {
         const counts = ALL.map((c) => ({ c, n: companyInvestors(c.id).length })).filter((x) => x.n > 0);
-        t.max = Math.max(...counts.map((x) => x.n)); if (!t.k) t.k = 2; t.k = Math.min(t.k, t.max);
-        const hit = counts.filter((x) => x.n >= t.k).sort((a, b) => b.n - a.n || a.c.company.localeCompare(b.c.company));
-        hit.forEach(({ c }) => { nodes.set('c:' + c.id, { role: 'nb', ring: COL.violet, fill: COL.violet }); companyInvestors(c.id).forEach(({ e }) => { edges.set(e.id, { color: COL.investor, flow: true, from: e.s }); if (!nodes.has(e.s)) nodes.set(e.s, { role: 'nb' }); }); });
-        info = { hit };
+        t.max = Math.max(2, ...counts.map((x) => x.n)); t.k = Math.min(Math.max(2, t.k || 3), t.max);
+        const hit = counts.filter((x) => x.n >= t.k && edges.some((e) => e.t === 'c:' + x.c.id)).sort((a, b) => b.n - a.n || a.c.company.localeCompare(b.c.company));
+        hit.forEach(({ c }) => { const cid = 'c:' + c.id; lit.add(cid); active.add(cid); fund.filter((e) => e.t === cid).forEach((e) => { lit.add(e.s); litEdges.add(e.id); }); });
+        model = { type: 'MULTI-INVESTOR', name: t.k + ' or more investors.', desc: 'Companies with at least ' + t.k + ' distinct recorded backers within this dataset.', meta: [hit.length + ' companies', 'All recorded rounds'], heading: 'Companies',
+          rows: hit.map(({ c, n }) => ({ id: 'c:' + c.id, name: c.company, cls: 'company', caption: (() => { const l = companyInvestors(c.id).filter((x) => x.e.role === 'Lead').map((x) => x.inv.name); return n + ' recorded investors' + (l.length ? ' · led by ' + l.join(' and ') : ''); })() })),
+          empty: 'No company reaches this threshold.', evidence: ['Counts distinct backers recorded for each company, across all rounds in coverage.'], sources: [], noExpand: true };
       } else if (t.type === 'coinv') {
-        if (!t.a) t.a = (S.sel && S.sel.startsWith('i:')) ? S.sel : null;
-        if (t.a) { const co = coInvestors(t.a); nodes.set(t.a, { role: 'sel', ring: COL.investor });
-          co.forEach((x) => { nodes.set(x.inv.id, { role: 'nb', badge: String(x.shared.length) }); x.shared.forEach((cid) => { nodes.set(cid, { role: 'nb', ring: COL.violet }); (G.adj.get(cid) || []).forEach((e) => { if (e.kind === 'funding' && (e.s === t.a || e.s === x.inv.id)) edges.set(e.id, { color: e.s === t.a ? COL.investor : COL.rose, flow: true, from: e.s }); }); }); });
-          info = { co };
-        } else {
-          const pairs = new Map(); ALL.forEach((c) => { const invs = companyInvestors(c.id).map((r) => 'i:' + r.inv.id).sort(); for (let i = 0; i < invs.length; i++) for (let j = i + 1; j < invs.length; j++) { const k = invs[i] + '|' + invs[j]; if (!pairs.has(k)) pairs.set(k, []); pairs.get(k).push('c:' + c.id); } });
-          const top = [...pairs.entries()].filter(([, v]) => v.length >= 2).sort((a, b) => b[1].length - a[1].length).slice(0, 12);
-          top.forEach(([k, cs]) => { const [a, b] = k.split('|'); nodes.set(a, { role: 'nb' }); nodes.set(b, { role: 'nb' }); cs.forEach((cid) => { nodes.set(cid, { role: 'nb', ring: COL.violet }); (G.adj.get(cid) || []).forEach((e) => { if (e.kind === 'funding' && (e.s === a || e.s === b)) edges.set(e.id, { color: COL.investor, flow: true, from: e.s }); }); }); });
-          info = { pairs: top };
-        }
+        const co = coInvestors(t.a).filter((x) => edges.some((e) => e.s === x.n.id));
+        lit.add(t.a); active.add(t.a);
+        co.forEach((x) => { lit.add(x.n.id); x.shared.forEach((cid) => { lit.add(cid); fund.forEach((e) => { if (e.t === cid && (e.s === t.a || e.s === x.n.id)) litEdges.add(e.id); }); }); });
+        model = { type: 'CO-INVESTORS', name: G.nodes.get(t.a).label, desc: 'Backers that share at least one recorded portfolio company with this investor.', meta: [co.length + ' co-investors', 'Shared companies'], heading: 'Co-investors',
+          rows: co.map((x) => ({ id: x.n.id, name: x.n.label, cls: 'vc', caption: x.shared.length + ' shared · ' + x.shared.map((s) => G.nodes.get(s).label).join(', '), cmpA: t.a })),
+          empty: 'None of its portfolio companies has another recorded investor.', evidence: ['Two funds are linked when both are recorded in the same company. That does not mean they were in the same round.'], sources: [], noExpand: true };
       } else if (t.type === 'path') {
-        if (!t.a) t.a = S.sel || 'i:pi-ventures'; if (!t.b) t.b = 'u:isro';
         const kinds = new Set(['funding', 'founder', 'talent', 'institution']); if (t.analyst) { kinds.add('tech'); kinds.add('peer'); }
-        const prev = new Map([[t.a, null]]); const q = [t.a]; let found = false;
-        while (q.length && !found) { const v = q.shift(); for (const e of (G.adj.get(v) || [])) { if (!kinds.has(e.kind)) continue; const o = other(e, v); if (!prev.has(o)) { prev.set(o, [v, e]); if (o === t.b) { found = true; break; } q.push(o); } } }
+        const prev = new Map([[t.a, null]]); const qq = [t.a]; let found = false;
+        while (qq.length && !found) { const v = qq.shift(); for (const e of (G.adj.get(v) || [])) { if (!kinds.has(e.kind)) continue; const o = other(e, v); if (!prev.has(o)) { prev.set(o, [v, e]); if (o === t.b) { found = true; break; } qq.push(o); } } }
         const steps = []; if (found) { let cur = t.b; while (cur !== t.a) { const [p, e] = prev.get(cur); steps.unshift({ from: p, to: cur, e }); cur = p; } }
-        steps.forEach((s, i) => { nodes.set(s.from, { role: i === 0 ? 'sel' : 'nb', ring: COL.violet }); nodes.set(s.to, { role: s.to === t.b ? 'sel' : 'nb', ring: COL.violet }); edges.set(s.e.id, { color: COL.violet, flow: true, from: s.from }); });
-        if (!steps.length) { nodes.set(t.a, { role: 'sel', ring: COL.violet }); nodes.set(t.b, { role: 'sel', ring: COL.violet }); }
-        info = { steps, found };
+        lit.add(t.a); lit.add(t.b); active.add(t.a); active.add(t.b); steps.forEach((s) => { lit.add(s.to); litEdges.add(s.e.id); });
+        model = { type: 'CONNECTION PATH', name: G.nodes.get(t.a).label + ' → ' + G.nodes.get(t.b).label, desc: found ? 'The shortest path through ' + (t.analyst ? 'recorded and analyst' : 'documented') + ' relationships.' : 'No path through ' + (t.analyst ? 'recorded or analyst' : 'documented') + ' relationships within this dataset.',
+          meta: [steps.length + ' steps', t.analyst ? 'Includes analyst links' : 'Documented only'], heading: 'Path',
+          rows: steps.map((s) => { const n = G.nodes.get(s.to); return { id: s.to, name: n.label, cls: CLS[n.type], caption: KIND_LABEL[s.e.kind] + ' · ' + s.e.label + (s.e.documented ? '' : ' (analyst)') }; }),
+          empty: 'Try including analyst groupings.', evidence: [], sources: steps.flatMap((s) => s.e.sources), noExpand: true };
       } else if (t.type === 'timeline') {
-        const vis = G.edges.filter((e) => e.kind === 'funding' && e.dv && e.dv <= t.cursorEnd);
-        const m = t.months[t.idx]; const inMonth = vis.filter((e) => m && e.dv.getUTCFullYear() === m.getUTCFullYear() && e.dv.getUTCMonth() === m.getUTCMonth());
-        inMonth.forEach((e) => { edges.set(e.id, { color: COL.investor, flow: true, from: e.s }); nodes.set(e.s, { role: 'nb' }); nodes.set(e.t, { role: 'nb', ring: COL.violet }); });
-        info = { vis, inMonth };
-      }
-      t.result = { nodes, edges, info, all: !nodes.size };
-      if (t.type === 'timeline') t.result.passive = !nodes.size;
-    }
-    function rerunTool() { runTool(); applyView({}); }
-    function renderAnalyze(body) {
-      const grid = el('div', 'tool-grid');
-      Object.entries(TOOLS).forEach(([k, v]) => { const b = el('button'); b.type = 'button'; b.setAttribute('aria-pressed', String(!!S.tool && S.tool.type === k)); b.append(v.label, el('small', null, v.d)); b.addEventListener('click', () => startTool(k, {})); grid.append(b); });
-      body.append(grid);
-      if (!S.tool) { body.append(el('p', 'muted', 'Pick a tool. Results light up in the graph, and every highlighted connection is listed here with its source.')); return; }
-      const t = S.tool, info = t.result ? t.result.info : {};
-      const form = el('div', 'form');
-      const pick = (label, val, opts, on) => { const l = el('label', null, label); const s = selectCtl(opts, val, label); s.addEventListener('change', () => on(s.value)); l.append(s); form.append(l); };
-      const invOpts = () => investorNodes().map((n) => [n.id, n.label + ' (' + n.portfolio + ')']);
-      const compOpts = () => [...G.nodes.values()].filter((n) => n.type === 'company').sort((a, b) => a.label.localeCompare(b.label)).map((n) => [n.id, n.label]);
-      const clear = el('button', 'btn ghost small', 'Clear analysis'); clear.type = 'button'; clear.addEventListener('click', () => { clearTool(); setTab('details'); });
-      const keyrow = (items) => { const k = el('div', 'keyrow'); items.forEach(([c, t2]) => { const s = el('span'); const i = el('i'); i.style.background = c; s.append(i, t2); k.append(s); }); return k; };
-      if (t.type === 'cmpvc') {
-        pick('Backer A', t.a, invOpts(), (v) => { t.a = v; rerunTool(); }); pick('Backer B', t.b, invOpts(), (v) => { t.b = v; rerunTool(); });
-        body.append(form, keyrow([[COL.investor, 'A only'], [COL.rose, 'B only'], [COL.violet, 'Both invested']]));
-        const st = el('div', 'stat'); [[info.shared.length, 'shared'], [info.onlyA.length, 'only ' + G.nodes.get(t.a).label], [info.onlyB.length, 'only ' + G.nodes.get(t.b).label]].forEach(([v, l]) => { const d = el('div'); d.append(el('b', null, String(v)), el('span', null, l)); st.append(d); }); body.append(st);
-        const sec2 = (title, ids, cls, fn) => { if (!ids.length) return; body.append(el('h4', null, title)); const u = el('ul', 'conn'); ids.forEach((cid) => { const li = el('li', cls); const r1 = el('div', 'row1'); const b = el('button', 'nm', G.nodes.get(cid).label); b.type = 'button'; b.addEventListener('click', () => { clearTool(true); setTab('details'); focusOn(cid); }); r1.append(b); li.append(r1); fn(li, cid); u.append(li); }); body.append(u); };
-        sec2('Both invested', info.shared, 'v', (li, cid) => { const ea = info.A.get(cid), eb = info.B.get(cid); const same = ea.round_id && ea.round_id === eb.round_id;
-          li.append(el('small', null, same ? 'Same round: both recorded as leading the ' + ea.round + ' round (' + fmtDate(ea.date) + ').' : 'Both invested. Same round not recorded.'));
-          li.append(el('small', null, 'A: ' + ea.label + ' · B: ' + eb.label)); const s = el('small'); s.append(srcLink('Source: ' + ea.sources[0].name, ea.sources[0].url)); li.append(s); });
-        sec2('Only ' + G.nodes.get(t.a).label, info.onlyA, '', (li, cid) => li.append(el('small', null, info.A.get(cid).label)));
-        sec2('Only ' + G.nodes.get(t.b).label, info.onlyB, '', (li, cid) => li.append(el('small', null, info.B.get(cid).label)));
-      } else if (t.type === 'cmpco') {
-        pick('Company A', t.a, compOpts(), (v) => { t.a = v; rerunTool(); }); pick('Company B', t.b, compOpts(), (v) => { t.b = v; rerunTool(); });
-        body.append(form, keyrow([[COL.violet, 'Shared'], [COL.investor, 'Investment'], [COL.institution, 'Institution'], [COL.bottleneck, 'Technology (analyst)']]));
-        const groups = { funding: 'Shared investors', founder: 'Shared founders', talent: 'Shared institutions or employers', institution: 'Shared incubators or programmes', tech: 'Shared technical bottleneck (analyst grouping)' };
-        if (!info.shared.length) body.append(el('div', 'note', 'No shared investors, institutions or technology groupings recorded for these two companies.'));
-        Object.entries(groups).forEach(([k, title]) => { const ids = info.shared.filter((id) => info.NA.get(id).kind === k); if (!ids.length) return; body.append(el('h4', null, title)); const u = el('ul', 'conn');
-          ids.forEach((id) => { const li = el('li', 'v'); const r1 = el('div', 'row1'); const b = el('button', 'nm', G.nodes.get(id).label); b.type = 'button'; b.addEventListener('click', () => { clearTool(true); setTab('details'); focusOn(id); }); r1.append(b); li.append(r1);
-            const ea = info.NA.get(id), eb = info.NB.get(id); li.append(el('small', null, G.nodes.get(t.a).label + ': ' + ea.label), el('small', null, G.nodes.get(t.b).label + ': ' + eb.label));
-            if (k === 'funding') li.append(el('small', null, ea.round_id && ea.round_id === eb.round_id ? 'Same round.' : 'Different companies, so these are separate investments.'));
-            if (!ea.documented) li.append(el('small', null, 'Analyst grouping, not from a source.')); u.append(li); }); body.append(u); });
-      } else if (t.type === 'multi') {
-        const l = el('label', null, 'At least ' + t.k + ' distinct recorded investors'); const r = el('input'); r.type = 'range'; r.min = 2; r.max = t.max; r.value = t.k; r.addEventListener('input', () => { t.k = +r.value; l.firstChild.textContent = 'At least ' + t.k + ' distinct recorded investors'; rerunTool(); }); l.append(r); form.append(l); body.append(form);
-        const st = el('div', 'stat'); const d = el('div'); d.append(el('b', null, String(info.hit.length)), el('span', null, 'companies')); st.append(d); body.append(st);
-        const u = el('ul', 'conn'); info.hit.forEach(({ c, n }) => { const li = el('li', 'v'); const r1 = el('div', 'row1'); const b = el('button', 'nm', c.company); b.type = 'button'; b.addEventListener('click', () => { clearTool(true); setTab('details'); focusOn('c:' + c.id); }); r1.append(b, el('span', 'dt', n + ' investors')); li.append(r1, el('small', null, companyInvestors(c.id).map((x) => x.inv.name + (x.e.role === 'Lead' ? ' (lead)' : '')).join(', '))); u.append(li); }); body.append(u);
-        body.append(el('p', 'faint', 'Counts distinct backers recorded for each company within this dataset, across all rounds in coverage.'));
-      } else if (t.type === 'coinv') {
-        pick('Backer', t.a || '', [['', 'Top pairs across the dataset'], ...invOpts()], (v) => { t.a = v || null; rerunTool(); }); body.append(form);
-        if (t.a) {
-          if (!info.co.length) body.append(el('div', 'note', 'No co-investors recorded: none of its portfolio companies has another recorded investor.'));
-          const u = el('ul', 'conn'); info.co.forEach((x) => { const li = el('li'); const r1 = el('div', 'row1'); const b = el('button', 'nm', x.inv.label); b.type = 'button'; b.addEventListener('click', () => startTool('cmpvc', { a: t.a, b: x.inv.id })); r1.append(b, el('span', 'dt', x.shared.length + ' shared')); li.append(r1, el('small', null, 'Via ' + x.shared.map((s) => G.nodes.get(s).label).join(', '))); u.append(li); }); body.append(u);
-          body.append(el('p', 'faint', 'Two funds are linked when both are recorded as investors in the same company. That does not mean they were in the same round.'));
-        } else {
-          body.append(el('h4', null, 'Backers that share two or more companies'));
-          const u = el('ul', 'conn'); info.pairs.forEach(([k, cs]) => { const [a, b] = k.split('|'); const li = el('li'); const r1 = el('div', 'row1'); const bt = el('button', 'nm', G.nodes.get(a).label + ' + ' + G.nodes.get(b).label); bt.type = 'button'; bt.addEventListener('click', () => startTool('cmpvc', { a, b })); r1.append(bt, el('span', 'dt', cs.length + ' shared')); li.append(r1, el('small', null, cs.map((c) => G.nodes.get(c).label).join(', '))); u.append(li); });
-          if (!info.pairs.length) body.append(el('div', 'note', 'No pair of backers shares two or more companies in this dataset yet.')); body.append(u);
-        }
-      } else if (t.type === 'path') {
-        const all = [...G.nodes.values()].filter((n) => n.type !== 'sector').sort((a, b) => a.label.localeCompare(b.label)).map((n) => [n.id, n.label + ' · ' + (n.type === 'investor' ? 'backer' : TYPE_LABEL[n.type].toLowerCase())]);
-        pick('From', t.a, all, (v) => { t.a = v; rerunTool(); }); pick('To', t.b, all, (v) => { t.b = v; rerunTool(); });
-        const l = el('label', 'chk'); const c = el('input'); c.type = 'checkbox'; c.checked = !!t.analyst; c.addEventListener('change', () => { t.analyst = c.checked; rerunTool(); }); l.append(c, 'Include analyst groupings and comparisons'); form.append(l);
-        body.append(form);
-        if (!info.found) body.append(el('div', 'note', 'No path through ' + (t.analyst ? 'recorded or analyst' : 'documented') + ' relationships within this dataset.' + (t.analyst ? '' : ' Try including analyst groupings.')));
-        else { body.append(el('p', 'muted', info.steps.length + ' step' + (info.steps.length > 1 ? 's' : '') + ', the shortest path found.'));
-          const ol = el('ol', 'path'); const first = el('li'); first.append(el('b', null, G.nodes.get(t.a).label)); ol.append(first);
-          info.steps.forEach((s) => { const li = el('li'); li.append(el('b', null, G.nodes.get(s.to).label)); const sm = el('small'); sm.append(el('span', 'kind', KIND_LABEL[s.e.kind]), s.e.label + (s.e.documented ? '' : ' (analyst)')); li.append(sm); if (s.e.sources && s.e.sources[0]) { const s2 = el('small'); s2.append(srcLink('Source: ' + s.e.sources[0].name, s.e.sources[0].url)); li.append(s2); } ol.append(li); });
-          body.append(ol); }
-      } else if (t.type === 'timeline') {
-        const m = t.months[t.idx]; const l = el('label', null, 'Up to ' + (m ? m.toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' }) : '—'));
-        const r = el('input'); r.type = 'range'; r.min = 0; r.max = Math.max(0, t.months.length - 1); r.value = t.idx; r.setAttribute('aria-label', 'Timeline month');
-        r.addEventListener('input', () => { t.idx = +r.value; setCursor(); runTool(); applyView({}); }); l.append(r); form.append(l);
-        const play = el('button', 'btn ghost small', t.timer ? '❚❚ Pause' : '▶ Play from start'); play.type = 'button';
-        play.addEventListener('click', () => { if (t.timer) { clearInterval(t.timer); t.timer = null; renderInspector(); return; } if (t.idx >= t.months.length - 1) t.idx = 0; t.timer = setInterval(() => { if (!S.tool || S.tool !== t) return; t.idx++; if (t.idx >= t.months.length - 1) { t.idx = t.months.length - 1; clearInterval(t.timer); t.timer = null; } setCursor(); runTool(); applyView({}); }, 900); setCursor(); runTool(); applyView({}); });
-        form.append(play); body.append(form);
-        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); svg.setAttribute('class', 'hist'); svg.setAttribute('viewBox', '0 0 300 56'); svg.setAttribute('preserveAspectRatio', 'none');
-        const counts = t.months.map((mm) => G.edges.filter((e) => e.kind === 'funding' && e.dv && e.dv.getUTCFullYear() === mm.getUTCFullYear() && e.dv.getUTCMonth() === mm.getUTCMonth()).length); const mx = Math.max(1, ...counts); const bw = 300 / Math.max(1, counts.length);
-        svg.innerHTML = counts.map((v, i) => '<rect x="' + (i * bw + .5) + '" y="' + (54 - v / mx * 50) + '" width="' + Math.max(1, bw - 1.5) + '" height="' + Math.max(v ? 1.5 : 0, v / mx * 50) + '" rx="1" fill="' + (i <= t.idx ? (i === t.idx ? '#B3A0FF' : '#EDC88D') : '#2A3B52') + '"/>').join('') + '<line x1="0" x2="300" y1="55" y2="55" stroke="#2A3B52"/>';
-        body.append(svg, el('p', 'faint', 'Dated lead investments per month.'));
+        const m = t.months[t.idx]; const inMonth = fund.filter((e) => e.dv && m && e.dv.getUTCFullYear() === m.getUTCFullYear() && e.dv.getUTCMonth() === m.getUTCMonth());
+        inMonth.forEach((e) => { lit.add(e.s); lit.add(e.t); active.add(e.t); litEdges.add(e.id); });
         const und = G.edges.filter((e) => e.kind === 'funding' && !e.dv).length;
-        const st = el('div', 'stat'); [[info.vis.length, 'dated investments so far'], [info.inMonth.length, 'in this month'], [und, 'undated (not shown)']].forEach(([v, l2]) => { const d = el('div'); d.append(el('b', null, String(v)), el('span', null, l2)); st.append(d); }); body.append(st);
-        if (info.inMonth.length) { body.append(el('h4', null, 'This month')); const u = el('ul', 'conn'); info.inMonth.forEach((e) => { const li = connItem(e, e.t, 'hl'); li.querySelector('.nm').textContent = G.nodes.get(e.s).label + ' → ' + G.nodes.get(e.t).label; u.append(li); }); body.append(u); }
-        body.append(el('p', 'faint', 'Only lead investments carry a date in this dataset, so the timeline shows when recorded rounds closed. It is a replay of the record, not live activity.'));
+        model = { type: 'TIMELINE', name: 'Up to ' + (m ? m.toLocaleDateString('en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' }) : '—') + '.', desc: 'Dated lead investments as they accumulated. A replay of the record, not live activity.',
+          meta: [fund.length + ' dated so far', und + ' undated not shown'], heading: 'This month',
+          rows: inMonth.map((e) => ({ id: e.t, name: G.nodes.get(e.s).label + ' → ' + G.nodes.get(e.t).label, cls: 'company', caption: e.label + ' · ', date: fmtDate(e.date) })),
+          empty: 'No dated investments in this month.', evidence: ['Only lead investments carry a date in this dataset.'], sources: inMonth.flatMap((e) => e.sources), noExpand: true };
+        if (!inMonth.length) { fund.forEach((e) => { lit.add(e.s); lit.add(e.t); }); }
       }
-      const foot = el('div', 'cta'); foot.append(clear); body.append(foot);
+      return { lit, active, litEdges, violet: true, model };
+    }
+    function startTool(type, args) {
+      S.compare = false; S.tool = { type, ...(args || {}) }; const t = S.tool;
+      if (type === 'multi' || type === 'coinv' || type === 'timeline') S.lens = S.lens === 'all' ? 'all' : 'funding';
+      if (type === 'cmpco' || type === 'path') S.lens = 'all';
+      if (type === 'coinv' && !t.a) t.a = S.sel && S.sel.startsWith('i:') ? S.sel : investorNodes()[0].id;
+      if (type === 'cmpco') { const comps = [...G.nodes.values()].filter((n) => n.type === 'company'); if (!t.a) t.a = S.sel && S.sel.startsWith('c:') ? S.sel : comps[0].id;
+        if (!t.b || t.b === t.a) { const nbA = new Set((G.adj.get(t.a) || []).filter((e) => e.kind !== 'sector' && e.kind !== 'peer').map((e) => other(e, t.a))); let best = null, bs = -1; comps.forEach((c) => { if (c.id === t.a) return; const s2 = (G.adj.get(c.id) || []).filter((e) => e.kind !== 'sector' && e.kind !== 'peer' && nbA.has(other(e, c.id))).length; if (s2 > bs) { bs = s2; best = c.id; } }); t.b = best; } }
+      if (type === 'path') { if (!t.a) t.a = S.sel || 'i:pi-ventures'; if (!t.b || t.b === t.a) t.b = 'u:isro'; }
+      if (type === 'timeline') { const ds = G.edges.filter((e) => e.kind === 'funding' && e.dv).map((e) => e.dv).sort((a, b) => a - b); t.months = []; if (ds.length) { const d = new Date(Date.UTC(ds[0].getUTCFullYear(), ds[0].getUTCMonth(), 1)); while (d <= ds[ds.length - 1]) { t.months.push(new Date(d)); d.setUTCMonth(d.getUTCMonth() + 1); } } if (t.idx == null || t.idx >= t.months.length) t.idx = t.months.length - 1; setCursor(); }
+      S.bar = 'tools'; refresh();
+    }
+    function setCursor() { const t = S.tool; const m = t.months[t.idx]; t.cursorEnd = m ? new Date(Date.UTC(m.getUTCFullYear(), m.getUTCMonth() + 1, 0, 23)) : new Date(0); }
+    function stopTool() { if (S.tool && S.tool.timer) clearInterval(S.tool.timer); S.tool = null; }
+
+    // ---------- inspector models
+    const srcOf = (es) => es.flatMap((e) => e.sources || []);
+    function entityModel(n) {
+      const inc = V.edges.filter((e) => e.s === n.id || e.t === n.id);
+      const hidden = V.lensEdges.filter((e) => (e.s === n.id || e.t === n.id) && filterReason(e));
+      const notes = [];
+      if (V.selOutside) notes.push({ warn: true, text: 'Not connected in the ' + LENSES[S.lens].label + ' lens' + (filtersActive() ? ' with your filters' : '') + '.', clear: filtersActive() });
+      if (hidden.length) { const by = {}; hidden.forEach((e) => { const r = filterReason(e); (by[r] = by[r] || []).push(G.nodes.get(other(e, n.id)).label); }); notes.push({ warn: true, text: Object.entries(by).map(([r, names]) => names.length + ' more hidden by the ' + r + ' filter: ' + names.slice(0, 5).join(', ') + (names.length > 5 ? '…' : '')).join('. ') + '.', clear: filtersActive() }); }
+      const rowFor = (e) => { const o = G.nodes.get(other(e, n.id));
+        let caption, date = null;
+        if (e.kind === 'funding' && o.type === 'investor') { caption = e.role === 'Lead' ? e.label + (e.amount && e.amount !== 'Not in coverage' ? ' · ' + e.amount : '') + (e.date ? ' · ' : '') : e.label; date = e.date ? fmtDate(e.date) : null; }
+        else if (o.type === 'company') caption = o.ref.sector + ' · ' + o.ref.round_tab + (e.kind === 'funding' && e.role === 'Lead' ? ' · Led' : e.kind !== 'funding' ? ' · ' + e.label : '');
+        else caption = e.label;
+        return { id: o.id, name: o.label, cls: CLS[o.type], caption, date }; };
+      const sortE = (a, b) => (b.role === 'Lead') - (a.role === 'Lead') || String(b.date || '').localeCompare(String(a.date || ''));
+      const actions = [];
+      if (S.scope === 'local' && S.focus && S.focus !== n.id) { actions.push({ label: 'Centre the local graph here', short: 'Centre here', icon: 'scan', fn: () => { S.focus = n.id; S.expanded.clear(); refresh(); } }); actions.push({ label: S.expanded.has(n.id) ? 'Collapse this branch' : 'Expand this branch', short: S.expanded.has(n.id) ? 'Collapse' : 'Expand', icon: 'network', fn: () => { if (S.expanded.has(n.id)) S.expanded.delete(n.id); else S.expanded.add(n.id); refresh(); } }); }
+      if (n.type === 'company') {
+        const c = n.ref, lf = c.last_funding || {}; const inv = companyInvestors(c.id);
+        if (S.lens === 'funding' || S.lens === 'all') {
+          const leads = inv.filter((x) => x.e.role === 'Lead');
+          if (!inv.length) notes.push({ text: 'No investors recorded in this dataset' + (named(lf.lead) ? '.' : '; coverage of the last round does not name a lead.') });
+          else if (!leads.length) notes.push({ text: named(lf.lead) ? 'The lead named in coverage (' + lf.lead + ') is not matched to a recorded investor.' : 'Lead investor not identified in coverage' + (lf.lead && /family|angel/i.test(lf.lead) ? ' (' + lf.lead + ')' : '') + '.' });
+          if (leads.length > 1) notes.push({ text: leads.map((x) => x.inv.name).join(' and ') + ' are both recorded as leading the same round.' });
+          if (inv.some((x) => x.e.role !== 'Lead')) notes.push({ text: 'Rounds and dates are recorded only for lead investors.' });
+        }
+        actions.push({ label: 'Open full profile', short: 'Profile', icon: 'square-arrow-out-up-right', fn: () => openProfile(c) });
+        actions.push({ label: SL.includes(c.id) ? 'On shortlist' : 'Add to shortlist', short: SL.includes(c.id) ? 'Shortlisted' : 'Shortlist', icon: 'star', pressed: SL.includes(c.id), fn: () => { SL = SL.includes(c.id) ? SL.filter((x) => x !== c.id) : [...SL, c.id]; saveSL(); renderInspector(); } });
+        actions.push({ label: 'Compare with another company', short: 'Compare', icon: 'git-compare-arrows', fn: () => startTool('cmpco', { a: n.id }) });
+        const heading = S.lens === 'funding' ? 'Known investors' : S.lens === 'talent' ? 'Founders and institutions' : S.lens === 'technology' ? 'Technical groupings' : 'Connections';
+        return { type: 'COMPANY', name: n.label, desc: c.tech, meta: [c.sector, lf.stage || c.round_tab, lf.date ? fmtDate(lf.date) : null, c.role === 'Benchmark' ? 'Benchmark' : null].filter(Boolean),
+          heading, rows: inc.slice().sort(sortE).map(rowFor), empty: 'No connections recorded in this lens.', notes, actions, sources: srcOf(inc),
+          evidence: [S.lens === 'funding' ? inv.length + ' recorded investor' + (inv.length === 1 ? '' : 's') + ' within this dataset' : inc.length + ' connections in the ' + LENSES[S.lens].label + ' lens'] };
+      }
+      if (n.type === 'investor') {
+        const inv = n.inv;
+        actions.push({ label: 'Compare with another VC', short: 'Compare', icon: 'git-compare-arrows', fn: () => { stopTool(); S.compare = true; S.a = n.id; const co = coInvestors(n.id); S.b = (co[0] && co[0].n.id) || investorNodes().find((x) => x.id !== n.id).id; S.lens = 'funding'; refresh(); } });
+        actions.push({ label: 'Explore co-investors', short: 'Co-investors', icon: 'waypoints', fn: () => startTool('coinv', { a: n.id }) });
+        return { type: 'INVESTOR', name: n.label, desc: inv.type + '. Backs ' + n.portfolio + ' compan' + (n.portfolio === 1 ? 'y' : 'ies') + ' within this dataset' + (n.leads ? ', leading ' + n.leads : '') + '.' + (inv.type === 'Not classified' ? ' Its type is not clear from the sources.' : ''),
+          meta: ['Investor', inv.website ? inv.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : 'Recorded portfolio'], link: inv.website,
+          heading: 'Portfolio companies', rows: inc.slice().sort(sortE).map(rowFor), empty: 'No portfolio companies in this view.', notes, actions, sources: srcOf(inc),
+          evidence: ['Investment connections · within this dataset'] };
+      }
+      return { type: TYPE_UP[n.type], name: n.label, desc: n.desc || (n.type === 'bottleneck' ? "The radar's own grouping of companies working on the same technical problem." : n.type === 'institution' ? 'Universities, incubators and past employers linked to companies in this dataset.' : ''),
+        meta: [n.type === 'bottleneck' || n.type === 'peer' ? 'Analyst grouping' : 'Recorded relationships'], heading: 'Connected companies', rows: inc.map(rowFor), empty: 'No connections in this view.', notes, actions, sources: srcOf(inc),
+        evidence: [inc.every((e) => !e.documented) && inc.length ? "These links are the radar's comparison, not from a source." : 'Relationships within this dataset'] };
+    }
+    function idleModel() { return { type: 'NETWORK', name: 'Select an entity.', desc: 'Click a company or investor to illuminate its direct connections.', meta: [LENSES[S.lens].label + ' lens'], heading: 'Connections', rows: [], empty: '', notes: [], actions: [], sources: [], evidence: [], noExpand: true }; }
+
+    // ---------- DOM
+    let width = 600, height = 508, clock = 0, T = d3.zoomIdentity, zoom = null;
+    const P = new Map(), Q = new Map(), D = new Map(); let dirtyLabels = true, labelTick = 0, firstResize = true;
+    const NS = 'http://www.w3.org/2000/svg';
+    function nodeEl(n) {
+      if (n.el) return n.el;
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'dsr-node ' + CLS[n.type]; b.setAttribute('aria-label', n.label + ', ' + TYPE_UP[n.type].toLowerCase()); b.setAttribute('aria-pressed', 'false'); b.hidden = true;
+      const dot = document.createElement('span'); dot.className = 'dsr-node-dot'; dot.setAttribute('aria-hidden', 'true');
+      const lab = document.createElement('span'); lab.className = 'dsr-node-label'; lab.textContent = n.label;
+      b.append(dot, lab); nodeLayer.appendChild(b); n.el = b; n.dot = dot; n.lab = lab;
+      b.addEventListener('click', (ev) => { if (dragMoved) { dragMoved = false; return; } select(n.id); });
+      b.addEventListener('dblclick', () => { S.scope = 'local'; S.focus = n.id; S.hops = 1; S.expanded.clear(); stopTool(); S.compare = false; S.sel = n.id; refresh(); });
+      b.addEventListener('pointerenter', () => { S.hover = n.id; }); b.addEventListener('pointerleave', () => { if (S.hover === n.id) S.hover = null; });
+      b.addEventListener('focus', () => { S.hover = n.id; kick(); }); b.addEventListener('blur', () => { if (S.hover === n.id) S.hover = null; });
+      b.addEventListener('pointerdown', (ev) => { if (ev.button) return; drag = { n, x: ev.clientX, y: ev.clientY, id: ev.pointerId }; dragMoved = false; });
+      return b;
+    }
+    let drag = null, dragMoved = false;
+    function edgeEl(e) {
+      if (e.path) return e;
+      e.path = document.createElementNS(NS, 'path'); e.path.setAttribute('fill', 'none'); e.path.setAttribute('stroke-width', '1'); svg.appendChild(e.path);
+      e.particle = document.createElementNS(NS, 'circle'); e.particle.setAttribute('r', '2'); svg.appendChild(e.particle);
+      return e;
     }
 
-    /* ---------------- URL state ---------------- */
+    function refresh() {
+      if (S.compare) { if (!S.a || !G.nodes.has(S.a)) S.a = investorNodes()[0].id; if (!S.b || S.b === S.a || !G.nodes.has(S.b)) { const co = coInvestors(S.a); S.b = (co[0] && co[0].n.id) || investorNodes().find((n) => n.id !== S.a).id; } }
+      if (S.scope === 'local' && !S.focus) S.focus = S.sel;
+      compute(); computeBase();
+      G.nodes.forEach((n) => {
+        const shown = V.vis.has(n.id);
+        if (!shown) { if (n.el) n.el.hidden = true; return; }
+        const el = nodeEl(n); el.hidden = false;
+        const active = V.active.has(n.id), direct = V.lit.has(n.id);
+        el.classList.toggle('selected', active); el.setAttribute('aria-pressed', String(active)); el.style.opacity = direct ? '1' : '.34';
+      });
+      G.edges.forEach((e) => {
+        const show = V.edgeIds.has(e.id);
+        if (!show) { if (e.path) { e.path.style.display = 'none'; e.particle.style.display = 'none'; } return; }
+        edgeEl(e); const active = V.litEdges.has(e.id); const recent = !active && S.recent && e.dv && (TODAY - e.dv) / 864e5 <= S.recent;
+        e.path.style.display = '';
+        e.path.setAttribute('stroke', active ? (V.violet ? '#b3a0ff' : '#67bfce') : recent ? '#edc88d' : '#2a3b50');
+        e.path.setAttribute('stroke-opacity', active ? '.68' : recent ? '.5' : '.28');
+        e.path.setAttribute('stroke-width', active ? '1.25' : '1');
+        e.path.setAttribute('stroke-dasharray', e.documented ? '' : '3 3');
+        e.particle.style.display = active ? '' : 'none'; e.particle.setAttribute('fill', V.violet ? '#d3c8ff' : '#a9f5fb');
+      });
+      renderChrome(); renderInspector(); syncHash(); dirtyLabels = true; draw(); kick();
+    }
+    function renderChrome() {
+      root.querySelectorAll('[data-scope]').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.scope === 'local') === (S.scope === 'local'))));
+      const lens = q('#dsr-lens'); if (!lens.children.length) Object.entries(LENSES).forEach(([k, v]) => { const b = document.createElement('button'); b.type = 'button'; b.dataset.lens = k; b.textContent = v.label; b.addEventListener('click', () => { S.lens = k; if (S.compare && k !== 'funding' && k !== 'all') S.compare = false; if (S.tool && ((S.tool.type === 'cmpco' || S.tool.type === 'path') && k !== 'all')) stopTool(); refresh(); }); lens.appendChild(b); });
+      lens.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lens === S.lens)));
+      q('[data-compare]').setAttribute('aria-pressed', String(S.compare)); q('[data-compare-bar]').hidden = !S.compare;
+      q('#dsr-tools-btn').setAttribute('aria-pressed', String(!!S.tool)); q('#dsr-tool-bar').hidden = !(S.tool && S.bar === 'tools');
+      const nf = [S.sector, S.stage, S.btype].filter(Boolean).length;
+      q('#dsr-filters-btn').setAttribute('aria-pressed', String(S.bar === 'filters' || nf > 0)); q('#dsr-filters-btn span').textContent = 'Filters' + (nf ? ' · ' + nf : ''); q('#dsr-filter-bar').hidden = S.bar !== 'filters';
+      if (S.compare) { ['a', 'b'].forEach((k) => { const sel = q('[data-investor-' + k + ']'); if (sel.value !== S[k]) sel.value = S[k]; }); const common = V.model.rows.length; txt('[data-shared-count]', common + ' shared ' + (common === 1 ? 'company' : 'companies')); }
+      if (S.tool) renderToolBar();
+      if (S.bar === 'filters') renderFilterBar();
+      txt('#dsr-overline', 'ECOSYSTEM / ' + LENSES[S.lens].label.toUpperCase());
+      txt('[data-scope-label]', S.scope === 'local' ? 'LOCAL / ' + (S.hops === 2 ? 'TWO HOPS' : 'ONE HOP') : 'GLOBAL NETWORK');
+      txt('[data-network-count]', V.vis.size + ' ENTITIES');
+      txt('[data-graph-context]', S.compare ? 'Shared companies illuminated' : S.tool ? 'Analysis results illuminated' : S.scope === 'local' && S.hops === 2 ? 'Indirect connections remain in context' : S.sel ? 'Direct connections illuminated' : 'Select an entity to illuminate it');
+      txt('[data-pause-label]', S.paused ? 'Resume' : 'Pause'); q('[data-pause]').setAttribute('aria-label', S.paused ? 'Resume ambient motion' : 'Pause ambient motion'); txt('[data-motion-status]', S.paused ? 'Motion paused' : 'Ambient motion');
+      const kinds = lensKinds(); const types = new Set([...V.vis].map((id) => G.nodes.get(id).type));
+      const lg = q('#dsr-legend'); lg.replaceChildren();
+      [['company', 'dsr-legend-company', 'Company'], ['investor', 'dsr-legend-vc', 'Investor'], ['institution', 'dsr-legend-inst', 'Institution'], ['founder', 'dsr-legend-founder', 'Founder'], ['bottleneck', 'dsr-legend-bottleneck', 'Bottleneck']].forEach(([t, c, l]) => { if (!types.has(t)) return; const s = document.createElement('span'); const b = document.createElement('b'); b.className = c; s.append(b, l); lg.append(s); });
+      if (kinds.has('tech') || kinds.has('peer')) { const s = document.createElement('span'); const b = document.createElement('b'); b.className = 'dsr-legend-analyst'; s.append(b, 'Analyst'); lg.append(s); }
+      const tot = G.edges.filter((e) => kinds.has(e.kind)); const ent = new Set(); tot.forEach((e) => { ent.add(e.s); ent.add(e.t); });
+      txt('[data-totals]', ent.size + ' entities · ' + tot.length + (S.lens === 'funding' ? ' investment' : '') + ' relationships · within this dataset');
+    }
+    function actBtn(label, iconName, fn, pressed) { const b = document.createElement('button'); b.type = 'button'; b.className = 'dsr-action'; if (pressed != null) b.setAttribute('aria-pressed', String(pressed)); b.innerHTML = (iconName ? icon(iconName) : '') + '<span></span>'; b.lastChild.textContent = label; b.addEventListener('click', fn); return b; }
+    function labeled(text, ctl) { const l = document.createElement('label'); l.append(text, ctl); return l; }
+    function sel(opts, val, aria, on) { const s = document.createElement('select'); s.setAttribute('aria-label', aria); opts.forEach(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; if (String(v) === String(val)) o.selected = true; s.append(o); }); s.addEventListener('change', () => on(s.value)); return s; }
+    function renderFilterBar() {
+      const bar = q('#dsr-filter-bar'); bar.replaceChildren();
+      bar.append(labeled('Company sector', sel([['', 'All sectors'], ...sectors().map((s) => [s, s])], S.sector, 'Company sector', (v) => { S.sector = v; refresh(); })));
+      bar.append(labeled('Company stage', sel([['', 'All rounds'], ['early', 'Pre-seed and seed'], ['later', 'Series A and later'], ['Undisclosed', 'Undisclosed stage']], S.stage, 'Company stage', (v) => { S.stage = v; refresh(); })));
+      bar.append(labeled('Backer type', sel([['', 'All backer types'], ...BTYPES], S.btype, 'Backer type', (v) => { S.btype = v; refresh(); })));
+      bar.append(labeled('Recent relationships', sel([['0', 'Off'], ['30', 'Dated in last 30 days'], ['90', 'Dated in last 90 days']], String(S.recent), 'Highlight recent relationships', (v) => { S.recent = +v; refresh(); })));
+      const chk = (label, key) => { const l = document.createElement('label'); l.className = 'dsr-check'; const c = document.createElement('input'); c.type = 'checkbox'; c.checked = S[key]; c.addEventListener('change', () => { S[key] = c.checked; refresh(); }); l.append(c, label); return l; };
+      bar.append(chk('Unconnected companies', 'isolated'));
+      if (S.lens === 'talent') bar.append(chk('Founders', 'founders'));
+      if (S.lens === 'technology' || S.lens === 'all') bar.append(chk('International peers', 'peers'));
+      bar.append(chk('Sector hubs', 'sectors'));
+      if (filtersActive()) bar.append(actBtn('Clear filters', 'x', clearFilters));
+    }
+    function clearFilters() { S.sector = ''; S.stage = ''; S.btype = ''; refresh(); }
+    const TOOLS = [['cmpco', 'Compare companies'], ['multi', 'Multi-investor companies'], ['coinv', 'Co-investors'], ['path', 'Connection path'], ['timeline', 'Timeline']];
+    function renderToolBar() {
+      const bar = q('#dsr-tool-bar'); bar.replaceChildren(); const t = S.tool;
+      bar.append(labeled('Analysis', sel(TOOLS, t.type, 'Analysis', (v) => startTool(v, {}))));
+      const invOpts = investorNodes().map((n) => [n.id, n.label + ' (' + n.portfolio + ')']);
+      const compOpts = [...G.nodes.values()].filter((n) => n.type === 'company').sort((a, b) => a.label.localeCompare(b.label)).map((n) => [n.id, n.label]);
+      const allOpts = [...G.nodes.values()].filter((n) => n.type !== 'sector' && n.type !== 'peer').sort((a, b) => a.label.localeCompare(b.label)).map((n) => [n.id, n.label]);
+      if (t.type === 'cmpco') { bar.append(labeled('First company', sel(compOpts, t.a, 'First company', (v) => { t.a = v; refresh(); }))); const s2 = document.createElement('span'); s2.className = 'dsr-compare-symbol'; s2.textContent = '∩'; bar.append(s2, labeled('Second company', sel(compOpts, t.b, 'Second company', (v) => { t.b = v; refresh(); }))); }
+      if (t.type === 'multi') { const r = document.createElement('input'); r.type = 'range'; r.min = 2; r.max = t.max || 6; r.value = t.k || 3; r.setAttribute('aria-label', 'Minimum investors'); r.addEventListener('input', () => { t.k = +r.value; refresh(); }); bar.append(labeled('At least ' + (t.k || 3) + ' investors', r)); }
+      if (t.type === 'coinv') bar.append(labeled('Investor', sel(invOpts, t.a, 'Investor', (v) => { t.a = v; refresh(); })));
+      if (t.type === 'path') { bar.append(labeled('From', sel(allOpts, t.a, 'From', (v) => { t.a = v; refresh(); })), labeled('To', sel(allOpts, t.b, 'To', (v) => { t.b = v; refresh(); }))); const l = document.createElement('label'); l.className = 'dsr-check'; const c = document.createElement('input'); c.type = 'checkbox'; c.checked = !!t.analyst; c.addEventListener('change', () => { t.analyst = c.checked; refresh(); }); l.append(c, 'Include analyst links'); bar.append(l); }
+      if (t.type === 'timeline') {
+        const r = document.createElement('input'); r.type = 'range'; r.min = 0; r.max = Math.max(0, t.months.length - 1); r.value = t.idx; r.setAttribute('aria-label', 'Timeline month');
+        r.addEventListener('input', () => { t.idx = +r.value; setCursor(); refresh(); });
+        const lbl = labeled('Month', r);
+        const svgH = document.createElementNS(NS, 'svg'); svgH.setAttribute('class', 'dsr-hist'); svgH.setAttribute('viewBox', '0 0 300 34'); svgH.setAttribute('preserveAspectRatio', 'none');
+        const counts = t.months.map((m) => G.edges.filter((e) => e.kind === 'funding' && e.dv && e.dv.getUTCFullYear() === m.getUTCFullYear() && e.dv.getUTCMonth() === m.getUTCMonth()).length); const mx = Math.max(1, ...counts); const bw = 300 / Math.max(1, counts.length);
+        svgH.innerHTML = counts.map((v, i) => '<rect x="' + (i * bw + .5) + '" y="' + (33 - v / mx * 30) + '" width="' + Math.max(1, bw - 1.5) + '" height="' + (v / mx * 30) + '" fill="' + (i === t.idx ? '#b3a0ff' : i < t.idx ? '#edc88d' : '#2a3b50') + '"/>').join('');
+        lbl.append(svgH); bar.append(lbl);
+        bar.append(actBtn(t.timer ? 'Pause replay' : 'Replay', t.timer ? 'pause' : 'play', () => { if (t.timer) { clearInterval(t.timer); t.timer = null; refresh(); return; } if (t.idx >= t.months.length - 1) t.idx = 0; t.timer = setInterval(() => { if (S.tool !== t) return clearInterval(t.timer); t.idx++; if (t.idx >= t.months.length - 1) { t.idx = t.months.length - 1; clearInterval(t.timer); t.timer = null; } setCursor(); refresh(); }, 900); setCursor(); refresh(); }));
+      }
+      bar.append(actBtn('Close', 'x', () => { stopTool(); S.bar = null; refresh(); }));
+    }
+    function renderInspector() {
+      const m = V.model; if (!m) return;
+      txt('[data-detail-type]', m.type); txt('[data-detail-name]', m.name); txt('[data-detail-description]', m.desc || '');
+      root.querySelector('.dsr-selection-indicator').textContent = 'Selected';
+      root.querySelector('.dsr-selection-indicator').hidden = m.type === 'NETWORK';
+      const meta = q('[data-detail-meta]'); meta.replaceChildren(); (m.meta || []).forEach((v, i) => { const s = document.createElement('span'); if (i === 1 && m.link) { const a = document.createElement('a'); a.href = m.link; a.target = '_blank'; a.rel = 'noopener'; a.textContent = v; s.append(a); } else s.textContent = v; meta.appendChild(s); });
+      txt('[data-connections-heading]', m.heading); txt('[data-connections-number]', String(m.rows.length).padStart(2, '0'));
+      const list = q('[data-connection-list]'); list.replaceChildren();
+      m.rows.forEach((c) => {
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'dsr-connection' + (c.cls === 'company' ? ' company' : '');
+        const mark = document.createElement('span'); mark.className = 'dsr-connection-mark' + (['inst', 'founder', 'bottleneck', 'peer'].includes(c.cls) ? ' ' + c.cls : ''); mark.setAttribute('aria-hidden', 'true');
+        const copy = document.createElement('span'); copy.className = 'dsr-connection-copy';
+        const nm = document.createElement('span'); nm.className = 'dsr-connection-name'; nm.textContent = c.name;
+        const cap = document.createElement('span'); cap.className = 'dsr-connection-caption'; cap.textContent = c.caption; if (c.date) { const d = document.createElement('span'); d.className = 'dsr-date'; d.textContent = c.date; cap.append(d); }
+        copy.append(nm, cap);
+        const ar = document.createElement('span'); ar.className = 'dsr-connection-arrow'; ar.textContent = '↗'; ar.setAttribute('aria-hidden', 'true');
+        b.append(mark, copy, ar);
+        b.addEventListener('click', () => { if (c.cmpA) { stopTool(); S.compare = true; S.bar = null; S.a = c.cmpA; S.b = c.id; refresh(); return; } goTo(c.id); });
+        list.appendChild(b);
+      });
+      if (!m.rows.length && m.empty) { const p = document.createElement('p'); p.textContent = m.empty; p.className = 'dsr-detail-description'; list.appendChild(p); }
+      const notes = q('[data-detail-notes]'); notes.replaceChildren();
+      (m.notes || []).filter((n) => n.warn).forEach((n) => { const d = document.createElement('div'); d.className = 'dsr-evidence-note' + (n.warn ? ' dsr-warn' : ''); d.textContent = n.text + ' '; if (n.clear) { const b = document.createElement('button'); b.type = 'button'; b.textContent = 'Clear filters'; b.addEventListener('click', clearFilters); d.append(b); } notes.append(d); });
+      const ex = q('[data-expand]'); ex.hidden = !!m.noExpand;
+      txt('[data-expand-label]', S.scope === 'local' && S.hops === 2 && S.focus === S.sel ? 'Return to direct connections' : 'Explore two connections away');
+      const acts = q('[data-detail-actions]'); acts.replaceChildren();
+      (m.actions || []).forEach((a) => { const b = actBtn(a.short || a.label, a.icon, a.fn, a.pressed); b.title = a.label; b.setAttribute('aria-label', a.label); acts.append(b); });
+      const ev = q('[data-evidence-note]'); ev.replaceChildren();
+      [...(m.notes || []).filter((n) => !n.warn).map((n) => n.text), ...(m.evidence || [])].forEach((t2, i) => { if (i) ev.append(document.createElement('br')); ev.append(t2); });
+      const uniq = []; const seen = new Set(); (m.sources || []).forEach((s2) => { if (s2 && s2.url && !seen.has(s2.url)) { seen.add(s2.url); uniq.push(s2); } });
+      if (uniq.length) { ev.append(document.createElement('br'), 'Sources: '); uniq.slice(0, 6).forEach((s2, i) => { if (i) ev.append(', '); const a = document.createElement('a'); a.href = s2.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = s2.name; ev.append(a); }); if (uniq.length > 6) ev.append(' and ' + (uniq.length - 6) + ' more'); }
+      txt('[data-announcement]', S.compare ? m.rows.length + ' shared companies highlighted.' : S.sel ? m.name + ' selected. ' + m.rows.length + ' direct connections highlighted.' : '');
+    }
+    function select(id) { stopTool(); S.compare = false; if (S.bar === 'tools') S.bar = null; S.sel = id; if (S.scope === 'local' && !V.vis.has(id)) S.focus = id; refresh(); }
+    function goTo(id) {
+      const n = G.nodes.get(id); if (!n) return;
+      const kinds = lensKinds();
+      if (!(G.adj.get(id) || []).some((e) => kinds.has(e.kind))) { const want = { investor: 'funding', founder: 'talent', institution: 'talent', bottleneck: 'technology', peer: 'technology' }[n.type]; if (want) { S.lens = want; if (n.type === 'founder') S.founders = true; if (n.type === 'peer') S.peers = true; } }
+      if (S.scope === 'local') { S.focus = id; S.expanded.clear(); }
+      select(id);
+    }
+
+    // ---------- motion (reference maths) + one animation loop
+    const LOOP = { running: false, active: 0, frames: 0, starts: 0, last: 0, inView: true };
+    const wanted = () => curPage === 'network' && !document.hidden && LOOP.inView;
+    function kick() { if (!LOOP.running && root && wanted()) { LOOP.running = true; LOOP.active++; LOOP.starts++; LOOP.last = 0; requestAnimationFrame(frame); } }
+    function frame(ts) {
+      if (!LOOP.last) LOOP.last = ts; const dt = Math.min(.06, (ts - LOOP.last) / 1000); LOOP.last = ts;
+      if (!S.paused) clock += dt;
+      const moving = draw(); LOOP.frames++;
+      if (++labelTick % 8 === 0 || dirtyLabels) updateLabels();
+      if (wanted() && (!S.paused || moving || drag)) requestAnimationFrame(frame);
+      else { LOOP.running = false; LOOP.active--; }
+    }
+    function draw() {
+      let moving = false;
+      V.vis.forEach((id) => {
+        const n = G.nodes.get(id); if (!n.el) return; const b = BASE.get(id) || { x: .5, y: .5 };
+        const still = id === S.hover || (!S.compare && !S.tool && id === S.sel) || (drag && drag.n === n && dragMoved);
+        const tx = b.x * width, ty = b.y * height;
+        const dTx = still ? 0 : Math.sin(clock * .24 + n.phase) * 7, dTy = still ? 0 : Math.cos(clock * .19 + n.phase) * 6;
+        let qv = Q.get(id), dv = D.get(id);
+        if (!qv) { qv = { x: tx, y: ty }; dv = { x: dTx, y: dTy }; }
+        else if (id === S.hover && !(drag && dragMoved)) { /* hovered nodes hold still */ }
+        else { const ox = qv.x, oy = qv.y; qv = { x: qv.x + (tx - qv.x) * .12, y: qv.y + (ty - qv.y) * .12 }; dv = { x: dv.x + (dTx - dv.x) * .12, y: dv.y + (dTy - dv.y) * .12 }; if (Math.abs(qv.x - ox) + Math.abs(qv.y - oy) > .05) moving = true; }
+        if (drag && drag.n === n && dragMoved) { qv = { x: tx, y: ty }; dv = { x: 0, y: 0 }; }
+        Q.set(id, qv); D.set(id, dv);
+        const x = T.x + T.k * qv.x + dv.x, y = T.y + T.k * qv.y + dv.y;
+        P.set(id, { x, y });
+        n.el.style.transform = 'translate(' + (x - 22).toFixed(2) + 'px,' + (y - 22).toFixed(2) + 'px)';
+        n.dot.style.opacity = (.88 + .12 * Math.sin(clock * 1.2 + n.phase)).toFixed(3);
+      });
+      V.edges.forEach((e) => {
+        if (!e.path) return; const a = P.get(e.s), b = P.get(e.t); if (!a || !b) return;
+        const cx = (a.x + b.x) / 2 + (b.y - a.y) * .09, cy = (a.y + b.y) / 2 - (b.x - a.x) * .09;
+        e.path.setAttribute('d', 'M ' + a.x.toFixed(2) + ' ' + a.y.toFixed(2) + ' Q ' + cx.toFixed(2) + ' ' + cy.toFixed(2) + ' ' + b.x.toFixed(2) + ' ' + b.y.toFixed(2));
+        if (V.litEdges.has(e.id)) { const t = (Math.sin(clock * .63 + e.phase) + 1) / 2, inv = 1 - t; const px = inv * inv * a.x + 2 * inv * t * cx + t * t * b.x, py = inv * inv * a.y + 2 * inv * t * cy + t * t * b.y; e.particle.setAttribute('cx', px.toFixed(2)); e.particle.setAttribute('cy', py.toFixed(2)); e.particle.setAttribute('opacity', (.5 + .5 * Math.sin(Math.PI * t)).toFixed(2)); }
+      });
+      return moving;
+    }
+    // labels: lit entities always named; the rest only where they don't collide
+    const measure = (() => { const c = document.createElement('canvas').getContext('2d'); const cache = new Map(); return (t, big) => { const k = (big ? 'b' : 's') + t; if (!cache.has(k)) { c.font = (big ? '500 12px' : '400 11px') + ' Inter, "Segoe UI", sans-serif'; cache.set(k, c.measureText(t).width); } return cache.get(k); }; })();
+    function updateLabels() {
+      dirtyLabels = false; const boxes = [];
+      const dim = V.lit.size < V.vis.size;
+      const prio = (n) => V.active.has(n.id) ? 0 : dim && V.lit.has(n.id) ? 1 : (dim ? 5 : 0) + (n.type === 'investor' ? 3 - Math.min(n.portfolio, 5) * .3 : n.type === 'company' ? 4 : n.type === 'bottleneck' || n.type === 'institution' ? 3.5 : 6);
+      const items = [...V.vis].map((id) => G.nodes.get(id)).filter((n) => n.el).map((n) => [prio(n), n]).sort((a, b) => a[0] - b[0]);
+      const crowded = V.vis.size > 40 && T.k < 1.6;
+      if (dim) items.forEach(([p, n]) => { if (p > 1) return; const pos = P.get(n.id); if (pos) boxes.push([pos.x - 8, pos.y - 8, pos.x + 8, pos.y + 8]); });
+      items.forEach(([p, n]) => {
+        const pos = P.get(n.id); if (!pos) return;
+        const big = V.active.has(n.id); const w = measure(n.label, big) + 4, h = big ? 17 : 15;
+        const hit = (bx) => boxes.some((o) => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1]);
+        // the reference places labels below; lit labels may move above or to a side only to stay legible
+        const cand = { below: [pos.x - w / 2, pos.y + 21, pos.x + w / 2, pos.y + 21 + h], above: [pos.x - w / 2, pos.y - 21 - h, pos.x + w / 2, pos.y - 21], right: [pos.x + 12, pos.y - h / 2, pos.x + 12 + w, pos.y + h / 2], left: [pos.x - 12 - w, pos.y - h / 2, pos.x - 12, pos.y + h / 2] };
+        let place = 'below', box = cand.below;
+        if (p <= 1 && hit(box)) { for (const k of ['above', 'right', 'left']) if (!hit(cand[k])) { place = k; box = cand[k]; break; } }
+        let on = p <= 1 || !hit(box);
+        if (n._place !== place) { n._place = place; const st = n.lab.style; st.top = st.bottom = st.left = st.right = st.transform = '';
+          if (place === 'above') { st.top = 'auto'; st.bottom = '43px'; } else if (place === 'right') { st.top = '50%'; st.left = '34px'; st.transform = 'translateY(-50%)'; } else if (place === 'left') { st.top = '50%'; st.left = 'auto'; st.right = '34px'; st.transform = 'translateY(-50%)'; } }
+        if ((width < 440 || (dim && crowded)) && !V.lit.has(n.id)) on = false;
+        if (on) boxes.push(box);
+        if (n._labOn !== on) { n.lab.classList.toggle('dsr-off', !on); n._labOn = on; }
+      });
+    }
+
+    // ---------- camera (zoom/pan is the user's; node sizes stay constant)
+    function setupDom() {
+      root = $('dsr-observatory'); graph = q('[data-graph]'); svg = q('[data-edges]'); nodeLayer = q('[data-nodes]');
+      const ro = new ResizeObserver(() => { width = graph.clientWidth; height = graph.clientHeight; svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height); if (firstResize && width && width < 440 && !hashHasScope) { S.scope = 'local'; if (!S.focus) S.focus = S.sel; } if (width) firstResize = false; Q.clear(); D.clear(); if (G) refresh(); });
+      ro.observe(graph);
+      if ('IntersectionObserver' in window) new IntersectionObserver((ents) => { LOOP.inView = ents[0].isIntersecting; if (LOOP.inView) kick(); }).observe(graph);
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) kick(); });
+      zoom = d3.zoom().scaleExtent([0.5, 6])
+        .filter((ev) => { if (ev.type === 'wheel') return true; if (ev.type === 'dblclick') return false; if (ev.touches) return ev.touches.length >= 2; if (ev.button) return false; return !(ev.target.closest && ev.target.closest('.dsr-node')); })
+        .on('start', (ev) => { if (ev.sourceEvent && ev.sourceEvent.type !== 'wheel') graph.classList.add('dsr-grabbing'); })
+        .on('zoom', (ev) => { T = ev.transform; dirtyLabels = true; draw(); kick(); })
+        .on('end', () => graph.classList.remove('dsr-grabbing'));
+      d3.select(graph).call(zoom).on('dblclick.zoom', null);
+      graph.addEventListener('click', (ev) => { if (ev.target === graph || ev.target === svg || ev.target === nodeLayer) { /* background click keeps the reference's always-selected state */ } });
+      window.addEventListener('pointermove', (ev) => {
+        if (!drag) return; if (!dragMoved && Math.hypot(ev.clientX - drag.x, ev.clientY - drag.y) < 5) return;
+        if (S.scope !== 'global') return; dragMoved = true;
+        const r = graph.getBoundingClientRect(); const gx = (ev.clientX - r.left - T.x) / T.k, gy = (ev.clientY - r.top - T.y) / T.k;
+        const key = layoutKey(); let m = pins.get(key); if (!m) pins.set(key, m = new Map()); m.set(drag.n.id, { x: gx / width, y: gy / height }); BASE.set(drag.n.id, { x: gx / width, y: gy / height }); dirtyLabels = true; kick();
+      });
+      window.addEventListener('pointerup', () => { if (drag) { const moved = dragMoved; drag = null; if (moved) setTimeout(() => { dragMoved = false; }, 0); } });
+      root.querySelectorAll('[data-scope]').forEach((b) => b.addEventListener('click', () => { const local = b.dataset.scope === 'local'; S.scope = local ? 'local' : 'global'; S.hops = 1; S.expanded.clear(); if (local) S.focus = S.sel; refresh(); }));
+      q('[data-compare]').addEventListener('click', () => { S.compare = !S.compare; stopTool(); S.hops = 1; if (S.compare) { S.lens = S.lens === 'all' ? 'all' : 'funding'; if (S.sel && S.sel.startsWith('i:')) { S.a = S.sel; S.b = null; } } refresh(); });
+      q('[data-pause]').addEventListener('click', () => { S.paused = !S.paused; refresh(); });
+      q('[data-expand]').addEventListener('click', () => { if (S.scope === 'local' && S.hops === 2 && S.focus === S.sel) S.hops = 1; else { S.scope = 'local'; S.hops = 2; S.focus = S.sel; S.expanded.clear(); } refresh(); });
+      q('#dsr-filters-btn').addEventListener('click', () => { S.bar = S.bar === 'filters' ? null : 'filters'; refresh(); });
+      q('#dsr-tools-btn').addEventListener('click', () => { if (S.tool && S.bar === 'tools') { stopTool(); S.bar = null; refresh(); } else if (S.tool) { S.bar = 'tools'; refresh(); } else startTool('multi', { k: 3 }); });
+      ['a', 'b'].forEach((k) => { const s = q('[data-investor-' + k + ']'); investorNodes().forEach((n) => { const o = document.createElement('option'); o.value = n.id; o.textContent = n.label; s.appendChild(o); }); s.addEventListener('change', () => { S[k] = s.value; refresh(); }); });
+      const dl = q('#dsr-dl'); [...G.nodes.values()].filter((n) => n.type !== 'sector').sort((a, b) => a.label.localeCompare(b.label)).forEach((n) => { const o = document.createElement('option'); o.value = n.label; dl.append(o); });
+      const srch = q('#dsr-search'); const go = () => { const v = srch.value.trim().toLowerCase(); if (!v) return; const ns = [...G.nodes.values()].filter((n) => n.type !== 'sector'); const n = ns.find((x) => x.label.toLowerCase() === v) || ns.find((x) => x.label.toLowerCase().startsWith(v)) || ns.find((x) => x.label.toLowerCase().includes(v)); if (!n) { txt('[data-announcement]', 'No match for ' + srch.value); return; } goTo(n.id); srch.value = ''; };
+      srch.addEventListener('change', go); srch.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); go(); } });
+      const zoomBy = (k) => d3.select(graph).transition().duration(reduceMQ.matches ? 0 : 250).call(zoom.scaleBy, k);
+      q('#dsr-zoom-in').addEventListener('click', () => zoomBy(1.4)); q('#dsr-zoom-out').addEventListener('click', () => zoomBy(1 / 1.4));
+      q('#dsr-fit').addEventListener('click', () => d3.select(graph).transition().duration(reduceMQ.matches ? 0 : 300).call(zoom.transform, d3.zoomIdentity));
+      q('#dsr-reset').addEventListener('click', () => { pins.clear(); S.sector = ''; S.stage = ''; S.btype = ''; stopTool(); S.compare = false; S.scope = 'global'; S.hops = 1; S.expanded.clear(); d3.select(graph).call(zoom.transform, d3.zoomIdentity); refresh(); });
+      root.addEventListener('keydown', (e) => { if (e.key === 'Escape' && (S.compare || S.tool)) { stopTool(); S.compare = false; S.bar = null; refresh(); } });
+      reduceMQ.addEventListener && reduceMQ.addEventListener('change', () => { if (reduceMQ.matches) { S.paused = true; refresh(); } });
+    }
+
+    // ---------- shareable state
     function syncHash() {
       if (curPage !== 'network') return;
-      const p = new URLSearchParams(); p.set('lens', S.lens); if (S.scope === 'focus') { p.set('scope', 'focus'); if (S.focus) p.set('focus', S.focus); p.set('hops', S.hops); if (S.expanded.size) p.set('exp', [...S.expanded].join(',')); if (S.collapsed.size) p.set('col', [...S.collapsed].join(',')); }
+      const p = new URLSearchParams(); p.set('lens', S.lens);
+      if (S.scope === 'local') { p.set('scope', 'local'); if (S.focus) p.set('focus', S.focus); p.set('hops', S.hops); if (S.expanded.size) p.set('exp', [...S.expanded].join(',')); }
       if (S.sel) p.set('sel', S.sel); if (S.sector) p.set('sector', S.sector); if (S.stage) p.set('stage', S.stage); if (S.btype) p.set('btype', S.btype);
+      if (S.compare) { p.set('compare', '1'); p.set('a', S.a); p.set('b', S.b); }
       if (S.tool) { p.set('tool', S.tool.type); if (S.tool.a) p.set('a', S.tool.a); if (S.tool.b) p.set('b', S.tool.b); if (S.tool.type === 'multi') p.set('k', S.tool.k); if (S.tool.type === 'timeline' && S.tool.months[S.tool.idx]) p.set('t', S.tool.months[S.tool.idx].toISOString().slice(0, 7)); if (S.tool.analyst) p.set('analyst', '1'); }
       setHash('network?' + p.toString());
     }
-    let ready = false;
+    let hashHasScope = false;
     function enter(params) {
       if (!G) build();
-      if (!ready) { setupCanvas(); wireChrome(); ready = true; const dl = $('net-dl'); [...G.nodes.values()].filter((n) => n.type !== 'sector').sort((a, b) => a.label.localeCompare(b.label)).forEach((n) => { const o = el('option'); o.value = n.label; o.label = n.type === 'investor' ? 'Backer' : TYPE_LABEL[n.type]; dl.append(o); }); }
       const p = params || new URLSearchParams();
-      const legacyView = p.get('view');
-      S.lens = LENSES[p.get('lens')] ? p.get('lens') : legacyView && LENSES[legacyView] ? legacyView : (p.has('lens') ? 'funding' : S.lens);
-      S.scope = p.get('scope') === 'focus' || legacyView === 'local' ? 'focus' : 'network';
-      S.focus = p.get('focus') || (legacyView === 'local' ? p.get('sel') : null);
-      S.hops = p.get('hops') === '2' ? 2 : 1;
-      S.expanded = new Set((p.get('exp') || '').split(',').filter(Boolean)); S.collapsed = new Set((p.get('col') || '').split(',').filter(Boolean));
-      S.sel = p.get('sel') || null; if (S.sel && !G.nodes.has(S.sel)) S.sel = null; if (S.focus && !G.nodes.has(S.focus)) S.focus = null;
+      hashHasScope = p.has('scope') || p.get('view') === 'local';
+      const legacy = p.get('view');
+      S.lens = LENSES[p.get('lens')] ? p.get('lens') : legacy && LENSES[legacy] ? legacy : S.lens;
+      const sc = p.get('scope'); S.scope = sc === 'local' || sc === 'focus' || legacy === 'local' ? 'local' : 'global';
+      S.focus = p.get('focus') || (legacy === 'local' ? p.get('sel') : null); if (S.focus && !G.nodes.has(S.focus)) S.focus = null;
+      S.hops = p.get('hops') === '2' ? 2 : 1; S.expanded = new Set((p.get('exp') || '').split(',').filter((x) => G.nodes.has(x)));
+      S.sel = p.get('sel'); if (!S.sel || !G.nodes.has(S.sel)) { const best = ALL.slice().sort((a, b) => companyInvestors(b.id).length - companyInvestors(a.id).length)[0]; S.sel = best ? 'c:' + best.id : null; }
       S.sector = p.get('sector') || ''; S.stage = p.get('stage') || ''; S.btype = p.get('btype') || '';
-      if (S.tool && S.tool.timer) clearInterval(S.tool.timer); S.tool = null;
-      renderBar(); renderFilters();
+      stopTool(); S.compare = p.get('compare') === '1'; S.bar = null;
+      if (S.compare) { S.a = p.get('a'); S.b = p.get('b'); }
+      if (!root) setupDom();
       const tool = p.get('tool');
-      if (tool && TOOLS[tool]) { const args = { a: p.get('a') || undefined, b: p.get('b') || undefined, k: p.get('k') ? +p.get('k') : undefined, analyst: p.get('analyst') === '1' };
-        if (tool === 'timeline' && p.get('t')) { S.tool = { type: 'timeline' }; startTool('timeline', {}); const i = S.tool.months.findIndex((m) => m.toISOString().slice(0, 7) === p.get('t')); if (i >= 0) { S.tool.idx = i; setCursor(); runTool(); } applyView({ fit: true, instant: true }); }
-        else { startTool(tool, args); applyView({ fit: true, instant: true }); }
-      } else { setTab(S.tab === 'analyze' ? 'details' : S.tab); applyView({ fit: true, instant: true }); }
-      userMoved = false; kick();
+      if (tool && TOOLS.some((t) => t[0] === tool)) { const args = { a: p.get('a') || undefined, b: p.get('b') || undefined, k: p.get('k') ? +p.get('k') : undefined, analyst: p.get('analyst') === '1' }; startTool(tool, args); if (tool === 'timeline' && p.get('t')) { const i = S.tool.months.findIndex((m) => m.toISOString().slice(0, 7) === p.get('t')); if (i >= 0) { S.tool.idx = i; setCursor(); refresh(); } } }
+      else refresh();
+      kick();
     }
-    function wireChrome() {
-      $('filters-btn').addEventListener('click', () => { S.filtersOpen = !S.filtersOpen; renderFilters(); renderBar(); });
-      $('pause-btn').addEventListener('click', togglePause);
-      $('fit-btn').addEventListener('click', () => fit(emphasisIds()));
-      $('reset-btn').addEventListener('click', () => { pins.clear(); clearTool(true); S.sel = null; S.selEdge = null; S.scope = 'network'; S.focus = null; S.expanded.clear(); S.collapsed.clear(); S.sector = ''; S.stage = ''; S.btype = ''; userMoved = false; renderFilters(); renderBar(); setTab('details'); applyView({ fit: true }); });
-      $('tab-details').addEventListener('click', () => setTab('details')); $('tab-analyze').addEventListener('click', () => setTab('analyze'));
-      $('insp-handle').addEventListener('click', () => openSheet(!sheetOpen));
-      const srch = $('net-search');
-      const go = () => { const v = srch.value.trim().toLowerCase(); if (!v) return; const ns = [...G.nodes.values()].filter((n) => n.type !== 'sector'); const n = ns.find((x) => x.label.toLowerCase() === v) || ns.find((x) => x.label.toLowerCase().startsWith(v)) || ns.find((x) => x.label.toLowerCase().includes(v)); if (!n) { announce('No match for ' + srch.value); return; } clearTool(true); setTab('details'); focusOn(n.id); openSheet(true); srch.blur(); };
-      srch.addEventListener('change', go); srch.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); go(); } });
-    }
-    function onLeave() { if (S.tool && S.tool.timer) { clearInterval(S.tool.timer); S.tool.timer = null; } setHover(null); }
-    // test and debugging hooks
+    function onLeave() { if (S.tool && S.tool.timer) { clearInterval(S.tool.timer); S.tool.timer = null; } S.hover = null; }
+    const TODAY = new Date();
     window.__radar = {
-      state: () => ({ lens: S.lens, scope: S.scope, focus: S.focus, hops: S.hops, sel: S.sel, paused: S.paused, tool: S.tool && { type: S.tool.type, a: S.tool.a, b: S.tool.b, k: S.tool.k } }),
-      loop: () => ({ running: LOOP.running, active: LOOP.active, frames: LOOP.frames, starts: LOOP.starts, ambT: LOOP.ambT }),
-      screenPos: (id) => { const n = G.nodes.get(id); if (!n || !n.drawn) return null; const p = pos(n); const r = canvas.getBoundingClientRect(); return { x: r.left + T.applyX(p.x), y: r.top + T.applyY(p.y), alpha: n.a, role: n.role || null }; },
-      view: () => ({ nodes: [...VIEW.ids], edges: VIEW.edges.map((e) => e.id) }),
-      highlighted: () => ({ nodes: HL ? [...HL.nodes.keys()] : [], edges: HL ? [...HL.edges.keys()] : [] }),
-      graph: () => G, select: (id) => focusOn(id), tool: (t, a) => startTool(t, a), result: () => S.tool && S.tool.result && S.tool.result.info,
+      state: () => ({ lens: S.lens, scope: S.scope, focus: S.focus, hops: S.hops, sel: S.sel, paused: S.paused, compare: S.compare && { a: S.a, b: S.b }, tool: S.tool && { type: S.tool.type, a: S.tool.a, b: S.tool.b, k: S.tool.k } }),
+      loop: () => ({ running: LOOP.running, active: LOOP.active, frames: LOOP.frames, starts: LOOP.starts, clock }),
+      screenPos: (id) => { const p2 = P.get(id); if (!p2 || !V.vis.has(id)) return null; const r = graph.getBoundingClientRect(); return { x: r.left + p2.x, y: r.top + p2.y, opacity: G.nodes.get(id).el.style.opacity, selected: G.nodes.get(id).el.classList.contains('selected') }; },
+      view: () => ({ nodes: [...V.vis], edges: V.edges.map((e) => e.id) }),
+      highlighted: () => ({ nodes: [...V.lit], active: [...V.active], edges: [...V.litEdges] }),
+      model: () => V.model, select: (id) => goTo(id), tool: (t, a) => startTool(t, a),
+      compare: (a, b) => { stopTool(); S.compare = true; S.a = a; S.b = b; S.lens = 'funding'; refresh(); },
     };
     return { enter, onLeave, companyInvestors, build: () => { if (!G) build(); } };
   })();
